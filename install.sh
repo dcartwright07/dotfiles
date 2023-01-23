@@ -39,8 +39,6 @@ ln -sv $DOTFILES/.lpass $HOME
 ln -sv $DOTFILES/.cache $HOME
 ln -sv $DOTFILES/.mume $HOME
 ln -sv $DOTFILES/.swiftpm $HOME
-ln -sv $DOTFILES/.tmux.conf $HOME
-ln -sv $DOTFILES/.tmuxp $HOME
 
 # Config
 rm -rf $HOME/.config/iterm2
@@ -69,3 +67,7 @@ ln -sv $DOTFILES/.config/exercism $HOME/.config/exercism
 
 rm -rf $HOME/.config/spotify-tui
 ln -sv $DOTFILES/.config/spotify-tui $HOME/.config/spotify-tui
+
+rm -rf $HOME/.config/tmux
+ln -sv $DOTFILES/.config/tmux/.tmux.conf $HOME/.config/tmux/.tmux.config
+ln -sv $DOTFILES/.config/tmux/.tmuxp $HOME/.config/tmux/.tmuxp
