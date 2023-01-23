@@ -1,0 +1,13 @@
+{
+  "app.hideMenubarIcon": false,
+  "app.preferredTerminal": "iTerm2",
+  "autocomplete.fontFamily": "JetBrains Mono",
+  "autocomplete.fontSize": 14,
+  "autocomplete.height": 200,
+  "autocomplete.keybindings.insertCommonPrefixOrNavigateDown": "tab",
+  "autocomplete.keybindings.insertSelected": "tab",
+  "autocomplete.theme": "monokai-dark",
+  "autocomplete.width": 387,
+  "cli.tips.disabled": false,
+  "integrations.hyper.disabled": true
+}

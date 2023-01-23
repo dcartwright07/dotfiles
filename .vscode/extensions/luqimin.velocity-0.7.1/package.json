@@ -1,0 +1,73 @@
+{
+	"name": "velocity",
+	"displayName": "Apache Velocity",
+	"description": "The Apache Velocity support for Visual Studio Code",
+	"version": "0.7.1",
+	"publisher": "luqimin",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/luqimin/tinyvm"
+	},
+	"engines": {
+		"vscode": "^1.0.0"
+	},
+	"icon": "icon.png",
+	"categories": [
+		"Languages"
+	],
+	"activationEvents": [
+		"onLanguage:velocity"
+	],
+	"main": "./extension",
+	"contributes": {
+		"languages": [
+			{
+				"id": "velocity",
+				"aliases": [
+					"Velocity",
+					"vtl"
+				],
+				"extensions": [
+					".vm",
+					".vtl"
+				],
+				"configuration": "./language-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "velocity",
+				"scopeName": "text.velocity",
+				"path": "./syntaxes/Velocity.tmLanguage"
+			},
+			{
+				"language": "velocity",
+				"scopeName": "text.html.velocity",
+				"path": "./syntaxes/Velocity_HTML.tmLanguage"
+			}
+		],
+		"snippets": [
+			{
+				"language": "velocity",
+				"path": "./snippets/snippets.json"
+			}
+		]
+	},
+	"keywords": [
+		"velocity",
+		"vm",
+		"java",
+		"template"
+	],
+	"__metadata": {
+		"id": "d71a6298-b78f-4804-818b-6ab92c7ad827",
+		"publisherId": "3ee7fe73-c05e-466c-816e-b411dda44a93",
+		"publisherDisplayName": "luqimin",
+		"targetPlatform": "undefined",
+		"isApplicationScoped": false,
+		"updated": false,
+		"isPreReleaseVersion": false,
+		"preRelease": false,
+		"installedTimestamp": 1660007114456
+	}
+}

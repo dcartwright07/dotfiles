@@ -1,0 +1,19 @@
+{
+    "assetEnvironment": "prod",
+    "assetsMD5": {
+        "codestream-14.8.1+4264.vsix": ""
+    },
+    "buildBranch": "master",
+    "buildDisplayString": "14.8.1+4264",
+    "buildNumber": "4264",
+    "fullName": "codestream-14.8.1+4264",
+    "name": "codestream",
+    "prefix": "",
+    "primaryRepo": "codestream",
+    "repoCommitId": {
+        "codestream": "ae084e9386abc4c1c7bc7b7721fa90c59da50744"
+    },
+    "sandboxType": "vscode2_sb",
+    "suffix": null,
+    "version": "14.8.1"
+}

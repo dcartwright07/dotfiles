@@ -1,0 +1,32 @@
+prSections:
+  - title: My Pull Requests
+    filters: is:open author:@me
+  - title: WU247 Web
+    filters: is:open repo:WhatsUp247/wu247v3
+  - title: Needs My Review
+    filters: is:open review-requested:@me
+  # - title: Subscribed
+  # filters: is:open -author:@me org:whatsup247
+issuesSections:
+  - title: My Issues
+    filters: is:open assignee:@me
+  - title: WU247 Web
+    filters: is:open repo:WhatsUp247/wu247v3
+  - title: What'sUp 24/7
+    filters: is:open org:whatsup247
+  # - title: Issues w/ Milestone
+  #   filters: is:open org:whatsup247 milestone:"*"
+  # - title: Issues w/o Milestone
+  #   filters: is:open org:whatsup247 no:milestone
+  # - title: Subscribed
+  # filters: is:open -author:@me org:whatsup247
+defaults:
+  preview:
+    open: true
+    width: 50
+  prsLimit: 20
+  issuesLimit: 100
+  view: issues
+keybindings:
+  prs: []
+repoPaths: {}

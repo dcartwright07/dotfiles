@@ -1,0 +1,93 @@
+[INFO  Wed Jun 22 00:19:53 2022] ...right/.vim/plugged/diffview.nvim/lua/diffview/logger.lua:42: [DiffView] Completed update for 0 files successfully (41.500 ms)
+[INFO  Wed Jun 22 00:20:31 2022] ...right/.vim/plugged/diffview.nvim/lua/diffview/logger.lua:42: [DiffView] Completed update for 1 files successfully (58.589 ms)
+[INFO  Wed Jun 22 00:22:39 2022] ...right/.vim/plugged/diffview.nvim/lua/diffview/logger.lua:42: [DiffView] Completed update for 0 files successfully (221.048 ms)
+[INFO  Wed Jun 22 00:22:39 2022] ...right/.vim/plugged/diffview.nvim/lua/diffview/logger.lua:42: [DiffView] Completed update for 0 files successfully (100.986 ms)
+[INFO  Thu Jun 23 23:46:48 2022] ...right/.vim/plugged/diffview.nvim/lua/diffview/logger.lua:42: [DiffView] Completed update for 1 files successfully (58.616 ms)
+[INFO  Thu Jun 23 23:50:11 2022] ...right/.vim/plugged/diffview.nvim/lua/diffview/logger.lua:42: [DiffView] Completed update for 1 files successfully (58.977 ms)
+[INFO  Fri Jun 24 00:00:15 2022] ...right/.vim/plugged/diffview.nvim/lua/diffview/logger.lua:42: [DiffView] Completed update for 1 files successfully (61.884 ms)
+[INFO  Fri Jun 24 00:00:50 2022] ...right/.vim/plugged/diffview.nvim/lua/diffview/logger.lua:42: [DiffView] Completed update for 2 files successfully (66.501 ms)
+[INFO  Fri Jun 24 00:04:33 2022] ...right/.vim/plugged/diffview.nvim/lua/diffview/logger.lua:42: [FileHistory] Completed update for 2490 entries successfully (43993.998 ms).
+[INFO  Fri Jun 24 00:05:27 2022] ...right/.vim/plugged/diffview.nvim/lua/diffview/logger.lua:42: [DiffView] Completed update for 2 files successfully (63.635 ms)
+[INFO  Fri Jun 24 00:05:46 2022] ...right/.vim/plugged/diffview.nvim/lua/diffview/logger.lua:42: [DiffView] Completed update for 2 files successfully (43.099 ms)
+[INFO  Fri Jun 24 00:08:37 2022] ...right/.vim/plugged/diffview.nvim/lua/diffview/logger.lua:42: [FileHistory] Completed update for 2490 entries successfully (43142.634 ms).
+[ERROR Fri Jun 24 00:09:33 2022] ...right/.vim/plugged/diffview.nvim/lua/diffview/logger.lua:42: Job exited with a non-zero exit status! Code: 64
+[ERROR Fri Jun 24 00:09:33 2022] ...right/.vim/plugged/diffview.nvim/lua/diffview/logger.lua:42:    [cmd] git 'log' '--pretty=format:%x00' '--date=raw' '--numstat' '--diff-merges=first-parent' '--'
+[ERROR Fri Jun 24 00:09:33 2022] ...right/.vim/plugged/diffview.nvim/lua/diffview/logger.lua:42:    [cwd] /Users/dominiccartwright/Sites/whatsup247/app
+[INFO  Fri Jun 24 00:09:39 2022] ...right/.vim/plugged/diffview.nvim/lua/diffview/logger.lua:42: [DiffView] Completed update for 0 files successfully (43.623 ms)
+[ERROR Fri Jun 24 00:10:14 2022] ...right/.vim/plugged/diffview.nvim/lua/diffview/logger.lua:42: Job exited with a non-zero exit status! Code: 64
+[ERROR Fri Jun 24 00:10:14 2022] ...right/.vim/plugged/diffview.nvim/lua/diffview/logger.lua:42:    [cmd] git 'log' '--pretty=format:%x00' '--date=raw' '--numstat' '--diff-merges=first-parent' '--'
+[ERROR Fri Jun 24 00:10:14 2022] ...right/.vim/plugged/diffview.nvim/lua/diffview/logger.lua:42:    [cwd] /Users/dominiccartwright/Sites/whatsup247/app
+[ERROR Fri Jun 24 00:10:14 2022] ...right/.vim/plugged/diffview.nvim/lua/diffview/logger.lua:42: Job exited with a non-zero exit status! Code: 64
+[ERROR Fri Jun 24 00:10:14 2022] ...right/.vim/plugged/diffview.nvim/lua/diffview/logger.lua:42:    [cmd] git 'log' '--pretty=format:%x00' '--date=raw' '--numstat' '--diff-merges=first-parent' '--'
+[ERROR Fri Jun 24 00:10:14 2022] ...right/.vim/plugged/diffview.nvim/lua/diffview/logger.lua:42:    [cwd] /Users/dominiccartwright/Sites/whatsup247/app
+[INFO  Mon Jun 27 12:57:09 2022] ...rtwright/.vim/plugged/diffview.nvim/lua/diffview/lib.lua:40: [command call] :DiffviewOpen 
+[INFO  Mon Jun 27 12:57:09 2022] ...right/.vim/plugged/diffview.nvim/lua/diffview/logger.lua:42: [DiffView] Completed update for 2 files successfully (54.763 ms)
+[INFO  Mon Jun 27 12:57:46 2022] ...rtwright/.vim/plugged/diffview.nvim/lua/diffview/lib.lua:40: [command call] :DiffviewOpen 
+[INFO  Mon Jun 27 12:57:46 2022] ...right/.vim/plugged/diffview.nvim/lua/diffview/logger.lua:42: [DiffView] Completed update for 2 files successfully (50.755 ms)
+[INFO  Mon Jun 27 12:57:49 2022] ...rtwright/.vim/plugged/diffview.nvim/lua/diffview/lib.lua:40: [command call] :DiffviewOpen 
+[INFO  Mon Jun 27 12:57:49 2022] ...right/.vim/plugged/diffview.nvim/lua/diffview/logger.lua:42: [DiffView] Completed update for 2 files successfully (51.645 ms)
+[INFO  Mon Jun 27 13:00:06 2022] ...rtwright/.vim/plugged/diffview.nvim/lua/diffview/lib.lua:40: [command call] :DiffviewOpen 
+[INFO  Mon Jun 27 13:00:07 2022] ...right/.vim/plugged/diffview.nvim/lua/diffview/logger.lua:42: [DiffView] Completed update for 2 files successfully (53.046 ms)
+[INFO  Mon Jun 27 13:20:31 2022] ...rtwright/.vim/plugged/diffview.nvim/lua/diffview/lib.lua:130: [command call] :DiffviewFileHistory 
+[INFO  Mon Jun 27 13:20:31 2022] ...right/.vim/plugged/diffview.nvim/lua/diffview/logger.lua:42: [FileHistory] Completed update for 81 entries successfully (88.180 ms).
+[INFO  Mon Jun 27 13:21:51 2022] ...rtwright/.vim/plugged/diffview.nvim/lua/diffview/lib.lua:130: [command call] :DiffviewFileHistory 
+[INFO  Mon Jun 27 13:21:52 2022] ...right/.vim/plugged/diffview.nvim/lua/diffview/logger.lua:42: [FileHistory] Completed update for 81 entries successfully (90.164 ms).
+[INFO  Mon Jul  4 00:23:16 2022] ...rtwright/.vim/plugged/diffview.nvim/lua/diffview/lib.lua:40: [command call] :DiffviewOpen 
+[INFO  Mon Jul  4 00:23:16 2022] ...right/.vim/plugged/diffview.nvim/lua/diffview/logger.lua:42: [DiffView] Completed update for 0 files successfully (55.229 ms)
+[INFO  Mon Jul  4 00:23:21 2022] ...rtwright/.vim/plugged/diffview.nvim/lua/diffview/lib.lua:40: [command call] :DiffviewOpen 
+[INFO  Mon Jul  4 00:23:22 2022] ...right/.vim/plugged/diffview.nvim/lua/diffview/logger.lua:42: [DiffView] Completed update for 0 files successfully (37.242 ms)
+[INFO  Mon Jul  4 00:23:26 2022] ...rtwright/.vim/plugged/diffview.nvim/lua/diffview/lib.lua:40: [command call] :DiffviewOpen 
+[INFO  Mon Jul  4 00:23:26 2022] ...right/.vim/plugged/diffview.nvim/lua/diffview/logger.lua:42: [DiffView] Completed update for 0 files successfully (36.030 ms)
+[INFO  Mon Jul  4 00:23:31 2022] ...rtwright/.vim/plugged/diffview.nvim/lua/diffview/lib.lua:40: [command call] :DiffviewOpen 
+[INFO  Mon Jul  4 00:23:31 2022] ...right/.vim/plugged/diffview.nvim/lua/diffview/logger.lua:42: [DiffView] Completed update for 0 files successfully (33.676 ms)
+[INFO  Mon Jul  4 00:23:55 2022] ...rtwright/.vim/plugged/diffview.nvim/lua/diffview/lib.lua:40: [command call] :DiffviewOpen 
+[INFO  Mon Jul  4 00:23:56 2022] ...right/.vim/plugged/diffview.nvim/lua/diffview/logger.lua:42: [DiffView] Completed update for 1 files successfully (55.121 ms)
+[INFO  Mon Jul  4 00:24:46 2022] ...rtwright/.vim/plugged/diffview.nvim/lua/diffview/lib.lua:40: [command call] :DiffviewOpen 
+[INFO  Mon Jul  4 00:24:46 2022] ...right/.vim/plugged/diffview.nvim/lua/diffview/logger.lua:42: [DiffView] Completed update for 1 files successfully (52.858 ms)
+[INFO  Thu Jul  7 00:32:34 2022] ...rtwright/.vim/plugged/diffview.nvim/lua/diffview/lib.lua:40: [command call] :DiffviewOpen 
+[INFO  Thu Jul  7 00:32:34 2022] ...right/.vim/plugged/diffview.nvim/lua/diffview/logger.lua:42: [DiffView] Completed update for 0 files successfully (39.479 ms)
+[INFO  Fri Jul  8 16:12:35 2022] ...rtwright/.vim/plugged/diffview.nvim/lua/diffview/lib.lua:130: [command call] :DiffviewFileHistory 
+[INFO  Fri Jul  8 16:12:43 2022] ...rtwright/.vim/plugged/diffview.nvim/lua/diffview/lib.lua:130: [command call] :DiffviewFileHistory 
+[ERROR Fri Jul  8 16:12:50 2022] ...right/.vim/plugged/diffview.nvim/lua/diffview/logger.lua:42: Job exited with a non-zero exit status! Code: 64
+[ERROR Fri Jul  8 16:12:50 2022] ...right/.vim/plugged/diffview.nvim/lua/diffview/logger.lua:42:    [cmd] git 'log' '--pretty=format:%x00' '--date=raw' '--numstat' '--diff-merges=first-parent' '--'
+[ERROR Fri Jul  8 16:12:50 2022] ...right/.vim/plugged/diffview.nvim/lua/diffview/logger.lua:42:    [cwd] /Users/dominiccartwright/Sites/whatsup247/app
+[ERROR Fri Jul  8 16:12:50 2022] ...right/.vim/plugged/diffview.nvim/lua/diffview/logger.lua:42: Job exited with a non-zero exit status! Code: 64
+[ERROR Fri Jul  8 16:12:50 2022] ...right/.vim/plugged/diffview.nvim/lua/diffview/logger.lua:42:    [cmd] git 'log' '--pretty=format:%x00' '--date=raw' '--numstat' '--diff-merges=first-parent' '--'
+[ERROR Fri Jul  8 16:12:50 2022] ...right/.vim/plugged/diffview.nvim/lua/diffview/logger.lua:42:    [cwd] /Users/dominiccartwright/Sites/whatsup247/app
+[INFO  Sat Jul  9 01:38:03 2022] ...rtwright/.vim/plugged/diffview.nvim/lua/diffview/lib.lua:40: [command call] :DiffviewOpen 
+[ERROR Sat Jul  9 01:38:03 2022] ...right/.vim/plugged/diffview.nvim/lua/diffview/logger.lua:42: [system_list()] Job exited with a non-zero exit status! Code: 128
+[ERROR Sat Jul  9 01:38:03 2022] ...right/.vim/plugged/diffview.nvim/lua/diffview/logger.lua:42: [system_list()]    [cmd] git 'rev-parse' '--path-format=absolute' '--show-toplevel'
+[ERROR Sat Jul  9 01:38:03 2022] ...right/.vim/plugged/diffview.nvim/lua/diffview/logger.lua:42: [system_list()]    [cwd] /Users/dominiccartwright
+[ERROR Sat Jul  9 01:38:03 2022] ...right/.vim/plugged/diffview.nvim/lua/diffview/logger.lua:42: [system_list()] [stderr] fatal: not a git repository (or any of the parent directories): .git
+[INFO  Sat Jul  9 01:38:03 2022] ...right/.vim/plugged/diffview.nvim/lua/diffview/logger.lua:42: [DiffView] Completed update for 0 files successfully (56.660 ms)
+[INFO  Mon Jul 11 12:01:31 2022] ...rtwright/.vim/plugged/diffview.nvim/lua/diffview/lib.lua:40: [command call] :DiffviewOpen 
+[INFO  Mon Jul 11 12:01:32 2022] ...right/.vim/plugged/diffview.nvim/lua/diffview/logger.lua:42: [DiffView] Completed update for 1 files successfully (53.756 ms)
+[INFO  Mon Jul 11 18:19:20 2022] ...rtwright/.vim/plugged/diffview.nvim/lua/diffview/lib.lua:132: [command call] :DiffviewFileHistory 
+[INFO  Mon Jul 11 18:19:21 2022] ...right/.vim/plugged/diffview.nvim/lua/diffview/logger.lua:42: [FileHistory] Completed update for 125 entries successfully (660.395 ms).
+[INFO  Mon Jul 11 18:22:42 2022] ...rtwright/.vim/plugged/diffview.nvim/lua/diffview/lib.lua:132: [command call] :DiffviewFileHistory 
+[INFO  Mon Jul 11 18:22:43 2022] ...right/.vim/plugged/diffview.nvim/lua/diffview/logger.lua:42: [FileHistory] Completed update for 125 entries successfully (661.914 ms).
+[INFO  Thu Jul 14 23:13:28 2022] ...rtwright/.vim/plugged/diffview.nvim/lua/diffview/lib.lua:40: [command call] :DiffviewOpen 
+[INFO  Thu Jul 14 23:13:28 2022] ...right/.vim/plugged/diffview.nvim/lua/diffview/logger.lua:42: [DiffView] Completed update for 1 files successfully (73.439 ms)
+[INFO  Thu Jul 14 23:13:40 2022] ...right/.vim/plugged/diffview.nvim/lua/diffview/logger.lua:42: [DiffView] Completed update for 1 files successfully (96.927 ms)
+[INFO  Thu Jul 14 23:13:41 2022] ...right/.vim/plugged/diffview.nvim/lua/diffview/logger.lua:42: [DiffView] Completed update for 1 files successfully (54.230 ms)
+[INFO  Thu Jul 14 23:13:43 2022] ...right/.vim/plugged/diffview.nvim/lua/diffview/logger.lua:42: [DiffView] Completed update for 1 files successfully (107.569 ms)
+[INFO  Thu Jul 14 23:13:43 2022] ...right/.vim/plugged/diffview.nvim/lua/diffview/logger.lua:42: [DiffView] Completed update for 1 files successfully (74.575 ms)
+[INFO  Thu Jul 14 23:14:34 2022] ...right/.vim/plugged/diffview.nvim/lua/diffview/logger.lua:42: [DiffView] Completed update for 0 files successfully (75.709 ms)
+[INFO  Thu Jul 14 23:14:34 2022] ...right/.vim/plugged/diffview.nvim/lua/diffview/logger.lua:42: [DiffView] Completed update for 0 files successfully (73.987 ms)
+[INFO  Thu Jul 14 23:14:40 2022] ...rtwright/.vim/plugged/diffview.nvim/lua/diffview/lib.lua:132: [command call] :DiffviewFileHistory 
+[ERROR Thu Jul 14 23:14:54 2022] ...right/.vim/plugged/diffview.nvim/lua/diffview/logger.lua:42: Job exited with a non-zero exit status! Code: 64
+[ERROR Thu Jul 14 23:14:54 2022] ...right/.vim/plugged/diffview.nvim/lua/diffview/logger.lua:42:    [cmd] git 'log' '--pretty=format:%x00' '--date=raw' '--numstat' '--diff-merges=first-parent' '--'
+[ERROR Thu Jul 14 23:14:54 2022] ...right/.vim/plugged/diffview.nvim/lua/diffview/logger.lua:42:    [cwd] /Users/dominiccartwright/Sites/whatsup247/app
+[INFO  Fri Jul 15 22:27:27 2022] ...rtwright/.vim/plugged/diffview.nvim/lua/diffview/lib.lua:40: [command call] :DiffviewOpen 
+[ERROR Fri Jul 15 22:27:27 2022] ...right/.vim/plugged/diffview.nvim/lua/diffview/logger.lua:42: [system_list()] Job exited with a non-zero exit status! Code: 128
+[ERROR Fri Jul 15 22:27:27 2022] ...right/.vim/plugged/diffview.nvim/lua/diffview/logger.lua:42: [system_list()]    [cmd] git 'rev-parse' '--path-format=absolute' '--show-toplevel'
+[ERROR Fri Jul 15 22:27:27 2022] ...right/.vim/plugged/diffview.nvim/lua/diffview/logger.lua:42: [system_list()]    [cwd] /Users/dominiccartwright/Exercism/vimscript/hello-world
+[ERROR Fri Jul 15 22:27:27 2022] ...right/.vim/plugged/diffview.nvim/lua/diffview/logger.lua:42: [system_list()] [stderr] fatal: not a git repository (or any of the parent directories): .git
+[ERROR Fri Jul 15 22:27:27 2022] ...right/.vim/plugged/diffview.nvim/lua/diffview/logger.lua:42: [system_list()] Job exited with a non-zero exit status! Code: 128
+[ERROR Fri Jul 15 22:27:27 2022] ...right/.vim/plugged/diffview.nvim/lua/diffview/logger.lua:42: [system_list()]    [cmd] git 'rev-parse' '--path-format=absolute' '--show-toplevel'
+[ERROR Fri Jul 15 22:27:27 2022] ...right/.vim/plugged/diffview.nvim/lua/diffview/logger.lua:42: [system_list()]    [cwd] /Users/dominiccartwright/Exercism/vimscript/hello-world
+[ERROR Fri Jul 15 22:27:27 2022] ...right/.vim/plugged/diffview.nvim/lua/diffview/logger.lua:42: [system_list()] [stderr] fatal: not a git repository (or any of the parent directories): .git
+[INFO  Sat Jul 16 20:12:45 2022] ...rtwright/.vim/plugged/diffview.nvim/lua/diffview/lib.lua:132: [command call] :DiffviewFileHistory 
+[INFO  Sat Jul 16 20:12:46 2022] ...right/.vim/plugged/diffview.nvim/lua/diffview/logger.lua:42: [FileHistory] Completed update for 14 entries successfully (281.962 ms).
+[INFO  Sat Jul 16 20:12:49 2022] ...rtwright/.vim/plugged/diffview.nvim/lua/diffview/lib.lua:132: [command call] :DiffviewFileHistory 
+[INFO  Sat Jul 16 20:12:49 2022] ...right/.vim/plugged/diffview.nvim/lua/diffview/logger.lua:42: [FileHistory] Completed update for 14 entries successfully (235.000 ms).

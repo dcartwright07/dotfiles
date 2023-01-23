@@ -1,0 +1,85 @@
+[ERROR Sun Jul 31 13:26:38 2022 7.6983958531175e+14] .../site/pack/packer/start/packer.nvim/lua/packer/async.lua:20: Error in coroutine: ...ite/pack/packer/start/packer.nvim/lua/packer/display.lua:829: Vim(let):E117: Unknown function: matchup#pos#get_cursor
+[WARN  Sun Jul 31 17:01:59 2022 7.82760895577e+14] .../site/pack/packer/start/packer.nvim/lua/packer/clean.lua:79: Cleaning cancelled!
+[WARN  Sun Jul 31 17:21:07 2022 7.8390944528367e+14] ...ite/pack/packer/start/packer.nvim/lua/packer/display.lua:654: No plugin selected!
+[WARN  Sun Jul 31 17:27:52 2022 7.8431392958708e+14] ...ite/pack/packer/start/packer.nvim/lua/packer/display.lua:625: No plugin selected!
+[WARN  Sun Jul 31 23:08:04 2022 8.0472650709421e+14] ...e/nvim/site/pack/packer/start/packer.nvim/lua/packer.lua:207: Plugin "nvim-ts-context-commentstring" is used twice! (line 269)
+[ERROR Tue Aug  2 22:41:05 2022 9.7591383667558e+14] .../site/pack/packer/start/packer.nvim/lua/packer/async.lua:20: Error in coroutine: ...ack/packer/start/packer.nvim/lua/packer/plugin_utils.lua:236: Vim:E492: Not an editor command: TSUpdate
+[WARN  Wed Aug  3 21:34:43 2022 1.0583344854022e+15] ...e/nvim/site/pack/packer/start/packer.nvim/lua/packer.lua:207: Plugin "plenary.nvim" is used twice! (line 269)
+[WARN  Fri Aug  5 12:22:50 2022 1.1980262404604e+15] ...e/nvim/site/pack/packer/start/packer.nvim/lua/packer.lua:207: Plugin "plenary.nvim" is used twice! (line 269)
+[WARN  Fri Aug  5 12:24:36 2022 1.198132255573e+15] ...e/nvim/site/pack/packer/start/packer.nvim/lua/packer.lua:207: Plugin "plenary.nvim" is used twice! (line 269)
+[WARN  Fri Aug  5 12:46:45 2022 1.199460772657e+15] ...e/nvim/site/pack/packer/start/packer.nvim/lua/packer.lua:207: Plugin "plenary.nvim" is used twice! (line 269)
+[WARN  Fri Aug  5 12:47:02 2022 1.1994777144129e+15] ...e/nvim/site/pack/packer/start/packer.nvim/lua/packer.lua:207: Plugin "plenary.nvim" is used twice! (line 269)
+[WARN  Fri Aug  5 22:02:52 2022 1.2328292852166e+15] ...e/nvim/site/pack/packer/start/packer.nvim/lua/packer.lua:207: Plugin "nvim-ts-context-commentstring" is used twice! (line 269)
+[ERROR Thu Aug 11 00:29:09 2022 3.8409828229138e+14] .../site/pack/packer/start/packer.nvim/lua/packer/async.lua:20: Error in coroutine: ...ite/pack/packer/start/packer.nvim/lua/packer/install.lua:43: attempt to index a nil value
+[ERROR Tue Aug 16 08:43:56 2022 8.4580030700738e+14] .../site/pack/packer/start/packer.nvim/lua/packer/async.lua:20: Error in coroutine: ...ack/packer/start/packer.nvim/lua/packer/plugin_utils.lua:236: Vim:E492: Not an editor command: TSUpdate
+[WARN  Tue Aug 16 08:43:57 2022 8.4580070604346e+14] ...ite/pack/packer/start/packer.nvim/lua/packer/display.lua:566: Potential breaking change in commit a75339b of wbthomason/packer.nvim
+[WARN  Tue Aug 23 14:29:53 2022 3.1370903187254e+14] ...ite/pack/packer/start/packer.nvim/lua/packer/display.lua:566: Potential breaking change in commit 58d88d5 of nvim-neo-tree/neo-tree.nvim/v2.x
+[WARN  Tue Aug 23 14:29:53 2022 3.1370903212542e+14] ...ite/pack/packer/start/packer.nvim/lua/packer/display.lua:566: Potential breaking change in commit f126f37 of akinsho/bufferline.nvim
+[WARN  Tue Aug 23 14:29:53 2022 3.1370903215425e+14] ...ite/pack/packer/start/packer.nvim/lua/packer/display.lua:566: Potential breaking change in commit df6c56a of akinsho/bufferline.nvim
+[WARN  Tue Aug 23 14:29:53 2022 3.137090323315e+14] ...ite/pack/packer/start/packer.nvim/lua/packer/display.lua:566: Potential breaking change in commit fe7a6f4 of neovim/nvim-lspconfig
+[WARN  Tue Aug 23 14:29:53 2022 3.1370903237633e+14] ...ite/pack/packer/start/packer.nvim/lua/packer/display.lua:566: Potential breaking change in commit 0585c11 of L3MON4D3/LuaSnip
+[WARN  Tue Aug 23 14:29:53 2022 3.1370903244546e+14] ...ite/pack/packer/start/packer.nvim/lua/packer/display.lua:566: Potential breaking change in commit 37a97a0 of JoosepAlviste/nvim-ts-context-commentstring
+[WARN  Sun Sep  4 22:15:15 2022 1.378465960121e+15] ...ite/pack/packer/start/packer.nvim/lua/packer/display.lua:566: Potential breaking change in commit a9acd61 of jose-elias-alvarez/null-ls.nvim
+[WARN  Sun Sep  4 22:15:15 2022 1.3784659607395e+15] ...ite/pack/packer/start/packer.nvim/lua/packer/display.lua:566: Potential breaking change in commit c919d04 of L3MON4D3/LuaSnip
+[WARN  Sun Sep  4 22:15:15 2022 1.3784659607691e+15] ...ite/pack/packer/start/packer.nvim/lua/packer/display.lua:566: Potential breaking change in commit 9643335 of L3MON4D3/LuaSnip
+[WARN  Sun Sep  4 22:15:15 2022 1.3784659608034e+15] ...ite/pack/packer/start/packer.nvim/lua/packer/display.lua:566: Potential breaking change in commit 7cc44a4 of L3MON4D3/LuaSnip
+[WARN  Sun Sep  4 22:15:15 2022 1.378465960829e+15] ...ite/pack/packer/start/packer.nvim/lua/packer/display.lua:566: Potential breaking change in commit 48a79b7 of L3MON4D3/LuaSnip
+[WARN  Sun Sep  4 22:15:15 2022 1.3784659608532e+15] ...ite/pack/packer/start/packer.nvim/lua/packer/display.lua:566: Potential breaking change in commit dddd655 of L3MON4D3/LuaSnip
+[WARN  Sun Sep  4 22:15:15 2022 1.3784659609324e+15] ...ite/pack/packer/start/packer.nvim/lua/packer/display.lua:566: Potential breaking change in commit 7ab2c03 of nvim-treesitter/nvim-treesitter
+[WARN  Sun Sep  4 22:24:00 2022 1.3789909382243e+15] ...ite/pack/packer/start/packer.nvim/lua/packer/display.lua:566: Potential breaking change in commit a9acd61 of jose-elias-alvarez/null-ls.nvim
+[WARN  Sun Sep  4 22:24:00 2022 1.3789909385148e+15] ...ite/pack/packer/start/packer.nvim/lua/packer/display.lua:566: Potential breaking change in commit c919d04 of L3MON4D3/LuaSnip
+[WARN  Sun Sep  4 22:24:00 2022 1.3789909385534e+15] ...ite/pack/packer/start/packer.nvim/lua/packer/display.lua:566: Potential breaking change in commit 9643335 of L3MON4D3/LuaSnip
+[WARN  Sun Sep  4 22:24:00 2022 1.378990938593e+15] ...ite/pack/packer/start/packer.nvim/lua/packer/display.lua:566: Potential breaking change in commit 7cc44a4 of L3MON4D3/LuaSnip
+[WARN  Sun Sep  4 22:24:00 2022 1.3789909386396e+15] ...ite/pack/packer/start/packer.nvim/lua/packer/display.lua:566: Potential breaking change in commit 48a79b7 of L3MON4D3/LuaSnip
+[WARN  Sun Sep  4 22:24:00 2022 1.378990938678e+15] ...ite/pack/packer/start/packer.nvim/lua/packer/display.lua:566: Potential breaking change in commit dddd655 of L3MON4D3/LuaSnip
+[WARN  Sun Sep  4 22:24:00 2022 1.3789909387422e+15] ...ite/pack/packer/start/packer.nvim/lua/packer/display.lua:566: Potential breaking change in commit 7ab2c03 of nvim-treesitter/nvim-treesitter
+[WARN  Sun Sep  4 22:27:14 2022 1.3791849176278e+15] ...ite/pack/packer/start/packer.nvim/lua/packer/display.lua:566: Potential breaking change in commit a9acd61 of jose-elias-alvarez/null-ls.nvim
+[WARN  Sun Sep  4 22:27:14 2022 1.3791849179183e+15] ...ite/pack/packer/start/packer.nvim/lua/packer/display.lua:566: Potential breaking change in commit c919d04 of L3MON4D3/LuaSnip
+[WARN  Sun Sep  4 22:27:14 2022 1.3791849179576e+15] ...ite/pack/packer/start/packer.nvim/lua/packer/display.lua:566: Potential breaking change in commit 9643335 of L3MON4D3/LuaSnip
+[WARN  Sun Sep  4 22:27:14 2022 1.3791849180321e+15] ...ite/pack/packer/start/packer.nvim/lua/packer/display.lua:566: Potential breaking change in commit 7cc44a4 of L3MON4D3/LuaSnip
+[WARN  Sun Sep  4 22:27:14 2022 1.3791849180776e+15] ...ite/pack/packer/start/packer.nvim/lua/packer/display.lua:566: Potential breaking change in commit 48a79b7 of L3MON4D3/LuaSnip
+[WARN  Sun Sep  4 22:27:14 2022 1.3791849181128e+15] ...ite/pack/packer/start/packer.nvim/lua/packer/display.lua:566: Potential breaking change in commit dddd655 of L3MON4D3/LuaSnip
+[WARN  Sun Sep  4 22:27:14 2022 1.3791849181985e+15] ...ite/pack/packer/start/packer.nvim/lua/packer/display.lua:566: Potential breaking change in commit 7ab2c03 of nvim-treesitter/nvim-treesitter
+[WARN  Sun Sep  4 22:31:30 2022 1.3794412698042e+15] ...ite/pack/packer/start/packer.nvim/lua/packer/display.lua:566: Potential breaking change in commit a9acd61 of jose-elias-alvarez/null-ls.nvim
+[WARN  Sun Sep  4 22:31:30 2022 1.3794412700958e+15] ...ite/pack/packer/start/packer.nvim/lua/packer/display.lua:566: Potential breaking change in commit c919d04 of L3MON4D3/LuaSnip
+[WARN  Sun Sep  4 22:31:30 2022 1.3794412701769e+15] ...ite/pack/packer/start/packer.nvim/lua/packer/display.lua:566: Potential breaking change in commit 9643335 of L3MON4D3/LuaSnip
+[WARN  Sun Sep  4 22:31:30 2022 1.3794412702215e+15] ...ite/pack/packer/start/packer.nvim/lua/packer/display.lua:566: Potential breaking change in commit 7cc44a4 of L3MON4D3/LuaSnip
+[WARN  Sun Sep  4 22:31:30 2022 1.3794412702535e+15] ...ite/pack/packer/start/packer.nvim/lua/packer/display.lua:566: Potential breaking change in commit 48a79b7 of L3MON4D3/LuaSnip
+[WARN  Sun Sep  4 22:31:30 2022 1.3794412702915e+15] ...ite/pack/packer/start/packer.nvim/lua/packer/display.lua:566: Potential breaking change in commit dddd655 of L3MON4D3/LuaSnip
+[WARN  Sun Sep  4 22:31:30 2022 1.3794412703303e+15] ...ite/pack/packer/start/packer.nvim/lua/packer/display.lua:566: Potential breaking change in commit 7ab2c03 of nvim-treesitter/nvim-treesitter
+[WARN  Tue Sep  6 11:57:09 2022 1.5141848589052e+15] ...ite/pack/packer/start/packer.nvim/lua/packer/display.lua:610: Potential breaking change in commit 4b403d2 of jose-elias-alvarez/null-ls.nvim
+[WARN  Fri Sep 23 12:38:15 2022 1.0017146168143e+15] ...ite/pack/packer/start/packer.nvim/lua/packer/display.lua:610: Potential breaking change in commit d1e0bcd of stevearc/aerial.nvim
+[WARN  Fri Sep 23 12:38:15 2022 1.0017146171712e+15] ...ite/pack/packer/start/packer.nvim/lua/packer/display.lua:610: Potential breaking change in commit a0cd6cc of lewis6991/gitsigns.nvim
+[WARN  Fri Sep 23 12:43:00 2022 1.0019989482243e+15] ...ite/pack/packer/start/packer.nvim/lua/packer/display.lua:610: Potential breaking change in commit d1e0bcd of stevearc/aerial.nvim
+[WARN  Fri Sep 23 12:43:00 2022 1.00199894871e+15] ...ite/pack/packer/start/packer.nvim/lua/packer/display.lua:610: Potential breaking change in commit a0cd6cc of lewis6991/gitsigns.nvim
+[WARN  Fri Sep 23 12:43:46 2022 1.0020452341568e+15] ...ite/pack/packer/start/packer.nvim/lua/packer/display.lua:610: Potential breaking change in commit d1e0bcd of stevearc/aerial.nvim
+[WARN  Fri Sep 23 12:43:46 2022 1.0020452345044e+15] ...ite/pack/packer/start/packer.nvim/lua/packer/display.lua:610: Potential breaking change in commit a0cd6cc of lewis6991/gitsigns.nvim
+[WARN  Fri Sep 23 12:48:50 2022 1.002349474306e+15] ...ite/pack/packer/start/packer.nvim/lua/packer/display.lua:610: Potential breaking change in commit d1e0bcd of stevearc/aerial.nvim
+[WARN  Fri Sep 23 12:48:50 2022 1.0023494747555e+15] ...ite/pack/packer/start/packer.nvim/lua/packer/display.lua:610: Potential breaking change in commit a0cd6cc of lewis6991/gitsigns.nvim
+[WARN  Fri Sep 23 12:52:49 2022 1.0025883871506e+15] ...ite/pack/packer/start/packer.nvim/lua/packer/display.lua:610: Potential breaking change in commit d1e0bcd of stevearc/aerial.nvim
+[WARN  Fri Sep 23 12:52:49 2022 1.0025883874481e+15] ...ite/pack/packer/start/packer.nvim/lua/packer/display.lua:610: Potential breaking change in commit a0cd6cc of lewis6991/gitsigns.nvim
+[WARN  Fri Sep 23 12:55:28 2022 1.0027474941885e+15] ...ite/pack/packer/start/packer.nvim/lua/packer/display.lua:610: Potential breaking change in commit d1e0bcd of stevearc/aerial.nvim
+[WARN  Fri Sep 23 12:55:28 2022 1.0027474946367e+15] ...ite/pack/packer/start/packer.nvim/lua/packer/display.lua:610: Potential breaking change in commit a0cd6cc of lewis6991/gitsigns.nvim
+[WARN  Fri Sep 23 12:56:33 2022 1.0028123684015e+15] ...ite/pack/packer/start/packer.nvim/lua/packer/display.lua:610: Potential breaking change in commit a0cd6cc of lewis6991/gitsigns.nvim
+[WARN  Fri Sep 23 12:56:33 2022 1.0028123688629e+15] ...ite/pack/packer/start/packer.nvim/lua/packer/display.lua:610: Potential breaking change in commit d1e0bcd of stevearc/aerial.nvim
+[WARN  Fri Sep 23 12:56:39 2022 1.002818185736e+15] ...ite/pack/packer/start/packer.nvim/lua/packer/display.lua:610: Potential breaking change in commit d1e0bcd of stevearc/aerial.nvim
+[WARN  Fri Sep 23 12:56:39 2022 1.0028181858052e+15] ...ite/pack/packer/start/packer.nvim/lua/packer/display.lua:610: Potential breaking change in commit a0cd6cc of lewis6991/gitsigns.nvim
+[WARN  Mon Sep 26 21:39:49 2022 26709310323125] ...ite/pack/packer/start/packer.nvim/lua/packer/display.lua:610: Potential breaking change in commit 2ff0c63 of numToStr/Comment.nvim
+[WARN  Mon Sep 26 21:40:25 2022 26744945575791] ...ite/pack/packer/start/packer.nvim/lua/packer/display.lua:610: Potential breaking change in commit 2ff0c63 of numToStr/Comment.nvim
+[WARN  Mon Sep 26 21:40:57 2022 26776714806041] ...ite/pack/packer/start/packer.nvim/lua/packer/display.lua:610: Potential breaking change in commit 2ff0c63 of numToStr/Comment.nvim
+[WARN  Mon Sep 26 22:13:13 2022 28712983227916] ...ite/pack/packer/start/packer.nvim/lua/packer/display.lua:610: Potential breaking change in commit 2ff0c63 of numToStr/Comment.nvim
+[WARN  Mon Sep 26 22:19:42 2022 29101989907375] ...ite/pack/packer/start/packer.nvim/lua/packer/display.lua:610: Potential breaking change in commit 2ff0c63 of numToStr/Comment.nvim
+[ERROR Sat Oct  8 16:55:45 2022 1.0464939997476e+15] .../site/pack/packer/start/packer.nvim/lua/packer/async.lua:20: Error in coroutine: ...m/site/pack/packer/start/packer.nvim/lua/packer/util.lua:156: Window was closed immediately
+[ERROR Sat Oct  8 16:56:49 2022 1.0465582379185e+15] .../site/pack/packer/start/packer.nvim/lua/packer/async.lua:20: Error in coroutine: ...m/site/pack/packer/start/packer.nvim/lua/packer/util.lua:156: Window was closed immediately
+[ERROR Sat Oct  8 17:09:49 2022 1.0473378655128e+15] ...e/nvim/site/pack/packer/start/packer.nvim/lua/packer.lua:1025: Failure running setup function: "/Users/dominiccartwright/.config/nvim/lua/core/plugins.lua:271: attempt to index local 'plugin' (a function value)"
+[ERROR Sat Oct  8 17:10:38 2022 1.0473864958151e+15] ...e/nvim/site/pack/packer/start/packer.nvim/lua/packer.lua:1025: Failure running setup function: "/Users/dominiccartwright/.config/nvim/lua/core/plugins.lua:271: attempt to index local 'plugin' (a function value)"
+[ERROR Sat Oct  8 17:10:56 2022 1.0474050939384e+15] ...e/nvim/site/pack/packer/start/packer.nvim/lua/packer.lua:1025: Failure running setup function: "/Users/dominiccartwright/.config/nvim/lua/core/plugins.lua:271: attempt to index local 'plugin' (a function value)"
+[ERROR Sat Oct  8 17:11:37 2022 1.047445976902e+15] ...e/nvim/site/pack/packer/start/packer.nvim/lua/packer.lua:1025: Failure running setup function: "/Users/dominiccartwright/.config/nvim/lua/core/plugins.lua:271: attempt to index local 'plugin' (a function value)"
+[ERROR Sat Oct  8 17:12:21 2022 1.0474903400979e+15] ...e/nvim/site/pack/packer/start/packer.nvim/lua/packer.lua:1025: Failure running setup function: "/Users/dominiccartwright/.config/nvim/lua/core/plugins.lua:271: attempt to index local 'plugin' (a function value)"
+[ERROR Sat Oct  8 17:15:47 2022 1.0476956602064e+15] ...e/nvim/site/pack/packer/start/packer.nvim/lua/packer.lua:1025: Failure running setup function: "/Users/dominiccartwright/.config/nvim/lua/core/plugins.lua:271: attempt to index local 'plugin' (a function value)"
+[WARN  Sat Oct  8 17:20:44 2022 1.047993383962e+15] .../site/pack/packer/start/packer.nvim/lua/packer/clean.lua:79: Cleaning cancelled!
+[ERROR Sat Oct  8 17:20:46 2022 1.0479949187208e+15] .../site/pack/packer/start/packer.nvim/lua/packer/async.lua:20: Error in coroutine: ...ite/pack/packer/start/packer.nvim/lua/packer/compile.lua:612: Dependency null-ls.nvim for { "mason-null-ls.nvim" } not found
+[WARN  Sat Oct  8 17:21:06 2022 1.0480153484789e+15] .../site/pack/packer/start/packer.nvim/lua/packer/clean.lua:79: Cleaning cancelled!
+[ERROR Sat Oct  8 17:21:08 2022 1.048016985704e+15] .../site/pack/packer/start/packer.nvim/lua/packer/async.lua:20: Error in coroutine: ...ite/pack/packer/start/packer.nvim/lua/packer/compile.lua:612: Dependency null-ls.nvim for { "mason-null-ls.nvim" } not found
+[WARN  Sun Oct  9 14:56:20 2022 1.1257308977061e+15] ...e/nvim/site/pack/packer/start/packer.nvim/lua/packer.lua:219: Plugin "nvim-ts-context-commentstring" is used twice! (line 272)
+[WARN  Sun Oct  9 16:19:34 2022 1.1307253181529e+15] ...ite/pack/packer/start/packer.nvim/lua/packer/display.lua:610: Potential breaking change in commit 0eb7cfe of williamboman/mason-lspconfig.nvim

@@ -1,0 +1,1112 @@
+{
+    "name": "@fortawesome/pro-solid-svg-icons",
+    "dist-tags": {
+        "latest": "6.2.0"
+    },
+    "versions": {
+        "6.2.0": {
+            "dependencies": {
+                "@fortawesome/fontawesome-common-types": "6.2.0"
+            },
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/pro-solid-svg-icons",
+            "version": "6.2.0",
+            "_rev": "1-bQbA5mAzcTIb",
+            "dist": {
+                "integrity": "sha512-zYlZE6FPsIT2o70U88oMai8C4x/CZvvz5AJ2MVJjac1PtGYyKVdt83TuLq6cEAx7ku3O/JiHWPrYRNtV6c1Zyg==",
+                "shasum": "ba7e1d85b75576306c456a9193e2799b64dd704c",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/pro-solid-svg-icons/-/6.2.0/pro-solid-svg-icons-6.2.0.tgz"
+            }
+        },
+        "6.1.2": {
+            "dependencies": {
+                "@fortawesome/fontawesome-common-types": "6.1.2"
+            },
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/pro-solid-svg-icons",
+            "version": "6.1.2",
+            "_rev": "1-HXDhpnNzVYdR",
+            "dist": {
+                "integrity": "sha512-E1TzmbuO0Klch/EqAjh4WPs93Oss8KwY5MUi2pcSyflN8sq5UqnMZFLWGlLQy24BXeMwgMDw4Aa9xH6lVNg1ig==",
+                "shasum": "ecdab98c3e901c72e99c5a1a961070b3b80e05d6",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/pro-solid-svg-icons/-/6.1.2/pro-solid-svg-icons-6.1.2.tgz"
+            }
+        },
+        "6.1.1": {
+            "dependencies": {
+                "@fortawesome/fontawesome-common-types": "6.1.1"
+            },
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/pro-solid-svg-icons",
+            "version": "6.1.1",
+            "_rev": "1-x28n0BsNPvmP",
+            "dist": {
+                "integrity": "sha512-BF1vuvQlFNRy38EZAxaXuReQ73z9VrXaRmVy+MFnLFpHZa5yH3M68iZHl04/5uThUPbrXG7VsIRoICc5HjD0Iw==",
+                "shasum": "ca48846777ac9ec9700d9b83dc09d6635883fff1",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/pro-solid-svg-icons/-/6.1.1/pro-solid-svg-icons-6.1.1.tgz"
+            }
+        },
+        "6.1.0": {
+            "dependencies": {
+                "@fortawesome/fontawesome-common-types": "6.1.0"
+            },
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/pro-solid-svg-icons",
+            "version": "6.1.0",
+            "_rev": "1-iaHszCDGA1pE",
+            "dist": {
+                "integrity": "sha512-19RF+pRt/fv/Dps3SfBF4Y7hGtoWpzbIeYB/MRNhAGJEEgby3oL4SnhLv7JyjDxQkKBF6DIMKU04eUCNSSh5EA==",
+                "shasum": "8f1bf87d184a5b0433d56be49bae004a22d4cdbd",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/pro-solid-svg-icons/-/6.1.0/pro-solid-svg-icons-6.1.0.tgz"
+            }
+        },
+        "6.0.0": {
+            "dependencies": {
+                "@fortawesome/fontawesome-common-types": "^0.3.0"
+            },
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/pro-solid-svg-icons",
+            "version": "6.0.0",
+            "_rev": "1-6HU8K9M5l74r",
+            "dist": {
+                "integrity": "sha512-bDrTCWEDocxdVff2dyKS+AwZhPvcW8z82M/ucXBTvMnf0EVATuxqFMN7NsxngMAxcrKHqrf6BwdonAYOz1geYQ==",
+                "shasum": "ef4d702cf257df7da987338cc68fe7dadf405c41",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/pro-solid-svg-icons/-/6.0.0/pro-solid-svg-icons-6.0.0.tgz"
+            }
+        },
+        "6.0.0-beta3": {
+            "dependencies": {
+                "@fortawesome/fontawesome-common-types": "^0.3.0-beta3"
+            },
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/pro-solid-svg-icons",
+            "version": "6.0.0-beta3",
+            "_rev": "1-5CK67VIpFoV7",
+            "dist": {
+                "integrity": "sha512-1xctk0OsAAx9jC7/msHAI8AzX/3QgesDNlnnMrf+SNQjdfWd9dBm1exGPbXRayNJL/J2WRx7ULeACTrTxc5+6g==",
+                "shasum": "9cd2e3fbb10c78230f7d6adf7179177222c88f62",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/pro-solid-svg-icons/-/6.0.0-beta3/pro-solid-svg-icons-6.0.0-beta3.tgz"
+            }
+        },
+        "6.0.0-beta2": {
+            "dependencies": {
+                "@fortawesome/fontawesome-common-types": "^0.3.0-beta2"
+            },
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/pro-solid-svg-icons",
+            "version": "6.0.0-beta2",
+            "_rev": "1-ljaIkB7rIxGS",
+            "dist": {
+                "integrity": "sha512-5slpbjZlrAGYx6r4ooEtLW4XXQe5+Mwb1V/tyEXxaATzrlKGbw1Z/a/oAxhKm/98icBJpiOYpOqVtkWpzyUmcg==",
+                "shasum": "c19a03fc388183c4a74eb695d2f129defe180c06",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/pro-solid-svg-icons/-/6.0.0-beta2/pro-solid-svg-icons-6.0.0-beta2.tgz"
+            }
+        },
+        "6.0.0-beta1": {
+            "dependencies": {
+                "@fortawesome/fontawesome-common-types": "^0.2.33-beta1"
+            },
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/pro-solid-svg-icons",
+            "version": "6.0.0-beta1",
+            "_rev": "1-X99HBvwOAxlM",
+            "dist": {
+                "integrity": "sha512-J5ZR0SQQKKxby4c0bLzC8dDcqNN7VVIDnxB9hmkxG68qejtpUj/yQvA/PKWvWe+GLiPyAE31n73STf/16OTG2w==",
+                "shasum": "e8f34e6e2fb84763b2aef7cc4c28f4fec2f2a6f7",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/pro-solid-svg-icons/-/6.0.0-beta1/pro-solid-svg-icons-6.0.0-beta1.tgz"
+            }
+        },
+        "6.0.0-alpha3": {
+            "dependencies": {
+                "@fortawesome/fontawesome-common-types": "^0.2.33-alpha3"
+            },
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/pro-solid-svg-icons",
+            "version": "6.0.0-alpha3",
+            "_rev": "1-Kd8EeUZHOfuu",
+            "dist": {
+                "integrity": "sha512-K+HKw3E/JbuksWrTJEq1ZummKVhXpj4C4SYfcWduW5XoWPxpJ+kHj/lqKkYnUvgF5lTwPuHrHiV5PfQfnLvIDA==",
+                "shasum": "bd194cd39a02a8069c75669581f8a68f67e5839d",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/pro-solid-svg-icons/-/6.0.0-alpha3/pro-solid-svg-icons-6.0.0-alpha3.tgz"
+            }
+        },
+        "6.0.0-alpha2": {
+            "dependencies": {
+                "@fortawesome/fontawesome-common-types": "^0.2.33-alpha2"
+            },
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/pro-solid-svg-icons",
+            "version": "6.0.0-alpha2",
+            "_rev": "1-w9m1fmstU3vE",
+            "dist": {
+                "integrity": "sha512-KHrdHfUNAaiQxHWdsyJz4KTYqPVC/10TKt3XnHOmaNCnJSwDTkBB1sNx0fwgDd3VUCGp3blhQ6PPXmPnyd70SQ==",
+                "shasum": "6f71cefdb00ddfdd3660f67c35d62ff1919294fa",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/pro-solid-svg-icons/-/6.0.0-alpha2/pro-solid-svg-icons-6.0.0-alpha2.tgz"
+            }
+        },
+        "5.15.4": {
+            "dependencies": {
+                "@fortawesome/fontawesome-common-types": "^0.2.36"
+            },
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/pro-solid-svg-icons",
+            "version": "5.15.4",
+            "_rev": "1-pqrn3AQxJfJF",
+            "dist": {
+                "integrity": "sha512-ZlSg/RyAlwYJcsJlw2WfZSeOJ8GMKwIQ3ZY+GNFRZ+7pF+RRXxyZp2WIgUKhPK/M43SfSou6R6XdKZyz2xVVEQ==",
+                "shasum": "bf0f54b5920e8a779684bc9e69617ef5259c00c9",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/pro-solid-svg-icons/-/5.15.4/pro-solid-svg-icons-5.15.4.tgz"
+            }
+        },
+        "5.15.3": {
+            "dependencies": {
+                "@fortawesome/fontawesome-common-types": "^0.2.35"
+            },
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/pro-solid-svg-icons",
+            "version": "5.15.3",
+            "_rev": "1-LibkXbkh2u57",
+            "dist": {
+                "integrity": "sha512-7W0sJ3gkiMEdIbGOBaAXpND/ZGOccw+fzyJL/iG/nuX3zcDggLz7/41ORDnIArIjaWr+UmIOtHZcXSB7gcOAWg==",
+                "shasum": "f443689f17dfb932f51d0943d9af69c9044c8c59",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/pro-solid-svg-icons/-/5.15.3/pro-solid-svg-icons-5.15.3.tgz"
+            }
+        },
+        "5.15.2": {
+            "dependencies": {
+                "@fortawesome/fontawesome-common-types": "^0.2.34"
+            },
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/pro-solid-svg-icons",
+            "version": "5.15.2",
+            "_rev": "1-XDMt6SlDBlDO",
+            "dist": {
+                "integrity": "sha512-yztHgfUVzOItDa8hpm8DKDGOgecOolVdazRSjQro8FTI6clEYuf8pwwUna4XOEc6Id15G/HSAGJyVMN7SHfp4Q==",
+                "shasum": "b8d8b9387ea9225a33c8ebd2cd44aa4315767ae9",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/pro-solid-svg-icons/-/5.15.2/pro-solid-svg-icons-5.15.2.tgz"
+            }
+        },
+        "5.15.1": {
+            "dependencies": {
+                "@fortawesome/fontawesome-common-types": "^0.2.32"
+            },
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/pro-solid-svg-icons",
+            "version": "5.15.1",
+            "_rev": "1-WN6g9T9ilxey",
+            "dist": {
+                "integrity": "sha512-PUlwSvPLgsd1m3n6LQkKwJ9JnewagtcX9L/NpFK1IZ6IgVETXR8rpRlOXp0mbztQ28zUm5AawFgavjiYyLjCTg==",
+                "shasum": "65f60a76b45655ff0bb774169ff1dedde4d1703b",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/pro-solid-svg-icons/-/5.15.1/pro-solid-svg-icons-5.15.1.tgz"
+            }
+        },
+        "5.15.0": {
+            "dependencies": {
+                "@fortawesome/fontawesome-common-types": "^0.2.31"
+            },
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/pro-solid-svg-icons",
+            "version": "5.15.0",
+            "_rev": "1-kCDTfZNz8fIs",
+            "dist": {
+                "integrity": "sha512-GZbUZzp4D/rgoKXAdtKyuy26MsD3Vz4AIc2r4dNHOgsUNYntlFygxzlsp1PcN3eyjyg/eqs3+0DsqIzSoahc8g==",
+                "shasum": "8c35ce77f75f3f0b49f34b8e574f5d377da832b3",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/pro-solid-svg-icons/-/5.15.0/pro-solid-svg-icons-5.15.0.tgz"
+            }
+        },
+        "5.14.0": {
+            "dependencies": {
+                "@fortawesome/fontawesome-common-types": "^0.2.30"
+            },
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/pro-solid-svg-icons",
+            "version": "5.14.0",
+            "_rev": "1-PmmFRtClOSyy",
+            "dist": {
+                "integrity": "sha512-+xtjbIy/bjzs4Rv/227uPJQ+b4GNdrW6MP4hWGI/VX33wgMaw+NekK4AK2UC0EDZBqYHp9+8hDzjTE6BxAz0lw==",
+                "shasum": "8da47f25a043acd4f47b837a4a696166415c9b97",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/pro-solid-svg-icons/-/5.14.0/pro-solid-svg-icons-5.14.0.tgz"
+            }
+        },
+        "5.13.1": {
+            "dependencies": {
+                "@fortawesome/fontawesome-common-types": "^0.2.29"
+            },
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/pro-solid-svg-icons",
+            "version": "5.13.1",
+            "_rev": "1-P2Ybzf1PUJk9",
+            "dist": {
+                "integrity": "sha512-h3ePsrYGbOvfhbZ44zBIutYzBKV9Fsy5r01xjU4znOAhIh1QTxJbGUjgF1PpI1ALVrrUJKfxMrnHNdfjXqRe6w==",
+                "shasum": "8b751df41bcb7f7bd9ea24983500c050341ee114",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/pro-solid-svg-icons/-/5.13.1/pro-solid-svg-icons-5.13.1.tgz"
+            }
+        },
+        "5.13.0": {
+            "dependencies": {
+                "@fortawesome/fontawesome-common-types": "^0.2.28"
+            },
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/pro-solid-svg-icons",
+            "version": "5.13.0",
+            "_rev": "1-rRZ9nayknghn",
+            "dist": {
+                "integrity": "sha512-MK3ycWLTTDw2xdY5BOQU3KYcGFk07Lj1Ub+EAlEAs9WcSgw7meEO3acPBpgNXUPB11gsI/4o9h+UxzJM1u+L8g==",
+                "shasum": "8708f27cdbf906f0799e0f0d41a8b4556fafe798",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/pro-solid-svg-icons/-/5.13.0/pro-solid-svg-icons-5.13.0.tgz"
+            }
+        },
+        "5.12.1": {
+            "dependencies": {
+                "@fortawesome/fontawesome-common-types": "^0.2.27"
+            },
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/pro-solid-svg-icons",
+            "version": "5.12.1",
+            "_rev": "1-3h5xvqX5iGs2",
+            "dist": {
+                "integrity": "sha512-7xhIu8QuBBK9/grUVx28rs9MNJaMQppt/rrhY2LMiYuETVKrYzHuTDvjS+UXaKsgHN31JTM/vVMVro/daTB/uw==",
+                "shasum": "1de223a184a81f40c1ab575880168c82c7afc773",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/pro-solid-svg-icons/-/5.12.1/pro-solid-svg-icons-5.12.1.tgz"
+            }
+        },
+        "5.12.0": {
+            "dependencies": {
+                "@fortawesome/fontawesome-common-types": "^0.2.26"
+            },
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/pro-solid-svg-icons",
+            "version": "5.12.0",
+            "_rev": "1-zdpYWvHdgunt",
+            "dist": {
+                "integrity": "sha512-D2X8XMMs6+J785AEw7MbGxcRAkeFdcF1TcQ0xyGeUDLHmPQdVAbnbwqyoOm1Jx7eV0r2iNJ+Q4SEFl2pD0/igw==",
+                "shasum": "d1b7047aa8df6cd9334bd29c015ecf9d576acb70",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/pro-solid-svg-icons/-/5.12.0/pro-solid-svg-icons-5.12.0.tgz"
+            }
+        },
+        "5.12.0-2": {
+            "dependencies": {
+                "@fortawesome/fontawesome-common-types": "^0.2.26-2"
+            },
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/pro-solid-svg-icons",
+            "version": "5.12.0-2",
+            "_rev": "1-lzH4bsoAKVuE",
+            "dist": {
+                "integrity": "sha512-SEzPQlEy8ZB8e8dpRHGcnEr/wY2YMi/qMATfhf3ea9v+VRs8UKFqkF+XrcBSGOVUcdN8UxWelR2j/jChg9VH4w==",
+                "shasum": "fa7cfe3997db86cda729770c0f75420e55306a24",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/pro-solid-svg-icons/-/5.12.0-2/pro-solid-svg-icons-5.12.0-2.tgz"
+            }
+        },
+        "5.11.2": {
+            "dependencies": {
+                "@fortawesome/fontawesome-common-types": "^0.2.25"
+            },
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/pro-solid-svg-icons",
+            "version": "5.11.2",
+            "_rev": "1-p2Hc8VN3qBea",
+            "dist": {
+                "integrity": "sha512-YYrEFhda4KIUweXed1s+RQko53O7rXGK1jEbdlGXZlHnNTX7OyrkvJDQYqhQ7H+H62HV0BxF/xtDXvSJRlyO1Q==",
+                "shasum": "5d72c801b3413191a81841c606d8cc7926014b76",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/pro-solid-svg-icons/-/5.11.2/pro-solid-svg-icons-5.11.2.tgz"
+            }
+        },
+        "5.11.1": {
+            "dependencies": {
+                "@fortawesome/fontawesome-common-types": "^0.2.24"
+            },
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/pro-solid-svg-icons",
+            "version": "5.11.1",
+            "_rev": "1-FDvr3p2B81Z5",
+            "dist": {
+                "integrity": "sha512-CCSYRcx7HMvposSXciy3q74gO6QOyTTl4eGuK5ag3WgyMQuP8FGC/0N4Tc1NEj8fcFcT+DwrHy0tN6vyrmM7xw==",
+                "shasum": "e5a88ddb6a0578887a9bae6bed96c8a79c231c8c",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/pro-solid-svg-icons/-/5.11.1/pro-solid-svg-icons-5.11.1.tgz"
+            }
+        },
+        "5.11.0": {
+            "dependencies": {
+                "@fortawesome/fontawesome-common-types": "^0.2.23"
+            },
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/pro-solid-svg-icons",
+            "version": "5.11.0",
+            "_rev": "1-5b5iI9kWUaE0",
+            "dist": {
+                "integrity": "sha512-cn2HlTj9NJc41NVlQEGGd3ROvDmFZXKx4t9gOX/MYo8WiA+okKBI1ZRP38OxIiWuc466m0CXqZktsYbtBhLr3Q==",
+                "shasum": "15b4de831ca401e4905c35185324fc1cc2e279be",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/pro-solid-svg-icons/-/5.11.0/pro-solid-svg-icons-5.11.0.tgz"
+            }
+        },
+        "5.10.2": {
+            "dependencies": {
+                "@fortawesome/fontawesome-common-types": "^0.2.22"
+            },
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/pro-solid-svg-icons",
+            "version": "5.10.2",
+            "_rev": "1-mxWvqq7HvMGV",
+            "dist": {
+                "integrity": "sha512-GRj6cU7q0B71rTJ5p7imKe24k9/puAPV/B0KYWxSQ96DAH08n+pJ3MPP5tPOtWlHFng+ZYMT+wTJkjk0nSAXdw==",
+                "shasum": "2d4084b6bf228f906ca07380d0f8b12d2dfda440",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/pro-solid-svg-icons/-/5.10.2/pro-solid-svg-icons-5.10.2.tgz"
+            }
+        },
+        "5.10.1": {
+            "dependencies": {
+                "@fortawesome/fontawesome-common-types": "^0.2.21"
+            },
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/pro-solid-svg-icons",
+            "version": "5.10.1",
+            "_rev": "1-uQvBVTlEWFkN",
+            "dist": {
+                "integrity": "sha512-MdHMBSE40zKMHSPEwmU2nSwZRQUO1an9f+mENHqFi6apUS4q4WwrxHABsmOfk/2e+GSIEJchOVMiljqpUqbbUQ==",
+                "shasum": "37d9641baa96a76216dc72af9136f2952eb2a5f0",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/pro-solid-svg-icons/-/5.10.1/pro-solid-svg-icons-5.10.1.tgz"
+            }
+        },
+        "5.10.0": {
+            "dependencies": {
+                "@fortawesome/fontawesome-common-types": "^0.2.20"
+            },
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/pro-solid-svg-icons",
+            "version": "5.10.0",
+            "_rev": "1-cDMUg4lCzQfc",
+            "dist": {
+                "integrity": "sha512-rGw1hhWDgvk0PGkEGfjFP3zsOWtjTXCPxdk7jmRM+aCEUZ1uYEgVevHyA/lBdcvbMMmn0inAqQFQ4Rz6yE5zag==",
+                "shasum": "76114a3487dc809e05d006feb14fa4533aafcfa5",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/pro-solid-svg-icons/-/5.10.0/pro-solid-svg-icons-5.10.0.tgz"
+            }
+        },
+        "5.10.0-14": {
+            "dependencies": {
+                "@fortawesome/fontawesome-common-types": "^0.2.20-14"
+            },
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/pro-solid-svg-icons",
+            "version": "5.10.0-14",
+            "_rev": "1-KdeR4Lj99mxo",
+            "dist": {
+                "integrity": "sha512-tJ/jboXOyQ/1TTN+/EQvfCS34ReBSowvDjsvs+MDgp5qUb3o9VdydzdT2uVY2OlmdTzTzONyIJDMSlcKf0jC4w==",
+                "shasum": "7c641972b5c51994e57eaab58ddd90945cd354d1",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/pro-solid-svg-icons/-/5.10.0-14/pro-solid-svg-icons-5.10.0-14.tgz"
+            }
+        },
+        "5.10.0-13": {
+            "dependencies": {
+                "@fortawesome/fontawesome-common-types": "^0.2.20-13"
+            },
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/pro-solid-svg-icons",
+            "version": "5.10.0-13",
+            "_rev": "1-nL3YHGZbqSQx",
+            "dist": {
+                "integrity": "sha512-we4fLV0T8VhIzELbrcnwo+hU2HmNZsZphEIgIfg6vH6VEdk4SgHNAtSeWsor7/lnbZYrJAIN9hL6br4oMWCixQ==",
+                "shasum": "d85f9583570fd91d12532079328536e9f9042851",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/pro-solid-svg-icons/-/5.10.0-13/pro-solid-svg-icons-5.10.0-13.tgz"
+            }
+        },
+        "5.10.0-12": {
+            "dependencies": {
+                "@fortawesome/fontawesome-common-types": "^0.2.20-12"
+            },
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/pro-solid-svg-icons",
+            "version": "5.10.0-12",
+            "_rev": "1-qSyhdopCHONW",
+            "dist": {
+                "integrity": "sha512-fmpLG3KG2JovCaALxlcnq6Tfm9pa/a04C6pRTHkCJvNop+yJpK7lLVjCoTrk3S+jC2oXHuzBhJNY2vnWAjoh1w==",
+                "shasum": "d882cce8981e9515a6a8562fb25deeeb4aaded50",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/pro-solid-svg-icons/-/5.10.0-12/pro-solid-svg-icons-5.10.0-12.tgz"
+            }
+        },
+        "5.10.0-11": {
+            "dependencies": {
+                "@fortawesome/fontawesome-common-types": "^0.2.20-11"
+            },
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/pro-solid-svg-icons",
+            "version": "5.10.0-11",
+            "_rev": "1-WniuZG1Y37q9",
+            "dist": {
+                "integrity": "sha512-RP+n15GXST2I72ZpJhxlPyXv99myKHzojHpQJlBuHiIIjEYTeKAn0RNKM9A0RD4Um4mC+LAn8c27NhNym5YhVw==",
+                "shasum": "9f0c48daeb5242afb694ce62b4d756ee6eb84d78",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/pro-solid-svg-icons/-/5.10.0-11/pro-solid-svg-icons-5.10.0-11.tgz"
+            }
+        },
+        "5.10.0-10": {
+            "dependencies": {
+                "@fortawesome/fontawesome-common-types": "^0.2.20-10"
+            },
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/pro-solid-svg-icons",
+            "version": "5.10.0-10",
+            "_rev": "1-fPAvwYoMgv2v",
+            "dist": {
+                "integrity": "sha512-Jplpi7RR6vNCqaiGKqhoXCfwFmqMRTUyIGEHZ3pH0EjOF2i2JPGwX1cVTcG/2Zlfk4mK3fpL8PODmV4kPQakmA==",
+                "shasum": "8a4494a26bb094b1b1cccb0e713a30eca155b3f2",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/pro-solid-svg-icons/-/5.10.0-10/pro-solid-svg-icons-5.10.0-10.tgz"
+            }
+        },
+        "5.10.0-9": {
+            "dependencies": {
+                "@fortawesome/fontawesome-common-types": "^0.2.20-9"
+            },
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/pro-solid-svg-icons",
+            "version": "5.10.0-9",
+            "_rev": "1-G3Q3m2S4AlbS",
+            "dist": {
+                "integrity": "sha512-MHmpt5M/kcN3Z7WAcOMHsdaVfnMvDpOIPaX4qlB6sb6isfVQp0S5vF9MQLLSMCQBMsG1COW3xGSOPALEHwBEBQ==",
+                "shasum": "7a4182811dd6b99861f6b41e00f32dd906e02ffd",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/pro-solid-svg-icons/-/5.10.0-9/pro-solid-svg-icons-5.10.0-9.tgz"
+            }
+        },
+        "5.10.0-7": {
+            "dependencies": {
+                "@fortawesome/fontawesome-common-types": "^0.2.20-7"
+            },
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/pro-solid-svg-icons",
+            "version": "5.10.0-7",
+            "_rev": "1-BGzK1L6YyJ4O",
+            "dist": {
+                "integrity": "sha512-aRe4EtmxVaybJdFPnmc0uJoI69NqiGTXl5YKHPXAfqFx9FjEXCyg2IuYPQ+INCJaNvbHdcUthzjVia1EBWYJhg==",
+                "shasum": "b5932a8bf53b236048109444730dc424caa88957",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/pro-solid-svg-icons/-/5.10.0-7/pro-solid-svg-icons-5.10.0-7.tgz"
+            }
+        },
+        "5.10.0-6": {
+            "dependencies": {
+                "@fortawesome/fontawesome-common-types": "^0.2.20-6"
+            },
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/pro-solid-svg-icons",
+            "version": "5.10.0-6",
+            "_rev": "1-AGJn4mwySf9n",
+            "dist": {
+                "integrity": "sha512-ji0nbMoMjO5UC1TzImnBlrqizDD1C1vtOr6B8sy0fKNO4dXMMyXFUHOQLmO8pCGjAP/dTFS7iIIQiOKKosXd7Q==",
+                "shasum": "bc238423837037b0f9d38cdcc747d2cb4ae4769c",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/pro-solid-svg-icons/-/5.10.0-6/pro-solid-svg-icons-5.10.0-6.tgz"
+            }
+        },
+        "5.10.0-5": {
+            "dependencies": {
+                "@fortawesome/fontawesome-common-types": "^0.2.20-5"
+            },
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/pro-solid-svg-icons",
+            "version": "5.10.0-5",
+            "_rev": "1-LMLLHrvfGZ24",
+            "dist": {
+                "integrity": "sha512-NR7FysTDXF78r5nkh5iFR8t1OIjtcSM1zOYlp63X7nBuc5WcUa+WoCgl8RubXcwpZdUTkYiooDsCsgcHQIqZeA==",
+                "shasum": "863c8023ced9d9a8900f8b3c1f28ac2bc3529e7f",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/pro-solid-svg-icons/-/5.10.0-5/pro-solid-svg-icons-5.10.0-5.tgz"
+            }
+        },
+        "5.10.0-4": {
+            "dependencies": {
+                "@fortawesome/fontawesome-common-types": "^0.2.20-4"
+            },
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/pro-solid-svg-icons",
+            "version": "5.10.0-4",
+            "_rev": "1-5P9tAfr2Ytef",
+            "dist": {
+                "integrity": "sha512-3RuoDeASdtgZpQUZKa+k9yzyoc1W2BUWGwgjSlmhekagN/KNZVOX9lfWKvUZrZ4YrGVwB8MYH7x4DUNi5Tx/lg==",
+                "shasum": "63492a4bb06d3ffde2bebc6ee2153e38d9c1478a",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/pro-solid-svg-icons/-/5.10.0-4/pro-solid-svg-icons-5.10.0-4.tgz"
+            }
+        },
+        "5.10.0-3": {
+            "dependencies": {
+                "@fortawesome/fontawesome-common-types": "^0.2.20-3"
+            },
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/pro-solid-svg-icons",
+            "version": "5.10.0-3",
+            "_rev": "1-BU6TD2ScSAtN",
+            "dist": {
+                "integrity": "sha512-nGm3N0I96qxWnu89P/RojeydoKa7CkaibISLKpVbkRQJEmujQl67+O9LlvLnsa47nz3L4qGOGnZAD1O2b51Pxw==",
+                "shasum": "8d76b7908925076a30cca5625f32df37365b314d",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/pro-solid-svg-icons/-/5.10.0-3/pro-solid-svg-icons-5.10.0-3.tgz"
+            }
+        },
+        "5.10.0-2": {
+            "dependencies": {
+                "@fortawesome/fontawesome-common-types": "^0.2.20-2"
+            },
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/pro-solid-svg-icons",
+            "version": "5.10.0-2",
+            "_rev": "1-T2EFzkZ7foDa",
+            "dist": {
+                "integrity": "sha512-stszvYdQtEFy4vpWtO6U+Fd2MM7U4AKLIS4/qnXvh5eFaRhDemglRS64vz7Ffn+SbDDJcfcdmBCeEl0U7AtjzA==",
+                "shasum": "86378d9981a38d5a30fb983436d54e57bd7071f5",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/pro-solid-svg-icons/-/5.10.0-2/pro-solid-svg-icons-5.10.0-2.tgz"
+            }
+        },
+        "5.10.0-1": {
+            "dependencies": {
+                "@fortawesome/fontawesome-common-types": "^0.2.20-1"
+            },
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/pro-solid-svg-icons",
+            "version": "5.10.0-1",
+            "_rev": "1-pdpTxfbmxDk5",
+            "dist": {
+                "integrity": "sha512-8YXHjgqIYRU1KDtVyAGjwEGkWjDfDvJpv9nXF/bXX5PV4jTPw1vMBVENlNIezFiFvUlGnV/GPWbPh765D0sLlg==",
+                "shasum": "888ee9bc97ec8b5044fd6f78ac0f9e27dc1665ec",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/pro-solid-svg-icons/-/5.10.0-1/pro-solid-svg-icons-5.10.0-1.tgz"
+            }
+        },
+        "5.9.0": {
+            "dependencies": {
+                "@fortawesome/fontawesome-common-types": "^0.2.19"
+            },
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/pro-solid-svg-icons",
+            "version": "5.9.0",
+            "_rev": "1-YkYa2fHM7Ryg",
+            "dist": {
+                "integrity": "sha512-sjQNmvPEx80Kd+zJBKFrT+06oOkD5vGsHxelUJwnii3b7fkBM6nb6FnvAU+CZBHTNh5GCAI5OVcjBcMhXiXIaQ==",
+                "shasum": "c872b14d22081b50d617bea6d5b7399b6f0676dc",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/pro-solid-svg-icons/-/5.9.0/pro-solid-svg-icons-5.9.0.tgz"
+            }
+        },
+        "5.8.2": {
+            "dependencies": {
+                "@fortawesome/fontawesome-common-types": "^0.2.18"
+            },
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/pro-solid-svg-icons",
+            "version": "5.8.2",
+            "_rev": "1-MG167bo8mzPW",
+            "dist": {
+                "integrity": "sha512-raU7P+5OJ4MXJmsnssFfoT8SCiwS68ce8HocIin2qS7/0NEV0ETenLOIGPD5+5CKCrM/dLnf0S7fdAWlrlYYLw==",
+                "shasum": "6e1ce9e8f4202b3b378ff4a28a35503c1987bfc6",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/pro-solid-svg-icons/-/5.8.2/pro-solid-svg-icons-5.8.2.tgz"
+            }
+        },
+        "5.8.1": {
+            "dependencies": {
+                "@fortawesome/fontawesome-common-types": "^0.2.17"
+            },
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/pro-solid-svg-icons",
+            "version": "5.8.1",
+            "_rev": "1-9jMDzcJVxhio",
+            "dist": {
+                "integrity": "sha512-+NM0RWWuG6VQf1cmi0fCmja1ZDbwx0hSxgAPzrYhh24eqT3I+sMbX42kdJr7TNk8LqsWFYiQT4Z0qU+CcSHysg==",
+                "shasum": "12c6f590309617ce1999b5e7a6ad3fd756e30b3b",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/pro-solid-svg-icons/-/5.8.1/pro-solid-svg-icons-5.8.1.tgz"
+            }
+        },
+        "5.8.0": {
+            "dependencies": {
+                "@fortawesome/fontawesome-common-types": "^0.2.16"
+            },
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/pro-solid-svg-icons",
+            "version": "5.8.0",
+            "_rev": "1-nw6reDsZRKfu",
+            "dist": {
+                "integrity": "sha512-2lKvQSythV1AUF/xFHi4iu76gC1r36SfvrCrDMKgym+ggcbq88NpRE1loopDIB8ZfGH7Xzm4LPSSkwyxjNEB0A==",
+                "shasum": "1986ec6c87253af764e302ef07c8101b68f6c533",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/pro-solid-svg-icons/-/5.8.0/pro-solid-svg-icons-5.8.0.tgz"
+            }
+        },
+        "5.7.2": {
+            "dependencies": {
+                "@fortawesome/fontawesome-common-types": "^0.2.15"
+            },
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/pro-solid-svg-icons",
+            "version": "5.7.2",
+            "_rev": "1-pDLJH53QX96X",
+            "dist": {
+                "integrity": "sha512-EfohjjzeYQtscDwculCLEZVZRg/bwIfzynBiVXRPkM1VCHZPn6bUwHv53GgtyUavsx9Sc9luJtzR3tVrCEeGwA==",
+                "shasum": "2cc91dc47647aa449f4f1ee45230b0f8e5c28a01",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/pro-solid-svg-icons/-/5.7.2/pro-solid-svg-icons-5.7.2.tgz"
+            }
+        },
+        "5.7.1": {
+            "dependencies": {
+                "@fortawesome/fontawesome-common-types": "^0.2.14"
+            },
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/pro-solid-svg-icons",
+            "version": "5.7.1",
+            "_rev": "1-TLIMETTKiDCh",
+            "dist": {
+                "integrity": "sha512-wlKXnGR4LXdVnj1McATt4W0FQMmnZBgkOApHdKN1ot8cg4fsv6emIjbt9Ew78IXt7n6dWRB3f3GIeiwyOBcaUA==",
+                "shasum": "6ee4630f8267e383193a4e199f4cb7f4debfe98f",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/pro-solid-svg-icons/-/5.7.1/pro-solid-svg-icons-5.7.1.tgz"
+            }
+        },
+        "5.7.0": {
+            "dependencies": {
+                "@fortawesome/fontawesome-common-types": "^0.2.13"
+            },
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/pro-solid-svg-icons",
+            "version": "5.7.0",
+            "_rev": "1-5PRuisWUjDZj",
+            "dist": {
+                "integrity": "sha512-s/VCYW2pQkqvDfUp4fNGxQY81+UhSIBIUSY0B0vhjQFsYdN+eiFqfcstv1GAV/V2ItW0LUnOzfsz/D9anoedPg==",
+                "shasum": "13dca12493ca50906a61c8d7643d5b79e9aeaf3b",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/pro-solid-svg-icons/-/5.7.0/pro-solid-svg-icons-5.7.0.tgz"
+            }
+        },
+        "5.6.3": {
+            "dependencies": {
+                "@fortawesome/fontawesome-common-types": "^0.2.12"
+            },
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/pro-solid-svg-icons",
+            "version": "5.6.3",
+            "_rev": "1-Dd8e5hDHXCW8",
+            "dist": {
+                "integrity": "sha512-l94i+ndjsBa79XD5pyg/lsxU26i+LT+dppv4yq3BowptJ+pyHPGw6vxzXDxe2HMfG9YIsVGg/0m1aCB4BO+yqg==",
+                "shasum": "4ab7152119adf890ac4781ec48d968304fee91a6",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/pro-solid-svg-icons/-/5.6.3/pro-solid-svg-icons-5.6.3.tgz"
+            }
+        },
+        "5.6.2": {
+            "dependencies": {
+                "@fortawesome/fontawesome-common-types": "^0.2.11"
+            },
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/pro-solid-svg-icons",
+            "version": "5.6.2",
+            "_rev": "1-ThwI7qgig16G",
+            "dist": {
+                "integrity": "sha512-70yd3isN+ubuHYL08IWCxU/C0jrMhZbCvTd4DNYJ/oU8OHpdNLjAKhESjOjBvTkJlmbnNgMMwFE+Ag0219VEdg==",
+                "shasum": "5cdacbfbda74ddd0f6ddb288a50a723d66fd4ddb",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/pro-solid-svg-icons/-/5.6.2/pro-solid-svg-icons-5.6.2.tgz"
+            }
+        },
+        "5.6.1": {
+            "dependencies": {
+                "@fortawesome/fontawesome-common-types": "^0.2.10"
+            },
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/pro-solid-svg-icons",
+            "version": "5.6.1",
+            "_rev": "1-CJyUCaoPVQsq",
+            "dist": {
+                "integrity": "sha512-4nPqU4q1KgIgDO7QJN6uuVqagH+X77DmoQawTwrPs2CPkbtfJTNUn8N5ctXQWpJa/cYs1nxCNS5tkInYUMMq5Q==",
+                "shasum": "7f6eee68dacc9d4f519d76ca0eaf6ba7fd2ae510",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/pro-solid-svg-icons/-/5.6.1/pro-solid-svg-icons-5.6.1.tgz"
+            }
+        },
+        "5.6.0": {
+            "dependencies": {
+                "@fortawesome/fontawesome-common-types": "^0.2.9"
+            },
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/pro-solid-svg-icons",
+            "version": "5.6.0",
+            "_rev": "1-4w5kq58ShJXb",
+            "dist": {
+                "integrity": "sha512-H9lc2bs8H1b9XO89Nyqucmzm84nVHNlQ3Z8JGtHHcwuyj1mVHUJw8it4SrDBv33lXnoGT+60Z7w5ba0cRpvoPA==",
+                "shasum": "92194c3e09a60f141bd28d890ef8d608b92b7004",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/pro-solid-svg-icons/-/5.6.0/pro-solid-svg-icons-5.6.0.tgz"
+            }
+        },
+        "5.5.0": {
+            "dependencies": {
+                "@fortawesome/fontawesome-common-types": "^0.2.8"
+            },
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/pro-solid-svg-icons",
+            "version": "5.5.0",
+            "_rev": "1-phJo5WJEw05G",
+            "dist": {
+                "integrity": "sha512-XIzTlyDHLZFCiSQ7o4uxESvsUOzmtZ7MHwRuPnUerAC+iAF5Ye5lm9KzIiV3k08ZGAaEK1NZICcHXFYtZyNLEw==",
+                "shasum": "fccaba199394fa0a200b7a2617ea2b4b3b3c773d",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/pro-solid-svg-icons/-/5.5.0/pro-solid-svg-icons-5.5.0.tgz"
+            }
+        },
+        "5.5.0-2": {
+            "dependencies": {
+                "@fortawesome/fontawesome-common-types": "^0.2.8-2"
+            },
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/pro-solid-svg-icons",
+            "version": "5.5.0-2",
+            "_rev": "1-tydR5uUbKCHH",
+            "dist": {
+                "integrity": "sha512-YEYf+9D/vuZNO7O7FuTNo006MACHlvNaMbCYX75Z2cO0xi89qPfjz6qxlZ82Z03QiO967nNNFEWh3/VsiAEQFA==",
+                "shasum": "57e2f10bcdcf3c6b13c3f3799b7b0c881725bd21",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/pro-solid-svg-icons/-/5.5.0-2/pro-solid-svg-icons-5.5.0-2.tgz"
+            }
+        },
+        "5.5.0-1": {
+            "dependencies": {
+                "@fortawesome/fontawesome-common-types": "^0.2.8-1"
+            },
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/pro-solid-svg-icons",
+            "version": "5.5.0-1",
+            "_rev": "1-HLgEoxvkLIu1",
+            "dist": {
+                "integrity": "sha512-+6+7ZeHoUa8Rl+3zi6bfkpdDyhWCuoZ6QF8Bjg6J9MpgIJPiErbksVqqJ75X3YrhLRaDqfGY3tXXhGs5AQ6bug==",
+                "shasum": "97b1d92b4ca00294afc0ab9f3b31efe5409659e8",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/pro-solid-svg-icons/-/5.5.0-1/pro-solid-svg-icons-5.5.0-1.tgz"
+            }
+        },
+        "5.4.2": {
+            "dependencies": {
+                "@fortawesome/fontawesome-common-types": "^0.2.7"
+            },
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/pro-solid-svg-icons",
+            "version": "5.4.2",
+            "_rev": "1-xvt7SlYiBR9H",
+            "dist": {
+                "integrity": "sha512-ugkAmG9j8egK9oQjaXiH565ndpal2tGJPNoreTtxG7c1kvcv4Q8BE5DukYJHqmQWNmDUt3QZ1Cei1tfw8BPM7A==",
+                "shasum": "24c557c6d4974dab3d47f73ced4ab1905d05754b",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/pro-solid-svg-icons/-/5.4.2/pro-solid-svg-icons-5.4.2.tgz"
+            }
+        },
+        "5.4.1": {
+            "dependencies": {
+                "@fortawesome/fontawesome-common-types": "^0.2.6"
+            },
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/pro-solid-svg-icons",
+            "version": "5.4.1",
+            "_rev": "1-LxDC31ZETgEZ",
+            "dist": {
+                "integrity": "sha512-SiY3BAFXWanQVYALcHQ8E5r795SFUQKVaYpK82irv0AYFcEBBaeoyB6QlSokGXlyzSwecdJ+rJmYGYcqBjsftA==",
+                "shasum": "9eb15239168fbcc3e320c100aa00865d75f06a8a",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/pro-solid-svg-icons/-/5.4.1/pro-solid-svg-icons-5.4.1.tgz"
+            }
+        },
+        "5.4.0": {
+            "dependencies": {
+                "@fortawesome/fontawesome-common-types": "^0.2.5"
+            },
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/pro-solid-svg-icons",
+            "version": "5.4.0",
+            "_rev": "1-nLMg6LRv2LKh",
+            "dist": {
+                "integrity": "sha512-WfZTS4ejPmEpKSQ9pS0hQxnOilzn2U5FbsOZbV6/BExgWZai1QxaPMqm+Tn30i46wJwxIzl7WTtCtpm1o6NI9g==",
+                "shasum": "4ba21651212bbfd2e007fc7d8a29223d7c45ddcd",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/pro-solid-svg-icons/-/5.4.0/pro-solid-svg-icons-5.4.0.tgz"
+            }
+        },
+        "5.3.1": {
+            "dependencies": {
+                "@fortawesome/fontawesome-common-types": "^0.2.4"
+            },
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/pro-solid-svg-icons",
+            "version": "5.3.1",
+            "_rev": "1-uXtCwaZZKRsy",
+            "dist": {
+                "integrity": "sha512-FQLtAPdYDY1TElK9tt8Plc0hdFD84IG43b9nedTYB2uV9C5bCMi6kIO5CCAwc83VGS8EaYnw4dy3Cw1qdV9LoQ==",
+                "shasum": "b09c2cce921e8a2295ab8ac73499975b124eb953",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/pro-solid-svg-icons/-/5.3.1/pro-solid-svg-icons-5.3.1.tgz"
+            }
+        },
+        "5.2.0": {
+            "dependencies": {
+                "@fortawesome/fontawesome-common-types": "^0.2.2"
+            },
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/pro-solid-svg-icons",
+            "version": "5.2.0",
+            "_rev": "1-5C9hSHX6fGU6",
+            "dist": {
+                "integrity": "sha512-RaNIv2oB4RJcPQnMbXagVq+7ccAjK0ixXFRqTmrnc837DZBBZ/RQbwpDop12KzNXajpEY/SwsaSLO9Qp0HUY7w==",
+                "shasum": "8ccca8eda13b0242e9d3c6a0698699ab86881a70",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/pro-solid-svg-icons/-/5.2.0/pro-solid-svg-icons-5.2.0.tgz"
+            }
+        },
+        "5.1.1": {
+            "dependencies": {
+                "@fortawesome/fontawesome-common-types": "^0.2.1"
+            },
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/pro-solid-svg-icons",
+            "version": "5.1.1",
+            "_rev": "1-qaP4s9ODfPVy",
+            "dist": {
+                "integrity": "sha512-PsL35eejy1o6hhQb8TnBPdX/g/a9bXcpTCgpYY02htCHILgFiXb5ITNoianeUWviUpE7Uhl2aQM8KO6po3CLrQ==",
+                "shasum": "6485a3330fe5ab1fde475af0c6c7193ff9c7eca9",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/pro-solid-svg-icons/-/5.1.1/pro-solid-svg-icons-5.1.1.tgz"
+            }
+        },
+        "5.1.0": {
+            "dependencies": {
+                "@fortawesome/fontawesome-common-types": "^0.2.0"
+            },
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/pro-solid-svg-icons",
+            "version": "5.1.0",
+            "_rev": "1-mj39NLcnFnDd",
+            "dist": {
+                "integrity": "sha512-sf6pn6dPjO5/YQt76KIRFzuOMqHA8hvCQggYx0FzPqa1fbxdjw/0/IVxKkY1mWXeEyWrjm//8P5YJnfEkAXnNA==",
+                "shasum": "968d214f2b7b02d76e8c3de13199aefe9a69fb29",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/pro-solid-svg-icons/-/5.1.0/pro-solid-svg-icons-5.1.0.tgz"
+            }
+        },
+        "5.1.0-11": {
+            "dependencies": {
+                "@fortawesome/fontawesome-common-types": "^0.2.0-9"
+            },
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/pro-solid-svg-icons",
+            "version": "5.1.0-11",
+            "_rev": "1-xoQSLtqse2Tn",
+            "dist": {
+                "integrity": "sha512-2S7Jf/5WARs5ggKTeJBOgXzb5BDLPaQAjMYuqZ3f5lLWzm3hmnIDNT4XgIuO5Xz10RzewHKTMB/FSmxqD3OdEA==",
+                "shasum": "be3503ec5f02b8faac150f19ee527154cd7b7197",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/pro-solid-svg-icons/-/5.1.0-11/pro-solid-svg-icons-5.1.0-11.tgz"
+            }
+        },
+        "5.1.0-10": {
+            "dependencies": {
+                "@fortawesome/fontawesome-common-types": "^0.2.0-8"
+            },
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/pro-solid-svg-icons",
+            "version": "5.1.0-10",
+            "_rev": "1-llgv2PyNcexD",
+            "dist": {
+                "integrity": "sha512-ka+Twm9CukDafQevwExU60i++vZaPSut2dqaoNxchB/cL8RAydZ3ircMxwQg3ukmVNryxp4K/KpGJfS/XYwALQ==",
+                "shasum": "1dc3868f92ad1604cf82c13953cf21f548ff7937",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/pro-solid-svg-icons/-/5.1.0-10/pro-solid-svg-icons-5.1.0-10.tgz"
+            }
+        },
+        "5.1.0-9": {
+            "dependencies": {
+                "@fortawesome/fontawesome-common-types": "^0.2.0-7"
+            },
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/pro-solid-svg-icons",
+            "version": "5.1.0-9",
+            "_rev": "1-lcYrxFo4eoEK",
+            "dist": {
+                "integrity": "sha512-/x6oG0GVOAjRHN3rmFpj0//YWWvobG+E+ffCRFTqyLe2q+bGsv25dA0iNED+BNEGBPiA4G/fEos4WYGwmrr2gQ==",
+                "shasum": "25a96c0dc90ca8ce33528a4d7bd268274515045a",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/pro-solid-svg-icons/-/5.1.0-9/pro-solid-svg-icons-5.1.0-9.tgz"
+            }
+        },
+        "5.1.0-8": {
+            "dependencies": {
+                "@fortawesome/fontawesome-common-types": "^0.2.0-6"
+            },
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/pro-solid-svg-icons",
+            "version": "5.1.0-8",
+            "_rev": "1-X6w3tHv8DEvu",
+            "dist": {
+                "integrity": "sha512-Lxn+5Yu9a72Mg2H+NR1C86fVZdOuhU8VskLDKy+5RY1W8LVw2KVDtO6+wQDkBG26EKVPrD+SOiEXr0KtNALfwg==",
+                "shasum": "67ce81ed2ffd13bb9ff1e1395ea53f1aae92b70e",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/pro-solid-svg-icons/-/5.1.0-8/pro-solid-svg-icons-5.1.0-8.tgz"
+            }
+        },
+        "5.1.0-7": {
+            "dependencies": {
+                "@fortawesome/fontawesome-common-types": "^0.2.0-5"
+            },
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/pro-solid-svg-icons",
+            "version": "5.1.0-7",
+            "_rev": "1-QBbV5XNVxfRu",
+            "dist": {
+                "integrity": "sha512-1s10ftTVjuaHIZdwpVLPyfAS3a0gpaEFB4C5cQdE2BIO+s9jmhienkcY+4Rszposbn2qLfFh2nC18Wc6EEZB7Q==",
+                "shasum": "c6762e86d1cf69d13b29139a808451cce9775ecb",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/pro-solid-svg-icons/-/5.1.0-7/pro-solid-svg-icons-5.1.0-7.tgz"
+            }
+        },
+        "5.1.0-6": {
+            "dependencies": {
+                "@fortawesome/fontawesome-common-types": "^0.2.0-4"
+            },
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/pro-solid-svg-icons",
+            "version": "5.1.0-6",
+            "_rev": "1-gTcROAdf3ceS",
+            "dist": {
+                "integrity": "sha512-dNVM+YWBIY8Qsj4Tq4pI6ZphjJ22L+Go9aHUKGywV66SmV1HU6vilodvkMPYgh6E+I60S6e2ncmvAZ1DA7+cpw==",
+                "shasum": "3fc5ee79baadf45d40027675653ca77949905f96",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/pro-solid-svg-icons/-/5.1.0-6/pro-solid-svg-icons-5.1.0-6.tgz"
+            }
+        },
+        "5.1.0-5": {
+            "dependencies": {
+                "@fortawesome/fontawesome-common-types": "^0.2.0-3"
+            },
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/pro-solid-svg-icons",
+            "version": "5.1.0-5",
+            "_rev": "1-xFo2MkNWBBav",
+            "dist": {
+                "integrity": "sha512-KfagLO927MM96PC/1D/KvyYBUXTTeNy2SfH+zLI40vPfTamS340cNWu2DH1x4LQvKriDn6EpG8nU+T/X7KDcHg==",
+                "shasum": "96a8d3744d767e3d463c8707c5bdfd02307c5c8f",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/pro-solid-svg-icons/-/5.1.0-5/pro-solid-svg-icons-5.1.0-5.tgz"
+            }
+        },
+        "5.1.0-4": {
+            "dependencies": {
+                "@fortawesome/fontawesome-common-types": "^0.2.0-2"
+            },
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/pro-solid-svg-icons",
+            "version": "5.1.0-4",
+            "_rev": "1-FXmJENxjLgH0",
+            "dist": {
+                "integrity": "sha512-7UGQrru9mkPnQMQuqiNLB2Vdf5gkXpGZrZEeCaPRM0RwQMYb8JqhT5Txks7vn76SKdNrCgp4WwVA0DlSMWwHjQ==",
+                "shasum": "7d866a41e05072ffe97938145bd501d68593e977",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/pro-solid-svg-icons/-/5.1.0-4/pro-solid-svg-icons-5.1.0-4.tgz"
+            }
+        }
+    }
+}

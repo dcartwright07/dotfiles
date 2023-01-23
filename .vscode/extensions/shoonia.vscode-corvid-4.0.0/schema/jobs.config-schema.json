@@ -1,0 +1,233 @@
+{
+  "type": "object",
+  "title": "Scheduling Recurring Jobs",
+  "description": "The jobs.config file contains a JSON object which defines the scheduled jobs. The object consists of the properties listed below.",
+  "additionalProperties": false,
+  "required": [
+    "jobs"
+  ],
+  "properties": {
+    "jobs": {
+      "type": "array",
+      "title": "jobs (Array)",
+      "description": "The jobs object contains one top-level key named \"jobs\". The key maps to an array of objects, each of which represents a scheduled job. You can configure up to 20 jobs.",
+      "additionalItems": false,
+      "minItems": 1,
+      "maxItems": 20,
+      "defaultSnippets": [
+        {
+          "label": "For daily jobs",
+          "body": [
+            {
+              "functionLocation": "/$1.${2|js,jsw|}",
+              "functionName": "$3",
+              "description": "$4",
+              "executionConfig": {
+                "time": "$CURRENT_HOUR:$CURRENT_MINUTE$5"
+              }
+            }
+          ]
+        },
+        {
+          "label": "For monthly jobs",
+          "body": [
+            {
+              "functionLocation": "/$1.${2|js,jsw|}",
+              "functionName": "$3",
+              "description": "$4",
+              "executionConfig": {
+                "time": "$CURRENT_HOUR:$CURRENT_MINUTE$5",
+                "dateInMonth": 1
+              }
+            }
+          ]
+        },
+        {
+          "label": "For weekly jobs",
+          "body": [
+            {
+              "functionLocation": "/$1.${2|js,jsw|}",
+              "functionName": "$3",
+              "description": "$4",
+              "executionConfig": {
+                "time": "$CURRENT_HOUR:$CURRENT_MINUTE$5",
+                "dayOfWeek": "$CURRENT_DAY_NAME$6"
+              }
+            }
+          ]
+        },
+        {
+          "label": "Every hour",
+          "body": [
+            {
+              "functionLocation": "/$1.${2|js,jsw|}",
+              "functionName": "$3",
+              "description": "$4",
+              "executionConfig": {
+                "cronExpression": "0 * * * *$5"
+              }
+            }
+          ]
+        }
+      ],
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "functionLocation",
+          "functionName",
+          "executionConfig"
+        ],
+        "properties": {
+          "functionLocation": {
+            "type": "string",
+            "title": "functionLocation (String)",
+            "description": "The location of the file of the backend function that contains the function you want to run at the scheduled time. The function can be any function in any backend .js or .jsw file.",
+            "defaultSnippets": [
+              {
+                "title": "Make sure you export the function that you want the job scheduler to call.",
+                "body": "/$1.${2|js,jsw|}"
+              }
+            ]
+          },
+          "functionName": {
+            "type": "string",
+            "title": "functionName (String)",
+            "description": "Name of the function you want to run at the scheduled time.",
+            "pattern": "^[\\$a-zA-Z_][\\$\\w]*$"
+          },
+          "description": {
+            "type": "string",
+            "title": "description (String)",
+            "description": "A description of the job."
+          },
+          "executionConfig": {
+            "type": "object",
+            "title": "executionConfig (Object)",
+            "description": "An object containing information about when the job should run.",
+            "additionalProperties": false,
+            "defaultSnippets": [
+              {
+                "label": "For daily jobs",
+                "body": {
+                  "time": "$CURRENT_HOUR:$CURRENT_MINUTE$1"
+                }
+              },
+              {
+                "label": "For weekly jobs",
+                "body": {
+                  "time": "$CURRENT_HOUR:$CURRENT_MINUTE$1",
+                  "dayOfWeek": "$CURRENT_DAY_NAME$2"
+                }
+              },
+              {
+                "label": "For monthly jobs",
+                "body": {
+                  "time": "$CURRENT_HOUR:$CURRENT_MINUTE$1",
+                  "dateInMonth": 1
+                }
+              },
+              {
+                "label": "Every hour",
+                "body": {
+                  "cronExpression": "0 * * * *$1"
+                }
+              }
+            ],
+            "properties": {
+              "time": {
+                "type": "string",
+                "title": "time (String)",
+                "description": "The time of day the job runs. The time is specified as UTC time in HH:MM format.",
+                "pattern": "^([01]\\d|2[0-3]):?([0-5]\\d)$",
+                "default": "00:00"
+              },
+              "dayOfWeek": {
+                "type": "string",
+                "title": "dayOfWeek (String)",
+                "description": "The day of the week the job runs on. For daily or monthly jobs, omit the dayOfWeek property.",
+                "default": "Monday",
+                "enum": [
+                  "Monday",
+                  "Tuesday",
+                  "Wednesday",
+                  "Thursday",
+                  "Friday",
+                  "Saturday",
+                  "Sunday"
+                ]
+              },
+              "dateInMonth": {
+                "type": "integer",
+                "title": "dateInMonth (Number)",
+                "description": "The day of the month the job runs on. A number between 1 and 31.",
+                "default": 1,
+                "minimum": 1,
+                "maximum": 31
+              },
+              "cronExpression": {
+                "type": "string",
+                "title": "cronExpression (String)",
+                "description": "A valid cron expression.\n\nWhen using a cron expression, you can schedule your job to run at intervals as short as one hour apart, but not shorter. If you define your job to run more frequently, the job will be ignored.",
+                "pattern": "(\\*|[0-5]?[0-9]|\\*\/[0-9]+)\\s+(\\*|1?[0-9]|2[0-3]|\\*\/[0-9]+)\\s+(\\*|[1-2]?[0-9]|3[0-1]|\\*\/[0-9]+)\\s+(\\*|[0-9]|1[0-2]|\\*\/[0-9]+|jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)\\s+(\\*\/[0-9]+|\\*|[0-7]|sun|mon|tue|wed|thu|fri|sat)\\s*(\\*\/[0-9]+|\\*|[0-9]+)?",
+                "default": "0 * * * *"
+              }
+            },
+            "oneOf": [
+              {
+                "required": [
+                  "cronExpression"
+                ],
+                "not": {
+                  "required": [
+                    "time"
+                  ]
+                }
+              },
+              {
+                "required": [
+                  "time"
+                ],
+                "not": {
+                  "required": [
+                    "cronExpression"
+                  ]
+                }
+              }
+            ],
+            "dependencies": {
+              "dayOfWeek": {
+                "required": [
+                  "time"
+                ],
+                "not": {
+                  "required": [
+                    "dateInMonth"
+                  ]
+                }
+              },
+              "dateInMonth": {
+                "required": [
+                  "time"
+                ],
+                "not": {
+                  "required": [
+                    "dayOfWeek"
+                  ]
+                }
+              },
+              "cronExpression": {
+                "not": {
+                  "required": [
+                    "dayOfWeek",
+                    "dateInMonth"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

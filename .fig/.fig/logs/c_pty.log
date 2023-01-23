@@ -1,0 +1,17 @@
+set +m +b +o history
+
+unset HISTFILE
+
+export PATH='/Users/dominiccartwright/.nvm/versions/node/v18.1.0/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/Library/Apple/usr/bin:/Users/dominiccartwright/.fig/bin:/Users/dominiccartwright/.local/bin:/Users/dominiccartwright/.local/bin:/Users/dominiccartwright/.composer/vendor/bin:/Users/dominiccartwright/.local/bin'
+
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+[?1034hbash-3.2$ set +m +b +o history
+bash-3.2$ 
+bash-3.2$ unset HISTFILE
+bash-3.2$ 
+bash-3.2$ export PATH='/Users/dominiccartwright/.nvm/versions/node/v18.1.0/bin:/ opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin :/usr/local/go/bin:/Library/Apple/usr/bin:/Users/dominiccartwright/.fig/bin:/Use rs/dominiccartwright/.local/bin:/Users/dominiccartwright/.local/bin:/Users/domin iccartwright/.composer/vendor/bin:/Users/dominiccartwright/.local/bin'
+bash-3.2$ 
+bash-3.2$ 

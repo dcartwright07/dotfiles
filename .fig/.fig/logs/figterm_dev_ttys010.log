@@ -1,0 +1,15 @@
+[2m2022-10-10T04:32:34.339974Z[0m [31mERROR[0m [2mfigterm::ipc[0m[2m:[0m [2m299:[0m Failed to send message [3merr[0m[2m=[0mBroken pipe (os error 32)
+[2m2022-10-10T05:17:08.665815Z[0m [31mERROR[0m [2mfigterm::history[0m[2m:[0m [2m39:[0m Failed to insert command into history: attempt to write a readonly database
+[2m2022-10-10T05:18:01.538066Z[0m [31mERROR[0m [2mfigterm::history[0m[2m:[0m [2m39:[0m Failed to insert command into history: attempt to write a readonly database
+[2m2022-10-10T05:18:24.638261Z[0m [31mERROR[0m [2mfigterm::history[0m[2m:[0m [2m39:[0m Failed to insert command into history: attempt to write a readonly database
+[2m2022-10-10T05:19:03.400597Z[0m [31mERROR[0m [2mfigterm::history[0m[2m:[0m [2m39:[0m Failed to insert command into history: attempt to write a readonly database
+[2m2022-10-10T05:19:35.485950Z[0m [31mERROR[0m [2mfigterm::history[0m[2m:[0m [2m39:[0m Failed to insert command into history: attempt to write a readonly database
+[2m2022-10-10T05:19:49.732168Z[0m [31mERROR[0m [2mfigterm::history[0m[2m:[0m [2m39:[0m Failed to insert command into history: attempt to write a readonly database
+[2m2022-10-10T05:21:01.690471Z[0m [31mERROR[0m [2mfigterm::history[0m[2m:[0m [2m39:[0m Failed to insert command into history: attempt to write a readonly database
+[2m2022-10-10T05:22:03.449885Z[0m [31mERROR[0m [2mfigterm::history[0m[2m:[0m [2m39:[0m Failed to insert command into history: attempt to write a readonly database
+[2m2022-10-10T05:22:10.269768Z[0m [31mERROR[0m [2mfigterm::history[0m[2m:[0m [2m39:[0m Failed to insert command into history: attempt to write a readonly database
+[2m2022-10-10T05:24:17.356632Z[0m [31mERROR[0m [2mfigterm::history[0m[2m:[0m [2m39:[0m Failed to insert command into history: attempt to write a readonly database
+[2m2022-10-10T05:24:30.161908Z[0m [31mERROR[0m [2mfigterm::history[0m[2m:[0m [2m39:[0m Failed to insert command into history: attempt to write a readonly database
+[2m2022-10-10T05:35:25.999538Z[0m [31mERROR[0m [2mfigterm::history[0m[2m:[0m [2m39:[0m Failed to insert command into history: attempt to write a readonly database
+[2m2022-10-10T05:42:31.484120Z[0m [31mERROR[0m [2mfigterm::history[0m[2m:[0m [2m39:[0m Failed to insert command into history: attempt to write a readonly database
+[2m2022-10-10T13:33:15.001323Z[0m [31mERROR[0m [2mfigterm::history[0m[2m:[0m [2m39:[0m Failed to insert command into history: attempt to write a readonly database

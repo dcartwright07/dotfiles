@@ -1,0 +1,600 @@
+{
+    "name": "@fortawesome/pro-duotone-svg-icons",
+    "dist-tags": {
+        "latest": "6.2.0"
+    },
+    "versions": {
+        "6.2.0": {
+            "dependencies": {
+                "@fortawesome/fontawesome-common-types": "6.2.0"
+            },
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/pro-duotone-svg-icons",
+            "version": "6.2.0",
+            "_rev": "1-KGBD4RZWnmZy",
+            "dist": {
+                "integrity": "sha512-cphSgDxTr+o7qhq6AW8RrBbVfIvIqA6c/Fcbx5WgculmER+Hv6cnuliw4CrZ6KhxsfRWQRLMiYLxgTctqlpB5g==",
+                "shasum": "fab2b0c8b83a64036845bca07f3943f3df6165e6",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/pro-duotone-svg-icons/-/6.2.0/pro-duotone-svg-icons-6.2.0.tgz"
+            }
+        },
+        "6.1.2": {
+            "dependencies": {
+                "@fortawesome/fontawesome-common-types": "6.1.2"
+            },
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/pro-duotone-svg-icons",
+            "version": "6.1.2",
+            "_rev": "1-YHHG07S7BWEK",
+            "dist": {
+                "integrity": "sha512-sUB+nVtY32XC2P/xkaG481csWfZ0MKXzDycwl3YEEi7POx77eF+qnD7HnaKaDNrln7H+ntEelnvRdVti59tQ/Q==",
+                "shasum": "a562da19bacbb58da355bb4ad27f53f13702053a",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/pro-duotone-svg-icons/-/6.1.2/pro-duotone-svg-icons-6.1.2.tgz"
+            }
+        },
+        "6.1.1": {
+            "dependencies": {
+                "@fortawesome/fontawesome-common-types": "6.1.1"
+            },
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/pro-duotone-svg-icons",
+            "version": "6.1.1",
+            "_rev": "1-PgfwSh2GepGU",
+            "dist": {
+                "integrity": "sha512-BA9hKuVK50NvUNl3V1NmKhyJGXN3QrmGdZ0AvZjGRj73zWa6vgGewl8/PSdqTLP3uWZZZRrIfYqFvnHweTfQ+Q==",
+                "shasum": "61d6d6b8ac5102a5a95e26216830bfc9944cd22c",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/pro-duotone-svg-icons/-/6.1.1/pro-duotone-svg-icons-6.1.1.tgz"
+            }
+        },
+        "6.1.0": {
+            "dependencies": {
+                "@fortawesome/fontawesome-common-types": "6.1.0"
+            },
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/pro-duotone-svg-icons",
+            "version": "6.1.0",
+            "_rev": "1-XIxmFopQaz47",
+            "dist": {
+                "integrity": "sha512-i8bD9iE9zFRpmvz0JbRLVrAoBt8lGCYEboLNG94g54s6vzqIDAFjtj7r7gTuyNlIrIISSyUhMHYZm17Jd7AD6g==",
+                "shasum": "758a5433d6234592e443b3d19b2b6022c3f31c28",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/pro-duotone-svg-icons/-/6.1.0/pro-duotone-svg-icons-6.1.0.tgz"
+            }
+        },
+        "6.0.0": {
+            "dependencies": {
+                "@fortawesome/fontawesome-common-types": "^0.3.0"
+            },
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/pro-duotone-svg-icons",
+            "version": "6.0.0",
+            "_rev": "1-1dePplm7OttP",
+            "dist": {
+                "integrity": "sha512-gq/psAzWxv+Vuu50HYcj2VuBa9PGWljmEPih7PwPWbgSEPBO07wvhXcNXDLU+qZe7m1oNKAY5ke9gN7+qpYsjA==",
+                "shasum": "e59b7fe1272119ae318f67e6f114916bc452d57a",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/pro-duotone-svg-icons/-/6.0.0/pro-duotone-svg-icons-6.0.0.tgz"
+            }
+        },
+        "6.0.0-beta3": {
+            "dependencies": {
+                "@fortawesome/fontawesome-common-types": "^0.3.0-beta3"
+            },
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/pro-duotone-svg-icons",
+            "version": "6.0.0-beta3",
+            "_rev": "1-0ZC5Yf8ILkPA",
+            "dist": {
+                "integrity": "sha512-L52zVifiegwoEbEXwbUATOqBTHTPN7yY0Mc7Sn2I1+XFHOVNYYd/T05YbMFOmxIhtfc7OvJwZxWdyfKoMYfufA==",
+                "shasum": "ee6dac4185ac87d2676f899d004ed15c52f978ae",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/pro-duotone-svg-icons/-/6.0.0-beta3/pro-duotone-svg-icons-6.0.0-beta3.tgz"
+            }
+        },
+        "6.0.0-beta2": {
+            "dependencies": {
+                "@fortawesome/fontawesome-common-types": "^0.3.0-beta2"
+            },
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/pro-duotone-svg-icons",
+            "version": "6.0.0-beta2",
+            "_rev": "1-HEB2kdCtjIAJ",
+            "dist": {
+                "integrity": "sha512-8Z3ro/svpur1A7MNIOUwPiwVdxwNfcnMJtOGGsc11KLpV/t4DrLQ4WJKL2tCfhQygGwl6/9JKTLntQynRSBUBQ==",
+                "shasum": "adbd56498fea829122e3afc981bca119a2606d5b",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/pro-duotone-svg-icons/-/6.0.0-beta2/pro-duotone-svg-icons-6.0.0-beta2.tgz"
+            }
+        },
+        "6.0.0-beta1": {
+            "dependencies": {
+                "@fortawesome/fontawesome-common-types": "^0.2.33-beta1"
+            },
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/pro-duotone-svg-icons",
+            "version": "6.0.0-beta1",
+            "_rev": "1-s801zUhe6TYM",
+            "dist": {
+                "integrity": "sha512-YubdFwgc/+/FGwwng8tvo1VEFPZmuwPoCwBUpeM4iH+60RrKPaK/X852cQa7/od3x7jAQETPiZOqiQTNP7wqyQ==",
+                "shasum": "24c386904401505cd0d9a66e6621880722454913",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/pro-duotone-svg-icons/-/6.0.0-beta1/pro-duotone-svg-icons-6.0.0-beta1.tgz"
+            }
+        },
+        "6.0.0-alpha3": {
+            "dependencies": {
+                "@fortawesome/fontawesome-common-types": "^0.2.33-alpha3"
+            },
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/pro-duotone-svg-icons",
+            "version": "6.0.0-alpha3",
+            "_rev": "1-CgdgkzLwc8Bb",
+            "dist": {
+                "integrity": "sha512-b6/gJ75L9NtCFiLp6Fz6X1SVbrczLdP3F/pq6ACc8RaVZVcLBD9iTVjkd6aMx8UTUEXaFlT2ZIr0ThfAGOOXQw==",
+                "shasum": "cb3b19eda724d3291b0433e11b8caf22e484558a",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/pro-duotone-svg-icons/-/6.0.0-alpha3/pro-duotone-svg-icons-6.0.0-alpha3.tgz"
+            }
+        },
+        "6.0.0-alpha2": {
+            "dependencies": {
+                "@fortawesome/fontawesome-common-types": "^0.2.33-alpha2"
+            },
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/pro-duotone-svg-icons",
+            "version": "6.0.0-alpha2",
+            "_rev": "1-iJZFFCsZnkwS",
+            "dist": {
+                "integrity": "sha512-FsVPgKYENZ7CFbkfq79ElmNcKL8iq8XBq3GfFTkFQply76wCLVNK6YLwj11B3/hIyRzKHrzS0zwwk71kv1Zz1A==",
+                "shasum": "f069a60f6f450f7e50e2d4220550a57f6d0f9b75",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/pro-duotone-svg-icons/-/6.0.0-alpha2/pro-duotone-svg-icons-6.0.0-alpha2.tgz"
+            }
+        },
+        "5.15.4": {
+            "dependencies": {
+                "@fortawesome/fontawesome-common-types": "^0.2.36"
+            },
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/pro-duotone-svg-icons",
+            "version": "5.15.4",
+            "_rev": "1-l6oN5tlMhPwQ",
+            "dist": {
+                "integrity": "sha512-PQeY64u1U3bENpekjkkVvk67zNA27by2bhh6Y16oiNI6G/AvIRfgAszcHan/kk62BssjY76EX3LL5rnxM6Gasw==",
+                "shasum": "45c52c8b8f90207d61c908949cd96dfba5e6758e",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/pro-duotone-svg-icons/-/5.15.4/pro-duotone-svg-icons-5.15.4.tgz"
+            }
+        },
+        "5.15.3": {
+            "dependencies": {
+                "@fortawesome/fontawesome-common-types": "^0.2.35"
+            },
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/pro-duotone-svg-icons",
+            "version": "5.15.3",
+            "_rev": "1-LK3tPc1j9NqU",
+            "dist": {
+                "integrity": "sha512-D/CmRoX8D5pTWlCbhQRNv5EB9U5gigWQ7jsygZL8o1+Yhr+Sgvgz5g4T+NAig+7fBYQh/iEooxZ2qZikpoKoew==",
+                "shasum": "fd6b88c2119256b35c88357084a4831cbf008d55",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/pro-duotone-svg-icons/-/5.15.3/pro-duotone-svg-icons-5.15.3.tgz"
+            }
+        },
+        "5.15.2": {
+            "dependencies": {
+                "@fortawesome/fontawesome-common-types": "^0.2.34"
+            },
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/pro-duotone-svg-icons",
+            "version": "5.15.2",
+            "_rev": "1-Tb2aO8xYxHLD",
+            "dist": {
+                "integrity": "sha512-wCbRk9e6RndWqdI/lEg7TTfog5RhI34tRlgXNFmYEXAzH3txpXt5tcl4I982D196XwuGjo2XqKNqAEo6hC/zag==",
+                "shasum": "bdef0082ae0d56cca65170e7324e13671b6a827b",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/pro-duotone-svg-icons/-/5.15.2/pro-duotone-svg-icons-5.15.2.tgz"
+            }
+        },
+        "5.15.1": {
+            "dependencies": {
+                "@fortawesome/fontawesome-common-types": "^0.2.32"
+            },
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/pro-duotone-svg-icons",
+            "version": "5.15.1",
+            "_rev": "1-wgj2RVIvmyWD",
+            "dist": {
+                "integrity": "sha512-FgpjgPpitmg9GKfA0JIjmxdzcrT2eS6qbVDGXlWvy41R8TmD9SHalTsVKjodT1m1EQ55UYaLY3bTZTAmtq5nzA==",
+                "shasum": "1493535aaf89b1fcd8f85e22991da986e520b236",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/pro-duotone-svg-icons/-/5.15.1/pro-duotone-svg-icons-5.15.1.tgz"
+            }
+        },
+        "5.15.0": {
+            "dependencies": {
+                "@fortawesome/fontawesome-common-types": "^0.2.31"
+            },
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/pro-duotone-svg-icons",
+            "version": "5.15.0",
+            "_rev": "1-aU71Ndy7xtM3",
+            "dist": {
+                "integrity": "sha512-MzslzIgl6RZhmNdDRCHOeGXr8a8l47ck6uTPt56CMUI/pD2zEsb1vt4Lohm8yMWsoB1yizBJa2WA3HHoZ3StVw==",
+                "shasum": "d5916a626d261d6468015c9c7925920f4b9b6049",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/pro-duotone-svg-icons/-/5.15.0/pro-duotone-svg-icons-5.15.0.tgz"
+            }
+        },
+        "5.14.0": {
+            "dependencies": {
+                "@fortawesome/fontawesome-common-types": "^0.2.30"
+            },
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/pro-duotone-svg-icons",
+            "version": "5.14.0",
+            "_rev": "1-KHKnxCnHtGhi",
+            "dist": {
+                "integrity": "sha512-PUJTkwVVO0DawDdQF/RGzj65bQpU9qlp4Aa5AaQ9taF+7vDD5n9WMPttzNiuCxoBDC40fTh9SdenhiNW+Dlybg==",
+                "shasum": "475d982c7115114a97b2a21af0a80f393eb33096",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/pro-duotone-svg-icons/-/5.14.0/pro-duotone-svg-icons-5.14.0.tgz"
+            }
+        },
+        "5.13.1": {
+            "dependencies": {
+                "@fortawesome/fontawesome-common-types": "^0.2.29"
+            },
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/pro-duotone-svg-icons",
+            "version": "5.13.1",
+            "_rev": "1-uwISVDuzBoya",
+            "dist": {
+                "integrity": "sha512-CrQRD0BVBrsnrmRKdw8kcPVvryfJxLZk7AnOOjtF2oRe47Qs+H+wM+qYo9IzJNhj7r/0Od5V+cSAKTuDKnhAmg==",
+                "shasum": "1b9e1c5518d93689044d6cff9e25e020486c7f25",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/pro-duotone-svg-icons/-/5.13.1/pro-duotone-svg-icons-5.13.1.tgz"
+            }
+        },
+        "5.13.0": {
+            "dependencies": {
+                "@fortawesome/fontawesome-common-types": "^0.2.28"
+            },
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/pro-duotone-svg-icons",
+            "version": "5.13.0",
+            "_rev": "1-NaDkxV59oPru",
+            "dist": {
+                "integrity": "sha512-9A6rH9o6k3Deh8upCQx80o39XdUeFNcpaF/IEhJtKzPFwRp5hGFYYJhMcN5Y0F5q7IfBDLcabw+SiDVdteqRfg==",
+                "shasum": "d37942a4ad814da0b286f33d0115cd7d584662a8",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/pro-duotone-svg-icons/-/5.13.0/pro-duotone-svg-icons-5.13.0.tgz"
+            }
+        },
+        "5.12.1": {
+            "dependencies": {
+                "@fortawesome/fontawesome-common-types": "^0.2.27"
+            },
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/pro-duotone-svg-icons",
+            "version": "5.12.1",
+            "_rev": "1-vUa3c5OVgCqN",
+            "dist": {
+                "integrity": "sha512-4dcKEbHKR9log2iowQDb3/nsVyQKrSArj7IVuG5hgNJFfPpeBNXM1LJQBSFgcDLyxmO3fkthU/ZS5pe9M1rwCQ==",
+                "shasum": "fc2c3b7eeab90a20990b3dcace2b730585907eee",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/pro-duotone-svg-icons/-/5.12.1/pro-duotone-svg-icons-5.12.1.tgz"
+            }
+        },
+        "5.12.0": {
+            "dependencies": {
+                "@fortawesome/fontawesome-common-types": "^0.2.26"
+            },
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/pro-duotone-svg-icons",
+            "version": "5.12.0",
+            "_rev": "1-AKGdlzB3I7Iz",
+            "dist": {
+                "integrity": "sha512-zGEsIVmxwX9FX+SkwLzDbqcrRjIewyV7WlLl7FEHxEgiU8xvEYrP+ETTATR90/ZRX1cUUXQvrbRwFqbK+/n6cw==",
+                "shasum": "3824d81c86ef4aa72b1debc4322686122f36a6ae",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/pro-duotone-svg-icons/-/5.12.0/pro-duotone-svg-icons-5.12.0.tgz"
+            }
+        },
+        "5.12.0-2": {
+            "dependencies": {
+                "@fortawesome/fontawesome-common-types": "^0.2.26-2"
+            },
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/pro-duotone-svg-icons",
+            "version": "5.12.0-2",
+            "_rev": "1-Dx4FYiKJeGuF",
+            "dist": {
+                "integrity": "sha512-3TQcx+Y58tE+4WxX2tek0vhnTgqpX3dw5lg8OfYQnLMk5O+/q1h9CzVwmRaavttVbSLJfhQo5X3NSNlVsmbMJw==",
+                "shasum": "dbf2c04a572345351481140c2ee3715a3553abba",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/pro-duotone-svg-icons/-/5.12.0-2/pro-duotone-svg-icons-5.12.0-2.tgz"
+            }
+        },
+        "5.11.2": {
+            "dependencies": {
+                "@fortawesome/fontawesome-common-types": "^0.2.25"
+            },
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/pro-duotone-svg-icons",
+            "version": "5.11.2",
+            "_rev": "1-rUFnClGdEAWX",
+            "dist": {
+                "integrity": "sha512-Fqm+V5CqvYG48oBJjAfDIX3SKMqvD6hJ1asE6z/J1RhZtO7Y/4la6DVPxOdGvPu1aJutELa2wmNL100RMG/bvg==",
+                "shasum": "c565a0f8c39acc3f7b3c2a8b77e636ce13265fb2",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/pro-duotone-svg-icons/-/5.11.2/pro-duotone-svg-icons-5.11.2.tgz"
+            }
+        },
+        "5.11.1": {
+            "dependencies": {
+                "@fortawesome/fontawesome-common-types": "^0.2.24"
+            },
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/pro-duotone-svg-icons",
+            "version": "5.11.1",
+            "_rev": "1-dzLsiorIVXwV",
+            "dist": {
+                "integrity": "sha512-avTkJ6E4zGLHHmNSn3RSx0CJxJV0lXGj2cWviSN8pRfVD2F0HgBd03T6x+qGhEKFzKYVLPZcB0KDGbWA2WcxmQ==",
+                "shasum": "85b32df41946b6aadbbedd1166fdc262ef9f36ac",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/pro-duotone-svg-icons/-/5.11.1/pro-duotone-svg-icons-5.11.1.tgz"
+            }
+        },
+        "5.11.0": {
+            "dependencies": {
+                "@fortawesome/fontawesome-common-types": "^0.2.23"
+            },
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/pro-duotone-svg-icons",
+            "version": "5.11.0",
+            "_rev": "1-kbS2H4H7fyn5",
+            "dist": {
+                "integrity": "sha512-BpIemZ7ICesNsxh3GrLEWMAR7bTE5DsRuMrB0ptrWm9YuDZHjknmT65NlC9bVh4h4zzNX25aYfaSVSjJXClYYA==",
+                "shasum": "f2e5374314339a3a7d713066a49d4443cf4d16cc",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/pro-duotone-svg-icons/-/5.11.0/pro-duotone-svg-icons-5.11.0.tgz"
+            }
+        },
+        "5.10.2": {
+            "dependencies": {
+                "@fortawesome/fontawesome-common-types": "^0.2.22"
+            },
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/pro-duotone-svg-icons",
+            "version": "5.10.2",
+            "_rev": "1-Y6dPrbtiwwFj",
+            "dist": {
+                "integrity": "sha512-jdKiOhophNs84NfQWhtql1ycn+iZux10AZ8De1mXOXY/i2nRiY2/WOmTBo+ABQmH8bwcaLuQwt1ulMIblu85jA==",
+                "shasum": "acd9817b1e663d6d8af7b3cd5bd87b17ba8dda25",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/pro-duotone-svg-icons/-/5.10.2/pro-duotone-svg-icons-5.10.2.tgz"
+            }
+        },
+        "5.10.1": {
+            "dependencies": {
+                "@fortawesome/fontawesome-common-types": "^0.2.21"
+            },
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/pro-duotone-svg-icons",
+            "version": "5.10.1",
+            "_rev": "1-nLJOKKZG0pz2",
+            "dist": {
+                "integrity": "sha512-LclrX9pYx4MaDW5Mb8ESGKhPE3DJKzfWta6U6zxbDR4FchPI04arwnj0Pss0SuqWWakT0qWzNcd2MeBaIhDZdQ==",
+                "shasum": "0a6a30faea929e8e3106dd31812b7592daa1f870",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/pro-duotone-svg-icons/-/5.10.1/pro-duotone-svg-icons-5.10.1.tgz"
+            }
+        },
+        "5.10.0": {
+            "dependencies": {
+                "@fortawesome/fontawesome-common-types": "^0.2.20"
+            },
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/pro-duotone-svg-icons",
+            "version": "5.10.0",
+            "_rev": "1-PIQcKXk1pnsg",
+            "dist": {
+                "integrity": "sha512-D2mxl8kkCgFUYwfLeOkyI7nGxekT4BXs52GWlwEpow4KZRP38obqqJO43oUiCVVLO5pEaTS1dK592a7Z4P6ROw==",
+                "shasum": "c368c2aaf1a9c6abc877b8087f0d3d6c32c1a637",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/pro-duotone-svg-icons/-/5.10.0/pro-duotone-svg-icons-5.10.0.tgz"
+            }
+        },
+        "5.10.0-14": {
+            "dependencies": {
+                "@fortawesome/fontawesome-common-types": "^0.2.20-14"
+            },
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/pro-duotone-svg-icons",
+            "version": "5.10.0-14",
+            "_rev": "1-93h9UAm8bCNl",
+            "dist": {
+                "integrity": "sha512-D1pvKn4ghpSbeVA+Je2LfHiHfSSQUnRl/tXxl6XtPPuDl7j1NXnUmOjezSHXBTorb+5GAKFIm3tiT90MNSM/Qg==",
+                "shasum": "1ca390631c6fbe9ed5b64b41977efe2ea4838386",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/pro-duotone-svg-icons/-/5.10.0-14/pro-duotone-svg-icons-5.10.0-14.tgz"
+            }
+        },
+        "5.10.0-13": {
+            "dependencies": {
+                "@fortawesome/fontawesome-common-types": "^0.2.20-13"
+            },
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/pro-duotone-svg-icons",
+            "version": "5.10.0-13",
+            "_rev": "1-HIGqX3HSmSiM",
+            "dist": {
+                "integrity": "sha512-AmVnDVJkx0oMWKTOHMhKTTkafmVB7tfCxoYT9Jle6oSY8Omqc7NgxUvHXtkCrRpJ+SI9wQdLNnTcby6dz0/IOw==",
+                "shasum": "4211ee418cd9a121031bdbb5a44244e9fd9447c6",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/pro-duotone-svg-icons/-/5.10.0-13/pro-duotone-svg-icons-5.10.0-13.tgz"
+            }
+        },
+        "5.10.0-12": {
+            "dependencies": {
+                "@fortawesome/fontawesome-common-types": "^0.2.20-12"
+            },
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/pro-duotone-svg-icons",
+            "version": "5.10.0-12",
+            "_rev": "1-6prpihh0KHRC",
+            "dist": {
+                "integrity": "sha512-J1WmlDZA4hyy8N8lkAPDNNRir03+J+4kyt6Yz1UaquQseRPo/I6HvU7mdpbhn/Zfww8rjoY/QGkL9ldEoCLsIA==",
+                "shasum": "c2f25acd9d19768e050941eaf42397d941ae1ffd",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/pro-duotone-svg-icons/-/5.10.0-12/pro-duotone-svg-icons-5.10.0-12.tgz"
+            }
+        },
+        "5.10.0-11": {
+            "dependencies": {
+                "@fortawesome/fontawesome-common-types": "^0.2.20-11"
+            },
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/pro-duotone-svg-icons",
+            "version": "5.10.0-11",
+            "_rev": "1-reQKjDx9y60n",
+            "dist": {
+                "integrity": "sha512-mbVNXz9G5y6MTZl84fFuGgYutxiGw79fk7a8Jyj7LR9+UVZx8rJyPDFImBgOdxcLCF3ZGis3h/nXWLNXDOVupw==",
+                "shasum": "77c6043c54ac35d471f5a919d46b4984c93e5451",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/pro-duotone-svg-icons/-/5.10.0-11/pro-duotone-svg-icons-5.10.0-11.tgz"
+            }
+        },
+        "5.10.0-10": {
+            "dependencies": {
+                "@fortawesome/fontawesome-common-types": "^0.2.20-10"
+            },
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/pro-duotone-svg-icons",
+            "version": "5.10.0-10",
+            "_rev": "1-1oWuDBm40g8z",
+            "dist": {
+                "integrity": "sha512-WWom2Nw0zTTGc9RxmTlyG2PlGbJEe9sAy6iFvTXqkiJti/zI69h/Fezi0KkO/Wl4lIWU3lXgGCz5ZGJ0aWcnvQ==",
+                "shasum": "9a2df44c2120399b59f7b7ca4dfb109d8d6beebf",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/pro-duotone-svg-icons/-/5.10.0-10/pro-duotone-svg-icons-5.10.0-10.tgz"
+            }
+        },
+        "5.10.0-8": {
+            "dependencies": {
+                "@fortawesome/fontawesome-common-types": "^0.2.20-8"
+            },
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/pro-duotone-svg-icons",
+            "version": "5.10.0-8",
+            "_rev": "1-CBamUNLCOxzN",
+            "dist": {
+                "integrity": "sha512-zr+didSPxffQTTnMZCTNeuGQwiqaXeb10FlLIYALsBMxhA73UDjIuCXBZqypRu3QaQrX4qH551D9vXoDGVTWgw==",
+                "shasum": "a7636647e51fdf1ffb338c4861a1e7cd07cd6d8b",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/pro-duotone-svg-icons/-/5.10.0-8/pro-duotone-svg-icons-5.10.0-8.tgz"
+            }
+        },
+        "5.10.0-6": {
+            "dependencies": {
+                "@fortawesome/fontawesome-common-types": "^0.2.20-6"
+            },
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/pro-duotone-svg-icons",
+            "version": "5.10.0-6",
+            "_rev": "1-RbyyWHCKZIgB",
+            "dist": {
+                "integrity": "sha512-IiV/djvK5hD9vt1E+EQ5/L40lwDrzaUQtbeQvwooMv4rOMqjXv/9/nBpb/OPiwIZiES/yYxdp6MaWF1iZhguUQ==",
+                "shasum": "936806642ca2219f03e63fa408a348ac209d9da0",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/pro-duotone-svg-icons/-/5.10.0-6/pro-duotone-svg-icons-5.10.0-6.tgz"
+            }
+        },
+        "5.10.0-5": {
+            "dependencies": {
+                "@fortawesome/fontawesome-common-types": "^0.2.20-5"
+            },
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/pro-duotone-svg-icons",
+            "version": "5.10.0-5",
+            "_rev": "1-cQA7ys2o7nVa",
+            "dist": {
+                "integrity": "sha512-l8K5cz8caxbGKLu9pMXT5yDnhLwTB4QqETUWKtKoB0KEAY6pmsdbD9sr7V78Z5jbVsSu3yRjas8Mq92St352VQ==",
+                "shasum": "575eb705e9dfcfd0391d6bd67d8b75a2182c960b",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/pro-duotone-svg-icons/-/5.10.0-5/pro-duotone-svg-icons-5.10.0-5.tgz"
+            }
+        },
+        "5.10.0-4": {
+            "dependencies": {
+                "@fortawesome/fontawesome-common-types": "^0.2.20-4"
+            },
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/pro-duotone-svg-icons",
+            "version": "5.10.0-4",
+            "_rev": "1-R75eVc9bTR5a",
+            "dist": {
+                "integrity": "sha512-AJBrQwf2Lmuzwy0Kr3eO8lxePtFamOQRVwSpqWvqL/xpjdHx3gs/4BA65HZFQ2Senorc77dPsOswdAAoXI2Wdw==",
+                "shasum": "d1e9e2cc169da931666049e0c0217fcbe911c0d4",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/pro-duotone-svg-icons/-/5.10.0-4/pro-duotone-svg-icons-5.10.0-4.tgz"
+            }
+        },
+        "5.10.0-3": {
+            "dependencies": {
+                "@fortawesome/fontawesome-common-types": "^0.2.20-3"
+            },
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/pro-duotone-svg-icons",
+            "version": "5.10.0-3",
+            "_rev": "1-tX8tTAj33Nk6",
+            "dist": {
+                "integrity": "sha512-gNUD1qdZM8lf1ZrAIqJccyuYhsAwPiUAbLXL2Y2WW+GrZuS6RFUvd75aTPXjhmr76XgBVn7i55R4ts+Gpx4hXw==",
+                "shasum": "74481c3bf3b0dbd767ba4358fb2f643b2458055c",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/pro-duotone-svg-icons/-/5.10.0-3/pro-duotone-svg-icons-5.10.0-3.tgz"
+            }
+        }
+    }
+}

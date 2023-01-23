@@ -1,0 +1,15 @@
+color = ''
+project-name = 'default'
+[default]
+account_id = 'acct_18CR57FQUsOC0LbV'
+device_name = 'Dominics-Air.lan'
+display_name = "What's Up 24/7, Inc."
+live_mode_api_key = 'rk_live_***********************************************************************************************8VMc'
+live_mode_key_expires_at = '2023-03-02'
+live_mode_pub_key = 'pk_live_vU9EYHNay8PYyWdOaghyx47W'
+live_mode_publishable_key = 'pk_live_vU9EYHNay8PYyWdOaghyx47W'
+test_mode_api_key = 'rk_test_518CR57FQUsOC0LbVY0DxEQEE4IDj69yfVUsO8UIIN6GMCPouBZ5UTqWsWHDvRYnH3y46WWdLzDBgvHe5FS3r720u00jA0e2nAa'
+test_mode_key_expires_at = '2023-03-02'
+test_mode_pub_key = 'pk_test_qPaMCiaMDeTK8Sg2irnb6wTO'
+test_mode_publishable_key = 'pk_test_qPaMCiaMDeTK8Sg2irnb6wTO'
+

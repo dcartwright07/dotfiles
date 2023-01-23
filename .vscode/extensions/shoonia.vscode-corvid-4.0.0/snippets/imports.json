@@ -1,0 +1,82 @@
+{
+  "function $w(selector: string): Element | Array<Element>": {
+    "prefix": [
+      "$",
+      "$w"
+    ],
+    "scope": "javascript",
+    "body": [
+      "\\$w('$1')$2"
+    ]
+  },
+  "wix-window": {
+    "prefix": "iww",
+    "scope": "javascript",
+    "body": [
+      "import wixWindow from 'wix-window';"
+    ]
+  },
+  "wix-data": {
+    "prefix": "iwd",
+    "scope": "javascript",
+    "body": [
+      "import wixData from 'wix-data';"
+    ]
+  },
+  "wix-location": {
+    "prefix": "iwl",
+    "scope": "javascript",
+    "body": [
+      "import wixLocation from 'wix-location';"
+    ]
+  },
+  "wix-users": {
+    "prefix": "iwu",
+    "scope": "javascript",
+    "body": [
+      "import wixUsers from 'wix-users';"
+    ]
+  },
+  "wix-users-backend": {
+    "prefix": "iwub",
+    "scope": "javascript",
+    "body": [
+      "import wixUsers from 'wix-users-backend';"
+    ]
+  },
+  "wix-fetch": {
+    "prefix": "iwf",
+    "scope": "javascript",
+    "body": [
+      "import { ${1|fetch,getJSON|} } from 'wix-fetch';"
+    ]
+  },
+  "wix-storage": {
+    "prefix": "iws",
+    "scope": "javascript",
+    "body": [
+      "import { ${1|local,session,memory|} } from 'wix-storage';"
+    ]
+  },
+  "wix-http-functions": {
+    "prefix": "ihf",
+    "scope": "javascript",
+    "body": [
+      "import { ${1|ok,get,post,use,badRequest,notFound,serverError,created,delete,forbidden,options,put,response|} } from 'wix-http-functions';"
+    ]
+  },
+  "wix-router": {
+    "prefix": "iwr",
+    "scope": "javascript",
+    "body": [
+      "import { ${1|ok,notFound,next,redirect,forbidden,router,sendStatus,afterRouter,afterSitemap,beforeRouter,customizeQuery,sitemap|} } from 'wix-router';"
+    ]
+  },
+  "Web Modules": {
+    "prefix": "jsw",
+    "scope": "javascript",
+    "body": [
+      "import { $1 } from 'backend$2';"
+    ]
+  }
+}

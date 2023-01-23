@@ -1,0 +1,1157 @@
+{
+    "name": "@fortawesome/fontawesome-common-types",
+    "dist-tags": {
+        "latest": "6.2.0"
+    },
+    "versions": {
+        "6.2.0": {
+            "dependencies": {},
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/fontawesome-common-types",
+            "version": "6.2.0",
+            "_rev": "1-lv7sV6oDA6D0",
+            "dist": {
+                "integrity": "sha512-rBevIsj2nclStJ7AxTdfsa3ovHb1H+qApwrxcTVo+NNdeJiB9V75hsKfrkG5AwNcRUNxrPPiScGYCNmLMoh8pg==",
+                "shasum": "76467a94aa888aeb22aafa43eb6ff889df3a5a7f",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/fontawesome-common-types/-/6.2.0/fontawesome-common-types-6.2.0.tgz"
+            }
+        },
+        "6.1.2": {
+            "dependencies": {},
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/fontawesome-common-types",
+            "version": "6.1.2",
+            "_rev": "1-LO1DwLLEIPgV",
+            "dist": {
+                "integrity": "sha512-wBaAPGz1Awxg05e0PBRkDRuTsy4B3dpBm+zreTTyd9TH4uUM27cAL4xWyWR0rLJCrRwzVsQ4hF3FvM6rqydKPA==",
+                "shasum": "c1095b1bbabf19f37f9ff0719db38d92a410bcfe",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/fontawesome-common-types/-/6.1.2/fontawesome-common-types-6.1.2.tgz"
+            }
+        },
+        "6.1.1": {
+            "dependencies": {},
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/fontawesome-common-types",
+            "version": "6.1.1",
+            "_rev": "1-ycKrrkN11Xwy",
+            "dist": {
+                "integrity": "sha512-wVn5WJPirFTnzN6tR95abCx+ocH+3IFLXAgyavnf9hUmN0CfWoDjPT/BAWsUVwSlYYVBeCLJxaqi7ZGe4uSjBA==",
+                "shasum": "7dc996042d21fc1ae850e3173b5c67b0549f9105",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/fontawesome-common-types/-/6.1.1/fontawesome-common-types-6.1.1.tgz"
+            }
+        },
+        "6.1.0": {
+            "dependencies": {},
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/fontawesome-common-types",
+            "version": "6.1.0",
+            "_rev": "1-8AYcW7UgCWCn",
+            "dist": {
+                "integrity": "sha512-lFIJ5opxOKG9q88xOsuJJAdRZ+2WRldsZwUR/7MJoOMUMhF/LkHUjwWACIEPTa5Wo6uTDHvGRIX+XutdN7zYxA==",
+                "shasum": "5a9468da0e5c2a3ccc161882ef5ffafbd3d4882f",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/fontawesome-common-types/-/6.1.0/fontawesome-common-types-6.1.0.tgz"
+            }
+        },
+        "0.3.0": {
+            "dependencies": {},
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/fontawesome-common-types",
+            "version": "0.3.0",
+            "deprecated": "Please upgrade to 6.1.0. https://fontawesome.com/docs/changelog/",
+            "_rev": "1-6V1fjVJGFO7m",
+            "dist": {
+                "integrity": "sha512-CA3MAZBTxVsF6SkfkHXDerkhcQs0QPofy43eFdbWJJkZiq3SfiaH1msOkac59rQaqto5EqWnASboY1dBuKen5w==",
+                "shasum": "949995a05c0d8801be7e0a594f775f1dbaa0d893",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/fontawesome-common-types/-/0.3.0/fontawesome-common-types-0.3.0.tgz"
+            }
+        },
+        "0.3.0-beta3": {
+            "dependencies": {},
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/fontawesome-common-types",
+            "version": "0.3.0-beta3",
+            "_rev": "1-EWnyTJy72Bp5",
+            "dist": {
+                "integrity": "sha512-OT7fRVwAgQPOivlNP2gYcCe2uzyf+r6vSv/TgliTKnOiGVNL5O7LYh8nLucY0gbnhC6OygaXnA8+hY899FVooQ==",
+                "shasum": "8bd8fc862085998adf0875e06ba0cd16a4a12d82",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/fontawesome-common-types/-/0.3.0-beta3/fontawesome-common-types-0.3.0-beta3.tgz"
+            }
+        },
+        "0.3.0-beta2": {
+            "dependencies": {},
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/fontawesome-common-types",
+            "version": "0.3.0-beta2",
+            "_rev": "1-CZYIxIw0qnVV",
+            "dist": {
+                "integrity": "sha512-YrWMMGRhJ/iEwlP86AuW/uYGIZSwbVrpLQzB2JiWIGMTPCBhWLvurdSgckPJl5ry1fUNzWH4QNtgTf5rpdhCgg==",
+                "shasum": "d50068077cca88c81695d3b6ae44161ddf85ab55",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/fontawesome-common-types/-/0.3.0-beta2/fontawesome-common-types-0.3.0-beta2.tgz"
+            }
+        },
+        "0.2.36": {
+            "dependencies": {},
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/fontawesome-common-types",
+            "version": "0.2.36",
+            "_rev": "1-fwjAor716dPB",
+            "dist": {
+                "integrity": "sha512-a/7BiSgobHAgBWeN7N0w+lAhInrGxksn13uK7231n2m8EDPE3BMCl9NZLTGrj9ZXfCmC6LM0QLqXidIizVQ6yg==",
+                "shasum": "b44e52db3b6b20523e0c57ef8c42d315532cb903",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/fontawesome-common-types/-/0.2.36/fontawesome-common-types-0.2.36.tgz"
+            }
+        },
+        "0.2.35": {
+            "dependencies": {},
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/fontawesome-common-types",
+            "version": "0.2.35",
+            "_rev": "1-A2gRXh9x2hYe",
+            "dist": {
+                "integrity": "sha512-IHUfxSEDS9dDGqYwIW7wTN6tn/O8E0n5PcAHz9cAaBoZw6UpG20IG/YM3NNLaGPwPqgjBAFjIURzqoQs3rrtuw==",
+                "shasum": "01dd3d054da07a00b764d78748df20daf2b317e9",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/fontawesome-common-types/-/0.2.35/fontawesome-common-types-0.2.35.tgz"
+            }
+        },
+        "0.2.34": {
+            "dependencies": {},
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/fontawesome-common-types",
+            "version": "0.2.34",
+            "_rev": "1-zFzynYktXKSx",
+            "dist": {
+                "integrity": "sha512-XcIn3iYbTEzGIxD0/dY5+4f019jIcEIWBiHc3KrmK/ROahwxmZ/s+tdj97p/5K0klz4zZUiMfUlYP0ajhSJjmA==",
+                "shasum": "0a8c348bb23b7b760030f5b1d912e582be4ec915",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/fontawesome-common-types/-/0.2.34/fontawesome-common-types-0.2.34.tgz"
+            }
+        },
+        "0.2.33-beta1": {
+            "dependencies": {},
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/fontawesome-common-types",
+            "version": "0.2.33-beta1",
+            "_rev": "1-PzMgKPtqdHyB",
+            "dist": {
+                "integrity": "sha512-JythPz+6t/FIM5eGbaTBuMgM2EpvMBZWS0EWuLO8MsUqdefcfxTjXO3ACeSDakpAgFqxeUfKrErJi6hzCAXWXw==",
+                "shasum": "a764923cdd99a5a596f464a2e5d3f040fb2512e8",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/fontawesome-common-types/-/0.2.33-beta1/fontawesome-common-types-0.2.33-beta1.tgz"
+            }
+        },
+        "0.2.33-alpha3": {
+            "dependencies": {},
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/fontawesome-common-types",
+            "version": "0.2.33-alpha3",
+            "_rev": "1-N1YxlRU7mJMt",
+            "dist": {
+                "integrity": "sha512-10kwy2AiuV7KR2U2c6k8Jv26njaT3ypvxuFfUAq4shxTuYKW0tUkZybtuoG1k+roLqfgij7l1GDTYETf/KPUCA==",
+                "shasum": "cdaeb493243adb8f064ca417a5102109e95ff524",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/fontawesome-common-types/-/0.2.33-alpha3/fontawesome-common-types-0.2.33-alpha3.tgz"
+            }
+        },
+        "0.2.33-alpha2": {
+            "dependencies": {},
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/fontawesome-common-types",
+            "version": "0.2.33-alpha2",
+            "_rev": "1-xya1rigDUiA8",
+            "dist": {
+                "integrity": "sha512-ak7zwP6UBbstptMqfuX3m1Bev2XbLe+kLrF8qNqoTDKw8TIwKCxe+/bKVMgjpO1X9m2xxj9oX3dwVc9z7x3B4A==",
+                "shasum": "88bfc0669f661daf84400d13997a1eb64d0a4434",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/fontawesome-common-types/-/0.2.33-alpha2/fontawesome-common-types-0.2.33-alpha2.tgz"
+            }
+        },
+        "0.2.32": {
+            "dependencies": {},
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/fontawesome-common-types",
+            "version": "0.2.32",
+            "_rev": "1-psn9NLVOD1fV",
+            "dist": {
+                "integrity": "sha512-ux2EDjKMpcdHBVLi/eWZynnPxs0BtFVXJkgHIxXRl+9ZFaHPvYamAfCzeeQFqHRjuJtX90wVnMRaMQAAlctz3w==",
+                "shasum": "3436795d5684f22742989bfa08f46f50f516f259",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/fontawesome-common-types/-/0.2.32/fontawesome-common-types-0.2.32.tgz"
+            }
+        },
+        "0.2.31": {
+            "dependencies": {},
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/fontawesome-common-types",
+            "version": "0.2.31",
+            "_rev": "1-57ogOzoSSoEo",
+            "dist": {
+                "integrity": "sha512-xfnPyH6NN5r/h1/qDYoGB0BlHSID902UkQzxR8QsoKDh55KAPr8ruAoie12WQEEQT8lRE2wtV7LoUllJ1HqCag==",
+                "shasum": "f15a39e5ab4e5dfda0717733bcacb9580e666ad9",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/fontawesome-common-types/-/0.2.31/fontawesome-common-types-0.2.31.tgz"
+            }
+        },
+        "0.2.30": {
+            "dependencies": {},
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/fontawesome-common-types",
+            "version": "0.2.30",
+            "_rev": "1-JNHavqVhMiwb",
+            "dist": {
+                "integrity": "sha512-TsRwpTuKwFNiPhk1UfKgw7zNPeV5RhNp2Uw3pws+9gDAkPGKrtjR1y2lI3SYn7+YzyfuNknflpBA1LRKjt7hMg==",
+                "shasum": "2f1cc5b46bd76723be41d0013a8450c9ba92b777",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/fontawesome-common-types/-/0.2.30/fontawesome-common-types-0.2.30.tgz"
+            }
+        },
+        "0.2.29": {
+            "dependencies": {},
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/fontawesome-common-types",
+            "version": "0.2.29",
+            "_rev": "1-vu1H6D5VqCjR",
+            "dist": {
+                "integrity": "sha512-cY+QfDTbZ7XVxzx7jxbC98Oxr/zc7R2QpTLqTxqlfyXDrAJjzi/xUIqAUsygELB62JIrbsWxtSRhayKFkGI7MA==",
+                "shasum": "e1a456b643237462d390304cab6975ff3fd68397",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/fontawesome-common-types/-/0.2.29/fontawesome-common-types-0.2.29.tgz"
+            }
+        },
+        "0.2.28": {
+            "dependencies": {},
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/fontawesome-common-types",
+            "version": "0.2.28",
+            "_rev": "1-OozuKqm6F232",
+            "dist": {
+                "integrity": "sha512-gtis2/5yLdfI6n0ia0jH7NJs5i/Z/8M/ZbQL6jXQhCthEOe5Cr5NcQPhgTvFxNOtURE03/ZqUcEskdn2M+QaBg==",
+                "shasum": "1091bdfe63b3f139441e9cba27aa022bff97d8b2",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/fontawesome-common-types/-/0.2.28/fontawesome-common-types-0.2.28.tgz"
+            }
+        },
+        "0.2.27": {
+            "dependencies": {},
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/fontawesome-common-types",
+            "version": "0.2.27",
+            "_rev": "1-iXELU36kl7Tb",
+            "dist": {
+                "integrity": "sha512-97GaByGaXDGMkzcJX7VmR/jRJd8h1mfhtA7RsxDBN61GnWE/PPCZhOdwG/8OZYktiRUF0CvFOr+VgRkJrt6TWg==",
+                "shasum": "19706345859fc46adf3684ed01d11b40903b87e9",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/fontawesome-common-types/-/0.2.27/fontawesome-common-types-0.2.27.tgz"
+            }
+        },
+        "0.2.26": {
+            "dependencies": {},
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/fontawesome-common-types",
+            "version": "0.2.26",
+            "_rev": "1-tck2pAY0y13G",
+            "dist": {
+                "integrity": "sha512-CcM/fIFwZlRdiWG/25xE/wHbtyUuCtqoCTrr6BsWw7hH072fR++n4L56KPydAr3ANgMJMjT8v83ZFIsDc7kE+A==",
+                "shasum": "6e0b13a752676036f8196f8a1500d53a27b4adc1",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/fontawesome-common-types/-/0.2.26/fontawesome-common-types-0.2.26.tgz"
+            }
+        },
+        "0.2.26-2": {
+            "dependencies": {},
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/fontawesome-common-types",
+            "version": "0.2.26-2",
+            "_rev": "1-FJfMFHB4FGQu",
+            "dist": {
+                "integrity": "sha512-LNdFiCiSnAMqBnMAW/4RWnAv28MrcB/KUhR/qjn1i8w9cR7sZ52sDiRDPqBKd801oy+5TtRuxva4foaiKDwMxA==",
+                "shasum": "a39fadcb5ad5b1866e4de89cd309eb59b38be052",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/fontawesome-common-types/-/0.2.26-2/fontawesome-common-types-0.2.26-2.tgz"
+            }
+        },
+        "0.2.25": {
+            "dependencies": {},
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/fontawesome-common-types",
+            "version": "0.2.25",
+            "_rev": "1-6aOD8l6q6j5y",
+            "dist": {
+                "integrity": "sha512-3RuZPDuuPELd7RXtUqTCfed14fcny9UiPOkdr2i+cYxBoTOfQgxcDoq77fHiiHcgWuo1LoBUpvGxFF1H/y7s3Q==",
+                "shasum": "6df015905081f2762e5cfddeb7a20d2e9b16c786",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/fontawesome-common-types/-/0.2.25/fontawesome-common-types-0.2.25.tgz"
+            }
+        },
+        "0.2.24": {
+            "dependencies": {},
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/fontawesome-common-types",
+            "version": "0.2.24",
+            "_rev": "1-4UnuRZuB6LkU",
+            "dist": {
+                "integrity": "sha512-IPBT/1LdUVQpHcqdrh8uI2/86Fbu7933hkA/HweiCmP5QgF/8PecFM00gYvykxf0RZud8bg8zu+YfggDFUc1Kw==",
+                "shasum": "e7be36e18b2af0d56cd2211b05b7b17a0fbfa6b7",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/fontawesome-common-types/-/0.2.24/fontawesome-common-types-0.2.24.tgz"
+            }
+        },
+        "0.2.23": {
+            "dependencies": {},
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/fontawesome-common-types",
+            "version": "0.2.23",
+            "_rev": "1-t3H89LZ5vAxQ",
+            "dist": {
+                "integrity": "sha512-e12eya9ezEA8AcrkIm96l/KcnRw9JwxbUR07R6PMOvpihwatdDqFPatVNPNcUm3/INw1OKDDmK3I2DFLJ/V2ow==",
+                "shasum": "6d71f44645c44314d82c8f1f68fe94465ca21634",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/fontawesome-common-types/-/0.2.23/fontawesome-common-types-0.2.23.tgz"
+            }
+        },
+        "0.2.22": {
+            "dependencies": {},
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/fontawesome-common-types",
+            "version": "0.2.22",
+            "_rev": "1-IrmLNtst4Tz3",
+            "dist": {
+                "integrity": "sha512-QmEuZsipX5/cR9JOg0fsTN4Yr/9lieYWM8AQpmRa0eIfeOcl/HLYoEa366BCGRSrgNJEexuvOgbq9jnJ22IY5g==",
+                "shasum": "3f1328d232a0fd5de8484d833c8519426f39f016",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/fontawesome-common-types/-/0.2.22/fontawesome-common-types-0.2.22.tgz"
+            }
+        },
+        "0.2.21": {
+            "dependencies": {},
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/fontawesome-common-types",
+            "version": "0.2.21",
+            "_rev": "1-cSHGKvzpukgj",
+            "dist": {
+                "integrity": "sha512-iJtcrU2BtF9Wyr0zm3tHEJy3HqA6sADExhCqCv3SKaJJKKp4ORJ40t4nyHvcWXSVFtd7r1gcdqcRsAfoREGTFA==",
+                "shasum": "f1c26ae24761cca583de7cafd1273ab4c70a4d87",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/fontawesome-common-types/-/0.2.21/fontawesome-common-types-0.2.21.tgz"
+            }
+        },
+        "0.2.20": {
+            "dependencies": {},
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/fontawesome-common-types",
+            "version": "0.2.20",
+            "_rev": "1-wxKaLr7mdTq3",
+            "dist": {
+                "integrity": "sha512-5wo0pMNS4gWTkplFAPSfNq4poXwLcgj8+khZs9/zbWMxC0hi6qnehXOrX7i7+Y7XyTQForja2WpR7Nz6LY2BtQ==",
+                "shasum": "b5450b07400aea96d87d24e98e22d4a3d8d59305",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/fontawesome-common-types/-/0.2.20/fontawesome-common-types-0.2.20.tgz"
+            }
+        },
+        "0.2.20-14": {
+            "dependencies": {},
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/fontawesome-common-types",
+            "version": "0.2.20-14",
+            "_rev": "1-E8zQmuG1gxyt",
+            "dist": {
+                "integrity": "sha512-awSvfjSUQBut0YxBPuL65MAu8mlxWpQWXEJEA/uap0NP1X/NZ1szpopE87rU2dbPyqF8geDCJIqJcxHmjvL3sw==",
+                "shasum": "8a6ebbc19c67d150b5f74a5ee49eaa0dfcd46d4b",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/fontawesome-common-types/-/0.2.20-14/fontawesome-common-types-0.2.20-14.tgz"
+            }
+        },
+        "0.2.20-13": {
+            "dependencies": {},
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/fontawesome-common-types",
+            "version": "0.2.20-13",
+            "_rev": "1-qJjWiGBkO0GJ",
+            "dist": {
+                "integrity": "sha512-JZdpSutl4uheawfeskZ2Xa4HjU0wJwGoDRzMy/RFokSjmLTU/635jVqFA/kSssrQEwDOgyVUpoajqo5GPwn4Pg==",
+                "shasum": "4af6a52fbcaa2529e1b995e28a7ca1e742e6c414",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/fontawesome-common-types/-/0.2.20-13/fontawesome-common-types-0.2.20-13.tgz"
+            }
+        },
+        "0.2.20-12": {
+            "dependencies": {},
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/fontawesome-common-types",
+            "version": "0.2.20-12",
+            "_rev": "1-tYs4mZYDTSkY",
+            "dist": {
+                "integrity": "sha512-WPIqjCV/DPuGvSdnn0yE3wHUGRETxvPF04sCpWOmYZ8+9INZhjsCky4iALIzcSTsR9sL7cO1kWkFvYb22U+uvw==",
+                "shasum": "65884217c93878112dd3d40bde5162aaf2acea7c",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/fontawesome-common-types/-/0.2.20-12/fontawesome-common-types-0.2.20-12.tgz"
+            }
+        },
+        "0.2.20-11": {
+            "dependencies": {},
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/fontawesome-common-types",
+            "version": "0.2.20-11",
+            "_rev": "1-sXMq6vlyO0Mx",
+            "dist": {
+                "integrity": "sha512-Z8Zfs0sItEPFt5643Y8xd62TOOzpeFiaMGdu4ROylADayiFHgnY9lq9y2wwypihCsKRY7X91Hx8KkmWRUDDyfw==",
+                "shasum": "6ef18dd09d5bde3e1c639a6520759c0bf7e8b6eb",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/fontawesome-common-types/-/0.2.20-11/fontawesome-common-types-0.2.20-11.tgz"
+            }
+        },
+        "0.2.20-10": {
+            "dependencies": {},
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/fontawesome-common-types",
+            "version": "0.2.20-10",
+            "_rev": "1-JC7cWCbKxJ6W",
+            "dist": {
+                "integrity": "sha512-zvusMGdW5AvQkrQmoNr3Lew1JaFgR6OuISWm33xMrFRsFzpYDdeuB+Mz1KFpK5U18W8CQ8x7/LJ6TU/pjTsy7g==",
+                "shasum": "1a4e3480f55367d010db29e878ef118c14860087",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/fontawesome-common-types/-/0.2.20-10/fontawesome-common-types-0.2.20-10.tgz"
+            }
+        },
+        "0.2.20-9": {
+            "dependencies": {},
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/fontawesome-common-types",
+            "version": "0.2.20-9",
+            "_rev": "1-cx3okO20EMgX",
+            "dist": {
+                "integrity": "sha512-gJ5PkAusqffr8po4ypmfjTHrlWK9kRJQyPXnpAqAr8oNJZEMCapq1rLhlrPybwpCwQxP1mBKuJeF/HN0R2YMhA==",
+                "shasum": "43c619987603e8dfc486e9a776821e1cadf8fcac",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/fontawesome-common-types/-/0.2.20-9/fontawesome-common-types-0.2.20-9.tgz"
+            }
+        },
+        "0.2.20-8": {
+            "dependencies": {},
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/fontawesome-common-types",
+            "version": "0.2.20-8",
+            "_rev": "1-rHZs9s9Q5D6n",
+            "dist": {
+                "integrity": "sha512-5RT1hFEh4nqq1loPRIn0rk3Lzu7RNZCQkEehvafk2a0d9lc5zVjIbO0vD2IM1CDKxxLTz/Z00aTCg3XKO3IVRQ==",
+                "shasum": "ba3f600ab03e00dadf7cbdd67e489526739a9a10",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/fontawesome-common-types/-/0.2.20-8/fontawesome-common-types-0.2.20-8.tgz"
+            }
+        },
+        "0.2.20-7": {
+            "dependencies": {},
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/fontawesome-common-types",
+            "version": "0.2.20-7",
+            "_rev": "1-iuyeGd1RJBt8",
+            "dist": {
+                "integrity": "sha512-pw+9vLq31uhYILIbmDix+Dw5A1QBFhUUqqwI+JkKMZWhXe1+wzjIlnk2PhBZnxm81YS3nnVisTWdblizVGQjjw==",
+                "shasum": "177f72b2ac79eab7c291a4a770bb9ff8071cba29",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/fontawesome-common-types/-/0.2.20-7/fontawesome-common-types-0.2.20-7.tgz"
+            }
+        },
+        "0.2.20-6": {
+            "dependencies": {},
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/fontawesome-common-types",
+            "version": "0.2.20-6",
+            "_rev": "1-BHWXGGbDzYB3",
+            "dist": {
+                "integrity": "sha512-u2hqBYtyeyQGqvQoQExOjGRLajFdjcCE0Lb9SLU0yq9/4bwCrKTJVwiKhUG+Xhxl3B33WqzPL+XaALAPfvkwdQ==",
+                "shasum": "0820fb1cf6605320123b524ccc44090f2f06e462",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/fontawesome-common-types/-/0.2.20-6/fontawesome-common-types-0.2.20-6.tgz"
+            }
+        },
+        "0.2.20-5": {
+            "dependencies": {},
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/fontawesome-common-types",
+            "version": "0.2.20-5",
+            "_rev": "1-fR6R5XoyzjNW",
+            "dist": {
+                "integrity": "sha512-KTHIy+jQ7Nr1ZjMZCsPgsYub0dFJkoIwbW+261rx72ixTHBq29iKWPtqSbJhlUKQM6FT1Dr3Ovj45dyYs3BuPA==",
+                "shasum": "124fc75855c02409c951f0aff8c6ea7b24934ddc",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/fontawesome-common-types/-/0.2.20-5/fontawesome-common-types-0.2.20-5.tgz"
+            }
+        },
+        "0.2.20-4": {
+            "dependencies": {},
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/fontawesome-common-types",
+            "version": "0.2.20-4",
+            "_rev": "1-uEzi3R7haexN",
+            "dist": {
+                "integrity": "sha512-bh4S/BmN8nn93ndhEwHk1rFesh1zmnD+k8FbeIJmXMdhbAyX1tsGJgGsUCb+RDMBduaixlsZQ7irH8YoMIicMQ==",
+                "shasum": "f3dbef4bff6277dee54916565f530a3c08c0054f",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/fontawesome-common-types/-/0.2.20-4/fontawesome-common-types-0.2.20-4.tgz"
+            }
+        },
+        "0.2.20-3": {
+            "dependencies": {},
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/fontawesome-common-types",
+            "version": "0.2.20-3",
+            "_rev": "1-XJSxKRLtlmKk",
+            "dist": {
+                "integrity": "sha512-Xpf6sigKetXHn21eu+KT+SNUnsSjyWH2olaUdZFR2tfeiWL/4ijJaRNt6+SNzFS2msgjsmAKEaOqEEzG0tKjag==",
+                "shasum": "57a1c4f792cc9ebfaeaebfa4137ca9425fe56c9c",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/fontawesome-common-types/-/0.2.20-3/fontawesome-common-types-0.2.20-3.tgz"
+            }
+        },
+        "0.2.20-2": {
+            "dependencies": {},
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/fontawesome-common-types",
+            "version": "0.2.20-2",
+            "_rev": "1-T9unKxRTjgsm",
+            "dist": {
+                "integrity": "sha512-M3Hy2bcAZei4RGaayRgExyrjDt+9Fe33JUrnBlZ1gEkdwdOiFzmtsih45KjY4o9kyOEFNj/1Me7AKyBhgs/aPA==",
+                "shasum": "3565b8583e73b2a9ecee296804772e4ec4d3250b",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/fontawesome-common-types/-/0.2.20-2/fontawesome-common-types-0.2.20-2.tgz"
+            }
+        },
+        "0.2.20-1": {
+            "dependencies": {},
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/fontawesome-common-types",
+            "version": "0.2.20-1",
+            "_rev": "1-XDLceEOG4xTI",
+            "dist": {
+                "integrity": "sha512-PSQdHReigLYS5NCQ0NPoOT45B5cQ+/1go3krv6CK19ErO+KmFuGuKKZf69FMb8/y4iH95qrtiHPnrozxXLPz6A==",
+                "shasum": "7f5ae4595b178c3fe6e8e10efc738c1640619b12",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/fontawesome-common-types/-/0.2.20-1/fontawesome-common-types-0.2.20-1.tgz"
+            }
+        },
+        "0.2.19": {
+            "dependencies": {},
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/fontawesome-common-types",
+            "version": "0.2.19",
+            "_rev": "1-3m9riiiFIAca",
+            "dist": {
+                "integrity": "sha512-nd2Ul/CUs8U9sjofQYAALzOGpgkVJQgEhIJnOHaoyVR/LeC3x2mVg4eB910a4kS6WgLPebAY0M2fApEI497raQ==",
+                "shasum": "754a0f85e1290858152e1c05700ab502b11197f1",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/fontawesome-common-types/-/0.2.19/fontawesome-common-types-0.2.19.tgz"
+            }
+        },
+        "0.2.18": {
+            "dependencies": {},
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/fontawesome-common-types",
+            "version": "0.2.18",
+            "_rev": "1-iQ37dwj2XuO3",
+            "dist": {
+                "integrity": "sha512-834DrzO2Ne3upCW+mJJPC/E6BsFcj+2Z1HmPIhbpbj8UaKmXWum4NClqLpUiMetugRlHuG4jbIHNdv2/lc3c1Q==",
+                "shasum": "c0d8f073a5116b2de0a2c8a7aba66093a6956ce7",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/fontawesome-common-types/-/0.2.18/fontawesome-common-types-0.2.18.tgz"
+            }
+        },
+        "0.2.17": {
+            "dependencies": {},
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/fontawesome-common-types",
+            "version": "0.2.17",
+            "_rev": "1-89qxFIVIBC8a",
+            "dist": {
+                "integrity": "sha512-DEYsEb/iiGVoMPQGjhG2uOylLVuMzTxOxysClkabZ5n80Q3oFDWGnshCLKvOvKoeClsgmKhWVrnnqvsMI1cAbw==",
+                "shasum": "d8c36e6f6f3b3415fa1f83eaffe4f41bd313715c",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/fontawesome-common-types/-/0.2.17/fontawesome-common-types-0.2.17.tgz"
+            }
+        },
+        "0.2.16": {
+            "dependencies": {},
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/fontawesome-common-types",
+            "version": "0.2.16",
+            "_rev": "1-HqHSRPSB5QxT",
+            "dist": {
+                "integrity": "sha512-KVV0xwBM+JWwPlijCghjeQKBHziuvdWRF6kGQlaHKdUcJQ095YVcSjoXg90p6V91XL7RYoUEhYKu/t/f6HIS6g==",
+                "shasum": "7428620cd5ac9b148f40b45413b5de7205954d5e",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/fontawesome-common-types/-/0.2.16/fontawesome-common-types-0.2.16.tgz"
+            }
+        },
+        "0.2.15": {
+            "dependencies": {},
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/fontawesome-common-types",
+            "version": "0.2.15",
+            "_rev": "1-4YsmxViQfZtL",
+            "dist": {
+                "integrity": "sha512-ATBRyKJw1d2ko+0DWN9+BXau0EK3I/Q6pPzPv3LhJD7r052YFAkAdfb1Bd7ZqhBsJrdse/S7jKxWUOZ61qBD4g==",
+                "shasum": "16af950653083d1e3064061de9f8e5e3b579f688",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/fontawesome-common-types/-/0.2.15/fontawesome-common-types-0.2.15.tgz"
+            }
+        },
+        "0.2.14": {
+            "dependencies": {},
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/fontawesome-common-types",
+            "version": "0.2.14",
+            "_rev": "1-2QQ6aM6slw2M",
+            "dist": {
+                "integrity": "sha512-LOcvERCI96KioXSIfOYN4IATv2ROJOyf72dYnpoWfOIkuyLp45oMej1kL03kYdzvktLCzYhykgHwiu6nkg9Xbw==",
+                "shasum": "0eb86a77ac88e8c12c48591735283f0bf0ea5606",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/fontawesome-common-types/-/0.2.14/fontawesome-common-types-0.2.14.tgz"
+            }
+        },
+        "0.2.13": {
+            "dependencies": {},
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/fontawesome-common-types",
+            "version": "0.2.13",
+            "_rev": "1-OR0YJZ81vJ2t",
+            "dist": {
+                "integrity": "sha512-Qy1eMKylnbsCRXod8C4CfwqlNtLU7OkJiLsFJZlHY4rY9ky2VYUKNnRj0b+3lnGwA1dWNY+pI0XWbP/mrLCohw==",
+                "shasum": "17f3d30c53732f07a765199c3cf93b4834e8cfde",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/fontawesome-common-types/-/0.2.13/fontawesome-common-types-0.2.13.tgz"
+            }
+        },
+        "0.2.12": {
+            "dependencies": {},
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/fontawesome-common-types",
+            "version": "0.2.12",
+            "_rev": "1-ueeDLhIRepnP",
+            "dist": {
+                "integrity": "sha512-ISLNpEx6fhJTYYkvBeo/4DHeL5EIA+VybJoOOnH67m6uXt6V6VFizdEN4qchHagNIeZfzI0LnA22gk0wbVPv/g==",
+                "shasum": "42baa71f97ca06faeb0b6718fa5ed20c5eefdf07",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/fontawesome-common-types/-/0.2.12/fontawesome-common-types-0.2.12.tgz"
+            }
+        },
+        "0.2.11": {
+            "dependencies": {},
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/fontawesome-common-types",
+            "version": "0.2.11",
+            "_rev": "1-Dd0PD7sRltXp",
+            "dist": {
+                "integrity": "sha512-JkIJDTtBkCA9y/tlJJ15LueowcICTrf2wEhQ35Mt01NtFKVdhBmnSlN/WNCawF0Gbhl/Y36kck3HfXQZWHvKkA==",
+                "shasum": "bafbbd7304aaab8437437d958656e6bf700334bd",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/fontawesome-common-types/-/0.2.11/fontawesome-common-types-0.2.11.tgz"
+            }
+        },
+        "0.2.10": {
+            "dependencies": {},
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/fontawesome-common-types",
+            "version": "0.2.10",
+            "_rev": "1-4YPnKOlCq5xX",
+            "dist": {
+                "integrity": "sha512-FbrzSgFDzoC6Dm8w7gCWxgdffFbYV7O/4THOtYDQEplZVOpYIA3vjgnxCXApY49YaIQ91mxIGROS3d7wS+fO3A==",
+                "shasum": "ae0e6858daf6f9ff1e2396f9fbea87b244628343",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/fontawesome-common-types/-/0.2.10/fontawesome-common-types-0.2.10.tgz"
+            }
+        },
+        "0.2.9": {
+            "dependencies": {},
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/fontawesome-common-types",
+            "version": "0.2.9",
+            "_rev": "1-ZFc7g3Xa1ui4",
+            "dist": {
+                "integrity": "sha512-tLNNifyheh8mmgzOgxl2XSe03usa1UMTZNLDre6gxvqgIwCDi8Wya2D1MMMry/nc7vsqWf33KEF6L+ULtXZk2A==",
+                "shasum": "f307509ec8ac542965ae1ef96a9be0ebea837949",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/fontawesome-common-types/-/0.2.9/fontawesome-common-types-0.2.9.tgz"
+            }
+        },
+        "0.2.8": {
+            "dependencies": {},
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/fontawesome-common-types",
+            "version": "0.2.8",
+            "_rev": "1-M5J6lMhgZJ51",
+            "dist": {
+                "integrity": "sha512-0sU7JDLdEeGQlWBSr5uEE6PZOM15YM1s9rFlpZV+WhNdX2V6Co3Sj0OW5el4F54X1Tw+nfxf4Cc3dUedudaDWg==",
+                "shasum": "8cacd1efd1aa956e1ef173f0abcf2ce1b7a0c66f",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/fontawesome-common-types/-/0.2.8/fontawesome-common-types-0.2.8.tgz"
+            }
+        },
+        "0.2.8-2": {
+            "dependencies": {},
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/fontawesome-common-types",
+            "version": "0.2.8-2",
+            "_rev": "1-As6fYX1rJ1Ri",
+            "dist": {
+                "integrity": "sha512-iX/Tke4nPL1Zp02yaaHkDhmAYOU2r1gIiju7rI5OPwGA0Rza6dXPf3xxh0pNKDla1z1IfBeEl03cTWo0/5uN1Q==",
+                "shasum": "d1ccf296998d23a9acabb673a2ba4a06ee871cf6",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/fontawesome-common-types/-/0.2.8-2/fontawesome-common-types-0.2.8-2.tgz"
+            }
+        },
+        "0.2.8-1": {
+            "dependencies": {},
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/fontawesome-common-types",
+            "version": "0.2.8-1",
+            "_rev": "1-0lF29OKxoi3p",
+            "dist": {
+                "integrity": "sha512-X1xkTLEf4MCFTemP39dsSNJ1SXY2FP8Rq5DMbXN3h33GMcKu4eSnbQ6U13bLt7UwIy0/OiT9IWNdLpdr1L7ZNw==",
+                "shasum": "fcf624cfd9c1fadf1b05ed3add6a940f0ea2d69e",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/fontawesome-common-types/-/0.2.8-1/fontawesome-common-types-0.2.8-1.tgz"
+            }
+        },
+        "0.2.7": {
+            "dependencies": {},
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/fontawesome-common-types",
+            "version": "0.2.7",
+            "_rev": "1-SjfQf0EFpfNi",
+            "dist": {
+                "integrity": "sha512-lFgL3Kqfwk8WS66pkBx5rpd7IQuo8UuahZXH9iuV9UrPK8eDzLccCYopnhTUgsz7+aJpMpqjVyv/N/11j5TtVw==",
+                "shasum": "fe76803922db0eb4393675199c2e0c3bad52629c",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/fontawesome-common-types/-/0.2.7/fontawesome-common-types-0.2.7.tgz"
+            }
+        },
+        "0.2.6": {
+            "dependencies": {},
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/fontawesome-common-types",
+            "version": "0.2.6",
+            "_rev": "1-QdwAXdPwF6Av",
+            "dist": {
+                "integrity": "sha512-AoBpRaR7IVaXgF2rh0G6cY+WSQhGqDf+JheJMGoSH0E0YjVIUxwha7Nf0SuwQuSQe1GwxZbuaoPUTXA74cRS3w==",
+                "shasum": "3f26b9d1bf2d057dfe0f448fe4a2c372508e97f0",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/fontawesome-common-types/-/0.2.6/fontawesome-common-types-0.2.6.tgz"
+            }
+        },
+        "0.2.5": {
+            "dependencies": {},
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/fontawesome-common-types",
+            "version": "0.2.5",
+            "_rev": "1-Pqkshss4B5Kt",
+            "dist": {
+                "integrity": "sha512-hkKASkxINPqAyhYDF9QVtDK02hcleUzGxXnGmFkF/fIJgHaGaI4lVV07OfLsC6KIlgXQfIAAf3PNR2C74HN6xg==",
+                "shasum": "a7f660607997b019cc985d525ec37d2fb72df926",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/fontawesome-common-types/-/0.2.5/fontawesome-common-types-0.2.5.tgz"
+            }
+        },
+        "0.2.4": {
+            "dependencies": {},
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/fontawesome-common-types",
+            "version": "0.2.4",
+            "_rev": "1-vOzMpW6yHAN4",
+            "dist": {
+                "integrity": "sha512-0qbIVm+MzkxMwKDx8V0C7w/6Nk+ZfBseOn2R1YK0f2DQP5pBcOQbu9NmaVaLzbJK6VJb1TuyTf0ZF97rc6iWJQ==",
+                "shasum": "7c560ff732c6c7c7c179ae25227ce5449e6f6d65",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/fontawesome-common-types/-/0.2.4/fontawesome-common-types-0.2.4.tgz"
+            }
+        },
+        "0.2.3": {
+            "dependencies": {},
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/fontawesome-common-types",
+            "version": "0.2.3",
+            "_rev": "1-xpRjIHYyEEJO",
+            "dist": {
+                "integrity": "sha512-9KrZkoxcboTU1QnrCyMQN1P4H5ek3nWggtoF+rlO2s4p1acOwubzV/uvmtwB5920NDtV160ICz9BQ2R45RWCrA==",
+                "shasum": "bcdffc26f2289ada8f6beb7808b45b05439b6718",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/fontawesome-common-types/-/0.2.3/fontawesome-common-types-0.2.3.tgz"
+            }
+        },
+        "0.2.2": {
+            "dependencies": {},
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/fontawesome-common-types",
+            "version": "0.2.2",
+            "_rev": "1-nulzBqYMxgy1",
+            "dist": {
+                "integrity": "sha512-OBzXzYJ+nDMece2nKeuV7hLuwqPN3jv1Fk56gag2DL4BiwWl8gkFQplj5Krep9HwtjFxbM6/DWN6ZG7FRC5N0w==",
+                "shasum": "7fd64eacf7f64e4d7619d21b0b2f2467f5a70611",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/fontawesome-common-types/-/0.2.2/fontawesome-common-types-0.2.2.tgz"
+            }
+        },
+        "0.2.1": {
+            "dependencies": {},
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/fontawesome-common-types",
+            "version": "0.2.1",
+            "_rev": "1-ITqMnAjUvbdr",
+            "dist": {
+                "integrity": "sha512-nxftit/oshSe4fwhDgXr7ugTgWxpeBOpuXxC8XAi3nR6WnfXsSsEOlhrNYgaypt7KtpmRGkUk5iG/62Lhxz36A==",
+                "shasum": "b919b31ab1b42cd2aadab5fa45934347c30ee316",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/fontawesome-common-types/-/0.2.1/fontawesome-common-types-0.2.1.tgz"
+            }
+        },
+        "0.2.0": {
+            "dependencies": {},
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/fontawesome-common-types",
+            "version": "0.2.0",
+            "_rev": "1-idNStfSdQv8Z",
+            "dist": {
+                "integrity": "sha512-raAiqWiXGZeQpFzz5fpLa6EQR3kSAK1cT5qaUanB9h4FatXvKEOPutDyeGQsF0hRtGfMb518Mzc7+LjBPDJCOg==",
+                "shasum": "6bcf6481030f59e7ffd1a40a67cd464d47780f6a",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/fontawesome-common-types/-/0.2.0/fontawesome-common-types-0.2.0.tgz"
+            }
+        },
+        "0.2.0-9": {
+            "dependencies": {},
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/fontawesome-common-types",
+            "version": "0.2.0-9",
+            "_rev": "1-B6xWZEUMXtBi",
+            "dist": {
+                "integrity": "sha512-V+PyKLFoFvfg9hj4weCjWVYPKvUI5hFLlPxPzb/SIrI9zhlOibHKtVpOy577fIXV7HFTy+FpeSlMDrhkV76dfA==",
+                "shasum": "96cfd9ff7bbc672c476e8566d653ec7495bb9a52",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/fontawesome-common-types/-/0.2.0-9/fontawesome-common-types-0.2.0-9.tgz"
+            }
+        },
+        "0.2.0-8": {
+            "dependencies": {},
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/fontawesome-common-types",
+            "version": "0.2.0-8",
+            "_rev": "1-SxXFjtrqUCRc",
+            "dist": {
+                "integrity": "sha512-XSXSBAnkRg9zfxCs4+nTHW9mNY3Xu3PjVXLDcEaXDMsgVqan66iO6gSzceJwlkD3WpmeR6PF71aQYYPmBBaQdw==",
+                "shasum": "50bbcc3d585f2d4423e5269821b6ce6fcca00033",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/fontawesome-common-types/-/0.2.0-8/fontawesome-common-types-0.2.0-8.tgz"
+            }
+        },
+        "0.2.0-7": {
+            "dependencies": {},
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/fontawesome-common-types",
+            "version": "0.2.0-7",
+            "_rev": "1-ghUOc5OGyE4N",
+            "dist": {
+                "integrity": "sha512-Bk2NBfQjaPsL94nJXs61OvZyRiQyvdslZYnwppIpl0bcAP23/Gl1KiQIC39TDC+clffU/6qJgpPcQrXrHV3mZw==",
+                "shasum": "19209a08fd07c3773223db73500ad0dc48622608",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/fontawesome-common-types/-/0.2.0-7/fontawesome-common-types-0.2.0-7.tgz"
+            }
+        },
+        "0.2.0-6": {
+            "dependencies": {},
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/fontawesome-common-types",
+            "version": "0.2.0-6",
+            "_rev": "1-7ipN0YpcPbmi",
+            "dist": {
+                "integrity": "sha512-Dm4HUtLEI5Wip6F17fxtsgYBRk3axsQRHbIIvvpMpuRPnE1ij/PXlRDC+tnqDpRLt27/yXcgUeWVC3mpAzmU8A==",
+                "shasum": "2e472bfbdfd05dcfe910e9f1649b2832eab6201e",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/fontawesome-common-types/-/0.2.0-6/fontawesome-common-types-0.2.0-6.tgz"
+            }
+        },
+        "0.2.0-5": {
+            "dependencies": {},
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/fontawesome-common-types",
+            "version": "0.2.0-5",
+            "_rev": "1-H1Ay6ZQIQlKu",
+            "dist": {
+                "integrity": "sha512-OUqDD+9sj47+Qzb/qa1zfWYqU5xzAXrK751F+6G3fUGwybnO7Xc2iZA1p+UuM6Y6TQxiVKRWp917+2oaOW642Q==",
+                "shasum": "95a4ad12c0d85c6e50334d9dc0301d71fbd466e3",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/fontawesome-common-types/-/0.2.0-5/fontawesome-common-types-0.2.0-5.tgz"
+            }
+        },
+        "0.2.0-4": {
+            "dependencies": {},
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/fontawesome-common-types",
+            "version": "0.2.0-4",
+            "_rev": "1-JkMPW56AstLe",
+            "dist": {
+                "integrity": "sha512-sRXStunPScQm8VfzZjIrMWnGZsiQ+cg9FEdZPyq44CY88MfavHFPke19F6JtKbFi3fPAs61Z4QnlwVqEfMcUIQ==",
+                "shasum": "6f0bdcab7b4f77e7e539f539a8c727bf800a995a",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/fontawesome-common-types/-/0.2.0-4/fontawesome-common-types-0.2.0-4.tgz"
+            }
+        },
+        "0.2.0-3": {
+            "dependencies": {},
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/fontawesome-common-types",
+            "version": "0.2.0-3",
+            "_rev": "1-ISZMJwa2Zgi6",
+            "dist": {
+                "integrity": "sha512-7+1ai0lyVvUlQCHOYVPmcMAr7Y1PoiwjiRNIPPZwyMiiOXUCcT07lPJVGIoi0rRjKh2Gn63I04FrLLBoFrXUHQ==",
+                "shasum": "e96685ddbf862e9fd45229ca42890ed857731530",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/fontawesome-common-types/-/0.2.0-3/fontawesome-common-types-0.2.0-3.tgz"
+            }
+        },
+        "0.2.0-2": {
+            "dependencies": {},
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/fontawesome-common-types",
+            "version": "0.2.0-2",
+            "_rev": "1-KMJWFzFdGnqR",
+            "dist": {
+                "integrity": "sha512-pqSW6KBcT8UA7s05asccYisIOGj1GE7mgh83oH1CX6dFpjSne6IE/Aavmr5if+02bUvRl3KdXcZ8IrAi49YGrw==",
+                "shasum": "40a38dd8a206885cf3a4c3459589374538d0d21e",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/fontawesome-common-types/-/0.2.0-2/fontawesome-common-types-0.2.0-2.tgz"
+            }
+        },
+        "0.2.0-1": {
+            "dependencies": {},
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/fontawesome-common-types",
+            "version": "0.2.0-1",
+            "_rev": "1-MAnOv2Shad8Q",
+            "dist": {
+                "integrity": "sha512-9DHRG3X1svhdKbfclA6ncvrrYw6840YRWMOYBWYhU4AfPOXxSZsnGYjpln3HdaJk4sRAqNkPKVvPM21psdjU9g==",
+                "shasum": "cd856608219b4d491a22630cabe0749ecaff1e5e",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/fontawesome-common-types/-/0.2.0-1/fontawesome-common-types-0.2.0-1.tgz"
+            }
+        },
+        "0.1.7": {
+            "dependencies": {},
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/fontawesome-common-types",
+            "version": "0.1.7",
+            "_rev": "1-fOmCHoG2UkLJ",
+            "dist": {
+                "integrity": "sha512-ego8jRVSHfq/iq4KRZJKQeUAdi3ZjGNrqw4oPN3fNdvTBnLCSntwVCnc37bsAJP9UB8MhrTfPnZYxkv2vpS4pg==",
+                "shasum": "4336c4b06d0b5608ff1215464b66fcf9f4795284",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/fontawesome-common-types/-/0.1.7/fontawesome-common-types-0.1.7.tgz"
+            }
+        },
+        "0.1.6": {
+            "dependencies": {},
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/fontawesome-common-types",
+            "version": "0.1.6",
+            "_rev": "1-vAopvByBpAIe",
+            "dist": {
+                "integrity": "sha512-p4oEK5k1Uy2va1jLv2eVRLv6LJwXw/EkZTm8ZFX9YAga2vuzhHuIsaL1FAtkqzZJ/ZpEygTle5eGTe3Hc9jvuA==",
+                "shasum": "3cefd6cd88a2256e1daa69b6fc9a6ab5e3c33e4a",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/fontawesome-common-types/-/0.1.6/fontawesome-common-types-0.1.6.tgz"
+            }
+        },
+        "0.1.5": {
+            "dependencies": {},
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/fontawesome-common-types",
+            "version": "0.1.5",
+            "_rev": "1-4TOe29cJPdnr",
+            "dist": {
+                "integrity": "sha512-ObTR4fg6oXQN+bV/Wd9NeizzXQ+1PPMjzv702tB7Kgxp1sIcb/WH1OQm36f5/NrMsg1Wod7eP4UVQGDkzqYPDw==",
+                "shasum": "d44485071f94ffac7f66ff6117b290eb7c908d58",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/fontawesome-common-types/-/0.1.5/fontawesome-common-types-0.1.5.tgz"
+            }
+        },
+        "0.1.4": {
+            "dependencies": {},
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/fontawesome-common-types",
+            "version": "0.1.4",
+            "_rev": "1-AV2rNXg7R5Oq",
+            "dist": {
+                "integrity": "sha512-JEgIoqh9HAQWul8CVLrOmWUI8nUQfCJZygRJ1Cr2H/O3+pCpVszW199cIpc7k7Nr1HJtLD77AUZVnxaKllx7AQ==",
+                "shasum": "1fbc66f0223646f23c5550c2c12e341078e2c262",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/fontawesome-common-types/-/0.1.4/fontawesome-common-types-0.1.4.tgz"
+            }
+        },
+        "0.1.3": {
+            "dependencies": {},
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/fontawesome-common-types",
+            "version": "0.1.3",
+            "_rev": "1-EsjJMwYbfo9p",
+            "dist": {
+                "integrity": "sha512-jJXUoNkmHozqlcXzNiYytcmEe3eNxn7Vh8hmnIoRi0TmT3ChQ0osuSApuIObIomnIcvqlA24FCpnamKvfZ7F5g==",
+                "shasum": "8475e0f2d1ad1f858c4ec2e76ed9a2456a09ad83",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/fontawesome-common-types/-/0.1.3/fontawesome-common-types-0.1.3.tgz"
+            }
+        },
+        "0.1.2": {
+            "dependencies": {},
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/fontawesome-common-types",
+            "version": "0.1.2",
+            "_rev": "1-cEVCxBIbMsYA",
+            "dist": {
+                "integrity": "sha512-l6pzAz8wVL7Z6CD/hYN7593xogzMFfX04dwyniqDswT8whGSopSG3UMOIx7xkBFbnXTdRgi4/2tbwFXyBy2WBw==",
+                "shasum": "d6aa075058f0c984d6e2ebcbc0052c1f7f9bea72",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/fontawesome-common-types/-/0.1.2/fontawesome-common-types-0.1.2.tgz"
+            }
+        },
+        "0.1.2-1": {
+            "dependencies": {},
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/fontawesome-common-types",
+            "version": "0.1.2-1",
+            "_rev": "1-yKJd4KQKEnj8",
+            "dist": {
+                "integrity": "sha512-IUa0QpKDNRu/CuckjcBFoH1lEraFbdbp8TvdFdFJRxHBIotrk8kyEShinIyxPxD12fZ65JMmWOG07+c2/pdgLA==",
+                "shasum": "9d0f82ed9d97ed847d78274a19a2ab79c55cda47",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/fontawesome-common-types/-/0.1.2-1/fontawesome-common-types-0.1.2-1.tgz"
+            }
+        },
+        "0.1.1": {
+            "dependencies": {},
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/fontawesome-common-types",
+            "version": "0.1.1",
+            "_rev": "1-RvIyaoUnQDiP",
+            "dist": {
+                "integrity": "sha512-KxD6KAXjiyLrZHT0r7lnRVyE8DhYZW3GjKmamneD0t+yBjpYO96l1VbsQE1gwrc5qWzG58Km4VzYwYrEvcf4OA==",
+                "shasum": "28c78607ffd2d246abfcc09bacd28490952280af",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/fontawesome-common-types/-/0.1.1/fontawesome-common-types-0.1.1.tgz"
+            }
+        },
+        "0.1.1-1": {
+            "dependencies": {},
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/fontawesome-common-types",
+            "version": "0.1.1-1",
+            "_rev": "1-wJn4Dnv1vDX9",
+            "dist": {
+                "integrity": "sha512-2IWFdrEOO+uDRS1EdTh7KbEZkc0ve5n5v0JrMLt4l9vyIaDfT7aWHVGQt23+3FGKs7dwyUIdwbQ/oOj2vIQ2vw==",
+                "shasum": "6fde66f52b500cb11d3409ed4973a0e498f10dd8",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/fontawesome-common-types/-/0.1.1-1/fontawesome-common-types-0.1.1-1.tgz"
+            }
+        },
+        "0.1.0": {
+            "dependencies": {},
+            "engines": {
+                "node": ">=6"
+            },
+            "name": "@fortawesome/fontawesome-common-types",
+            "version": "0.1.0",
+            "_rev": "1-XyvsdzXw6j2g",
+            "dist": {
+                "integrity": "sha512-ESsHmWKuKEgaRktoPBsDnSLiWcAYkudUCt5Dzu7mEtFqB32/CWiSEl5fa49W36CZOMEVoIiacDuG5hZZONdM8g==",
+                "shasum": "74390593716ad1137f61e11b6e07c4a5d2482b5e",
+                "tarball": "https://npm.fontawesome.com/@fortawesome/fontawesome-common-types/-/0.1.0/fontawesome-common-types-0.1.0.tgz"
+            }
+        }
+    }
+}
