@@ -1,6 +1,3 @@
-# Fig pre block. Keep at the top of this file.
-[[ -f "$HOME/.fig/shell/zshrc.pre.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.pre.zsh"
-
 export ZSH="/Users/dominiccartwright/.config/.oh-my-zsh"
 export DISABLE_AUTO_TITLE="true"
 
@@ -10,8 +7,8 @@ plugins=(
   git
   sudo
   history
-  # zsh-autosuggestions
-  # zsh-syntax-highlighting
+  zsh-autosuggestions
+  zsh-syntax-highlighting
   zsh-z
   web-search
   copypath
@@ -26,9 +23,10 @@ source $ZSH/oh-my-zsh.sh
 alias v="nvim"
 alias edit="nvim ~/.zshrc"
 alias ztheme="nvim ~/.config/.oh-my-zsh/themes/dominic.zsh-theme"
-alias nv-config="nvim ~/.config/nvim/lua/user/"
+alias nv-config="cd ~/.config/nvim/lua/user/; nvim"
 alias edit-dash="nvim ~/.config/gh-dash/config.yml"
 alias tmux-config="nvim ~/.config/tmux/tmux.conf"
+alias kitty-config="cd ~/.config/kitty/; nvim"
 
 alias composer="php /usr/local/bin/composer"
 alias hosts="sudo code -r /etc/hosts"
@@ -52,9 +50,13 @@ alias routes="sail artisan route:list --except-vendor"
 # Ethode Specific
 alias live-push="npx gulp live-push"
 
-alias stripe-listen="stripe listen --forward-to local.whatsup247.com/organization/g/stripe"
+# Github
+alias bugs="gh issue list -l bug"
+alias my-issues="gh issue list -a @me"
+alias issues="gh issue list"
+alias feats="gh issue list -l enhancement"
+alias prs="gh pr list"
 
-# alias s="cmatrix -s -u 10 -C red"
 alias sys="tiptop"
 alias wConfig="nvim ~/Library/Application\ Support/watson/config"
 alias timer="watson"
@@ -62,14 +64,6 @@ alias ls="pls --multi-cols"
 alias pip="pip3"
 alias python="python3"
 alias load="tmuxp load"
-
-# PM
-source /Users/dominiccartwright/.pm/pm.zsh
-alias pma="pm add"
-alias pmg="pm go"
-alias pmrm="pm remove"
-alias pml="pm list"
-# end PM
 
 ## Functions ===============
 # NVM
@@ -103,6 +97,3 @@ load-nvmrc
 export PATH="$PATH:/Users/dominiccartwright/.local/bin"
 
 # export PATH="$PATH:/Users/dominiccartwright/.local/share"
-
-# Fig post block. Keep at the bottom of this file.
-[[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"

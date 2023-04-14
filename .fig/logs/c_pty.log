@@ -1,344 +1,0 @@
-set +m +b +o history
-
-unset HISTFILE
-
-export PATH='/Users/dominiccartwright/.nvm/versions/node/v16.17.1/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/Library/Apple/usr/bin:/Users/dominiccartwright/.fig/bin:/Users/dominiccartwright/.local/bin:/Users/dominiccartwright/.local/bin:/Users/dominiccartwright/.composer/vendor/bin:/Users/dominiccartwright/.local/bin:/Users/dominiccartwright/.composer/vendor/bin'
-
-export HOME=/Users/dominiccartwright
-
-
-
-The default interactive shell is now zsh.
-To update your account to use zsh, please run `chsh -s /bin/zsh`.
-For more details, please visit https://support.apple.com/kb/HT208050.
-[?1034hbash-3.2$ set +m +b +o history
-bash-3.2$ 
-bash-3.2$ unset HISTFILE
-bash-3.2$ 
-bash-3.2$ export PATH='/Users/dominiccartwright/.nvm/versions/node/v16.17.1/bin: /opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbi n:/usr/local/go/bin:/Library/Apple/usr/bin:/Users/dominiccartwright/.fig/bin:/Us ers/dominiccartwright/.local/bin:/Users/dominiccartwright/.local/bin:/Users/domi niccartwright/.composer/vendor/bin:/Users/dominiccartwright/.local/bin:/Users/do miniccartwright/.composer/vendor/bin'
-bash-3.2$ 
-bash-3.2$ export HOME=/Users/dominiccartwright
-bash-3.2$ 
-bash-3.2$ 
-bash-3.2$ { ( fig --version ) 1> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/ T/33.stdout 2> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/33.stderr; '/App lications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 33 /var/folder s/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/33 $? ; } &
-[1] 11151
-bash-3.2$ 
-bash-3.2$ { ( which fish ) 1> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/7 0.stdout 2> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/70.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 70 /var/folders/5 p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/70 $? ; } &
-[2] 12565
-bash-3.2$ 
-bash-3.2$ export HOME=/Users/dominiccartwright
-bash-3.2$ 
-bash-3.2$ 
-bash-3.2$ { ( fig --version ) 1> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/ T/33.stdout 2> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/33.stderr; '/App lications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 33 /var/folder s/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/33 $? ; } &
-[1] 25132
-bash-3.2$ 
-bash-3.2$ { ( which fish ) 1> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/7 0.stdout 2> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/70.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 70 /var/folders/5 p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/70 $? ; } &
-[2] 27087
-bash-3.2$ 
-bash-3.2$ export HOME=/Users/dominiccartwright
-bash-3.2$ 
-bash-3.2$ 
-bash-3.2$ { ( fig --version ) 1> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/ T/33.stdout 2> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/33.stderr; '/App lications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 33 /var/folder s/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/33 $? ; } &
-[1] 92799
-bash-3.2$ 
-bash-3.2$ { ( which fish ) 1> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/7 1.stdout 2> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/71.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 71 /var/folders/5 p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/71 $? ; } &
-[2] 94525
-bash-3.2$ 
-bash-3.2$ export HOME=/Users/dominiccartwright
-bash-3.2$ 
-bash-3.2$ 
-bash-3.2$ { ( fig --version ) 1> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/ T/33.stdout 2> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/33.stderr; '/App lications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 33 /var/folder s/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/33 $? ; } &
-[1] 30062
-bash-3.2$ 
-bash-3.2$ { ( which fish ) 1> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/7 3.stdout 2> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/73.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 73 /var/folders/5 p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/73 $? ; } &
-[2] 31849
-bash-3.2$ 
-bash-3.2$ export HOME=/Users/dominiccartwright
-bash-3.2$ 
-bash-3.2$ 
-bash-3.2$ { ( fig --version ) 1> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/ T/33.stdout 2> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/33.stderr; '/App lications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 33 /var/folder s/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/33 $? ; } &
-[1] 10137
-bash-3.2$ 
-bash-3.2$ { ( which fish ) 1> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/7 3.stdout 2> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/73.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 73 /var/folders/5 p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/73 $? ; } &
-[2] 12057
-bash-3.2$ 
-bash-3.2$ export HOME=/Users/dominiccartwright
-bash-3.2$ 
-bash-3.2$ 
-bash-3.2$ { ( fig --version ) 1> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/ T/33.stdout 2> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/33.stderr; '/App lications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 33 /var/folder s/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/33 $? ; } &
-[1] 76543
-bash-3.2$ 
-bash-3.2$ { ( which fish ) 1> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/7 3.stdout 2> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/73.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 73 /var/folders/5 p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/73 $? ; } &
-[2] 78513
-bash-3.2$ 
-bash-3.2$ export HOME=/Users/dominiccartwright
-bash-3.2$ 
-bash-3.2$ 
-bash-3.2$ { ( fig --version ) 1> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/ T/33.stdout 2> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/33.stderr; '/App lications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 33 /var/folder s/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/33 $? ; } &
-[1] 82224
-bash-3.2$ 
-bash-3.2$ { ( which fish ) 1> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/7 3.stdout 2> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/73.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 73 /var/folders/5 p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/73 $? ; } &
-[2] 84240
-bash-3.2$ 
-bash-3.2$ export HOME=/Users/dominiccartwright
-bash-3.2$ 
-bash-3.2$ 
-bash-3.2$ { ( fig --version ) 1> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/ T/33.stdout 2> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/33.stderr; '/App lications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 33 /var/folder s/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/33 $? ; } &
-[1] 57363
-bash-3.2$ 
-bash-3.2$ { ( which fish ) 1> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/7 3.stdout 2> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/73.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 73 /var/folders/5 p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/73 $? ; } &
-[2] 59301
-bash-3.2$ 
-bash-3.2$ export HOME=/Users/dominiccartwright
-bash-3.2$ 
-bash-3.2$ 
-bash-3.2$ { ( fig --version ) 1> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/ T/33.stdout 2> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/33.stderr; '/App lications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 33 /var/folder s/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/33 $? ; } &
-[1] 65595
-bash-3.2$ 
-bash-3.2$ { ( which fish ) 1> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/7 3.stdout 2> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/73.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 73 /var/folders/5 p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/73 $? ; } &
-[2] 67380
-bash-3.2$ 
-bash-3.2$ export HOME=/Users/dominiccartwright
-bash-3.2$ 
-bash-3.2$ 
-bash-3.2$ { ( fig --version ) 1> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/ T/33.stdout 2> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/33.stderr; '/App lications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 33 /var/folder s/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/33 $? ; } &
-[1] 41517
-bash-3.2$ 
-bash-3.2$ { ( which fish ) 1> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/7 3.stdout 2> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/73.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 73 /var/folders/5 p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/73 $? ; } &
-[2] 43375
-bash-3.2$ 
-bash-3.2$ export HOME=/Users/dominiccartwright
-bash-3.2$ 
-bash-3.2$ 
-bash-3.2$ { ( fig --version ) 1> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/ T/33.stdout 2> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/33.stderr; '/App lications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 33 /var/folder s/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/33 $? ; } &
-[1] 85208
-bash-3.2$ 
-bash-3.2$ { ( which fish ) 1> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/7 3.stdout 2> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/73.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 73 /var/folders/5 p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/73 $? ; } &
-[2] 86953
-bash-3.2$ 
-bash-3.2$ export HOME=/Users/dominiccartwright
-bash-3.2$ 
-bash-3.2$ 
-bash-3.2$ { ( fig --version ) 1> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/ T/33.stdout 2> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/33.stderr; '/App lications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 33 /var/folder s/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/33 $? ; } &
-[1] 59270
-bash-3.2$ 
-bash-3.2$ { ( which fish ) 1> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/7 3.stdout 2> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/73.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 73 /var/folders/5 p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/73 $? ; } &
-[2] 61271
-bash-3.2$ 
-bash-3.2$ export HOME=/Users/dominiccartwright
-bash-3.2$ 
-bash-3.2$ 
-bash-3.2$ { ( cd  && fig --version | cat ) 1> /var/folders/5p/gr1kz4rx0bz69475vl 8wtz2c0000gn/T/33.stdout 2> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/33. stderr; '/Applications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 3 3 /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/33 $? ; } &
-[1] 53110
-bash-3.2$ 
-bash-3.2$ { ( which fish ) 1> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/7 3.stdout 2> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/73.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 73 /var/folders/5 p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/73 $? ; } &
-[2] 55169
-bash-3.2$ 
-bash-3.2$ export HOME=/Users/dominiccartwright
-bash-3.2$ 
-bash-3.2$ 
-bash-3.2$ { ( cd  && fig --version | cat ) 1> /var/folders/5p/gr1kz4rx0bz69475vl 8wtz2c0000gn/T/33.stdout 2> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/33. stderr; '/Applications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 3 3 /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/33 $? ; } &
-[1] 59411
-bash-3.2$ 
-bash-3.2$ { ( which fish ) 1> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/7 3.stdout 2> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/73.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 73 /var/folders/5 p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/73 $? ; } &
-[2] 60787
-bash-3.2$ 
-bash-3.2$ export HOME=/Users/dominiccartwright
-bash-3.2$ 
-bash-3.2$ 
-bash-3.2$ { ( cd  && fig --version | cat ) 1> /var/folders/5p/gr1kz4rx0bz69475vl 8wtz2c0000gn/T/33.stdout 2> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/33. stderr; '/Applications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 3 3 /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/33 $? ; } &
-[1] 99316
-bash-3.2$ 
-bash-3.2$ { ( which fish ) 1> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/7 3.stdout 2> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/73.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 73 /var/folders/5 p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/73 $? ; } &
-[2] 1354
-bash-3.2$ 
-bash-3.2$ export HOME=/Users/dominiccartwright
-bash-3.2$ 
-bash-3.2$ 
-bash-3.2$ { ( cd  && fig --version | cat ) 1> /var/folders/5p/gr1kz4rx0bz69475vl 8wtz2c0000gn/T/33.stdout 2> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/33. stderr; '/Applications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 3 3 /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/33 $? ; } &
-[1] 33851
-bash-3.2$ 
-bash-3.2$ { ( which fish ) 1> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/7 3.stdout 2> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/73.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 73 /var/folders/5 p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/73 $? ; } &
-[2] 35489
-bash-3.2$ 
-bash-3.2$ export HOME=/Users/dominiccartwright
-bash-3.2$ 
-bash-3.2$ 
-bash-3.2$ { ( cd  && fig --version | cat ) 1> /var/folders/5p/gr1kz4rx0bz69475vl 8wtz2c0000gn/T/35.stdout 2> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/35. stderr; '/Applications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 3 5 /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/35 $? ; } &
-[1] 66770
-bash-3.2$ 
-bash-3.2$ { ( which fish ) 1> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/7 3.stdout 2> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/73.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 73 /var/folders/5 p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/73 $? ; } &
-[2] 68819
-bash-3.2$ 
-bash-3.2$ export HOME=/Users/dominiccartwright
-bash-3.2$ 
-bash-3.2$ 
-bash-3.2$ { ( cd  && fig --version | cat ) 1> /var/folders/5p/gr1kz4rx0bz69475vl 8wtz2c0000gn/T/33.stdout 2> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/33. stderr; '/Applications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 3 3 /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/33 $? ; } &
-[1] 98080
-bash-3.2$ 
-bash-3.2$ { ( which fish ) 1> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/7 3.stdout 2> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/73.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 73 /var/folders/5 p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/73 $? ; } &
-[2] 203
-bash-3.2$ 
-bash-3.2$ export HOME=/Users/dominiccartwright
-bash-3.2$ 
-bash-3.2$ 
-bash-3.2$ { ( cd  && fig --version | cat ) 1> /var/folders/5p/gr1kz4rx0bz69475vl 8wtz2c0000gn/T/33.stdout 2> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/33. stderr; '/Applications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 3 3 /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/33 $? ; } &
-[1] 34178
-bash-3.2$ 
-bash-3.2$ { ( which fish ) 1> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/7 3.stdout 2> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/73.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 73 /var/folders/5 p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/73 $? ; } &
-[2] 36192
-bash-3.2$ 
-bash-3.2$ export HOME=/Users/dominiccartwright
-bash-3.2$ 
-bash-3.2$ 
-bash-3.2$ { ( cd  && fig --version | cat ) 1> /var/folders/5p/gr1kz4rx0bz69475vl 8wtz2c0000gn/T/33.stdout 2> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/33. stderr; '/Applications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 3 3 /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/33 $? ; } &
-[1] 72501
-bash-3.2$ 
-bash-3.2$ { ( which fish ) 1> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/7 3.stdout 2> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/73.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 73 /var/folders/5 p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/73 $? ; } &
-[2] 74141
-bash-3.2$ 
-bash-3.2$ export HOME=/Users/dominiccartwright
-bash-3.2$ 
-bash-3.2$ 
-bash-3.2$ { ( cd  && fig --version | cat ) 1> /var/folders/5p/gr1kz4rx0bz69475vl 8wtz2c0000gn/T/35.stdout 2> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/35. stderr; '/Applications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 3 5 /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/35 $? ; } &
-[1] 17646
-bash-3.2$ 
-bash-3.2$ { ( which fish ) 1> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/7 3.stdout 2> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/73.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 73 /var/folders/5 p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/73 $? ; } &
-[2] 19689
-bash-3.2$ 
-bash-3.2$ export HOME=/Users/dominiccartwright
-bash-3.2$ 
-bash-3.2$ 
-bash-3.2$ { ( cd  && fig --version | cat ) 1> /var/folders/5p/gr1kz4rx0bz69475vl 8wtz2c0000gn/T/35.stdout 2> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/35. stderr; '/Applications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 3 5 /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/35 $? ; } &
-[1] 59705
-bash-3.2$ 
-bash-3.2$ { ( which fish ) 1> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/7 3.stdout 2> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/73.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 73 /var/folders/5 p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/73 $? ; } &
-[2] 61760
-bash-3.2$ 
-bash-3.2$ export HOME=/Users/dominiccartwright
-bash-3.2$ 
-bash-3.2$ 
-bash-3.2$ { ( cd  && fig --version | cat ) 1> /var/folders/5p/gr1kz4rx0bz69475vl 8wtz2c0000gn/T/35.stdout 2> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/35. stderr; '/Applications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 3 5 /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/35 $? ; } &
-[1] 11075
-bash-3.2$ 
-bash-3.2$ { ( which fish ) 1> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/7 3.stdout 2> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/73.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 73 /var/folders/5 p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/73 $? ; } &
-[2] 13041
-bash-3.2$ 
-bash-3.2$ export HOME=/Users/dominiccartwright
-bash-3.2$ 
-bash-3.2$ 
-bash-3.2$ { ( cd  && fig --version | cat ) 1> /var/folders/5p/gr1kz4rx0bz69475vl 8wtz2c0000gn/T/33.stdout 2> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/33. stderr; '/Applications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 3 3 /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/33 $? ; } &
-[1] 48651
-bash-3.2$ 
-bash-3.2$ { ( which fish ) 1> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/7 3.stdout 2> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/73.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 73 /var/folders/5 p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/73 $? ; } &
-[2] 50701
-bash-3.2$ 
-bash-3.2$ export HOME=/Users/dominiccartwright
-bash-3.2$ 
-bash-3.2$ 
-bash-3.2$ { ( cd  && fig --version | cat ) 1> /var/folders/5p/gr1kz4rx0bz69475vl 8wtz2c0000gn/T/33.stdout 2> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/33. stderr; '/Applications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 3 3 /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/33 $? ; } &
-[1] 20789
-bash-3.2$ 
-bash-3.2$ { ( which fish ) 1> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/7 3.stdout 2> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/73.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 73 /var/folders/5 p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/73 $? ; } &
-[2] 22376
-bash-3.2$ 
-bash-3.2$ export HOME=/Users/dominiccartwright
-bash-3.2$ 
-bash-3.2$ 
-bash-3.2$ { ( cd  && fig --version | cat ) 1> /var/folders/5p/gr1kz4rx0bz69475vl 8wtz2c0000gn/T/33.stdout 2> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/33. stderr; '/Applications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 3 3 /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/33 $? ; } &
-[1] 97895
-bash-3.2$ 
-bash-3.2$ { ( which fish ) 1> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/7 3.stdout 2> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/73.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 73 /var/folders/5 p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/73 $? ; } &
-[2] 99818
-bash-3.2$ 
-bash-3.2$ export HOME=/Users/dominiccartwright
-bash-3.2$ 
-bash-3.2$ 
-bash-3.2$ { ( cd  && fig --version | cat ) 1> /var/folders/5p/gr1kz4rx0bz69475vl 8wtz2c0000gn/T/33.stdout 2> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/33. stderr; '/Applications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 3 3 /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/33 $? ; } &
-[1] 47004
-bash-3.2$ 
-bash-3.2$ { ( which fish ) 1> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/7 3.stdout 2> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/73.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 73 /var/folders/5 p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/73 $? ; } &
-[2] 48813
-bash-3.2$ 
-bash-3.2$ export HOME=/Users/dominiccartwright
-bash-3.2$ 
-bash-3.2$ 
-bash-3.2$ { ( cd  && fig --version | cat ) 1> /var/folders/5p/gr1kz4rx0bz69475vl 8wtz2c0000gn/T/33.stdout 2> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/33. stderr; '/Applications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 3 3 /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/33 $? ; } &
-[1] 6357
-bash-3.2$ 
-bash-3.2$ { ( which fish ) 1> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/7 3.stdout 2> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/73.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 73 /var/folders/5 p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/73 $? ; } &
-[2] 8278
-bash-3.2$ 
-bash-3.2$ export HOME=/Users/dominiccartwright
-bash-3.2$ 
-bash-3.2$ 
-bash-3.2$ { ( cd  && fig --version | cat ) 1> /var/folders/5p/gr1kz4rx0bz69475vl 8wtz2c0000gn/T/33.stdout 2> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/33. stderr; '/Applications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 3 3 /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/33 $? ; } &
-[1] 14993
-bash-3.2$ 
-bash-3.2$ { ( which fish ) 1> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/7 3.stdout 2> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/73.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 73 /var/folders/5 p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/73 $? ; } &
-[2] 16655
-bash-3.2$ 
-bash-3.2$ export HOME=/Users/dominiccartwright
-bash-3.2$ 
-bash-3.2$ 
-bash-3.2$ { ( cd  && fig --version | cat ) 1> /var/folders/5p/gr1kz4rx0bz69475vl 8wtz2c0000gn/T/33.stdout 2> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/33. stderr; '/Applications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 3 3 /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/33 $? ; } &
-[1] 67649
-bash-3.2$ 
-bash-3.2$ { ( which fish ) 1> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/7 3.stdout 2> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/73.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 73 /var/folders/5 p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/73 $? ; } &
-[2] 69548
-bash-3.2$ 
-bash-3.2$ export HOME=/Users/dominiccartwright
-bash-3.2$ 
-bash-3.2$ 
-bash-3.2$ { ( cd  && fig --version | cat ) 1> /var/folders/5p/gr1kz4rx0bz69475vl 8wtz2c0000gn/T/33.stdout 2> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/33. stderr; '/Applications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 3 3 /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/33 $? ; } &
-[1] 7328
-bash-3.2$ 
-bash-3.2$ { ( which fish ) 1> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/7 3.stdout 2> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/73.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 73 /var/folders/5 p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/73 $? ; } &
-[2] 8765
-bash-3.2$ 
-bash-3.2$ export HOME=/Users/dominiccartwright
-bash-3.2$ 
-bash-3.2$ 
-bash-3.2$ { ( cd  && fig --version | cat ) 1> /var/folders/5p/gr1kz4rx0bz69475vl 8wtz2c0000gn/T/33.stdout 2> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/33. stderr; '/Applications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 3 3 /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/33 $? ; } &
-[1] 69323
-bash-3.2$ 
-bash-3.2$ { ( which fish ) 1> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/7 3.stdout 2> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/73.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 73 /var/folders/5 p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/73 $? ; } &
-[2] 70926
-bash-3.2$ 
-bash-3.2$ export HOME=/Users/dominiccartwright
-bash-3.2$ 
-bash-3.2$ 
-bash-3.2$ { ( cd  && fig --version | cat ) 1> /var/folders/5p/gr1kz4rx0bz69475vl 8wtz2c0000gn/T/35.stdout 2> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/35. stderr; '/Applications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 3 5 /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/35 $? ; } &
-[1] 27102
-bash-3.2$ 
-bash-3.2$ { ( which fish ) 1> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/7 3.stdout 2> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/73.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 73 /var/folders/5 p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/73 $? ; } &
-[2] 28730
-bash-3.2$ 
-bash-3.2$ export HOME=/Users/dominiccartwright
-bash-3.2$ 
-bash-3.2$ 
-bash-3.2$ { ( cd  && fig --version | cat ) 1> /var/folders/5p/gr1kz4rx0bz69475vl 8wtz2c0000gn/T/33.stdout 2> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/33. stderr; '/Applications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 3 3 /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/33 $? ; } &
-[1] 55976
-bash-3.2$ 
-bash-3.2$ { ( which fish ) 1> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/7 3.stdout 2> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/73.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 73 /var/folders/5 p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/73 $? ; } &
-[2] 57732
-bash-3.2$ 
-bash-3.2$ export HOME=/Users/dominiccartwright
-bash-3.2$ 
-bash-3.2$ 
-bash-3.2$ { ( cd  && fig --version | cat ) 1> /var/folders/5p/gr1kz4rx0bz69475vl 8wtz2c0000gn/T/33.stdout 2> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/33. stderr; '/Applications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 3 3 /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/33 $? ; } &
-[1] 16011
-bash-3.2$ 
-bash-3.2$ { ( which fish ) 1> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/7 3.stdout 2> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/73.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 73 /var/folders/5 p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/73 $? ; } &
-[2] 17799
-bash-3.2$ 
-bash-3.2$ export HOME=/Users/dominiccartwright
-bash-3.2$ 
-bash-3.2$ 
-bash-3.2$ { ( cd  && fig --version | cat ) 1> /var/folders/5p/gr1kz4rx0bz69475vl 8wtz2c0000gn/T/33.stdout 2> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/33. stderr; '/Applications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 3 3 /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/33 $? ; } &
-[1] 86028
-bash-3.2$ 
-bash-3.2$ { ( which fish ) 1> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/7 3.stdout 2> /var/folders/5p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/73.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 73 /var/folders/5 p/gr1kz4rx0bz69475vl8wtz2c0000gn/T/73 $? ; } &
-[2] 88050
-bash-3.2$ 
-bash-3.2$ 

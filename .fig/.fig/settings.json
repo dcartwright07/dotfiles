@@ -1,7 +1,0 @@
-{
-  "app.preferredTerminal": "iTerm2",
-  "autocomplete.fontSize": 11,
-  "autocomplete.keybindings.insertCommonPrefixOrNavigateDown": "tab",
-  "autocomplete.keybindings.insertSelected": "tab",
-  "autocomplete.theme": "dark"
-}
