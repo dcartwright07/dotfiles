@@ -328,7 +328,10 @@ use('alvan/vim-closetag')
 use('vim-scripts/Rainbow-Parenthesis')
 
 -- Dash
-use('rizzatti/dash.vim')
+use({
+  'mrjones2014/dash.nvim',
+  run = 'make install',
+})
 
 use({
   'tpope/vim-projectionist',
