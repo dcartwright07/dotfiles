@@ -1,8 +1,9 @@
 vim.g.projectionist_heuristics = {
   artisan = {
     ['*'] = {
-      start = 'php artisan serve',
-      console = 'php artisan tinker',
+      start = 'sail up -d',
+      console = 'sail artisan tinker',
+      make = 'npm run dev',
     },
     ['app/*.php'] = {
       type = 'source',

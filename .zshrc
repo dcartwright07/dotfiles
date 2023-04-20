@@ -1,4 +1,4 @@
-export ZSH="/Users/dominiccartwright/.config/.oh-my-zsh"
+export ZSH="$HOME/.config/.oh-my-zsh"
 export DISABLE_AUTO_TITLE="true"
 
 ZSH_THEME="dominic"
@@ -36,6 +36,8 @@ alias editKeys="code -r ~/.ssh/known_hosts"
 alias listen="lsof -nP | grep LISTEN"
 alias listByDate="find ${1} -type f | xargs stat --format '%Y :%y %n' 2>/dev/null | sort -nr | cut -d: -f2-"
 alias ip-p="curl ifconfig.me"
+alias ip="ifconfig en0 | grep inet"
+alias password="security find-generic-password"
 
 alias db="mycli -h localhost -P 3306 -u dominic -p KimC2013"
 
@@ -94,6 +96,6 @@ add-zsh-hook chpwd load-nvmrc
 load-nvmrc
 
 # Created by `pipx` on 2022-07-09 15:20:13
-export PATH="$PATH:/Users/dominiccartwright/.local/bin"
+export PATH="$PATH:$HOME/.local/bin"
 
 # export PATH="$PATH:/Users/dominiccartwright/.local/share"

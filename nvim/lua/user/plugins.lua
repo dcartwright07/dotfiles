@@ -247,12 +247,10 @@ use({
 
 --- Toggle Terminal.
 use({
-  'akinsho/toggleterm.nvim',
-  tag = '*',
+  'voldikss/vim-floaterm',
   config = function()
-    require('toggleterm').setup()
-    require('user/plugins/toggleterm')
-  end
+    require('user/plugins/floaterm')
+  end,
 })
 
 -- Improved syntax highlighting
@@ -331,6 +329,14 @@ use('vim-scripts/Rainbow-Parenthesis')
 
 -- Dash
 use('rizzatti/dash.vim')
+
+use({
+  'tpope/vim-projectionist',
+  requires = 'tpope/vim-dispatch',
+  config = function()
+    require('user/plugins/projectionist')
+  end,
+})
 
 -- Automatically set up your configuration after cloning packer.nvim
 -- Put this at the end after all plugins
