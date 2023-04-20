@@ -69,7 +69,7 @@ vim.keymap.set('n', 'K', '<cmd>lua vim.lsp.buf.hover()<CR>')
 -- vim.keymap.set('n', '<Leader>rn', '<cmd>lua vim.lsp.buf.rename()<CR>')
 
 -- Commands
-vim.cmd [[autocmd BufWritePre * lua vim.lsp.buf.formatting_seq_sync()]]
+vim.cmd [[autocmd BufWritePre * lua vim.lsp.buf.format()]]
 
 -- Diagnostic configuration
 vim.diagnostic.config({
