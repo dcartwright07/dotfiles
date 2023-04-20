@@ -76,16 +76,6 @@ vim.diagnostic.config({
   }
 })
 
--- vim.lsp.buf.format {
---   filter = function(client)
---     if client.name == "volar" then
---       return false
---     end
---     return true
---   end
--- }
-
-
 -- Sign configuration
 vim.fn.sign_define('DiagnosticSignError', { text = '', texthl = 'DiagnosticSignError' })
 vim.fn.sign_define('DiagnosticSignWarn', { text = '', texthl = 'DiagnosticSignWarn' })
