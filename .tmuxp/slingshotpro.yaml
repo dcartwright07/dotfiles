@@ -1,4 +1,4 @@
-session_name: pro
+session_name: slingshot-pro
 start_directory: "~/Repos/slingshot-pro"
 windows:
   - window_name: code
