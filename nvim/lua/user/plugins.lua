@@ -30,51 +30,7 @@ use('wbthomason/packer.nvim')
 use({
   'patstockwell/vim-monokai-tasty',
   config = function()
-    vim.cmd('colorscheme vim-monokai-tasty')
-    local colors = {
-      bg = "#16161D",
-      bg_alt = "#1F1F28",
-      fg = "#DCD7BA",
-      green = "#76946A",
-      red = "#E46876",
-      purple = "#AF87FF",
-      orange = "#FF9700",
-      white = "#FFFFFF",
-      light_blue = "#62D8F1",
-      magenta = "#FC1A70",
-    }
-
-    vim.api.nvim_set_hl(0, 'FloatBorder', {
-      fg = vim.api.nvim_get_hl_by_name('NormalFloat', true).background,
-      bg = vim.api.nvim_get_hl_by_name('NormalFloat', true).background,
-    })
-
-    vim.api.nvim_set_hl(0, 'CursorLineBg', {
-      fg = vim.api.nvim_get_hl_by_name('CursorLine', true).background,
-      bg = vim.api.nvim_get_hl_by_name('CursorLine', true).background,
-    })
-
-    vim.api.nvim_set_hl(0, 'NvimTreeIndentMarker', { fg = '#30323E' })
-
-    vim.api.nvim_set_hl(0, 'StatusLineNonText', {
-      fg = vim.api.nvim_get_hl_by_name('NonText', true).foreground,
-      bg = vim.api.nvim_get_hl_by_name('StatusLine', true).background,
-    })
-
-    vim.api.nvim_set_hl(0, 'IndentBlanklineChar', { fg = '#2F313C' })
-
-    vim.api.nvim_set_hl(0, "@variable", { fg = colors.white })
-    vim.api.nvim_set_hl(0, "@variable.builtin", { fg = colors.orange, italic = true })
-    vim.api.nvim_set_hl(0, "@keyword.function", { fg = colors.light_blue, italic = true })
-    vim.api.nvim_set_hl(0, "@parameter", { fg = colors.orange, italic = true })
-    vim.api.nvim_set_hl(0, "@type", { fg = colors.light_blue, })
-    vim.api.nvim_set_hl(0, "@type.builtin", { italic = true })
-    vim.api.nvim_set_hl(0, "@type.qualifier", { fg = colors.magenta })
-    vim.api.nvim_set_hl(0, "@tag", { fg = colors.magenta })
-    vim.api.nvim_set_hl(0, "@tag.delimiter", { fg = colors.white })
-    vim.api.nvim_set_hl(0, "@tag.attribute", { fg = colors.purple })
-    vim.api.nvim_set_hl(0, "@label", { fg = colors.magenta })
-    vim.api.nvim_set_hl(0, "@constructor", { fg = colors.orange })
+    require('user/plugins/ui')
   end,
 })
 
@@ -167,6 +123,7 @@ use({
   requires = {
     'nvim-lua/plenary.nvim',
     'kyazdani42/nvim-web-devicons',
+    'BurntSushi/ripgrep',
     'nvim-telescope/telescope-live-grep-args.nvim',
     { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' },
   },
@@ -331,14 +288,6 @@ use('vim-scripts/Rainbow-Parenthesis')
 use({
   'mrjones2014/dash.nvim',
   run = 'make install',
-})
-
-use({
-  'tpope/vim-projectionist',
-  requires = 'tpope/vim-dispatch',
-  config = function()
-    require('user/plugins/projectionist')
-  end,
 })
 
 use({

@@ -68,12 +68,3 @@ vim.keymap.set('n', '<leader>s', [[<cmd>lua require('telescope.builtin').lsp_doc
 vim.keymap.set('n', '<leader>T', ':TodoTelescope<CR>')
 vim.keymap.set('n', '<leader>Gb', [[<cmd>lua require('telescope.builtin').git_branches()<CR>]])
 vim.keymap.set('n', '<leader>Gc', [[<cmd>lua require('telescope.builtin').git_commits()<CR>]])
-
-vim.cmd([[
-  highlight link TelescopePromptTitle PMenuSel
-  highlight link TelescopePreviewTitle PMenuSel
-  highlight link TelescopePromptNormal NormalFloat
-  highlight link TelescopePromptBorder FloatBorder
-  highlight link TelescopeNormal CursorLine
-  highlight link TelescopeBorder CursorLineBg
-]])
