@@ -53,3 +53,7 @@ vim.keymap.set('n', '<Leader>o', ':Neotree focus<CR>')
 
 -- Fugitive
 vim.keymap.set('n', '<C-g>', ':G<CR> :G fetch<CR>')
+
+-- Peek
+vim.keymap.set('n', 'po', ':PeekOpen<CR>')
+vim.keymap.set('n', 'pc', ':PeekClose<CR>')

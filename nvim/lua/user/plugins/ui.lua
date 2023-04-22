@@ -26,7 +26,7 @@ vim.api.nvim_set_hl(0, 'FloatermBorder', {
 })
 
 vim.api.nvim_set_hl(0, 'Floaterm', {
-  fg = colors.black,
+  fg = colors.white,
   bg = colors.black,
 })
 
