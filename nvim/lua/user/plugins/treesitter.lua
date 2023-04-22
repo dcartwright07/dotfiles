@@ -4,11 +4,11 @@ require('nvim-treesitter.configs').setup({
     enable = true,
     additional_vim_regex_highlighting = true,
   },
-  indent = { 
-    enable = true 
+  indent = {
+    enable = true
   },
-  autotag = { 
-    enable = true 
+  autotag = {
+    enable = true
   },
   context_commentstring = {
     enable = true,

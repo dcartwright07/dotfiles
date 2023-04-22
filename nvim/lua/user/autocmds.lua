@@ -32,3 +32,17 @@ vim.api.nvim_create_autocmd("BufWritePre", {
         }
     end
 })
+
+-- vim.api.nvim_create_autocmd("TextYankPost", {
+--     desc = "Highlight yanked text",
+--     group = vim.api.nvim_create_augroup("highlightyank", { clear = true }),
+--     pattern = "*",
+--     callback = function() vim.highlight.on_yank() end,
+-- })
+
+-- vim.api.nvim_create_autocmd({ "VimEnter", "FileType", "BufEnter", "WinEnter" }, {
+--     desc = "URL Highlighting",
+--     group = vim.api.nvim_create_augroup("highlighturl", { clear = true }),
+--     pattern = "*",
+--     callback = function() utils.set_url_match() end,
+-- })
