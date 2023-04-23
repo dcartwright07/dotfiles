@@ -44,8 +44,8 @@ vim.keymap.set('v', '<C-j>', ":move '>+1<CR>gv=gv")
 vim.keymap.set('v', '<C-k>', ":move '<-2<CR>gv=gv")
 
 -- Commenting
-vim.keymap.set('n', '<Leader>/', ':Commentary<CR>')
-vim.keymap.set('v', '<Leader>/', ':Commentary<CR>')
+vim.keymap.set('n', '<Leader>/', '<Plug>(comment_toggle_linewise_current)')
+vim.keymap.set('v', '<Leader>/', '<Plug>(comment_toggle_linewise_current)')
 
 -- NeoTree
 vim.keymap.set('n', '<Leader>e', ':Neotree toggle<CR>')
@@ -57,3 +57,11 @@ vim.keymap.set('n', '<C-g>', ':G<CR> :G fetch<CR>')
 -- Peek
 vim.keymap.set('n', 'po', ':PeekOpen<CR>')
 vim.keymap.set('n', 'pc', ':PeekClose<CR>')
+
+-- Gitsigns
+vim.keymap.set('n', ']h', ':Gitsigns next_hunk<CR>')
+vim.keymap.set('n', '[h', ':Gitsigns prev_hunk<CR>')
+vim.keymap.set('n', 'gs', ':Gitsigns stage_hunk<CR>')
+vim.keymap.set('n', 'gS', ':Gitsigns undo_stage_hunk<CR>')
+vim.keymap.set('n', 'gp', ':Gitsigns preview_hunk<CR>')
+vim.keymap.set('n', 'gb', ':Gitsigns blame_line<CR>')

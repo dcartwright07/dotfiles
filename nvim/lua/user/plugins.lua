@@ -35,15 +35,14 @@ use({
 })
 
 -- Commenting support.
-use('tpope/vim-commentary')
--- use({
---   'numToStr/Comment.nvim',
---   config = function()
---     require('Comment').setup({
---       pre_hook = require('ts_context_commentstring.integrations.comment_nvim').create_pre_hook(),
---     })
---   end
--- })
+use({
+  'numToStr/Comment.nvim',
+  config = function()
+    require('Comment').setup({
+      pre_hook = require('ts_context_commentstring.integrations.comment_nvim').create_pre_hook(),
+    })
+  end
+})
 
 -- Add, change, and delete surrounding text.
 use('tpope/vim-surround')
@@ -192,12 +191,6 @@ use({
   'lewis6991/gitsigns.nvim',
   config = function()
     require('gitsigns').setup()
-    vim.keymap.set('n', ']h', ':Gitsigns next_hunk<CR>')
-    vim.keymap.set('n', '[h', ':Gitsigns prev_hunk<CR>')
-    vim.keymap.set('n', 'gs', ':Gitsigns stage_hunk<CR>')
-    vim.keymap.set('n', 'gS', ':Gitsigns undo_stage_hunk<CR>')
-    vim.keymap.set('n', 'gp', ':Gitsigns preview_hunk<CR>')
-    vim.keymap.set('n', 'gb', ':Gitsigns blame_line<CR>')
   end,
 })
 
@@ -206,7 +199,7 @@ use({
   'tpope/vim-fugitive',
   requires = 'tpope/vim-rhubarb',
   config = function()
-    vim.keymap.set('n', '<C-g>', ':G<CR>')
+    vim.keymap.set('n', '<C-g>', ':G<CR>:G fetch<CR>')
   end,
 })
 
@@ -283,8 +276,8 @@ use({
   config = function() require("todo-comments").setup {} end,
 })
 
--- Vuetify Autocomplete
 use('albanm/vuetify-vim')
+use('posva/vim-vue')
 
 -- Close HTML tags
 use('alvan/vim-closetag')
