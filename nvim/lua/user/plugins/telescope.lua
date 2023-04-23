@@ -68,3 +68,5 @@ vim.keymap.set('n', '<leader>s', [[<cmd>lua require('telescope.builtin').lsp_doc
 vim.keymap.set('n', '<leader>T', ':TodoTelescope<CR>')
 vim.keymap.set('n', '<leader>Gb', [[<cmd>lua require('telescope.builtin').git_branches()<CR>]])
 vim.keymap.set('n', '<leader>Gc', [[<cmd>lua require('telescope.builtin').git_commits()<CR>]])
+vim.keymap.set('n', '<leader>km', [[<cmd>lua require('telescope.builtin').keymaps()<CR>]])
+vim.keymap.set('n', '<leader>mp', [[<cmd>lua require('telescope.builtin').man_pages()<CR>]])

@@ -66,6 +66,7 @@ vim.keymap.set('n', 'gD', '<cmd>lua vim.lsp.buf.declaration()<CR>')
 vim.keymap.set('n', 'gi', ':Telescope lsp_implementations<CR>')
 vim.keymap.set('n', 'gr', ':Telescope lsp_references<CR>')
 vim.keymap.set('n', 'K', '<cmd>lua vim.lsp.buf.hover()<CR>')
+vim.keymap.set('n', 'm', ':Mason<CR>')
 -- vim.keymap.set('n', '<Leader>rn', '<cmd>lua vim.lsp.buf.rename()<CR>')
 
 -- Diagnostic configuration

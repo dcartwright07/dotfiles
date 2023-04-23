@@ -57,8 +57,3 @@ vim.keymap.set('n', '<C-g>', ':G<CR> :G fetch<CR>')
 -- Peek
 vim.keymap.set('n', 'po', ':PeekOpen<CR>')
 vim.keymap.set('n', 'pc', ':PeekClose<CR>')
-
--- maps.n["<leader>pm"] = { "<cmd>Mason<cr>", desc = "Mason Installer" }
--- maps.n["<leader>gl"] = { function() require("gitsigns").blame_line() end, desc = "View Git blame" }
--- maps.n["<leader>fk"] = { function() require("telescope.builtin").keymaps() end, desc = "Find keymaps" }
--- maps.n["<leader>fm"] = { function() require("telescope.builtin").man_pages() end, desc = "Find man" }
