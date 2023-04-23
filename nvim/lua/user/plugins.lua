@@ -276,8 +276,8 @@ use({
   config = function() require("todo-comments").setup {} end,
 })
 
+-- Vuetify Autocompletion
 use('albanm/vuetify-vim')
-use('posva/vim-vue')
 
 -- Close HTML tags
 use('alvan/vim-closetag')
@@ -291,6 +291,7 @@ use({
   run = 'make install',
 })
 
+-- Handle the linking between files and corresponding test
 use({
   'tpope/vim-projectionist',
   requires = 'tpope/vim-dispatch',
@@ -299,6 +300,7 @@ use({
   end,
 })
 
+-- Allow for opening markdown files while editing
 use({
   'toppair/peek.nvim',
   run = 'deno task --quiet build:fast',
