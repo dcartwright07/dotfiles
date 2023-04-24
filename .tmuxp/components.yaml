@@ -12,7 +12,7 @@ windows:
       - shell_command:
           - cmd: echo "Starting Session ..."
           - cmd: echo "Loading ..."
-          - cmd: yarn serve
+          - cmd: pnpm dev
   - window_name: shell
     panes:
       - shell_command:
