@@ -20,8 +20,8 @@ vim.keymap.set('v', '>', '>gv')
 vim.keymap.set('v', 'y', 'myy`y')
 
 -- Shortcuts
-vim.keymap.set('n', '<Leader>q', ':q')
-vim.keymap.set('n', '<Leader>w', ':w')
+vim.keymap.set('n', '<Leader>q', ':q<CR>')
+vim.keymap.set('n', '<Leader>w', ':w<CR>')
 
 -- Paste replace visual selection without copying it.
 vim.keymap.set('v', 'p', '"_dP')
