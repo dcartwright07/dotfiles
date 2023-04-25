@@ -46,7 +46,7 @@ vim.keymap.set('v', '<C-k>', ":move '<-2<CR>gv=gv")
 
 -- Commenting
 vim.keymap.set('n', '<Leader>/', '<Plug>(comment_toggle_linewise_current)')
-vim.keymap.set('v', '<Leader>/', '<Plug>(comment_toggle_linewise_current)')
+vim.keymap.set('v', '<Leader>/', '<Plug>(comment_toggle_linewise_visual)')
 
 -- NeoTree
 vim.keymap.set('n', '<Leader>e', ':Neotree toggle<CR>')
