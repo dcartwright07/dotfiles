@@ -277,7 +277,7 @@ use({
 use({
   "folke/todo-comments.nvim",
   requires = "nvim-lua/plenary.nvim",
-  config = function() require("todo-comments").setup {} end,
+  config = function() require("user/plugins/todo-comments") end,
 })
 
 -- Vuetify Autocompletion
