@@ -321,6 +321,14 @@ use({
 -- Github Copilot
 use('github/copilot.vim')
 
+-- Colorizer
+use({
+  'NvChad/nvim-colorizer.lua',
+  config = function()
+    require('user/plugins/colorizer')
+  end
+})
+
 -- Automatically set up your configuration after cloning packer.nvim
 -- Put this at the end after all plugins
 if packer_bootstrap then
