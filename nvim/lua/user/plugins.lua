@@ -225,6 +225,10 @@ use({
     require('user/plugins/treesitter')
   end,
 })
+use({
+  'nvim-treesitter/playground',
+  requires = 'nvim-treesitter/nvim-treesitter',
+})
 
 -- Language Server Protocol.
 use({
