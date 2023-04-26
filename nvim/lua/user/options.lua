@@ -44,7 +44,7 @@ vim.opt.undofile = true       -- persistent undo
 vim.opt.backup = true         -- automatically save a backup file
 vim.opt.backupdir:remove('.') -- keep backups out of the current directory
 
-
 vim.g.copilot_no_tab_map = "v:true"
-
--- let g:copilot_no_tab_map = v:true
+vim.g.vue_pre_processors = [["scss"]]
+vim.g.vim_monokai_tasty_italic = 1
+vim.g.closetag_filetypes = 'html,xhtml,phtml,vue,velocity,vtl'
