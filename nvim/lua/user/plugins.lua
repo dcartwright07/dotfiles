@@ -286,10 +286,7 @@ use('alvan/vim-closetag')
 use('vim-scripts/Rainbow-Parenthesis')
 
 -- Dash
-use({
-  'mrjones2014/dash.nvim',
-  run = 'make install',
-})
+use('rizzatti/dash.vim')
 
 -- Handle the linking between files and corresponding test
 use({

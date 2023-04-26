@@ -68,3 +68,6 @@ vim.keymap.set('n', 'gp', ':Gitsigns preview_hunk<CR>')
 vim.keymap.set('n', 'gb', ':Gitsigns blame_line<CR>')
 vim.keymap.set('n', 'gB', ':Gitsigns toggle_current_line_blame<CR>')
 vim.keymap.set('n', 'gh', ':Gitsigns diffthis<CR>')
+
+-- Dash
+vim.keymap.set('n', '<C-d>', ':Dash<CR>')
