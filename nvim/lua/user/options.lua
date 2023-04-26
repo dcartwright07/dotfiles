@@ -43,3 +43,8 @@ vim.opt.signcolumn = 'yes:2'
 vim.opt.undofile = true       -- persistent undo
 vim.opt.backup = true         -- automatically save a backup file
 vim.opt.backupdir:remove('.') -- keep backups out of the current directory
+
+
+vim.g.copilot_no_tab_map = "v:true"
+
+-- let g:copilot_no_tab_map = v:true
