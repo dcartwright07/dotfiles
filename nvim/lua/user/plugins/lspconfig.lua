@@ -38,20 +38,36 @@ lspconfig.sqlls.setup({ capabilities = capabilities })
 
 -- null-ls
 require('null-ls').setup({
-  sources = {
-    require('null-ls').builtins.diagnostics.eslint_d.with({
+  sources = function()
+    local diagnostics = require('null-ls').builtins.diagnostics
+    local formatting = require('null-ls').builtins.formatting
+
+    -- Diagnostics
+    diagnostics.eslint_d.with({
       condition = function(utils)
         return utils.root_has_file({ '.eslintrc.js' })
       end,
-    }),
-    require('null-ls').builtins.diagnostics.trail_space.with({ disabled_filetypes = { 'NvimTree' } }),
-    require('null-ls').builtins.formatting.eslint_d.with({
+    })
+    diagnostics.trail_space.with({ disabled_filetypes = { 'NvimTree' } })
+    diagnostics.stylint.with({
+      condition = function(utils)
+        return utils.root_has_file({ '.stylintrc', '.stylintrc.json', '.stylintrc.yml', '.stylintrc.yaml' })
+      end,
+    })
+
+    -- Formatting
+    formatting.eslint_d.with({
       condition = function(utils)
         return utils.root_has_file({ '.eslintrc.js' })
       end,
-    }),
-    require('null-ls').builtins.formatting.prettierd,
-  },
+    })
+    formatting.prettierd.with({
+      condition = function(utils)
+        return utils.root_has_file({ '.prettierrc.js', '.prettierrc', '.prettierrc.json', '.prettierrc.yml',
+          '.prettierrc.yaml' })
+      end,
+    })
+  end,
 })
 
 require('mason-null-ls').setup({ automatic_installation = true })
