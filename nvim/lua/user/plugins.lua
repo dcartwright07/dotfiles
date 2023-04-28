@@ -340,6 +340,15 @@ use({
   end
 })
 
+use({ "ellisonleao/glow.nvim", config = function() require("glow").setup() end })
+
+use({
+  's1n7ax/nvim-search-and-replace',
+  config = function()
+    require('user/plugins/search-and-replace')
+  end,
+})
+
 -- Automatically set up your configuration after cloning packer.nvim
 -- Put this at the end after all plugins
 if packer_bootstrap then
