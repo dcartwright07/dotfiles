@@ -20,8 +20,8 @@ vim.keymap.set('v', '>', '>gv')
 vim.keymap.set('v', 'y', 'myy`y')
 
 -- Shortcuts
-vim.keymap.set('n', '<Leader>q', ':q<CR>')
-vim.keymap.set('n', '<Leader>w', ':w<CR>')
+vim.keymap.set('n', '<Leader>q', ':q<CR>', { desc = 'Quit' })
+vim.keymap.set('n', '<Leader>w', ':w<CR>', { desc = 'Save' })
 
 -- Paste replace visual selection without copying it.
 vim.keymap.set('v', 'p', '"_dP')
@@ -31,7 +31,7 @@ vim.keymap.set('i', ';;', '<Esc>A;')
 vim.keymap.set('i', ',,', '<Esc>A,')
 
 -- Quickly clear search highlighting.
-vim.keymap.set('n', '<Leader>k', ':nohlsearch<CR>')
+vim.keymap.set('n', '<Leader>k', ':nohlsearch<CR>', { desc = 'Clear search highlighting' })
 
 -- Open the current file in the default program (on Mac this should just be just `open`).
 vim.keymap.set('n', '<Leader>x', ':!xdg-open %<CR><CR>')
@@ -45,12 +45,12 @@ vim.keymap.set('v', '<C-j>', ":move '>+1<CR>gv=gv")
 vim.keymap.set('v', '<C-k>', ":move '<-2<CR>gv=gv")
 
 -- Commenting
-vim.keymap.set('n', '<Leader>/', '<Plug>(comment_toggle_linewise_current)')
-vim.keymap.set('v', '<Leader>/', '<Plug>(comment_toggle_linewise_visual)')
+vim.keymap.set('n', '<Leader>/', '<Plug>(comment_toggle_linewise_current)', { desc = 'Comment current line' })
+vim.keymap.set('v', '<Leader>/', '<Plug>(comment_toggle_linewise_visual)', { desc = 'Comment visual selection' })
 
 -- NeoTree
-vim.keymap.set('n', '<Leader>e', ':Neotree toggle<CR>')
-vim.keymap.set('n', '<Leader>o', ':Neotree focus<CR>')
+vim.keymap.set('n', '<Leader>e', ':Neotree toggle<CR>', { desc = 'Toggle Neotree' })
+vim.keymap.set('n', '<Leader>o', ':Neotree focus<CR>', { desc = 'Focus Neotree' })
 
 -- Fugitive
 vim.keymap.set('n', '<C-g>', ':G<CR> :G fetch<CR>')
@@ -71,3 +71,16 @@ vim.keymap.set('n', 'gh', ':Gitsigns diffthis<CR>')
 
 -- Dash
 vim.keymap.set('n', '<C-d>', ':Dash<CR>')
+
+-- LSP and diagnostics
+vim.keymap.set('n', '<Leader>d', '<cmd>lua vim.diagnostic.open_float()<CR>', { desc = 'Open diagnostics' })
+vim.keymap.set('n', '<leader>D', '<cmd>lua vim.lsp.buf.type_definition()<CR>', { desc = 'Go to type definition' })
+vim.keymap.set('n', '[d', '<cmd>lua vim.diagnostic.goto_prev()<CR>')
+vim.keymap.set('n', ']d', '<cmd>lua vim.diagnostic.goto_next()<CR>')
+vim.keymap.set('n', 'gd', '<cmd>lua vim.lsp.buf.definition()<CR>')
+vim.keymap.set('n', 'gD', '<cmd>lua vim.lsp.buf.declaration()<CR>')
+vim.keymap.set('n', 'gi', ':Telescope lsp_implementations<CR>')
+vim.keymap.set('n', 'gr', ':Telescope lsp_references<CR>')
+vim.keymap.set('n', 'K', '<cmd>lua vim.lsp.buf.hover()<CR>')
+vim.keymap.set('n', 'm', ':Mason<CR>')
+-- vim.keymap.set('n', '<Leader>rn', '<cmd>lua vim.lsp.buf.rename()<CR>')

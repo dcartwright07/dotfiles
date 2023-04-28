@@ -38,52 +38,36 @@ lspconfig.sqlls.setup({ capabilities = capabilities })
 
 -- null-ls
 require('null-ls').setup({
-  sources = function()
-    local diagnostics = require('null-ls').builtins.diagnostics
-    local formatting = require('null-ls').builtins.formatting
-
+  sources = {
     -- Diagnostics
-    diagnostics.eslint_d.with({
+    require('null-ls').builtins.diagnostics.eslint_d.with({
       condition = function(utils)
         return utils.root_has_file({ '.eslintrc.js' })
       end,
-    })
-    diagnostics.trail_space.with({ disabled_filetypes = { 'NvimTree' } })
-    diagnostics.stylint.with({
+    }),
+    require('null-ls').builtins.diagnostics.trail_space.with({ disabled_filetypes = { 'NvimTree' } }),
+    require('null-ls').builtins.diagnostics.stylint.with({
       condition = function(utils)
         return utils.root_has_file({ '.stylintrc', '.stylintrc.json', '.stylintrc.yml', '.stylintrc.yaml' })
       end,
-    })
+    }),
 
     -- Formatting
-    formatting.eslint_d.with({
+    require('null-ls').builtins.formatting.eslint_d.with({
       condition = function(utils)
         return utils.root_has_file({ '.eslintrc.js' })
       end,
-    })
-    formatting.prettierd.with({
+    }),
+    require('null-ls').builtins.formatting.prettierd.with({
       condition = function(utils)
         return utils.root_has_file({ '.prettierrc.js', '.prettierrc', '.prettierrc.json', '.prettierrc.yml',
           '.prettierrc.yaml' })
       end,
-    })
-  end,
+    }),
+  },
 })
 
 require('mason-null-ls').setup({ automatic_installation = true })
-
--- Keymaps
-vim.keymap.set('n', '<Leader>d', '<cmd>lua vim.diagnostic.open_float()<CR>')
-vim.keymap.set('n', '<leader>D', '<cmd>lua vim.lsp.buf.type_definition()<CR>')
-vim.keymap.set('n', '[d', '<cmd>lua vim.diagnostic.goto_prev()<CR>')
-vim.keymap.set('n', ']d', '<cmd>lua vim.diagnostic.goto_next()<CR>')
-vim.keymap.set('n', 'gd', '<cmd>lua vim.lsp.buf.definition()<CR>')
-vim.keymap.set('n', 'gD', '<cmd>lua vim.lsp.buf.declaration()<CR>')
-vim.keymap.set('n', 'gi', ':Telescope lsp_implementations<CR>')
-vim.keymap.set('n', 'gr', ':Telescope lsp_references<CR>')
-vim.keymap.set('n', 'K', '<cmd>lua vim.lsp.buf.hover()<CR>')
-vim.keymap.set('n', 'm', ':Mason<CR>')
--- vim.keymap.set('n', '<Leader>rn', '<cmd>lua vim.lsp.buf.rename()<CR>')
 
 -- Diagnostic configuration
 vim.diagnostic.config({
