@@ -9,12 +9,10 @@ plugins=(
   history
   zsh-autosuggestions
   zsh-syntax-highlighting
-  zsh-z
+  z
   web-search
   copypath
   jsontools
-  dash
-  lpass
   nvm
 )
 
@@ -27,6 +25,7 @@ alias nv-config="cd ~/.config/nvim/lua/user/; nvim"
 alias edit-dash="nvim ~/.config/gh-dash/config.yml"
 alias tmux-config="nvim ~/.config/tmux/tmux.conf"
 alias kitty-config="cd ~/.config/kitty/; nvim"
+alias ssh='TERM=xterm-256color ssh'
 
 alias composer="php /usr/local/bin/composer"
 alias hosts="sudo code -r /etc/hosts"
@@ -38,6 +37,7 @@ alias listByDate="find ${1} -type f | xargs stat --format '%Y :%y %n' 2>/dev/nul
 alias ip-p="curl ifconfig.me"
 alias ip="ifconfig en0 | grep inet"
 alias password="security find-generic-password"
+alias cpass="op item get ${1} --fields label=password | pbcopy"
 
 alias db="mycli -h localhost -P 3306 -u dominic -p KimC2013"
 
@@ -63,8 +63,6 @@ alias sys="tiptop"
 alias wConfig="nvim ~/Library/Application\ Support/watson/config"
 alias timer="watson"
 alias ls="pls --multi-cols"
-alias pip="pip3"
-alias python="python3"
 alias load="tmuxp load"
 
 ## Functions ===============
@@ -95,7 +93,7 @@ load-nvmrc() {
 add-zsh-hook chpwd load-nvmrc
 load-nvmrc
 
+eval "$(op completion zsh)"; compdef _op op
+
 # Created by `pipx` on 2022-07-09 15:20:13
 export PATH="$PATH:$HOME/.local/bin"
-
-# export PATH="$PATH:/Users/dominiccartwright/.local/share"
