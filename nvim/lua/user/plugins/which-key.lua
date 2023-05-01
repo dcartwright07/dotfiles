@@ -65,6 +65,11 @@ vim.o.timeoutlen = 300
 -- }
 
 local which_key = require("which-key")
-which_key.setup {}
--- which_key.register(normalModeMaps, { mode = "n" })
+which_key.setup({
+  -- ignore_missing = true,
+  triggers = {
+    "<leader>"
+  }
+})
+which_key.register(normalModeMaps, { mode = "n" })
 -- which_key.register(visualModeMaps, { mode = "v" })
