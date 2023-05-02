@@ -4,17 +4,13 @@ windows:
   - window_name: code
     panes:
       - shell_command:
-          - cmd: echo "Starting Session ..."
-          - cmd: echo "Loading ..."
           - cmd: v
-  - window_name: build
+  - window_name: scripts
+    layout: even-horizontal
     panes:
       - shell_command:
-          - cmd: echo "Starting Session ..."
-          - cmd: echo "Loading ..."
-          - cmd: yarn serve
+          - cmd: yarn dev
+      - shell_command:
   - window_name: shell
     panes:
       - shell_command:
-          - cmd: echo "Starting Session ..."
-          - cmd: clear
