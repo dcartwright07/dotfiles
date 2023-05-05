@@ -6,7 +6,7 @@ require("todo-comments").setup {
     WARN = { icon = " ", color = "warning", alt = { "WARNING", "XXX" } },
     PERF = { icon = " ", alt = { "OPTIM", "PERFORMANCE", "OPTIMIZE" } },
     NOTE = { icon = " ", alt = { "INFO" } },
-    QUESTION = { icon = " ", color = "test", alt = { "HELP" } },
+    QUESTION = { icon = " ", color = "test", alt = { "HELP", "TECHDEBT" } },
     DELETE = { icon = " ", color = "error", alt = { "REMOVE", "REM" } },
   },
   colors = {
@@ -25,3 +25,4 @@ require("todo-comments").setup {
 -- NOTE: Test
 -- QUESTION: Test
 -- DELETE: Test
+-- TECHDEBT: Test
