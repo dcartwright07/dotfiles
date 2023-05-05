@@ -59,6 +59,9 @@ alias issues="gh issue list"
 alias feats="gh issue list -l enhancement"
 alias prs="gh pr list"
 
+# Git
+alias g-undo="git reset --soft HEAD~1"
+
 alias sys="tiptop"
 alias wConfig="nvim ~/Library/Application\ Support/watson/config"
 alias timer="watson"
