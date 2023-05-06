@@ -14,6 +14,7 @@ plugins=(
   copypath
   jsontools
   nvm
+  1password
 )
 
 source $ZSH/oh-my-zsh.sh
