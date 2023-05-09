@@ -12,6 +12,7 @@ require('lualine').setup({
         c = 'StatusLine',
       },
     },
+    color = { bg = "#353535" }
   },
   sections = {
     lualine_a = {

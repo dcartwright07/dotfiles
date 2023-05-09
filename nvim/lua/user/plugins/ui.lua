@@ -11,9 +11,10 @@ local colors = {
   white = "#FFFFFF",
   light_blue = "#62D8F1",
   magenta = "#FC1A70",
+  light_grey = "#CCCCCC",
   grey = "#8A8A8A",
   dark_grey = "#5F5F5F",
-  darker_grey = "#444444",
+  darker_grey = "#353535",
   yellow = "#F6F557",
   light_charcoal = "#2B2B2B",
   charcoal = "#262626",
@@ -35,11 +36,14 @@ vim.api.nvim_set_hl(0, 'CursorLineBg', {
   bg = vim.api.nvim_get_hl_by_name('CursorLine', true).background,
 })
 
--- vim.api.nvim_set_hl(0, 'NvimTreeIndentMarker', { fg = '#30323E' })
-
 vim.api.nvim_set_hl(0, 'StatusLineNonText', {
-  fg = vim.api.nvim_get_hl_by_name('NonText', true).foreground,
-  bg = vim.api.nvim_get_hl_by_name('StatusLine', true).background,
+  fg = colors.light_grey,
+  bg = colors.darker_grey,
+})
+
+vim.api.nvim_set_hl(0, 'StatusLine', {
+  fg = vim.api.nvim_get_hl_by_name('StatusLine', true).foreground,
+  bg = colors.darker_grey,
 })
 
 vim.api.nvim_set_hl(0, 'IndentBlanklineChar', { fg = '#2F313C' })
