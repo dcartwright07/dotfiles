@@ -1,0 +1,16 @@
+session_name: hickory
+start_directory: "~/Repos/hickory/"
+windows:
+  - window_name: code
+    panes:
+      - shell_command:
+          - cmd: v
+  - window_name: scripts
+    layout: even-horizontal
+    panes:
+      - shell_command:
+          - cmd: yarn serve
+      - shell_command:
+  - window_name: shell
+    panes:
+      - shell_command:
