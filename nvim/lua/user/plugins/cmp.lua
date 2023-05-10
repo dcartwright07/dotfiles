@@ -48,7 +48,7 @@ cmp.setup({
     { name = 'buffer' },
     { name = 'path' },
   },
-  experimental = {
-    ghost_text = true,
-  },
+  -- experimental = {
+  -- ghost_text = true,
+  -- },
 })
