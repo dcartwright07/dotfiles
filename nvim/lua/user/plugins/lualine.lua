@@ -1,4 +1,4 @@
-local separator = { '"▏"', color = 'StatusLineNonText' }
+local separator = { '"▏"', color = { fg = '#262626', gui = 'bold' } }
 
 require('lualine').setup({
   options = {
@@ -12,7 +12,6 @@ require('lualine').setup({
         c = 'StatusLine',
       },
     },
-    color = { bg = "#353535" }
   },
   sections = {
     lualine_a = {
