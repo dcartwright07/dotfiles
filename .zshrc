@@ -68,6 +68,8 @@ alias wConfig="nvim ~/Library/Application\ Support/watson/config"
 alias timer="watson"
 alias ls="pls --multi-cols"
 alias load="tmuxp load"
+alias damn="fuck"
+alias f="fzf"
 
 ## Functions ===============
 # NVM
@@ -101,3 +103,6 @@ eval "$(op completion zsh)"; compdef _op op
 
 # Created by `pipx` on 2022-07-09 15:20:13
 export PATH="$PATH:$HOME/.local/bin"
+
+eval $(thefuck --alias)
+export NI_CONFIG_FILE="$HOME/.config/ni/nirc"
