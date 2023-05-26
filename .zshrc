@@ -30,10 +30,9 @@ alias ssh='TERM=xterm-256color ssh'
 
 alias composer="php /usr/local/bin/composer"
 alias hosts="sudo code -r /etc/hosts"
-alias editApache="sudo code -r /etc/apache2/httpd.conf"
-alias editVhosts="sudo code -r /etc/apache2/extra/httpd-vhosts.conf"
 alias editKeys="code -r ~/.ssh/known_hosts"
 alias listen="lsof -nP | grep LISTEN"
+# alias killport="lsof -P | grep ':${1}' | awk '\''{print $2}'\'' | xargs kill -9"
 alias listByDate="find ${1} -type f | xargs stat --format '%Y :%y %n' 2>/dev/null | sort -nr | cut -d: -f2-"
 alias ip-p="curl ifconfig.me"
 alias ip="ifconfig en0 | grep inet"
@@ -70,6 +69,7 @@ alias ls="pls --multi-cols"
 alias load="tmuxp load"
 alias damn="fuck"
 alias f="fzf"
+alias lg="lazygit"
 
 ## Functions ===============
 # NVM
