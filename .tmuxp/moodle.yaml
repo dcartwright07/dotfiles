@@ -1,0 +1,13 @@
+session_name: moodle
+start_directory: "~/Repos/moodle-catalog-monorepo/"
+windows:
+  - window_name: code
+    panes:
+      - shell_command:
+          - cmd: v
+  - window_name: build
+    layout: even-horizontal
+    panes:
+      - shell_command:
+          - cmd: task dev:resume
+      - shell_command:
