@@ -9,7 +9,7 @@ windows:
     layout: even-horizontal
     panes:
       - shell_command:
-          - cmd: yarn dev
+          - cmd: yarn dev --port 8009
       - shell_command:
   - window_name: shell
     panes:
