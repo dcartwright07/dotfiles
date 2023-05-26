@@ -57,6 +57,10 @@ require('telescope').setup({
 
 require('telescope').load_extension('fzf')
 require('telescope').load_extension('live_grep_args')
+require('telescope').load_extension('node_modules')
+-- require('telescope').load_extension('packer')
+-- require('telescope').load_extension('project')
+-- require('telescope').load_extension('ultisnips')
 
 vim.keymap.set('n', '<leader>f', [[<cmd>lua require('telescope.builtin').find_files()<CR>]], { desc = 'Find Files' })
 vim.keymap.set('n', '<leader>F',
@@ -64,10 +68,10 @@ vim.keymap.set('n', '<leader>F',
   { desc = 'Find All Files' })
 vim.keymap.set('n', '<leader>b', [[<cmd>lua require('telescope.builtin').buffers()<CR>]], { desc = 'View Buffers' })
 vim.keymap.set('n', '<leader>g', [[<cmd>lua require('telescope').extensions.live_grep_args.live_grep_args()<CR>]],
-{ desc = 'Find a Word' })
+  { desc = 'Find a Word' })
 vim.keymap.set('n', '<leader>h', [[<cmd>lua require('telescope.builtin').oldfiles()<CR>]], { desc = 'History' })
 vim.keymap.set('n', '<leader>s', [[<cmd>lua require('telescope.builtin').lsp_document_symbols()<CR>]],
-{ desc = 'Document Symbols' })
+  { desc = 'Document Symbols' })
 vim.keymap.set('n', '<leader>T', ':TodoTelescope<CR>', { desc = 'Todo' })
 vim.keymap.set('n', '<leader>Gb', [[<cmd>lua require('telescope.builtin').git_branches()<CR>]], { desc = 'Git Branches' })
 vim.keymap.set('n', '<leader>Gc', [[<cmd>lua require('telescope.builtin').git_commits()<CR>]], { desc = 'Git Commits' })

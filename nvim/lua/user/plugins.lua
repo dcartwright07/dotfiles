@@ -132,6 +132,7 @@ use({
     'kyazdani42/nvim-web-devicons',
     'BurntSushi/ripgrep',
     'nvim-telescope/telescope-live-grep-args.nvim',
+    'nvim-telescope/telescope-node-modules.nvim',
     { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' },
   },
   config = function()

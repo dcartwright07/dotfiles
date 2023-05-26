@@ -70,7 +70,7 @@ vim.keymap.set('n', 'gB', ':Gitsigns toggle_current_line_blame<CR>')
 vim.keymap.set('n', 'gh', ':Gitsigns diffthis<CR>')
 
 -- Dash
-vim.keymap.set('n', '<C-d>', ':Dash<CR>')
+vim.keymap.set('n', '<leader>H', ':Dash<CR>')
 
 -- LSP and diagnostics
 vim.keymap.set('n', '<Leader>d', '<cmd>lua vim.diagnostic.open_float()<CR>', { desc = 'Open diagnostics' })
