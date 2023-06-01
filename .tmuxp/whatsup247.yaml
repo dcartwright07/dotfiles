@@ -13,7 +13,7 @@ windows:
           - cmd: echo "Starting Session ..."
           - cmd: echo "Loading ..."
           - cmd: npm run dev
-  - window_name: mysql
+  - window_name: database
     panes:
       - shell_command:
           - cmd: echo "Starting Session ..."

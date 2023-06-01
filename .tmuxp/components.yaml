@@ -4,17 +4,10 @@ windows:
   - window_name: code
     panes:
       - shell_command:
-          - cmd: echo "Starting Session ..."
-          - cmd: echo "Loading ..."
           - cmd: v
   - window_name: build
+    layout: even-horizontal
     panes:
       - shell_command:
-          - cmd: echo "Starting Session ..."
-          - cmd: echo "Loading ..."
           - cmd: pnpm dev
-  - window_name: shell
-    panes:
       - shell_command:
-          - cmd: echo "Starting Session ..."
-          - cmd: clear
