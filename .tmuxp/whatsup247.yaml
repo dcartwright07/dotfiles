@@ -20,7 +20,7 @@ windows:
           - cmd: echo "Loading ..."
           - cmd: sail up -d
           - cmd: clear
-          - cmd: db wu247
+          - cmd: mysql_db wu247 local
   - window_name: gh
     panes:
       - shell_command:
