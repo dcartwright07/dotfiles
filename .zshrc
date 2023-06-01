@@ -39,8 +39,6 @@ alias ip="ifconfig en0 | grep inet"
 alias password="security find-generic-password"
 alias cpass="op item get ${1} --fields label=password | pbcopy"
 
-alias db="mycli -h localhost -P 3306 -u dominic -p KimC2013"
-
 alias d-view="lazydocker"
 alias d="docker"
 
@@ -100,6 +98,24 @@ add-zsh-hook chpwd load-nvmrc
 load-nvmrc
 
 eval "$(op completion zsh)"; compdef _op op
+
+mysql_db() {
+  target_db=$1
+  db_type=$2
+
+  echo "Connecting to $target_db $db_type"
+
+  if [ "$target_db" = "wu247" ] && [ "$db_type" = "local" ]; then
+    item="rx64r7b3dbteulho7wj7umd5oq"
+  fi
+
+  local username="$(op item get $item --fields username)"
+  local password="$(op item get $item --fields password)"
+  local host="$(op item get $item --fields server)"
+  local port="$(op item get $item --fields port)"
+  local database="$(op item get $item --fields database)"
+  mycli -h $host -P $port -u $username -p $password $database
+}
 
 # Created by `pipx` on 2022-07-09 15:20:13
 export PATH="$PATH:$HOME/.local/bin"
