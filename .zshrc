@@ -124,3 +124,4 @@ export PATH="$PATH:$HOME/.local/bin"
 
 eval $(thefuck --alias)
 export NI_CONFIG_FILE="$HOME/.config/ni/nirc"
+export CONFIG_DIR="$HOME/.config/lazygit"
