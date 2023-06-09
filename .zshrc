@@ -37,7 +37,9 @@ alias listByDate="find ${1} -type f | xargs stat --format '%Y :%y %n' 2>/dev/nul
 alias ip-p="curl ifconfig.me"
 alias ip="ifconfig en0 | grep inet"
 alias password="security find-generic-password"
-alias cpass="op item get ${1} --fields label=password | pbcopy"
+alias cpass="op items list | fzf | awk '{print \$1}' | xargs -I % sh -c 'op item get % --fields label=password' | pbcopy"
+alias fpass="op items list | fzf | awk '{print \$1}' | xargs -I % sh -c 'op item get % --fields label=password'"
+alias spass="op items list | fzf | awk '{print \$1}' | xargs -I % sh -c 'op item get %'"
 
 alias d-view="lazydocker"
 alias d="docker"
