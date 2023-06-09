@@ -22,6 +22,10 @@ vim.keymap.set('v', 'y', 'myy`y')
 -- Shortcuts
 vim.keymap.set('n', '<Leader>q', ':q<CR>', { desc = 'Quit' })
 vim.keymap.set('n', '<Leader>w', ':w<CR>', { desc = 'Save' })
+vim.keymap.set('n', '<C-h>', '<C-w>h', { desc = 'Move left' })
+vim.keymap.set('n', '<C-j>', '<C-w>j', { desc = 'Move down' })
+vim.keymap.set('n', '<C-k>', '<C-w>k', { desc = 'Move up' })
+vim.keymap.set('n', '<C-l>', '<C-w>l', { desc = 'Move right' })
 
 -- Paste replace visual selection without copying it.
 vim.keymap.set('v', 'p', '"_dP')
