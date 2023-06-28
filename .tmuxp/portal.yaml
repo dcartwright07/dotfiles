@@ -1,0 +1,14 @@
+session_name: student-portal
+start_directory: "~/Repos/student-portal"
+windows:
+  - window_name: code
+    panes:
+      - shell_command:
+          - cmd: v
+  - window_name: terminal
+    panes:
+      - shell_command:
+          - cmd: yarn dev --port 8017
+  - window_name: database
+    panes:
+      - shell_command:
