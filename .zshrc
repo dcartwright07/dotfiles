@@ -67,7 +67,6 @@ alias wConfig="nvim ~/Library/Application\ Support/watson/config"
 alias timer="watson"
 alias ls="pls --multi-cols"
 alias load="tmuxp load"
-alias damn="fuck"
 alias f="fzf"
 alias lg="lazygit"
 
@@ -119,9 +118,43 @@ mysql_db() {
   mycli -h $host -P $port -u $username -p $password $database
 }
 
+postgres_db() {
+  target_db=$1
+  db_type=$2
+
+  echo "Connecting to $target_db $db_type"
+
+  if [ "$db_type" = "local" ]; then
+
+    if [ "$target_db" = "moodle" ]; then
+      username="moodle"
+      password="m%400dl3ing"
+      host="localhost"
+      port="5432"
+      database=$target_db
+    fi
+
+  else
+
+    if [ "$target_db" = "psql04" ] && [ "$target_db" = "dev" ]; then
+      item="rwzzcgf3yxndu2dzs2bssqkyfm"
+    fi
+
+    username="$(op item get $item --fields username)"
+    password="$(op item get $item --fields password)"
+    host="$(op item get $item --fields server)"
+    port="$(op item get $item --fields port)"
+    database="$(op item get $item --fields database)"
+
+  fi
+
+  echo postgres://$username:$password@$host:$port/$database
+
+  pgcli postgres://$username:$password@$host:$port/$database
+}
+
 # Created by `pipx` on 2022-07-09 15:20:13
 export PATH="$PATH:$HOME/.local/bin"
 
-eval $(thefuck --alias)
 export NI_CONFIG_FILE="$HOME/.config/ni/nirc"
 export CONFIG_DIR="$HOME/.config/lazygit"
