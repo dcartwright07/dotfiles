@@ -1,5 +1,6 @@
 mkdir -p ~/Repos
 git clone https://github.com/dcartwright07/dotfiles.git ~/Repos
+
 DOTFILES=$(cd $(dirname "${ZSH_SOURCE[0]}") && pwd)
 
 # Install MacOS command line tools
@@ -35,17 +36,24 @@ pipx install pls
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
+rm $ZSH_CUSTOM/themes/dominic.zsh-theme
+ln -sv $DOTFILES/dominic.zsh-theme $ZSH_CUSTOM/themes/dominic.zsh-theme
 
+# Install Kitty Terminal
+curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin
 
+# Install Warp Terminal
+brew install --cask warp
+
+# Config
 rm $HOME/.zshrc
 ln -sv $DOTFILES/.zshrc $HOME
 
-# ln -sv $DOTFILES/.viminfo $HOME
-# ln -sv $DOTFILES/.gitconfig $HOME
-
-# Config
 rm -rf $HOME/.config/nvim
 ln -sv $DOTFILES/nvim $HOME/.config/nvim
+
+rm -rf $HOME/.config/kitty
+ln -sv $DOTFILES/kitty $HOME/.config/kitty
 
 rm -rf $HOME/.config/tmux/tmux.conf
 ln -sv $DOTFILES/tmux/tmux.conf $HOME/.config/tmux/tmux.conf
