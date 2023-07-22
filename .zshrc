@@ -21,6 +21,7 @@ source $ZSH/oh-my-zsh.sh
 
 alias v="nvim"
 alias edit="nvim ~/.zshrc"
+alias refresh="source ~/.zshrc"
 alias ztheme="nvim ~/.config/.oh-my-zsh/themes/dominic.zsh-theme"
 alias nv-config="cd ~/.config/nvim/lua/user/; nvim"
 alias edit-dash="nvim ~/.config/gh-dash/config.yml"
@@ -44,13 +45,13 @@ alias spass="op items list | fzf | awk '{print \$1}' | xargs -I % sh -c 'op item
 alias d-view="lazydocker"
 alias d="docker"
 
+# Package Managers
+alias binstall='brew list | gum filter --placeholder "Choose a package to install" | xargs brew install'
+
 # Laravel Projects
 alias sail="[ -f sail ] && sh sail || sh vendor/bin/sail"
 alias art="sail artisan"
 alias routes="sail artisan route:list --except-vendor"
-
-# Ethode Specific
-alias live-push="npx gulp live-push"
 
 # Github
 alias bugs="gh issue list -l bug"
@@ -58,6 +59,7 @@ alias my-issues="gh issue list -a @me"
 alias issues="gh issue list"
 alias feats="gh issue list -l enhancement"
 alias prs="gh pr list"
+alias gh-squash="gh pr list | fzf | awk '{print \$1}' | xargs -I % sh -c 'gh pr merge % -d --squash'; ggpull"
 
 # Git
 alias g-undo="git reset --soft HEAD~1"
@@ -156,5 +158,6 @@ postgres_db() {
 # Created by `pipx` on 2022-07-09 15:20:13
 export PATH="$PATH:$HOME/.local/bin"
 
+export PATH="$PATH:$HOME/go/bin"
 export NI_CONFIG_FILE="$HOME/.config/ni/nirc"
 export CONFIG_DIR="$HOME/.config/lazygit"
