@@ -1,23 +1,49 @@
+mkdir -p ~/Repos
+git clone https://github.com/dcartwright07/dotfiles.git ~/Repos
 DOTFILES=$(cd $(dirname "${ZSH_SOURCE[0]}") && pwd)
+
+# Install MacOS command line tools
+xcode-select --install
+
+# Install Homebrew Packages
+brew install nvim
+brew install tmux
+brew install lazygit
+brew install pnpm
+brew install yarn
+brew install fzf
+brew install bat
+brew install --cask 1password/tap/1password-cli
+brew install tree
+brew install tig
+brew install ack
+brew install glow
+brew install gum
+brew install pipx
+brew install pip3
+brew install gh
+brew install mycli
+brew install pgcli
+brew install nvm
+brew install speedtest
+brew install tldr
+
+# Install Pipx Packages
+pipx install pls
+
+# Install Oh My Zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
+
 
 rm $HOME/.zshrc
 ln -sv $DOTFILES/.zshrc $HOME
 
-rm $HOME/.zsh_history
-ln -sv $DOTFILES/.zsh_history $HOME
-
-rm $HOME/.zsh_sessions
-ln -sv $DOTFILES/.zsh_sessions $HOME
 # ln -sv $DOTFILES/.viminfo $HOME
 # ln -sv $DOTFILES/.gitconfig $HOME
 
-rm $HOME/.lpass
-ln -sv $DOTFILES/.lpass $HOME
-
 # Config
-rm -rf $HOME/.config/iterm2
-ln -sv $DOTFILES/iterm2 $HOME/.config/iterm2
-
 rm -rf $HOME/.config/nvim
 ln -sv $DOTFILES/nvim $HOME/.config/nvim
 
