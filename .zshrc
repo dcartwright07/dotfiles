@@ -1,6 +1,8 @@
 export ZSH="$HOME/.config/.oh-my-zsh"
 export DISABLE_AUTO_TITLE="true"
 
+ulimit -n 4096
+
 ZSH_THEME="dominic"
 
 plugins=(
