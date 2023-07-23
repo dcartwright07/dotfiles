@@ -14,6 +14,7 @@ local packer_bootstrap = ensure_packer()
 require('packer').reset()
 require('packer').init({
   compile_path = vim.fn.stdpath('data') .. '/site/plugin/packer_compiled.lua',
+  max_jobs = 2000,
   display = {
     open_fn = function()
       return require('packer.util').float({ border = 'solid' })
@@ -47,9 +48,6 @@ use({
 -- Add, change, and delete surrounding text.
 use('tpope/vim-surround')
 
--- Useful commands like :Rename and :SudoWrite.
-use('tpope/vim-eunuch')
-
 -- Pairs of handy bracket mappings, like [b and ]b.
 use('tpope/vim-unimpaired')
 
@@ -61,9 +59,6 @@ use('tpope/vim-repeat')
 
 -- Add more languages.
 use('sheerun/vim-polyglot')
-
--- Navigate seamlessly between Vim windows and Tmux panes.
--- use('christoomey/vim-tmux-navigator')
 
 -- Jump to the last location when opening a file.
 use('farmergreg/vim-lastplace')
@@ -269,17 +264,6 @@ use({
   end,
 })
 
--- PHP Refactoring Tools
--- use({
---   'phpactor/phpactor',
---   ft = 'php',
---   run = 'composer install --no-dev --optimize-autoloader',
---   config = function()
---     vim.keymap.set('n', '<Leader>pm', ':PhpactorContextMenu<CR>')
---     vim.keymap.set('n', '<Leader>pn', ':PhpactorClassNew<CR>')
---   end,
--- })
-
 -- Named Comments
 use({
   "folke/todo-comments.nvim",
@@ -293,41 +277,8 @@ use('albanm/vuetify-vim')
 -- Close HTML tags
 use('alvan/vim-closetag')
 
--- Color Matching Parenthesis
-use('vim-scripts/Rainbow-Parenthesis')
-
 -- Dash
 use('rizzatti/dash.vim')
-
--- Handle the linking between files and corresponding test
-use({
-  'tpope/vim-projectionist',
-  requires = 'tpope/vim-dispatch',
-  config = function()
-    require('user/plugins/projectionist')
-  end,
-})
-
--- Allow for opening markdown files while editing
-use({
-  'toppair/peek.nvim',
-  run = 'deno task --quiet build:fast',
-  config = function()
-    require('peek').setup({
-      auto_load = true,
-      close_on_bdelete = true,
-      syntax = true,
-      theme = 'dark',
-      update_on_change = true,
-      app = 'webview',
-      filetype = { 'markdown' },
-      throttle_at = 200000,
-      throttle_time = 'auto',
-    })
-    vim.api.nvim_create_user_command('PeekOpen', require('peek').open, {})
-    vim.api.nvim_create_user_command('PeekClose', require('peek').close, {})
-  end
-})
 
 -- Github Copilot
 use('github/copilot.vim')
