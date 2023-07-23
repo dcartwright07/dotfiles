@@ -203,6 +203,12 @@ use({
     vim.keymap.set('n', '<C-g>', ':G<CR>:G fetch<CR>')
   end,
 })
+use({
+  "kdheepak/lazygit.nvim",
+  requires = {
+    "nvim-lua/plenary.nvim",
+  },
+})
 
 --- Toggle Terminal.
 use({
