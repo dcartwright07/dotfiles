@@ -350,6 +350,18 @@ use({
   end,
 })
 
+use({
+  'nacro90/numb.nvim',
+  config = function()
+    require('numb').setup()
+  end
+})
+
+use({
+  "folke/trouble.nvim",
+  dependencies = { "nvim-tree/nvim-web-devicons" },
+})
+
 -- Automatically set up your configuration after cloning packer.nvim
 -- Put this at the end after all plugins
 if packer_bootstrap then

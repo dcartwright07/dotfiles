@@ -105,3 +105,14 @@ vim.keymap.set('n', '<leader>Gb', [[<cmd>lua require('telescope.builtin').git_br
 vim.keymap.set('n', '<leader>Gc', [[<cmd>lua require('telescope.builtin').git_commits()<CR>]], { desc = 'Git Commits' })
 vim.keymap.set('n', '<leader>km', [[<cmd>lua require('telescope.builtin').keymaps()<CR>]], { desc = 'Keymaps' })
 vim.keymap.set('n', '<leader>mp', [[<cmd>lua require('telescope.builtin').man_pages()<CR>]], { desc = 'Man Pages' })
+
+-- Trouble
+vim.keymap.set("n", "<leader>Xx", [[<cmd>lua require("trouble").open()<CR>]], { desc = 'Trouble' })
+vim.keymap.set("n", "<leader>Xw", [[<cmd>lua require("trouble").open("workspace_diagnostics")<CR>]],
+    { desc = 'Workspace Diagnostics' })
+vim.keymap.set("n", "<leader>Xd", [[<cmd>lua require("trouble").open("document_diagnostics")<CR>]],
+    { desc = 'Document Diagnostics' })
+vim.keymap.set("n", "<leader>Xl", [[<cmd>lua require("trouble").open("loclist")<CR>]], { desc = 'Loclist' })
+vim.keymap.set("n", "<leader>Xq", [[<cmd>lua require("trouble").open("quickfix")<CR>]], { desc = 'Quickfix' })
+vim.keymap.set("n", "<leader>Xr", [[<cmd>lua require("trouble").open("lsp_references")<CR>]],
+    { desc = 'LSP References' })
