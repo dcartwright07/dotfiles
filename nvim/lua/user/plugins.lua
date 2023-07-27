@@ -318,6 +318,8 @@ use({
   dependencies = { "nvim-tree/nvim-web-devicons" },
 })
 
+use('vim-test/vim-test')
+
 -- Automatically set up your configuration after cloning packer.nvim
 -- Put this at the end after all plugins
 if packer_bootstrap then

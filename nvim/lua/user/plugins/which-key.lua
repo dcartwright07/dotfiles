@@ -4,6 +4,8 @@ vim.o.timeoutlen = 300
 -- -- Normal mode mappings
 local normalModeMaps = {
   ["<leader>/"] = { "<Plug>(comment_toggle_linewise_current)", "Comment Toggle" },
+  ["<leader><Right>"] = { "<C-w>l", "Move to Left Pane" },
+  ["<leader><Left>"] = { "<C-w>h", "Move to Right Pane" },
   ["<leader>g"] = {
     name = 'Git',
     s = { function() require("gitsigns").stage_hunk() end, 'Stage Hunk' },

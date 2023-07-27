@@ -53,6 +53,7 @@ vim.api.nvim_set_hl(0, "@variable.builtin", { fg = colors.orange, italic = true 
 vim.api.nvim_set_hl(0, "@keyword", { fg = colors.light_blue, italic = true })
 vim.api.nvim_set_hl(0, "@keyword.function", { fg = colors.light_blue, italic = true })
 vim.api.nvim_set_hl(0, "@keyword.return", { fg = colors.magenta })
+vim.api.nvim_set_hl(0, "@keyword.coroutine", { fg = colors.magenta })
 vim.api.nvim_set_hl(0, "@parameter", { fg = colors.orange, italic = true })
 vim.api.nvim_set_hl(0, "@type", { fg = colors.light_blue, })
 vim.api.nvim_set_hl(0, "@type.builtin", { italic = true })

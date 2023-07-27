@@ -44,13 +44,6 @@ alias cpass="op items list | fzf | awk '{print \$1}' | xargs -I % sh -c 'op item
 alias fpass="op items list | fzf | awk '{print \$1}' | xargs -I % sh -c 'op item get % --fields label=password'"
 alias spass="op items list | fzf | awk '{print \$1}' | xargs -I % sh -c 'op item get %'"
 
-# JIRA CLI
-alias j-api='export JIRA_API_TOKEN="$(op item get ghdlcpljnax5pu5ncy7oqqxthe --fields credential)"'
-alias j-issues="jira issue list -s~Done -s~Closed -s~'Stakeholder Review' -s~'Stake Holder Review Done' -s~'Quality Assurance' -p ${1}"
-alias j-projects="jira project list"
-alias j-issue="jira issue view ${1}"
-alias j-mine="jira issue list -a \$(jira me) -s~DONE -s~Closed -s~'Stakeholder Review' -s~'Stake Holder Review Done' -s~'Quality Assurance' -p ${1}"
-
 alias d-view="lazydocker"
 alias d="docker"
 
