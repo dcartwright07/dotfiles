@@ -13,7 +13,6 @@ local normalModeMaps = {
     p = { function() require("gitsigns").preview_hunk() end, 'Preview Hunk' },
     d = { function() require("gitsigns").diffthis() end, 'View Diff' },
     l = { function() require("gitsigns").blame_line() end, 'Blame Line' },
-    L = { "<cmd>LazyGit<cr>", "LazyGit" },
   },
   ["<leader>p"] = {
     name = "Preview",

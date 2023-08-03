@@ -190,13 +190,13 @@ use({
 })
 
 -- Git commands.
-use({
-  'tpope/vim-fugitive',
-  requires = 'tpope/vim-rhubarb',
-  config = function()
-    vim.keymap.set('n', '<C-g>', ':G<CR>:G fetch<CR>')
-  end,
-})
+-- use({
+--   'tpope/vim-fugitive',
+--   requires = 'tpope/vim-rhubarb',
+--   config = function()
+--     vim.keymap.set('n', '<C-g>', ':G<CR>:G fetch<CR>')
+--   end,
+-- })
 use({
   "kdheepak/lazygit.nvim",
   requires = {

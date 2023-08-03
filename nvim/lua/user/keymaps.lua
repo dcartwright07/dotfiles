@@ -54,7 +54,7 @@ vim.keymap.set('n', '<Leader>e', ':Neotree toggle<CR>', { desc = 'Toggle Neotree
 vim.keymap.set('n', '<Leader>o', ':Neotree focus<CR>', { desc = 'Focus Neotree' })
 
 -- Git
-vim.keymap.set('n', '<C-g>', ':G<CR> :G fetch<CR>')
+vim.keymap.set('n', '<C-g>', ':LazyGit<CR>', { desc = 'LazyGit' })
 
 -- Gitsigns
 vim.keymap.set('n', ']h', ':Gitsigns next_hunk<CR>')
