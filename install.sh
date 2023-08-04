@@ -14,6 +14,7 @@ brew install pnpm
 brew install yarn
 brew install fzf
 brew install bat
+brew install bat-extras
 brew install --cask 1password/tap/1password-cli
 brew install tree
 brew install tig

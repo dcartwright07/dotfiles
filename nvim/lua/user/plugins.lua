@@ -313,12 +313,17 @@ use({
   end
 })
 
+-- Shows all issues on request
 use({
   "folke/trouble.nvim",
   dependencies = { "nvim-tree/nvim-web-devicons" },
 })
 
+-- Test Runner for Vim
 use('vim-test/vim-test')
+
+-- Explain Regex
+use('tomiis4/Hypersonic.nvim')
 
 -- Automatically set up your configuration after cloning packer.nvim
 -- Put this at the end after all plugins

@@ -30,6 +30,7 @@ alias edit-dash="nvim ~/.config/gh-dash/config.yml"
 alias tmux-config="nvim ~/.config/tmux/tmux.conf"
 alias kitty-config="cd ~/.config/kitty/; nvim"
 alias ssh='TERM=xterm-256color ssh'
+alias man="batman"
 
 alias composer="php /usr/local/bin/composer"
 alias hosts="sudo code -r /etc/hosts"
@@ -140,8 +141,8 @@ postgres_db() {
 
   else
 
-    if [ "$target_db" = "psql04" ] && [ "$target_db" = "dev" ]; then
-      item="rwzzcgf3yxndu2dzs2bssqkyfm"
+    if [ "$target_db" = "psql04" ]; then
+      local item="rwzzcgf3yxndu2dzs2bssqkyfm"
     fi
 
     username="$(op item get $item --fields username)"
