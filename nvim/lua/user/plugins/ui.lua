@@ -63,6 +63,8 @@ vim.api.nvim_set_hl(0, 'TelescopePreviewBorder', { fg = colors.light_charcoal, b
 vim.api.nvim_set_hl(0, 'TelescopePreviewNormal', { bg = colors.light_charcoal })
 vim.api.nvim_set_hl(0, 'TelescopePreviewTitle', { fg = colors.yellow, bg = colors.dark_grey })
 
-vim.api.nvim_set_hl(0, 'IlluminatedWordText', { fg = colors.white, bg = colors.dark_grey })
-vim.api.nvim_set_hl(0, 'IlluminatedWordRead', { bg = colors.dark_grey })
-vim.api.nvim_set_hl(0, 'IlluminatedWordWrite', { bg = colors.dark_grey })
+vim.api.nvim_set_hl(0, 'IlluminatedWordText', { bg = colors.darker_grey })
+vim.api.nvim_set_hl(0, 'IlluminatedWordRead', { bg = colors.darker_grey })
+vim.api.nvim_set_hl(0, 'IlluminatedWordWrite', { bg = colors.darker_grey })
+
+vim.api.nvim_set_hl(0, 'MatchWord', { bg = colors.charcoal })
