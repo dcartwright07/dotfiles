@@ -34,7 +34,17 @@ require('telescope').setup({
         ['<C-Up>'] = actions.cycle_history_prev,
       },
     },
-    file_ignore_patterns = { '.git/', '.vscode/', 'node_modules/', 'vendor/' },
+    file_ignore_patterns = {
+      '.git/',
+      '.vscode/',
+      'node_modules/',
+      'vendor/',
+      'dist/',
+      'build/',
+      'target/',
+      '.cache/',
+      '.local/'
+    },
   },
   pickers = {
     find_files = {
@@ -45,6 +55,11 @@ require('telescope').setup({
     },
     lsp_references = {
       previewer = false,
+    },
+  },
+  extensions = {
+    live_grep_args = {
+      auto_quoting = true,
     },
   },
 })
