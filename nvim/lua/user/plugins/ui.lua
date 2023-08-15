@@ -122,3 +122,7 @@ vim.api.nvim_set_hl(0, 'TelescopePreviewTitle', {
   fg = colors.yellow,
   bg = colors.dark_grey,
 })
+
+vim.api.nvim_set_hl(0, 'IlluminatedWordText', { fg = colors.white, bg = colors.dark_grey })
+vim.api.nvim_set_hl(0, 'IlluminatedWordRead', { bg = colors.dark_grey })
+vim.api.nvim_set_hl(0, 'IlluminatedWordWrite', { bg = colors.dark_grey })

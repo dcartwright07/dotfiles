@@ -65,8 +65,14 @@ use('farmergreg/vim-lastplace')
 -- Enable * searching with visually selected text.
 use('nelstrom/vim-visual-star-search')
 
+-- Automatically highlighting other uses of the word under the cursor.
+use('RRethy/vim-illuminate')
+
 -- Automatically create parent dirs when saving.
 use('jessarcher/vim-heritage')
+
+-- Add a better %.
+use('andymass/vim-matchup')
 
 -- Text objects for HTML attributes.
 use({
@@ -273,7 +279,7 @@ use({
 -- Vuetify Autocompletion
 use('albanm/vuetify-vim')
 
--- Close HTML tags
+-- Match HTML tags
 use('alvan/vim-closetag')
 
 -- Dash
