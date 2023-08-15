@@ -21,30 +21,16 @@ local colors = {
   black = "#000000",
 }
 
-vim.api.nvim_set_hl(0, 'FloatermBorder', {
-  fg = colors.black,
-  bg = colors.black,
-})
-
-vim.api.nvim_set_hl(0, 'Floaterm', {
-  fg = colors.white,
-  bg = colors.black,
-})
+vim.api.nvim_set_hl(0, 'FloatermBorder', { fg = colors.black, bg = colors.black })
+vim.api.nvim_set_hl(0, 'Floaterm', { fg = colors.white, bg = colors.black })
 
 vim.api.nvim_set_hl(0, 'CursorLineBg', {
   fg = vim.api.nvim_get_hl_by_name('CursorLine', true).background,
-  bg = vim.api.nvim_get_hl_by_name('CursorLine', true).background,
+  bg = vim.api.nvim_get_hl_by_name('CursorLine', true).background
 })
-
-vim.api.nvim_set_hl(0, 'StatusLineNonText', {
-  fg = colors.light_grey,
-  bg = colors.darker_grey,
-})
-
-vim.api.nvim_set_hl(0, 'StatusLine', {
-  fg = vim.api.nvim_get_hl_by_name('StatusLine', true).foreground,
-  bg = colors.darker_grey,
-})
+vim.api.nvim_set_hl(0, 'StatusLineNonText', { fg = colors.light_grey, bg = colors.darker_grey })
+vim.api.nvim_set_hl(0, 'StatusLine',
+  { fg = vim.api.nvim_get_hl_by_name('StatusLine', true).foreground, bg = colors.darker_grey })
 
 vim.api.nvim_set_hl(0, 'IndentBlanklineChar', { fg = '#2F313C' })
 
@@ -64,64 +50,18 @@ vim.api.nvim_set_hl(0, "@tag.attribute", { fg = colors.purple })
 vim.api.nvim_set_hl(0, "@label", { fg = colors.magenta })
 vim.api.nvim_set_hl(0, "@constructor", { fg = colors.orange })
 
-vim.api.nvim_set_hl(0, 'TelescopePromptBorder', {
-  fg = colors.darker_grey,
-  bg = colors.darker_grey,
-})
-
-vim.api.nvim_set_hl(0, 'TelescopePromptNormal', {
-  fg = colors.white,
-  bg = colors.darker_grey,
-})
-
-vim.api.nvim_set_hl(0, 'TelescopePromptTitle', {
-  fg = colors.yellow,
-  bg = colors.dark_grey,
-})
-
-vim.api.nvim_set_hl(0, 'TelescopePromptCounter', {
-  fg = colors.darker_grey,
-  bg = colors.darker_grey,
-})
-
-vim.api.nvim_set_hl(0, 'TelescopePromptPrefix', {
-  fg = colors.red,
-  bg = colors.darker_grey,
-})
-
-vim.api.nvim_set_hl(0, 'TelescopeResultsBorder', {
-  fg = colors.light_charcoal,
-  bg = colors.light_charcoal,
-})
-
-vim.api.nvim_set_hl(0, 'TelescopeResultsNormal', {
-  fg = colors.white,
-  bg = colors.light_charcoal,
-})
-
--- vim.api.nvim_set_hl(0, 'TelescopeResultsTitle', {
---   fg = colors.yellow,
---   bg = colors.dark_grey,
--- })
-
-vim.api.nvim_set_hl(0, 'TelescopeSelectionCaret', {
-  fg = colors.yellow,
-  bg = colors.dark_grey,
-})
-
-vim.api.nvim_set_hl(0, 'TelescopePreviewBorder', {
-  fg = colors.light_charcoal,
-  bg = colors.light_charcoal,
-})
-
-vim.api.nvim_set_hl(0, 'TelescopePreviewNormal', {
-  bg = colors.light_charcoal,
-})
-
-vim.api.nvim_set_hl(0, 'TelescopePreviewTitle', {
-  fg = colors.yellow,
-  bg = colors.dark_grey,
-})
+vim.api.nvim_set_hl(0, 'TelescopePromptBorder', { fg = colors.darker_grey, bg = colors.darker_grey })
+vim.api.nvim_set_hl(0, 'TelescopePromptNormal', { fg = colors.white, bg = colors.darker_grey })
+vim.api.nvim_set_hl(0, 'TelescopePromptTitle', { fg = colors.yellow, bg = colors.dark_grey })
+vim.api.nvim_set_hl(0, 'TelescopePromptCounter', { fg = colors.darker_grey, bg = colors.darker_grey })
+vim.api.nvim_set_hl(0, 'TelescopePromptPrefix', { fg = colors.red, bg = colors.darker_grey })
+vim.api.nvim_set_hl(0, 'TelescopeResultsBorder', { fg = colors.light_charcoal, bg = colors.light_charcoal })
+vim.api.nvim_set_hl(0, 'TelescopeResultsNormal', { fg = colors.white, bg = colors.light_charcoal })
+-- vim.api.nvim_set_hl(0, 'TelescopeResultsTitle', { fg = colors.yellow, bg = colors.dark_grey })
+vim.api.nvim_set_hl(0, 'TelescopeSelectionCaret', { fg = colors.yellow, bg = colors.dark_grey })
+vim.api.nvim_set_hl(0, 'TelescopePreviewBorder', { fg = colors.light_charcoal, bg = colors.light_charcoal })
+vim.api.nvim_set_hl(0, 'TelescopePreviewNormal', { bg = colors.light_charcoal })
+vim.api.nvim_set_hl(0, 'TelescopePreviewTitle', { fg = colors.yellow, bg = colors.dark_grey })
 
 vim.api.nvim_set_hl(0, 'IlluminatedWordText', { fg = colors.white, bg = colors.dark_grey })
 vim.api.nvim_set_hl(0, 'IlluminatedWordRead', { bg = colors.dark_grey })
