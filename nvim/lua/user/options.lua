@@ -1,7 +1,7 @@
 vim.opt.expandtab = true
-vim.opt.shiftwidth = 2
-vim.opt.tabstop = 2
-vim.opt.softtabstop = 2
+vim.opt.shiftwidth = 4
+vim.opt.tabstop = 8
+vim.opt.softtabstop = 4
 vim.opt.breakindent = true -- Wrap indent to match  line start
 vim.opt.smartindent = true
 vim.opt.preserveindent = true
