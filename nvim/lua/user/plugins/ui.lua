@@ -38,7 +38,7 @@ vim.api.nvim_set_hl(0, "@variable", { fg = colors.white })
 vim.api.nvim_set_hl(0, "@variable.builtin", { fg = colors.orange, italic = true })
 vim.api.nvim_set_hl(0, "@keyword", { fg = colors.light_blue, italic = true })
 vim.api.nvim_set_hl(0, "@keyword.function", { fg = colors.light_blue, italic = true })
-vim.api.nvim_set_hl(0, "@keyword.return", { fg = colors.magenta })
+vim.api.nvim_set_hl(0, "@keyword.return", { fg = colors.magenta, italic = true })
 vim.api.nvim_set_hl(0, "@keyword.coroutine", { fg = colors.magenta })
 vim.api.nvim_set_hl(0, "@parameter", { fg = colors.orange, italic = true })
 vim.api.nvim_set_hl(0, "@type", { fg = colors.light_blue, })
@@ -46,9 +46,10 @@ vim.api.nvim_set_hl(0, "@type.builtin", { italic = true })
 vim.api.nvim_set_hl(0, "@type.qualifier", { fg = colors.magenta })
 vim.api.nvim_set_hl(0, "@tag", { fg = colors.magenta })
 vim.api.nvim_set_hl(0, "@tag.delimiter", { fg = colors.white })
-vim.api.nvim_set_hl(0, "@tag.attribute", { fg = colors.purple })
+vim.api.nvim_set_hl(0, "@tag.attribute", { fg = colors.purple, italic = true })
 vim.api.nvim_set_hl(0, "@label", { fg = colors.magenta })
 vim.api.nvim_set_hl(0, "@constructor", { fg = colors.orange })
+vim.api.nvim_set_hl(0, "@punctuation.special", { fg = colors.orange })
 
 vim.api.nvim_set_hl(0, 'TelescopePromptBorder', { fg = colors.darker_grey, bg = colors.darker_grey })
 vim.api.nvim_set_hl(0, 'TelescopePromptNormal', { fg = colors.white, bg = colors.darker_grey })
@@ -70,7 +71,11 @@ vim.api.nvim_set_hl(0, 'IlluminatedWordWrite', { bg = colors.darker_grey })
 vim.api.nvim_set_hl(0, 'MatchWord', { bg = colors.charcoal })
 
 -- vim.api.nvim_set_hl(0, 'IndentBlanklineContextChar', { fg = colors.purple, nocombine = true })
-vim.api.nvim_set_hl(0, 'IndentBlanklineContextStart', { sp = colors.purple, underline = true, nocombine = true })
+vim.api.nvim_set_hl(0, 'IndentBlanklineContextStart', {
+  sp = colors.purple,
+  underline = true,
+  nocombine = true
+})
 
 -- vim.api.nvim_set_hl(0, 'IndentBlanklineIndent1', { fg = '#E06C75', nocombine = true })
 -- vim.api.nvim_set_hl(0, 'IndentBlanklineIndent2', { fg = '#E5C07B', nocombine = true })
