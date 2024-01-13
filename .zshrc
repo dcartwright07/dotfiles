@@ -1,9 +1,19 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
+# Fig pre block. Keep at the top of this file.
+[[ -f "$HOME/.fig/shell/zshrc.pre.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.pre.zsh"
 export ZSH="$HOME/.config/.oh-my-zsh"
 export DISABLE_AUTO_TITLE="true"
 
 ulimit -n 4096
 
-ZSH_THEME="dominic"
+# ZSH_THEME="dominic"
+ZSH_THEME="powerlevel10k/powerlevel10k"
 
 plugins=(
   git
@@ -29,8 +39,11 @@ alias nv-config="cd ~/.config/nvim/lua/user/; nvim"
 alias edit-dash="nvim ~/.config/gh-dash/config.yml"
 alias tmux-config="nvim ~/.config/tmux/tmux.conf"
 alias kitty-config="cd ~/.config/kitty/; nvim"
+alias kitty-fonts="kitty +list-fonts --psnames"
 alias ssh='TERM=xterm-256color ssh'
 alias man="batman"
+# alias python="python3"
+alias p="pnpm"
 
 alias composer="php /usr/local/bin/composer"
 alias hosts="sudo code -r /etc/hosts"
@@ -55,6 +68,7 @@ alias binstall='brew list | gum filter --placeholder "Choose a package to instal
 alias sail="[ -f sail ] && sh sail || sh vendor/bin/sail"
 alias art="sail artisan"
 alias routes="sail artisan route:list --except-vendor"
+alias sphp="brew unlink php@${1} && brew link php@${2}"
 
 # Github
 alias bugs="gh issue list -l bug"
@@ -70,10 +84,12 @@ alias g-undo="git reset --soft HEAD~1"
 alias sys="tiptop"
 alias wConfig="nvim ~/Library/Application\ Support/watson/config"
 alias timer="watson"
-alias ls="pls --multi-cols"
+# alias ls="pls --multi-cols"
 alias load="tmuxp load"
 alias f="fzf"
 alias lg="lazygit"
+alias le="exa --icons --group-directories-first ${1}"
+alias j="fjira"
 
 ## Functions ===============
 # NVM
@@ -153,7 +169,7 @@ postgres_db() {
 
   fi
 
-  echo postgres://$username:$password@$host:$port/$database
+  # echo postgres://$username:$password@$host:$port/$database
 
   pgcli postgres://$username:$password@$host:$port/$database
 }
@@ -165,3 +181,11 @@ export PATH="$PATH:$HOME/go/bin"
 export NI_CONFIG_FILE="$HOME/.config/ni/nirc"
 export CONFIG_DIR="$HOME/.config/lazygit"
 
+# VSCode
+[[ "$TERM_PROGRAM" == "vscode" ]] && . "$(code --locate-shell-integration-path zsh)"
+
+# Fig post block. Keep at the bottom of this file.
+[[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
