@@ -22,10 +22,6 @@ vim.keymap.set('v', 'y', 'myy`y')
 -- Shortcuts
 vim.keymap.set('n', '<Leader>q', ':q<CR>', { desc = 'Quit' })
 vim.keymap.set('n', '<Leader>w', ':w<CR>', { desc = 'Save' })
-vim.keymap.set('n', '<C-h>', '<C-w>h', { desc = 'Move left' })
-vim.keymap.set('n', '<C-j>', '<C-w>j', { desc = 'Move down' })
-vim.keymap.set('n', '<C-k>', '<C-w>k', { desc = 'Move up' })
-vim.keymap.set('n', '<C-l>', '<C-w>l', { desc = 'Move right' })
 
 -- Paste replace visual selection without copying it.
 vim.keymap.set('v', 'p', '"_dP')
@@ -44,10 +40,6 @@ vim.keymap.set('n', '<C-j>', ':move .+1<CR>==')
 vim.keymap.set('n', '<C-k>', ':move .-2<CR>==')
 vim.keymap.set('v', '<C-j>', ":move '>+1<CR>gv=gv")
 vim.keymap.set('v', '<C-k>', ":move '<-2<CR>gv=gv")
-
--- Commenting
-vim.keymap.set('n', '<Leader>/', '<Plug>(comment_toggle_linewise_current)', { desc = 'Comment current line' })
-vim.keymap.set('v', '<Leader>/', '<Plug>(comment_toggle_linewise_visual)', { desc = 'Comment visual selection' })
 
 -- NeoTree
 vim.keymap.set('n', '<Leader>e', ':Neotree toggle<CR>', { desc = 'Toggle Neotree' })
@@ -73,7 +65,7 @@ vim.keymap.set('n', '<leader>D', ':Dash<CR>')
 vim.keymap.set('n', '<Leader>d', '<cmd>lua vim.diagnostic.open_float()<CR>', { desc = 'Open diagnostics' })
 vim.keymap.set('n', '[d', '<cmd>lua vim.diagnostic.goto_prev()<CR>')
 vim.keymap.set('n', ']d', '<cmd>lua vim.diagnostic.goto_next()<CR>')
-vim.keymap.set('n', 'gd', '<cmd>lua vim.lsp.buf.definition()<CR>')
+vim.keymap.set('n', 'gd', ':Telescope lsp_definitions<CR>')
 vim.keymap.set('n', 'gt', '<cmd>lua vim.lsp.buf.type_definition()<CR>')
 vim.keymap.set('n', 'gD', '<cmd>lua vim.lsp.buf.declaration()<CR>')
 vim.keymap.set('n', 'gi', ':Telescope lsp_implementations<CR>')

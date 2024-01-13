@@ -49,3 +49,4 @@ vim.g.vue_pre_processors = [["scss"]]
 vim.g.vim_monokai_tasty_italic = 1
 vim.g.closetag_filetypes = 'html,xhtml,phtml,vue,velocity,vtl'
 vim.g.closetag_xhtml_filenames = '*.xhtml,*.jsx,*.tsx,*.js,*.ts,*.jsx,*.tsx,*.html,*.phtml,*.vue,*.velocity,*.vtl'
+vim.g.skip_ts_context_commentstring_module = true

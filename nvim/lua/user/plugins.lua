@@ -26,13 +26,14 @@ local use = require('packer').use
 -- Packer can manage itself.
 use('wbthomason/packer.nvim')
 
--- Vim Monokai Tasty
+-- Vim Themes
 use({
     'patstockwell/vim-monokai-tasty',
     config = function()
         require('user/plugins/ui')
     end,
 })
+use('olimorris/onedarkpro.nvim')
 
 -- Commenting support.
 use({
@@ -223,6 +224,7 @@ use({
     'nvim-treesitter/nvim-treesitter',
     run = function()
         require('nvim-treesitter.install').update({ with_sync = true })
+        require('ts-context-commentstring').setup({})
     end,
     requires = {
         'JoosepAlviste/nvim-ts-context-commentstring',
@@ -303,8 +305,6 @@ use({
     end
 })
 
-use({ "ellisonleao/glow.nvim", config = function() require("glow").setup() end })
-
 use({
     's1n7ax/nvim-search-and-replace',
     config = function()
@@ -334,11 +334,21 @@ use('tomiis4/Hypersonic.nvim')
 -- Kitty syntax highlighting
 use('fladson/vim-kitty')
 
+-- Error Lens (Helps with displaying errors)
+use({
+    'chikko80/error-lens.nvim',
+    requires = 'nvim-telescope/telescope.nvim',
+    config = function()
+        require('error-lens').setup()
+    end
+})
+
 -- Automatically set up your configuration after cloning packer.nvim
 -- Put this at the end after all plugins
 if packer_bootstrap then
     require('packer').sync()
 end
+
 
 vim.cmd([[
   augroup packer_user_config

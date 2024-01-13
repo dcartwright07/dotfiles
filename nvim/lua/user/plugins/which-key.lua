@@ -6,6 +6,8 @@ local normalModeMaps = {
   ["<leader>/"] = { "<Plug>(comment_toggle_linewise_current)", "Comment Toggle" },
   ["<leader><Right>"] = { "<C-w>l", "Move to Left Pane" },
   ["<leader><Left>"] = { "<C-w>h", "Move to Right Pane" },
+  ["<leader><Down>"] = { "<C-w>j", "Move to Bottom Pane" },
+  ["<leader><Up>"] = { "<C-w>k", "Move to Top Pane" },
   ["<leader>g"] = {
     name = 'Git',
     s = { function() require("gitsigns").stage_hunk() end, 'Stage Hunk' },
@@ -33,11 +35,11 @@ local normalModeMaps = {
     r = { '<cmd>TroubleToggle lsp_references<cr>', 'LSP References' },
   }
 }
---
--- -- Visual mode mappings
--- local visualModeMaps = {
---   ["<leader>/"] = { "<Plug>(comment_toggle_linewise_visual)", "Comment Toggle" },
--- }
+
+-- Visual mode mappings
+local visualModeMaps = {
+  ["<leader>/"] = { "<Plug>(comment_toggle_linewise_visual)", "Comment Toggle" },
+}
 
 local which_key = require("which-key")
 which_key.setup({
@@ -47,4 +49,4 @@ which_key.setup({
   }
 })
 which_key.register(normalModeMaps, { mode = "n" })
--- which_key.register(visualModeMaps, { mode = "v" })
+which_key.register(visualModeMaps, { mode = "v" })
