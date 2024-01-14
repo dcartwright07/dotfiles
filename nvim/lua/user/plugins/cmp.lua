@@ -15,8 +15,21 @@ cmp.setup({
       luasnip.lsp_expand(args.body)
     end,
   },
+  sources = {
+    { name = 'nvim_lsp' },
+    { name = 'nvim_lsp_signature_help' },
+    -- { name = 'luasnip' },
+    {
+      name = 'buffer',
+      keyword_length = 3
+    },
+    { name = 'path' },
+  },
   formatting = {
     format = lspkind.cmp_format(),
+  },
+  window = {
+    documentation = cmp.config.window.bordered(),
   },
   mapping = {
     ["<Down>"] = cmp.mapping(function(fallback)
@@ -40,13 +53,6 @@ cmp.setup({
       end
     end, { "i", "s" }),
     ['<CR>'] = cmp.mapping.confirm({ select = true }),
-  },
-  sources = {
-    { name = 'nvim_lsp' },
-    { name = 'nvim_lsp_signature_help' },
-    { name = 'luasnip' },
-    { name = 'buffer' },
-    { name = 'path' },
   },
   -- experimental = {
   -- ghost_text = true,

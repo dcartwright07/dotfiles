@@ -72,8 +72,10 @@ require('mason-null-ls').setup({ automatic_installation = true })
 -- Diagnostic configuration
 vim.diagnostic.config({
   virtual_text = false,
+  severity_sort = true,
   float = {
-    source = true,
+    border = 'rounded',
+    source = 'always',
   }
 })
 
