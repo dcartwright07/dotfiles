@@ -1,0 +1,12 @@
+session_name: tools
+start_directory: "~/Repos"
+windows:
+  - window_name: jira
+    panes:
+      - shell_command:
+  - window_name: lazygit
+    panes:
+      - shell_command:
+  - window_name: terminal
+    panes:
+      - shell_command:
