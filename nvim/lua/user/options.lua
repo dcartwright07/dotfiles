@@ -51,3 +51,9 @@ vim.g.closetag_filetypes = 'html,xhtml,phtml,vue,velocity,vtl'
 vim.g.closetag_xhtml_filenames = '*.xhtml,*.jsx,*.tsx,*.js,*.ts,*.jsx,*.tsx,*.html,*.phtml,*.vue,*.velocity,*.vtl'
 vim.g.skip_ts_context_commentstring_module = true
 vim.g.gitblame_delay = 1000
+
+if vim.g.neovide then
+    vim.g.neovide_fullscreen = true
+    vim.g.neovide_hide_mouse_when_typing = true
+    vim.opt.guifont = "JetBrainsMono Nerd Font Mono:h18"
+end

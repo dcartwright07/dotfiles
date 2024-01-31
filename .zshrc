@@ -31,19 +31,21 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
-alias v="nvim"
-alias edit="nvim ~/.zshrc"
+alias v="neovide"
+alias edit="v ~/.zshrc"
 alias refresh="source ~/.zshrc"
-alias ztheme="nvim ~/.config/.oh-my-zsh/themes/dominic.zsh-theme"
-alias nv-config="cd ~/.config/nvim/lua/user/; nvim"
-alias edit-dash="nvim ~/.config/gh-dash/config.yml"
-alias tmux-config="nvim ~/.config/tmux/tmux.conf"
-alias kitty-config="cd ~/.config/kitty/; nvim"
+alias ztheme="v ~/.config/.oh-my-zsh/themes/dominic.zsh-theme"
+alias nv-config="cd ~/.config/nvim/lua/user/; v"
+alias edit-dash="v ~/.config/gh-dash/config.yml"
+alias tmux-config="v ~/.config/tmux/tmux.conf"
+alias kitty-config="cd ~/.config/kitty/; v"
 alias kitty-fonts="kitty +list-fonts --psnames"
+alias neovide-config="v $HOME/.config/neovide/config.toml"
 alias ssh='TERM=xterm-256color ssh'
 alias man="batman"
 # alias python="python3"
 alias p="pnpm"
+
 
 alias composer="php /usr/local/bin/composer"
 alias hosts="sudo code -r /etc/hosts"
@@ -82,7 +84,7 @@ alias gh-squash="gh pr list | fzf | awk '{print \$1}' | xargs -I % sh -c 'gh pr 
 alias g-undo="git reset --soft HEAD~1"
 
 alias sys="tiptop"
-alias wConfig="nvim ~/Library/Application\ Support/watson/config"
+alias wConfig="v ~/Library/Application\ Support/watson/config"
 alias timer="watson"
 # alias ls="pls --multi-cols"
 alias load="tmuxp load"
@@ -90,6 +92,12 @@ alias f="fzf"
 alias lg="lazygit"
 alias le="exa --icons --group-directories-first ${1}"
 alias j="fjira"
+
+# Projects
+alias pro="cd ~/Repos/slingshot/slingshot-pro/; v"
+alias portal="cd ~/Repos/slingshot/student-portal/; v"
+alias hickory="cd ~/Repos/slingshot/hickory/; v"
+alias wu247="cd ~/Repos/personal/whatsup247/wu247v3/; v"
 
 ## Functions ===============
 # NVM
