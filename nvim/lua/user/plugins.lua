@@ -30,10 +30,15 @@ use('wbthomason/packer.nvim')
 use({
     'patstockwell/vim-monokai-tasty',
     config = function()
-        require('user/plugins/ui')
+        require('user/plugins/ui-vim-monokai-tasty')
     end,
 })
-use('olimorris/onedarkpro.nvim')
+-- use({
+--     'olimorris/onedarkpro.nvim',
+--     config = function()
+--         require('user/plugins/ui-onedark')
+--     end,
+-- })
 
 -- Commenting support.
 use({

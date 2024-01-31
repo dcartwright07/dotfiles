@@ -10,6 +10,7 @@ local colors = {
   orange = "#FF9700",
   white = "#FFFFFF",
   light_blue = "#62D8F1",
+  blue = "#5596F1",
   magenta = "#FC1A70",
   light_grey = "#CCCCCC",
   grey = "#8A8A8A",
@@ -33,23 +34,25 @@ vim.api.nvim_set_hl(0, 'StatusLine',
   { fg = vim.api.nvim_get_hl_by_name('StatusLine', true).foreground, bg = colors.darker_grey })
 
 vim.api.nvim_set_hl(0, "@variable", { fg = colors.white })
--- vim.api.nvim_set_hl(0, "@variable.builtin", { fg = colors.orange, italic = true })
--- vim.api.nvim_set_hl(0, "@keyword", { fg = colors.magenta, italic = true })
--- vim.api.nvim_set_hl(0, "@keyword.function", { fg = colors.light_blue, italic = true })
--- vim.api.nvim_set_hl(0, "@keyword.return", { fg = colors.magenta, italic = true })
--- vim.api.nvim_set_hl(0, "@keyword.coroutine", { fg = colors.magenta, italic = true })
--- vim.api.nvim_set_hl(0, "@keyword.operator", { fg = colors.magenta, bold = true })
--- vim.api.nvim_set_hl(0, "@parameter", { fg = colors.orange, italic = true })
--- vim.api.nvim_set_hl(0, "@type", { fg = colors.light_blue, })
--- vim.api.nvim_set_hl(0, "@type.builtin", { italic = true })
--- vim.api.nvim_set_hl(0, "@type.qualifier", { fg = colors.magenta })
+vim.api.nvim_set_hl(0, "@variable.builtin", { fg = colors.orange, italic = true })
+vim.api.nvim_set_hl(0, "@variable.parameter", { fg = colors.orange, italic = true })
+vim.api.nvim_set_hl(0, "@variable.member", { fg = colors.blue, italic = true })
+vim.api.nvim_set_hl(0, "@keyword", { fg = colors.magenta, italic = true })
+vim.api.nvim_set_hl(0, "@keyword.function", { fg = colors.light_blue, italic = true })
+vim.api.nvim_set_hl(0, "@keyword.return", { fg = colors.magenta, italic = true })
+vim.api.nvim_set_hl(0, "@keyword.coroutine", { fg = colors.magenta, italic = true })
+vim.api.nvim_set_hl(0, "@keyword.operator", { fg = colors.magenta, bold = true })
+vim.api.nvim_set_hl(0, "@parameter", { fg = colors.orange, italic = true })
+vim.api.nvim_set_hl(0, "@type", { fg = colors.light_blue, })
+vim.api.nvim_set_hl(0, "@type.builtin", { italic = true })
+vim.api.nvim_set_hl(0, "@type.qualifier", { fg = colors.magenta })
 vim.api.nvim_set_hl(0, "@tag", { fg = colors.magenta })
 vim.api.nvim_set_hl(0, "@tag.delimiter", { fg = colors.white })
 vim.api.nvim_set_hl(0, "@tag.attribute", { fg = colors.purple, italic = true })
--- vim.api.nvim_set_hl(0, "@label", { fg = colors.magenta })
--- vim.api.nvim_set_hl(0, "@constructor", { fg = colors.orange })
--- vim.api.nvim_set_hl(0, "@punctuation.special", { fg = colors.orange })
--- vim.api.nvim_set_hl(0, "@exception", { fg = colors.orange, bold = true })
+vim.api.nvim_set_hl(0, "@label", { fg = colors.magenta })
+vim.api.nvim_set_hl(0, "@constructor", { fg = colors.orange })
+vim.api.nvim_set_hl(0, "@punctuation.special", { fg = colors.orange })
+vim.api.nvim_set_hl(0, "@exception", { fg = colors.orange, bold = true })
 
 vim.api.nvim_set_hl(0, 'TelescopePromptBorder', { fg = colors.darker_grey, bg = colors.darker_grey })
 vim.api.nvim_set_hl(0, 'TelescopePromptNormal', { fg = colors.white, bg = colors.darker_grey })
