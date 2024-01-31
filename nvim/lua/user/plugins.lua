@@ -201,6 +201,8 @@ use({
     end,
 })
 
+use({ 'f-person/git-blame.nvim' })
+
 -- Git commands.
 -- use({
 --   'tpope/vim-fugitive',
