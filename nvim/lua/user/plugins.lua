@@ -121,7 +121,6 @@ use({
         'kyazdani42/nvim-web-devicons',
         'BurntSushi/ripgrep',
         'nvim-telescope/telescope-live-grep-args.nvim',
-        'nvim-telescope/telescope-node-modules.nvim',
         { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' },
     },
     config = function()
@@ -187,13 +186,6 @@ use({
 use({ 'f-person/git-blame.nvim' })
 
 -- Git commands.
--- use({
---   'tpope/vim-fugitive',
---   requires = 'tpope/vim-rhubarb',
---   config = function()
---     vim.keymap.set('n', '<C-g>', ':G<CR>:G fetch<CR>')
---   end,
--- })
 use({
     "kdheepak/lazygit.nvim",
     requires = {
