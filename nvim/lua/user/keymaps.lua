@@ -42,8 +42,8 @@ vim.keymap.set('v', '<C-j>', ":move '>+1<CR>gv=gv")
 vim.keymap.set('v', '<C-k>', ":move '<-2<CR>gv=gv")
 
 -- NeoTree
-vim.keymap.set('n', '<Leader>e', ':Neotree toggle<CR>', { desc = 'Toggle Neotree' })
-vim.keymap.set('n', '<Leader>o', ':Neotree focus<CR>', { desc = 'Focus Neotree' })
+vim.keymap.set('n', '<Leader>e', ':Neotree position=current toggle<CR>', { desc = 'Toggle Neotree' })
+vim.keymap.set('n', '<Leader>o', ':Neotree position=current focus<CR>', { desc = 'Focus Neotree' })
 
 -- Git
 vim.keymap.set('n', '<C-g>', ':LazyGit<CR>', { desc = 'LazyGit' })
@@ -57,9 +57,6 @@ vim.keymap.set('n', 'gp', ':Gitsigns preview_hunk<CR>')
 vim.keymap.set('n', 'gb', ':Gitsigns blame_line<CR>')
 vim.keymap.set('n', 'gB', ':Gitsigns toggle_current_line_blame<CR>')
 vim.keymap.set('n', 'gh', ':Gitsigns diffthis<CR>')
-
--- Dash
-vim.keymap.set('n', '<leader>D', ':Dash<CR>')
 
 -- LSP and diagnostics
 vim.keymap.set('n', '<Leader>d', '<cmd>lua vim.diagnostic.open_float()<CR>', { desc = 'Open diagnostics' })

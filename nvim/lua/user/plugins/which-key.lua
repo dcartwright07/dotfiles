@@ -1,7 +1,7 @@
 vim.o.timeout = true
 vim.o.timeoutlen = 300
 
--- -- Normal mode mappings
+-- Normal mode mappings
 local normalModeMaps = {
   ["<leader>/"] = { "<Plug>(comment_toggle_linewise_current)", "Comment Toggle" },
   ["<leader><Right>"] = { "<C-w>l", "Move to Left Pane" },

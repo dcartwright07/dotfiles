@@ -33,12 +33,6 @@ use({
         require('user/plugins/ui-vim-monokai-tasty')
     end,
 })
--- use({
---     'olimorris/onedarkpro.nvim',
---     config = function()
---         require('user/plugins/ui-onedark')
---     end,
--- })
 
 -- Commenting support.
 use({
@@ -73,9 +67,6 @@ use('nelstrom/vim-visual-star-search')
 
 -- Automatically highlighting other uses of the word under the cursor.
 use('RRethy/vim-illuminate')
-
--- Automatically create parent dirs when saving.
-use('jessarcher/vim-heritage')
 
 -- Add a better %.
 use('andymass/vim-matchup')
@@ -122,14 +113,6 @@ use({
     end,
 })
 
--- Automatically fix indentation when pasting code.
-use({
-    'sickill/vim-pasta',
-    config = function()
-        vim.g.pasta_disabled_filetypes = { 'fugitive' }
-    end,
-})
-
 -- Fuzzy finder
 use({
     'nvim-telescope/telescope.nvim',
@@ -149,7 +132,7 @@ use({
 -- File tree sidebar
 use({
     "nvim-neo-tree/neo-tree.nvim",
-    branch = "v2.x",
+    branch = "v3.x",
     requires = {
         "nvim-lua/plenary.nvim",
         "nvim-tree/nvim-web-devicons",
@@ -218,14 +201,6 @@ use({
     },
 })
 
---- Toggle Terminal.
-use({
-    'voldikss/vim-floaterm',
-    config = function()
-        require('user/plugins/floaterm')
-    end,
-})
-
 -- Improved syntax highlighting
 use({
     'nvim-treesitter/nvim-treesitter',
@@ -285,14 +260,8 @@ use({
     config = function() require("user/plugins/todo-comments") end,
 })
 
--- Vuetify Autocompletion
-use('albanm/vuetify-vim')
-
 -- Match HTML tags
 use('alvan/vim-closetag')
-
--- Dash
-use('rizzatti/dash.vim')
 
 -- Github Copilot
 use('github/copilot.vim')
@@ -312,34 +281,11 @@ use({
     end
 })
 
-use({
-    's1n7ax/nvim-search-and-replace',
-    config = function()
-        require('user/plugins/search-and-replace')
-    end,
-})
-
-use({
-    'nacro90/numb.nvim',
-    config = function()
-        require('numb').setup()
-    end
-})
-
 -- Shows all issues on request
 use({
     "folke/trouble.nvim",
     dependencies = { "nvim-tree/nvim-web-devicons" },
 })
-
--- Test Runner for Vim
-use('vim-test/vim-test')
-
--- Explain Regex
-use('tomiis4/Hypersonic.nvim')
-
--- Kitty syntax highlighting
-use('fladson/vim-kitty')
 
 -- Error Lens (Helps with displaying errors)
 use({

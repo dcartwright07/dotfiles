@@ -12,10 +12,9 @@ require('dashboard').setup({
     },
     packages = { enable = true },
     project = { enable = false, limit = 8, icon = ' Projects', label = '', action = 'Telescope find_files cwd=' },
-    mru = { limit = 10, icon = ' Recent Files', label = '', },
+    mru = { limit = 8, icon = ' Recent Files', label = '', },
     footer = {
       '',
-      -- '🇧🇸🇧🇸🇧🇸🇧🇸🇧🇸🇧🇸',
       'All I really know is 💯! Nothing less!',
       '',
     },

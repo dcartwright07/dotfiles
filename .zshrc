@@ -45,6 +45,7 @@ alias ssh='TERM=xterm-256color ssh'
 alias man="batman"
 # alias python="python3"
 alias p="pnpm"
+alias pw="npx playwright"
 
 
 alias composer="php /usr/local/bin/composer"
@@ -90,7 +91,7 @@ alias timer="watson"
 alias load="tmuxp load"
 alias f="fzf"
 alias lg="lazygit"
-alias le="exa --icons --group-directories-first ${1}"
+alias ls="lsd"
 alias j="fjira"
 
 # Projects
