@@ -1,7 +1,7 @@
 return {
   "folke/which-key.nvim",
 
-  config = function ()
+  config = function()
     vim.o.timeout = true
     vim.o.timeoutlen = 300
 
@@ -30,6 +30,7 @@ return {
         r = { '<cmd>TroubleToggle lsp_references<cr>', 'LSP References' },
       },
       ["<leader>c"] = { ':Bdelete<cr>', 'Close Buffer' },
+      ["<leader>C"] = { ':CloakToggle', 'Toggle Cloak' },
     }
 
     -- Visual mode mappings

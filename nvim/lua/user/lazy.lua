@@ -52,6 +52,9 @@ require("lazy").setup({
     -- Text objects for HTML attributes
     { 'whatyouhide/vim-textobj-xmlattr', dependencies = 'kana/vim-textobj-user' },
 
+    -- File security
+    { 'laytan/cloak.nvim',               config = true },
+
     -- Automatically set the working directory to the project root.
     {
         'airblade/vim-rooter',
