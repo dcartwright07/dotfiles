@@ -34,35 +34,26 @@ require("lazy").setup({
     { import = 'user.plugins.lualine' },
     { import = 'user.plugins.flash' },
 
-    'tpope/vim-surround',              -- Add, change, and delete surrounding text.
-    'tpope/vim-unimpaired',            -- Pairs of handy bracket mappings, like [b and ]b.
-    'tpope/vim-sleuth',                -- Indent autodetection with editorconfig support.
-    'tpope/vim-repeat',                -- Allow plugins to enable repeating of commands.
-    -- { 'sheerun/vim-polyglot' }, -- Add more languages.
-    'farmergreg/vim-lastplace',        -- Jump to the last location when opening a file.
-    'nelstrom/vim-visual-star-search', -- Enable * searching with visually selected text.
-    'RRethy/vim-illuminate',           -- Automatically highlighting other uses of the word under the cursor.
-    'andymass/vim-matchup',            -- Add a better %.
-    'alvan/vim-closetag',              -- Automatically close HTML tags.
-    'famiu/bufdelete.nvim',            -- All closing buffers without closing the split window.
-    'github/copilot.vim',              -- Github Copilot
-    'f-person/git-blame.nvim',         -- Git Blame
+    'tpope/vim-surround',                                                          -- Add, change, and delete surrounding text.
+    'tpope/vim-unimpaired',                                                        -- Pairs of handy bracket mappings, like [b and ]b.
+    'tpope/vim-sleuth',                                                            -- Indent autodetection with editorconfig support.
+    'tpope/vim-repeat',                                                            -- Allow plugins to enable repeating of commands.
+    'farmergreg/vim-lastplace',                                                    -- Jump to the last location when opening a file.
+    'nelstrom/vim-visual-star-search',                                             -- Enable * searching with visually selected text.
+    'RRethy/vim-illuminate',                                                       -- Automatically highlighting other uses of the word under the cursor.
+    'andymass/vim-matchup',                                                        -- Add a better %.
+    'alvan/vim-closetag',                                                          -- Automatically close HTML tags.
+    'famiu/bufdelete.nvim',                                                        -- All closing buffers without closing the split window.
+    'github/copilot.vim',                                                          -- Github Copilot
+    'f-person/git-blame.nvim',                                                     -- Git Blame
 
-    -- Text objects for HTML attributes
-    { 'whatyouhide/vim-textobj-xmlattr', dependencies = 'kana/vim-textobj-user' },
+    { 'whatyouhide/vim-textobj-xmlattr', dependencies = 'kana/vim-textobj-user' }, -- Text objects for HTML attributes
+    { 'windwp/nvim-autopairs',           config = true },                          -- Automatically add closing brackets, quotes, etc.
+    { 'karb94/neoscroll.nvim',           config = true },                          -- Add smooth scrolling to avoid jarring jumps
+    { 'laytan/cloak.nvim',               config = true },                          -- File security
+    { 'lewis6991/gitsigns.nvim',         config = true },                          -- Git Signs
+    { "kdheepak/lazygit.nvim",           dependencies = 'plenary' },               -- Git Management
 
-    -- Automatically add closing brackets, quotes, etc.
-    { 'windwp/nvim-autopairs',           config = true },
-
-    -- Add smooth scrolling to avoid jarring jumps
-    { 'karb94/neoscroll.nvim',           config = true },
-
-    -- Git integration.
-    { 'lewis6991/gitsigns.nvim',         config = true },
-    { "kdheepak/lazygit.nvim",           dependencies = 'plenary' },
-
-    -- File security
-    { 'laytan/cloak.nvim',               config = true },
 
     -- Automatically set the working directory to the project root.
     {
