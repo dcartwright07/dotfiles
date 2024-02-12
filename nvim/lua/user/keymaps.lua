@@ -4,9 +4,6 @@ vim.g.maplocalleader = ' '
 vim.g.highlighturl_enabled = true
 vim.g.autoformat_enabled = true
 
--- Packer
-vim.keymap.set('n', 'ps', ':PackerSync<CR>')
-
 -- When text is wrapped, move by terminal rows, not lines, unless a count is provided.
 vim.keymap.set('n', 'k', "v:count == 0 ? 'gk' : 'k'", { expr = true })
 vim.keymap.set('n', 'j', "v:count == 0 ? 'gj' : 'j'", { expr = true })
