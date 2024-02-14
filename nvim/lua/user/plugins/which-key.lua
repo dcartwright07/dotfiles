@@ -29,8 +29,16 @@ return {
         q = { '<cmd>TroubleToggle quickfix<cr>', 'Quickfix' },
         r = { '<cmd>TroubleToggle lsp_references<cr>', 'LSP References' },
       },
-      ["<leader>c"] = { ':Bdelete<cr>', 'Close Buffer' },
+      ["<leader>w"] = { ':Bdelete<cr>', 'Close Buffer' },
       ["<leader>C"] = { ':CloakToggle', 'Toggle Cloak' },
+      ["<leader>c"] = {
+        name = 'Copilot',
+        c = { ':CopilotChat ', 'Prompt' },
+        e = { ':CopilotChatExplain ', 'Explain' },
+        t = { ':CopilotChatTests<cr>', 'Generate Tests' },
+        r = { ':CopilotChatReview<cr>', 'Review' },
+        R = { ':CopilotChatRefactor<cr>', 'Refactor' },
+      }
     }
 
     -- Visual mode mappings

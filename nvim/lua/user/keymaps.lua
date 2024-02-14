@@ -16,10 +16,6 @@ vim.keymap.set('v', '>', '>gv')
 -- http://ddrscott.github.io/blog/2016/yank-without-jank/
 vim.keymap.set('v', 'y', 'myy`y')
 
--- Shortcuts
-vim.keymap.set('n', '<Leader>q', ':q<CR>', { desc = 'Quit' })
-vim.keymap.set('n', '<Leader>w', ':w<CR>', { desc = 'Save' })
-
 -- Paste replace visual selection without copying it.
 vim.keymap.set('v', 'p', '"_dP')
 
