@@ -34,7 +34,7 @@ return {
       ["<leader>c"] = {
         name = 'Copilot',
         c = { ':CopilotChat ', 'Prompt' },
-        e = { ':CopilotChatExplain ', 'Explain' },
+        e = { ':CopilotChatExplain<cr>', 'Explain' },
         t = { ':CopilotChatTests<cr>', 'Generate Tests' },
         r = { ':CopilotChatReview<cr>', 'Review' },
         R = { ':CopilotChatRefactor<cr>', 'Refactor' },
