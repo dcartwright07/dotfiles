@@ -158,9 +158,11 @@ return {
   },
 
   -- Diagnostics Display
-  { "folke/trouble.nvim",       dependencies = 'devicons' },
-  { 'chikko80/error-lens.nvim', dependencies = 'nvim-telescope/telescope.nvim', config = true },
-
-
-
+  { "folke/trouble.nvim", dependencies = 'devicons' },
+  {
+    'chikko80/error-lens.nvim',
+    event = 'BufRead',
+    dependencies = 'nvim-telescope/telescope.nvim',
+    config = true,
+  },
 }
