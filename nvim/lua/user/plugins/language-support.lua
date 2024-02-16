@@ -1,4 +1,7 @@
 return {
+  -- Language dependencies
+  { 'nvimtools/none-ls.nvim', name = 'none-ls' },
+
   -- Language Syntax
   {
     'nvim-treesitter/nvim-treesitter',
@@ -45,6 +48,20 @@ return {
     end,
   },
 
+  -- Laravel Support
+  {
+    "adalessa/laravel.nvim",
+    dependencies = {
+      "nvim-telescope/telescope.nvim",
+      "tpope/vim-dotenv",
+      "MunifTanjim/nui.nvim",
+      "none-ls",
+    },
+    cmd = { "Sail", "Artisan", "Composer", "Npm", "Yarn", "Laravel" },
+    event = "VeryLazy",
+    config = true,
+  },
+
   -- LSP Configuration
   {
     'neovim/nvim-lspconfig',
@@ -52,7 +69,7 @@ return {
       'williamboman/mason.nvim',
       'williamboman/mason-lspconfig.nvim',
       'b0o/schemastore.nvim',
-      'jose-elias-alvarez/null-ls.nvim',
+      'none-ls',
       'jayp0521/mason-null-ls.nvim',
     },
 
@@ -158,7 +175,7 @@ return {
   },
 
   -- Diagnostics Display
-  { "folke/trouble.nvim", dependencies = 'devicons' },
+  { "folke/trouble.nvim",     dependencies = 'devicons' },
   {
     'chikko80/error-lens.nvim',
     event = 'BufRead',

@@ -38,6 +38,11 @@ return {
         t = { ':CopilotChatTests<cr>', 'Generate Tests' },
         r = { ':CopilotChatReview<cr>', 'Review' },
         R = { ':CopilotChatRefactor<cr>', 'Refactor' },
+      },
+      ["<leader>l"] = {
+        a = { ':Laravel artisan<cr>', 'Artisan' },
+        r = { ':Laravel routes<cr>', 'Routes' },
+        m = { ':Laravel related<cr>', 'Related' },
       }
     }
 
