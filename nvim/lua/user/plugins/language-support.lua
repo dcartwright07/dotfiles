@@ -57,7 +57,7 @@ return {
       "MunifTanjim/nui.nvim",
       "none-ls",
     },
-    cmd = { "Sail", "Artisan", "Composer", "Npm", "Yarn", "Laravel" },
+    cmd = { "Sail", "Artisan", "Composer", "Npm", "Yarn", "Laravel", "Pnpm" },
     event = "VeryLazy",
     config = true,
   },
@@ -95,19 +95,21 @@ return {
         }
       })
 
-      -- PHP
+      -- Backend LSP
       lspconfig.intelephense.setup({ capabilities = capabilities })
+      lspconfig.sqlls.setup({ capabilities = capabilities })
 
-      -- Vue, JavaScript, TypeScript
+      -- Frontend LSP
       lspconfig.volar.setup({
         capabilities = capabilities,
         filetypes = { 'typescript', 'javascript', 'javascriptreact', 'typescriptreact', 'vue' },
       })
-
-      -- Tailwind CSS
+      lspconfig.html.setup({ capabilities = capabilities })
       lspconfig.tailwindcss.setup({ capabilities = capabilities })
+      lspconfig.cssls.setup({ capabilities = capabilities })
+      lspconfig.eslint.setup({ capabilities = capabilities })
 
-      -- JSON
+      -- Data LSP
       lspconfig.jsonls.setup({
         capabilities = capabilities,
         settings = {
@@ -117,34 +119,26 @@ return {
         },
       })
 
+      -- DevOps LSP
       lspconfig.dockerls.setup({ capabilities = capabilities })
-
-      lspconfig.html.setup({ capabilities = capabilities })
-
-      lspconfig.sqlls.setup({ capabilities = capabilities })
 
       -- null-ls
       require('null-ls').setup({
         sources = {
           -- Diagnostics
-          require('null-ls').builtins.diagnostics.eslint_d.with({
-            condition = function(utils)
-              return utils.root_has_file({ '.eslintrc.js' })
-            end,
-          }),
+          -- require('null-ls').builtins.diagnostics.eslint_d.with({
+          --   condition = function(utils)
+          --     return utils.root_has_file({ '.eslintrc.js' })
+          --   end,
+          -- }),
           require('null-ls').builtins.diagnostics.trail_space.with({ disabled_filetypes = { 'NvimTree' } }),
-          require('null-ls').builtins.diagnostics.stylint.with({
-            condition = function(utils)
-              return utils.root_has_file({ '.stylintrc', '.stylintrc.json', '.stylintrc.yml', '.stylintrc.yaml' })
-            end,
-          }),
 
           -- Formatting
-          require('null-ls').builtins.formatting.eslint_d.with({
-            condition = function(utils)
-              return utils.root_has_file({ '.eslintrc.js' })
-            end,
-          }),
+          -- require('null-ls').builtins.formatting.eslint_d.with({
+          --   condition = function(utils)
+          --     return utils.root_has_file({ '.eslintrc.js' })
+          --   end,
+          -- }),
           require('null-ls').builtins.formatting.prettierd.with({
             condition = function(utils)
               return utils.root_has_file({ '.prettierrc.js', '.prettierrc', '.prettierrc.json', '.prettierrc.yml',
@@ -158,28 +152,38 @@ return {
 
       -- Diagnostic configuration
       vim.diagnostic.config({
-        virtual_text = false,
+        --   virtual_text = false,
         severity_sort = true,
         float = {
           border = 'rounded',
           source = 'always',
-        }
+        },
       })
 
       -- Sign configuration
-      vim.fn.sign_define('DiagnosticSignError', { text = '', texthl = 'DiagnosticSignError' })
-      vim.fn.sign_define('DiagnosticSignWarn', { text = '', texthl = 'DiagnosticSignWarn' })
-      vim.fn.sign_define('DiagnosticSignInfo', { text = '', texthl = 'DiagnosticSignInfo' })
-      vim.fn.sign_define('DiagnosticSignHint', { text = '', texthl = 'DiagnosticSignHint' })
+      vim.fn.sign_define('DiagnosticSignError', {
+        text = '',
+        texthl = 'DiagnosticError',
+        linehl = 'DiagnosticErrorLn'
+      })
+      vim.fn.sign_define('DiagnosticSignWarn', {
+        text = '',
+        texthl = 'DiagnosticWarn',
+        linehl = 'DiagnosticWarnLn'
+      })
+      vim.fn.sign_define('DiagnosticSignInfo', {
+        text = '',
+        texthl = 'DiagnosticInfo',
+        linehl = 'DiagnosticInfoLn'
+      })
+      vim.fn.sign_define('DiagnosticSignHint', {
+        text = '',
+        texthl = 'DiagnosticHint',
+        linehl = 'DiagnosticHintLn'
+      })
     end,
   },
 
   -- Diagnostics Display
   { "folke/trouble.nvim",     dependencies = 'devicons' },
-  {
-    'chikko80/error-lens.nvim',
-    event = 'BufRead',
-    dependencies = 'nvim-telescope/telescope.nvim',
-    config = true,
-  },
 }

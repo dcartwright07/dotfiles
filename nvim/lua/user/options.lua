@@ -9,6 +9,7 @@ vim.opt.wrap = true
 vim.opt.cursorline = true
 vim.opt.number = true
 vim.opt.relativenumber = true
+vim.opt.guifont = "JetBrainsMono Nerd Font Mono:h18"
 
 vim.opt.wildmode =
 'longest:full,full' -- complete the longest common match, and allow tabbing the results to fully complete them
@@ -55,5 +56,4 @@ vim.g.gitblame_delay = 1000
 if vim.g.neovide then
     vim.g.neovide_fullscreen = true
     vim.g.neovide_hide_mouse_when_typing = true
-    vim.opt.guifont = "JetBrainsMono Nerd Font Mono:h18"
 end

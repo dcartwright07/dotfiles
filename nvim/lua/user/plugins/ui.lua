@@ -28,11 +28,32 @@ return {
       black = "#000000",
     }
 
+    local diagnostic_colors = {
+      error_fg = "#FF6363",
+      error_bg = "#4B252C",
+      warn_fg = "#FA973A",
+      warn_bg = "#403733",
+      info_fg = "#387EFF",
+      info_bg = "#20355A",
+      hint_fg = "#16C53B",
+      hint_bg = "#254435",
+    }
+
     -- CursorLine
     vim.api.nvim_set_hl(0, 'CursorLineBg', {
       fg = vim.api.nvim_get_hl_by_name('CursorLine', true).background,
       bg = vim.api.nvim_get_hl_by_name('CursorLine', true).background
     })
+
+    -- Diagnostics
+    vim.api.nvim_set_hl(0, 'DiagnosticError', { fg = diagnostic_colors.error_fg })
+    vim.api.nvim_set_hl(0, 'DiagnosticWarn', { fg = diagnostic_colors.warn_fg })
+    vim.api.nvim_set_hl(0, 'DiagnosticInfo', { fg = diagnostic_colors.info_fg })
+    vim.api.nvim_set_hl(0, 'DiagnosticHint', { fg = diagnostic_colors.hint_fg })
+    vim.api.nvim_set_hl(0, 'DiagnosticErrorLn', { bg = diagnostic_colors.error_bg })
+    vim.api.nvim_set_hl(0, 'DiagnosticWarnLn', { bg = diagnostic_colors.warn_bg })
+    vim.api.nvim_set_hl(0, 'DiagnosticInfoLn', { bg = diagnostic_colors.info_bg })
+    vim.api.nvim_set_hl(0, 'DiagnosticHintLn', { bg = diagnostic_colors.hint_bg })
 
     -- StatusLine
     vim.api.nvim_set_hl(0, 'StatusLineNonText', { fg = colors.light_grey, bg = colors.darker_grey })
