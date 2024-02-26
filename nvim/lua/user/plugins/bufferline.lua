@@ -1,5 +1,6 @@
 return {
   'akinsho/bufferline.nvim',
+  version = '*',
   dependencies = "devicons",
 
   config = function()
@@ -9,6 +10,7 @@ return {
           icon = ' ',
         },
         show_close_icon = false,
+        show_buffer_close_icons = false,
         tab_size = 0,
         max_name_length = 25,
         offsets = {

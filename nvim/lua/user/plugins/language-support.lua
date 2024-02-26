@@ -1,6 +1,7 @@
 return {
   -- Language dependencies
-  { 'nvimtools/none-ls.nvim', name = 'none-ls' },
+  { 'nvimtools/none-ls.nvim', name = 'none-ls' },         -- List of diagnostic tools
+  { 'windwp/nvim-ts-autotag', name = 'nvim-ts-autotag' }, -- Automatically close HTML tags
 
   -- Language Syntax
   {
@@ -8,7 +9,6 @@ return {
     event = 'VeryLazy',
     build = function()
       require('nvim-treesitter.install').update({ with_sync = true })
-      require('ts-context-commentstring').setup()
     end,
     dependencies = {
       'JoosepAlviste/nvim-ts-context-commentstring',
@@ -22,6 +22,7 @@ return {
         sync_install = false,
         auto_install = true,
         ignore_install = {},
+        modules = {},
         highlight = {
           enable = true,
           additional_vim_regex_highlighting = true,
@@ -126,19 +127,9 @@ return {
       require('null-ls').setup({
         sources = {
           -- Diagnostics
-          -- require('null-ls').builtins.diagnostics.eslint_d.with({
-          --   condition = function(utils)
-          --     return utils.root_has_file({ '.eslintrc.js' })
-          --   end,
-          -- }),
           require('null-ls').builtins.diagnostics.trail_space.with({ disabled_filetypes = { 'NvimTree' } }),
 
           -- Formatting
-          -- require('null-ls').builtins.formatting.eslint_d.with({
-          --   condition = function(utils)
-          --     return utils.root_has_file({ '.eslintrc.js' })
-          --   end,
-          -- }),
           require('null-ls').builtins.formatting.prettierd.with({
             condition = function(utils)
               return utils.root_has_file({ '.prettierrc.js', '.prettierrc', '.prettierrc.json', '.prettierrc.yml',
@@ -185,5 +176,5 @@ return {
   },
 
   -- Diagnostics Display
-  { "folke/trouble.nvim",     dependencies = 'devicons' },
+  { "folke/trouble.nvim", dependencies = 'devicons' },
 }

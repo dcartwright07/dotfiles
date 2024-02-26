@@ -34,6 +34,7 @@ require("lazy").setup({
     { import = 'user.plugins.lualine' },
     { import = 'user.plugins.flash' },
     { import = 'user.plugins.copilot' },
+    { import = 'user.plugins.incline' },
 
     'tpope/vim-surround',                                                          -- Add, change, and delete surrounding text.
     'tpope/vim-unimpaired',                                                        -- Pairs of handy bracket mappings, like [b and ]b.
@@ -43,7 +44,6 @@ require("lazy").setup({
     'nelstrom/vim-visual-star-search',                                             -- Enable * searching with visually selected text.
     'RRethy/vim-illuminate',                                                       -- Automatically highlighting other uses of the word under the cursor.
     'andymass/vim-matchup',                                                        -- Add a better %.
-    'alvan/vim-closetag',                                                          -- Automatically close HTML tags.
     'famiu/bufdelete.nvim',                                                        -- All closing buffers without closing the split window.
     'f-person/git-blame.nvim',                                                     -- Git Blame
 
@@ -53,7 +53,6 @@ require("lazy").setup({
     { 'laytan/cloak.nvim',               config = true },                          -- File security
     { 'lewis6991/gitsigns.nvim',         config = true },                          -- Git Signs
     { "kdheepak/lazygit.nvim",           dependencies = 'plenary' },               -- Git Management
-
 
     -- Automatically set the working directory to the project root.
     {
@@ -73,7 +72,6 @@ require("lazy").setup({
         branch = "v3.x",
         dependencies = { 'plenary', 'devicons', "MunifTanjim/nui.nvim" },
     },
-
 }, {
     checker = {
         enabled = true,
