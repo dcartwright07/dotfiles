@@ -1,0 +1,89 @@
+# NVM
+export NVM_DIR="$HOME/.nvm"
+  [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+  [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+
+# Auto Assign Version if Project has .nvmrc file
+autoload -U add-zsh-hook
+load-nvmrc() {
+  local node_version="$(nvm version)"
+  local nvmrc_path="$(nvm_find_nvmrc)"
+
+  if [ -n "$nvmrc_path" ]; then
+    local nvmrc_node_version=$(nvm version "$(cat "${nvmrc_path}")")
+
+    if [ "$nvmrc_node_version" = "N/A" ]; then
+      nvm install
+    elif [ "$nvmrc_node_version" != "$node_version" ]; then
+      nvm use
+    fi
+  elif [ "$node_version" != "$(nvm version default)" ]; then
+    echo "Reverting to nvm default version"
+    nvm use default
+  fi
+}
+add-zsh-hook chpwd load-nvmrc
+load-nvmrc
+
+eval "$(op completion zsh)"; compdef _op op
+
+mysql_db() {
+  target_db=$1
+  db_type=$2
+
+  echo "Connecting to $target_db $db_type"
+
+  if [ "$target_db" = "wu247" ] && [ "$db_type" = "local" ]; then
+    item="rx64r7b3dbteulho7wj7umd5oq"
+  fi
+
+  local username="$(op item get $item --fields username)"
+  local password="$(op item get $item --fields password)"
+  local host="$(op item get $item --fields server)"
+  local port="$(op item get $item --fields port)"
+  local database="$(op item get $item --fields database)"
+  mycli -h $host -P $port -u $username -p $password $database
+}
+
+postgres_db() {
+  target_db=$1
+  db_type=$2
+
+  echo "Connecting to $target_db $db_type"
+
+  if [ "$db_type" = "local" ]; then
+
+    if [ "$target_db" = "moodle" ]; then
+      username="moodle"
+      password="m%400dl3ing"
+      host="localhost"
+      port="5432"
+      database=$target_db
+    fi
+
+  else
+
+    if [ "$target_db" = "psql04" ]; then
+      local item="rwzzcgf3yxndu2dzs2bssqkyfm"
+    fi
+
+    username="$(op item get $item --fields username)"
+    password="$(op item get $item --fields password)"
+    host="$(op item get $item --fields server)"
+    port="$(op item get $item --fields port)"
+    database="$(op item get $item --fields database)"
+
+  fi
+
+  # echo postgres://$username:$password@$host:$port/$database
+
+  pgcli postgres://$username:$password@$host:$port/$database
+}
+
+warp() {
+  cd $(find ~ -type d \( -path ~/Applications -prune -o -path ~/Library -prune \) -o -print | fzf)
+}
+
+project() {
+  cd $(find ~/Repos -type d | fzf)
+}
