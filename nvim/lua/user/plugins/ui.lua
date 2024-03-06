@@ -67,7 +67,6 @@ return {
     vim.api.nvim_set_hl(0, 'TelescopePromptPrefix', { fg = colors.red, bg = colors.darker_grey })
     vim.api.nvim_set_hl(0, 'TelescopeResultsBorder', { fg = colors.light_charcoal, bg = colors.light_charcoal })
     vim.api.nvim_set_hl(0, 'TelescopeResultsNormal', { fg = colors.white, bg = colors.light_charcoal })
-    -- vim.api.nvim_set_hl(0, 'TelescopeResultsTitle', { fg = colors.yellow, bg = colors.dark_grey })
     vim.api.nvim_set_hl(0, 'TelescopeSelectionCaret', { fg = colors.yellow, bg = colors.dark_grey })
     vim.api.nvim_set_hl(0, 'TelescopePreviewBorder', { fg = colors.light_charcoal, bg = colors.light_charcoal })
     vim.api.nvim_set_hl(0, 'TelescopePreviewNormal', { bg = colors.light_charcoal })
@@ -102,5 +101,12 @@ return {
 
     -- Match Word
     vim.api.nvim_set_hl(0, 'MatchWord', { bg = colors.charcoal })
+
+    -- Comment
+    vim.api.nvim_set_hl(0, 'CommentCursorLine', {
+      fg = colors.grey,
+      bg = vim.api.nvim_get_hl_by_name('CursorLine', true).background,
+      italic = true
+    })
   end
 }

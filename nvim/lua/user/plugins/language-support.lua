@@ -1,15 +1,17 @@
 return {
   -- Language dependencies
-  { 'nvimtools/none-ls.nvim', name = 'none-ls' },         -- List of diagnostic tools
   { 'windwp/nvim-ts-autotag', name = 'nvim-ts-autotag' }, -- Automatically close HTML tags
+  {
+    'nvimtools/none-ls.nvim',                             -- Replacement for null-ls
+    name = 'none-ls',
+    dependencies = { 'nvimtools/none-ls-extras.nvim' }
+  },
 
   -- Language Syntax
   {
     'nvim-treesitter/nvim-treesitter',
     event = 'VeryLazy',
-    build = function()
-      require('nvim-treesitter.install').update({ with_sync = true })
-    end,
+    build = ':TSUpdate',
     dependencies = {
       'JoosepAlviste/nvim-ts-context-commentstring',
       'nvim-treesitter/nvim-treesitter-textobjects',
@@ -108,7 +110,6 @@ return {
       lspconfig.html.setup({ capabilities = capabilities })
       lspconfig.tailwindcss.setup({ capabilities = capabilities })
       lspconfig.cssls.setup({ capabilities = capabilities })
-      lspconfig.eslint.setup({ capabilities = capabilities })
 
       -- Data LSP
       lspconfig.jsonls.setup({
@@ -128,8 +129,18 @@ return {
         sources = {
           -- Diagnostics
           require('null-ls').builtins.diagnostics.trail_space.with({ disabled_filetypes = { 'NvimTree' } }),
+          require('none-ls.diagnostics.eslint').with({
+            condition = function(utils)
+              return utils.root_has_file({ '.eslintrc.js' })
+            end,
+          }),
 
           -- Formatting
+          require('none-ls.formatting.eslint').with({
+            condition = function(utils)
+              return utils.root_has_file({ '.eslintrc.js' })
+            end,
+          }),
           require('null-ls').builtins.formatting.prettierd.with({
             condition = function(utils)
               return utils.root_has_file({ '.prettierrc.js', '.prettierrc', '.prettierrc.json', '.prettierrc.yml',
@@ -176,5 +187,5 @@ return {
   },
 
   -- Diagnostics Display
-  { "folke/trouble.nvim", dependencies = 'devicons' },
+  { "folke/trouble.nvim",     dependencies = 'devicons' },
 }
