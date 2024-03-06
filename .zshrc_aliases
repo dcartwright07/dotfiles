@@ -1,4 +1,4 @@
-alias v="neovide"
+alias v="nvim"
 alias edit="cd ~/Repos/dotfiles; v ~/.zshrc"
 alias refresh="source ~/.zshrc"
 alias ztheme="v ~/.config/.oh-my-zsh/themes/dominic.zsh-theme"
