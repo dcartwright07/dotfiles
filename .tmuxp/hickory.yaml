@@ -1,16 +1,14 @@
 session_name: hickory
-start_directory: "~/Repos/hickory/"
+start_directory: "~/Repos/slingshot/hickory"
 windows:
   - window_name: code
     panes:
       - shell_command:
-          - cmd: v
-  - window_name: scripts
+  - window_name: terminal
     layout: even-horizontal
     panes:
       - shell_command:
-          - cmd: yarn serve
       - shell_command:
-  - window_name: shell
+  - window_name: lazygit
     panes:
       - shell_command:

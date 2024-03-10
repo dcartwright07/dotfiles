@@ -1,16 +1,14 @@
 session_name: slingshot-pro
-start_directory: "~/Repos/slingshot-pro"
+start_directory: "~/Repos/slingshot/slingshot-pro"
 windows:
   - window_name: code
     panes:
       - shell_command:
-          - cmd: v
   - window_name: terminal
     layout: even-horizontal
     panes:
       - shell_command:
-          - cmd: yarn dev --port 8009
       - shell_command:
-  - window_name: database
+  - window_name: lazygit
     panes:
       - shell_command:

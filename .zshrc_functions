@@ -87,3 +87,12 @@ warp() {
 project() {
   cd $(find ~/Repos -type d | fzf)
 }
+
+ws() {
+  tmuxp load $(find ~/Repos/dotfiles/.tmuxp | fzf)
+}
+
+timezsh() {
+  shell=${1-$SHELL}
+  for i in $(seq 1 10); do /usr/bin/time $shell -i -c exit; done
+}

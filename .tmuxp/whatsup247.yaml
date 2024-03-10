@@ -1,5 +1,5 @@
 session_name: whatsup247
-start_directory: "~/Repos/whatsup247/wu247v3/"
+start_directory: "~/Repos/personal/whatsup247/wu247v3/"
 windows:
   - window_name: laravel
     panes:
