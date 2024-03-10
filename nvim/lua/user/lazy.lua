@@ -12,15 +12,16 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 vim.g.mapleader = " "
+vim.g.maplocalleader = " "
 
 require("lazy").setup({
+    { import = 'user.plugins.which-key' },
     'folke/neodev.nvim', -- Development plugin
 
     -- Reused Dependencies
     { 'nvim-lua/plenary.nvim',                 name = 'plenary' },
     { 'nvim-tree/nvim-web-devicons',           name = 'devicons' },
 
-    { import = 'user.plugins.which-key' },
     { import = 'user.plugins.ui' },
     { import = 'user.plugins.comment' },
     { import = 'user.plugins.dashboard' },
