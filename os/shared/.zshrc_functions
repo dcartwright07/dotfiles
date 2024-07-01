@@ -1,0 +1,70 @@
+# Set up fzf key bindings and completion
+eval "$(fzf --zsh)"
+
+# Set up zoxide
+eval "$(zoxide init zsh)"
+
+# Setup 1Password CLI
+eval "$(op completion zsh)"; compdef _op op
+
+mysql_db() {
+  target_db=$1
+  db_type=$2
+
+  echo "Connecting to $target_db $db_type"
+
+  if [ "$target_db" = "wu247" ] && [ "$db_type" = "local" ]; then
+    item="rx64r7b3dbteulho7wj7umd5oq"
+  fi
+
+  local username="$(op item get $item --fields username)"
+  local password="$(op item get $item --fields password)"
+  local host="$(op item get $item --fields server)"
+  local port="$(op item get $item --fields port)"
+  local database="$(op item get $item --fields database)"
+  mycli -h $host -P $port -u $username -p $password $database
+}
+
+postgres_db() {
+  target_db=$1
+  db_type=$2
+
+  echo "Connecting to $target_db $db_type"
+
+  if [ "$db_type" = "local" ]; then
+
+    if [ "$target_db" = "moodle" ]; then
+      username="moodle"
+      password="m%400dl3ing"
+      host="localhost"
+      port="5432"
+      database=$target_db
+    fi
+
+  else
+
+    if [ "$target_db" = "psql04" ]; then
+      local item="rwzzcgf3yxndu2dzs2bssqkyfm"
+    fi
+
+    username="$(op item get $item --fields username)"
+    password="$(op item get $item --fields password)"
+    host="$(op item get $item --fields server)"
+    port="$(op item get $item --fields port)"
+    database="$(op item get $item --fields database)"
+
+  fi
+
+  # echo postgres://$username:$password@$host:$port/$database
+
+  pgcli postgres://$username:$password@$host:$port/$database
+}
+
+project() {
+  cd $(find ~/Repos -type d | fzf)
+}
+
+timezsh() {
+  shell=${1-$SHELL}
+  for i in $(seq 1 10); do /usr/bin/time $shell -i -c exit; done
+}
