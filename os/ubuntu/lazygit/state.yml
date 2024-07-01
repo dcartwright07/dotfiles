@@ -1,0 +1,15 @@
+lastupdatecheck: 0
+recentrepos:
+    - /home/dominic/Repos/dotfiles
+    - /home/dominic/Repos/slingshot/slingshot-pro
+    - /home/dominic/Repos/slingshot/student-portal
+startuppopupversion: 5
+lastversion: 0.42.0
+customcommandshistory: []
+hidecommandlog: false
+ignorewhitespaceindiffview: false
+diffcontextsize: 3
+localbranchsortorder: recency
+remotebranchsortorder: alphabetical
+gitlogorder: topo-order
+gitlogshowgraph: always

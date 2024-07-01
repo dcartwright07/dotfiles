@@ -9,5 +9,6 @@ plugins=(
 )
 
 source $ZSH/oh-my-zsh.sh
+source ~/Repos/dotfiles/os/ubuntu/.zshrc_config
 source ~/Repos/dotfiles/os/ubuntu/.zshrc_aliases
 source ~/Repos/dotfiles/os/ubuntu/.zshrc_functions

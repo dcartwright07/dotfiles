@@ -1,7 +1,3 @@
-eval "$(fzf --zsh)" # Setup FZF key bindings and completion
-eval "$(zoxide init zsh)" # Set up zoxide
-eval "$(op completion zsh)"; compdef _op op # Setup 1Password CLI
-
 mysql_db() {
   target_db=$1
   db_type=$2
