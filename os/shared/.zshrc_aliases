@@ -28,6 +28,9 @@ alias d="docker"
 alias binstall='brew list | gum filter --placeholder "Choose a package to install" | xargs brew install'
 
 # Laravel Projects
+alias sail="sh vendor/bin/sail"
+alias s-up="sail up -d"
+alias s-dn="sail down"
 alias art="sail artisan"
 alias routes="sail artisan route:list --except-vendor"
 
