@@ -1,9 +1,9 @@
 # Alt+F4 is very cumbersome
 gsettings set org.gnome.desktop.wm.keybindings close "['<Super>q']"
 
-# Use 6 fixed workspaces instead of dynamic mode
+# Use 3 fixed workspaces instead of dynamic mode
 gsettings set org.gnome.mutter dynamic-workspaces false
-gsettings set org.gnome.desktop.wm.preferences num-workspaces 6
+gsettings set org.gnome.desktop.wm.preferences num-workspaces 3
 
 # Use super for workspaces
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-1 "['<Alt>1']"
