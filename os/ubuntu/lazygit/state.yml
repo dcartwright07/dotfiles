@@ -3,6 +3,7 @@ recentrepos:
     - /home/dominic/Repos/dotfiles
     - /home/dominic/Repos/slingshot/slingshot-pro
     - /home/dominic/Repos/slingshot/student-portal
+    - /home/dominic/Repos/slingshot/slingshot_queries
 startuppopupversion: 5
 lastversion: 0.42.0
 customcommandshistory: []
