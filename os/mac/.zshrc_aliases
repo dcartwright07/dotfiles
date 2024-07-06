@@ -1,4 +1,4 @@
-source ../shared/.zshrc_aliases
+source ~/Repos/dotfiles/os/shared/.zshrc_aliases
 
 alias ztheme="v ~/.config/.oh-my-zsh/themes/dominic.zsh-theme"
 alias edit-dash="v ~/.config/gh-dash/config.yml"
