@@ -1,0 +1,34 @@
+Plug 'tpope/vim-commentary'
+Plug 'easymotion/vim-easymotion'
+
+set relativenumber
+set which-key
+set notimeout
+set ideajoin
+
+let mapleader = " "
+
+map <leader>f <Action>(GotoFile)
+map <leader>g <Action>(FindInPath)
+map <leader>b <Action>(Switcher)
+map <leader>t <Action>(ActivateTerminalToolWindow)
+map <leader>rc <Action>(Run)
+map <leader>rs <Action>(Stop)
+map <leader>sv <Action>(MoveTabRight)
+map <leader>sh <Action>(MoveTabDown)
+map <leader>aa <Action>(GotoAction)
+map <leader>qa <Action>(CloseAllEditors)
+
+map <leader>jf <Plug>(easymotion-f)
+map <leader>jb <Plug>(easymotion-s)
+
+map <c-z> <Action>(ToggleDistractionFreeMode)
+
+nnoremap <leader>al :actionlist<CR>
+
+nmap <silent> <leader>/ <Plug>CommentaryLine
+xmap <silent> <leader>/ <Plug>Commentary
+
+nmap <silent> gr <Action>(ShowUsages)
+nmap <silent> [b <Action>(PreviousTab)
+nmap <silent> ]b <Action>(NextTab)
