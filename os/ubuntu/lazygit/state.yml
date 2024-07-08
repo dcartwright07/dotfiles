@@ -1,7 +1,9 @@
 lastupdatecheck: 0
 recentrepos:
     - /home/dominic/Repos/dotfiles
+    - /home/dominic/Repos/slingshot/slingshot-internal
     - /home/dominic/Repos/slingshot/slingshot-pro
+    - /home/dominic/Repos/slingshot/hickory
     - /home/dominic/Repos/slingshot/student-portal
     - /home/dominic/Repos/slingshot/slingshot_queries
 startuppopupversion: 5
