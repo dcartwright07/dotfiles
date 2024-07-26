@@ -3,63 +3,51 @@ return {
   event = "VeryLazy",
 
   config = function()
-    vim.o.timeout = true
-    vim.o.timeoutlen = 300
-
     -- Normal mode mappings
     local normalModeMaps = {
-      ["<leader>/"] = { "<Plug>(comment_toggle_linewise_current)", "Comment Toggle" },
-      ["<leader><Right>"] = { "<C-w>l", "Move to Left Pane" },
-      ["<leader><Left>"] = { "<C-w>h", "Move to Right Pane" },
-      ["<leader><Down>"] = { "<C-w>j", "Move to Bottom Pane" },
-      ["<leader><Up>"] = { "<C-w>k", "Move to Top Pane" },
-      ["<leader>g"] = {
-        name = 'Git',
-        s = { function() require("gitsigns").stage_hunk() end, 'Stage Hunk' },
-        u = { function() require("gitsigns").undo_stage_hunk() end, 'Undo Stage Hunk' },
-        p = { function() require("gitsigns").preview_hunk() end, 'Preview Hunk' },
-        d = { function() require("gitsigns").diffthis() end, 'View Diff' },
-        l = { function() require("gitsigns").blame_line() end, 'Blame Line' },
-      },
-      ["<leader>X"] = {
-        name = 'Trouble',
-        x = { '<cmd>TroubleToggle<cr>', 'Trouble' },
-        w = { '<cmd>TroubleToggle workspace_diagnostics<cr>', 'Workspace Diagnostics' },
-        d = { '<cmd>TroubleToggle document_diagnostics<cr>', 'Document Diagnostics' },
-        l = { '<cmd>TroubleToggle loclist<cr>', 'Loclist' },
-        q = { '<cmd>TroubleToggle quickfix<cr>', 'Quickfix' },
-        r = { '<cmd>TroubleToggle lsp_references<cr>', 'LSP References' },
-      },
-      ["<leader>w"] = { ':Bdelete<cr>', 'Close Buffer' },
-      ["<leader>C"] = { ':CloakToggle', 'Toggle Cloak' },
-      ["<leader>c"] = {
-        name = 'Copilot',
-        c = { ':CopilotChat ', 'Prompt' },
-        e = { ':CopilotChatExplain<cr>', 'Explain' },
-        t = { ':CopilotChatTests<cr>', 'Generate Tests' },
-        r = { ':CopilotChatReview<cr>', 'Review' },
-        R = { ':CopilotChatRefactor<cr>', 'Refactor' },
-      },
-      ["<leader>l"] = {
-        a = { ':Laravel artisan<cr>', 'Artisan' },
-        r = { ':Laravel routes<cr>', 'Routes' },
-        m = { ':Laravel related<cr>', 'Related' },
-      }
+      mode = "n",
+      { "<leader>/",       "<Plug>(comment_toggle_linewise_current)",            desc = "Comment Toggle" },
+      { "<leader><Right>", "<C-w>l",                                             desc = "Move to Left Pane" },
+      { "<leader><Left>",  "<C-w>h",                                             desc = "Move to Right Pane" },
+      { "<leader><Down>",  "<C-w>j",                                             desc = "Move to Bottom Pane" },
+      { "<leader><Up>",    "<C-w>k",                                             desc = "Move to Top Pane" },
+      { "<leader>w",       ':Bdelete<cr>',                                       desc = 'Close Buffer' },
+      { "<leader>C",       ':CloakToggle',                                       desc = 'Toggle Cloak' },
+      { "<leader>gs",      function() require("gitsigns").stage_hunk() end,      desc = 'Stage Hunk' },
+      { "<leader>gu",      function() require("gitsigns").undo_stage_hunk() end, desc = 'Undo Stage Hunk' },
+      { "<leader>gp",      function() require("gitsigns").preview_hunk() end,    desc = 'Preview Hunk' },
+      { "<leader>gd",      function() require("gitsigns").diffthis() end,        desc = 'View Diff' },
+      { "<leader>gl",      function() require("gitsigns").blame_line() end,      desc = 'Blame Line' },
+      { "<leader>X",       '<cmd>TroubleToggle<cr>',                             desc = 'Trouble' },
+      { "<leader>Xw",      '<cmd>TroubleToggle workspace_diagnostics<cr>',       desc = 'Workspace Diagnostics' },
+      { "<leader>Xd",      '<cmd>TroubleToggle document_diagnostics<cr>',        desc = 'Document Diagnostics' },
+      { "<leader>Xl",      '<cmd>TroubleToggle loclist<cr>',                     desc = 'Loclist' },
+      { "<leader>Xq",      '<cmd>TroubleToggle quickfix<cr>',                    desc = 'Quickfix' },
+      { "<leader>Xr",      '<cmd>TroubleToggle lsp_references<cr>',              desc = 'LSP References' },
+      { "<leader>c",       ':CopilotChat ',                                      desc = 'Prompt' },
+      { "<leader>ce",      ':CopilotChatExplain<cr>',                            desc = 'Explain' },
+      { "<leader>ct",      ':CopilotChatTests<cr>',                              desc = 'Generate Tests' },
+      { "<leader>cr",      ':CopilotChatReview<cr>',                             desc = 'Review' },
+      { "<leader>cR",      ':CopilotChatRefactor<cr>',                           desc = 'Refactor' },
+      { "<leader>la",      ':Laravel artisan<cr>',                               desc = 'Artisan' },
+      { "<leader>lr",      ':Laravel routes<cr>',                                desc = 'Routes' },
+      { "<leader>lm",      ':Laravel related<cr>',                               desc = 'Related' },
     }
 
     -- Visual mode mappings
     local visualModeMaps = {
-      ["<leader>/"] = { "<Plug>(comment_toggle_linewise_visual)", "Comment Toggle" },
+      mode = "v",
+      { "<leader>/", "<Plug>(comment_toggle_linewise_visual)", desc = "Comment Toggle" },
     }
 
     local which_key = require("which-key")
     which_key.setup({
       -- ignore_missing = true,
       triggers = {
-        "<leader>"
+        "<leader>", mode = { "n", "v" }
       }
     })
-    which_key.register(normalModeMaps, { mode = "n" })
-    which_key.register(visualModeMaps, { mode = "v" })
+    which_key.add(normalModeMaps)
+    which_key.add(visualModeMaps)
   end,
 }

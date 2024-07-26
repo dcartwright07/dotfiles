@@ -1,5 +1,14 @@
 return {
-  { 'github/copilot.vim', name = 'copilot' },
+  {
+    'github/copilot.vim',
+    name = 'copilot',
+    config = function()
+      vim.cmd([[
+      imap <silent><script><expr> <Tab> copilot#Accept("\<CR>")
+      let g:copilot_no_tab_map = v:true
+    ]])
+    end,
+  },
 
   {
     'CopilotC-Nvim/CopilotChat.nvim',

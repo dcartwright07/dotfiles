@@ -53,3 +53,5 @@ alias ls="lsd"
 alias j="fjira"
 alias count="wc"
 alias cd="z"
+
+alias pip="python3 -m pip"

@@ -1,10 +1,14 @@
 Plug 'tpope/vim-commentary'
 Plug 'easymotion/vim-easymotion'
 
-set relativenumber
 set which-key
 set notimeout
 set ideajoin
+
+set relativenumber " relative line numbers
+set ignorecase " search case insensitive
+set smartcase " search via smartcase
+set incsearch " search incremental
 
 let mapleader = " "
 
