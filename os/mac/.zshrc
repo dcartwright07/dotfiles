@@ -6,6 +6,7 @@ export PATH="$PATH:$HOME/development/flutter/bin:$PATH"
 export PATH="$PATH:$HOME/.gem/bin:$PATH"
 export NI_CONFIG_FILE="$HOME/.config/ni/nirc"
 export CONFIG_DIR="$HOME/.config/lazygit"
+export LAUNCH_EDITOR="webstorm"
 
 ulimit -n 4096
 
