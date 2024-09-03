@@ -3,7 +3,5 @@ source ~/Repos/dotfiles/os/shared/.zshrc_config
 # VSCode
 [[ "$TERM_PROGRAM" == "vscode" ]] && . "$(code --locate-shell-integration-path zsh)"
 
-# Enable Oh My Posh
-if [ "$TERM_PROGRAM" != "Apple_Terminal" ]; then
-  eval "$(oh-my-posh init zsh --config ~/.dominic.omp.json)"
-fi
+# Enable Starship
+eval "$(starship init zsh)"
