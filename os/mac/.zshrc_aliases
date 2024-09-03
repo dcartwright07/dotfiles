@@ -1,7 +1,6 @@
 source ~/Repos/dotfiles/os/shared/.zshrc_aliases
 
 alias ztheme="v ~/.config/.oh-my-zsh/themes/dominic.zsh-theme"
-alias edit-dash="v ~/.config/gh-dash/config.yml"
 alias tmux-config="v ~/.config/tmux/tmux.conf"
 alias neovide-config="v $HOME/.config/neovide/config.toml"
 
@@ -13,6 +12,4 @@ alias sail="[ -f sail ] && sh sail || sh vendor/bin/sail"
 alias sphp="brew unlink php@${1} && brew link php@${2}"
 
 # Tools
-alias wConfig="v ~/Library/Application\ Support/watson/config"
-alias timer="watson"
 alias load="tmuxp load"

@@ -1,17 +1,14 @@
-alias v="nvim"
+alias v="neovide"
 alias edit="cd ~/Repos/dotfiles; v ~/.zshrc"
 alias refresh="source ~/.zshrc"
 alias nv-config="cd ~/.config/nvim/lua/user/; v"
 alias kitty-config="cd ~/.config/kitty/; v"
 alias kitty-fonts="kitty +list-fonts --psnames"
-alias ssh-config="cd ~/.ssh; v config"
 alias ssh='TERM=xterm-256color ssh'
 alias man="batman"
 alias p="pnpm"
 alias pw="npx playwright"
 
-
-alias composer="php /usr/local/bin/composer"
 alias hosts="sudo code -r /etc/hosts"
 alias editKeys="code -r ~/.ssh/known_hosts"
 alias listen="lsof -nP | grep LISTEN"
@@ -23,9 +20,6 @@ alias spass="op items list | fzf | awk '{print \$1}' | xargs -I % sh -c 'op item
 
 alias d-view="lazydocker"
 alias d="docker"
-
-# Package Managers
-alias binstall='brew list | gum filter --placeholder "Choose a package to install" | xargs brew install'
 
 # Laravel Projects
 alias sail="sh vendor/bin/sail"
