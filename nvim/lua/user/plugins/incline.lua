@@ -1,4 +1,5 @@
 return {
+  -- Shows the current file in under the bufferline
   'b0o/incline.nvim',
 
   config = function()

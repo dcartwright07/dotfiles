@@ -45,6 +45,9 @@ return {
       -- bg = vim.api.nvim_get_hl_by_name('CursorLine', true).background
     })
 
+    -- Floating Windows
+    vim.api.nvim_set_hl(0, 'NormalFloat', { bg = colors.charcoal })
+
     -- Diagnostics
     vim.api.nvim_set_hl(0, 'DiagnosticError', { fg = diagnostic_colors.error_fg })
     vim.api.nvim_set_hl(0, 'DiagnosticWarn', { fg = diagnostic_colors.warn_fg })

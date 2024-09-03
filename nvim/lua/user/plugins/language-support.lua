@@ -67,10 +67,24 @@ return {
 
   -- LSP Configuration
   {
+    'williamboman/mason.nvim',
+    name = 'mason',
+    config = function()
+      require('mason').setup()
+    end,
+  },
+
+  {
+    'williamboman/mason-lspconfig.nvim',
+    name = 'mason-lspconfig',
+    config = function()
+      require('mason-lspconfig').setup({ automatic_installation = true })
+    end,
+  },
+
+  {
     'neovim/nvim-lspconfig',
     dependencies = {
-      'williamboman/mason.nvim',
-      'williamboman/mason-lspconfig.nvim',
       'b0o/schemastore.nvim',
       'none-ls',
       'jayp0521/mason-null-ls.nvim',
@@ -79,12 +93,11 @@ return {
     config = function()
       require('neodev').setup({})
 
-      -- Setup Mason to automatically install LSP servers
-      require('mason').setup()
-      require('mason-lspconfig').setup({ automatic_installation = true })
-
       local capabilities = require('cmp_nvim_lsp').default_capabilities(vim.lsp.protocol.make_client_capabilities())
       local lspconfig = require('lspconfig')
+      local mason_registry = require('mason-registry')
+      local vue_language_server_path = mason_registry.get_package('vue-language-server'):get_install_path() ..
+      '/node_modules/@vue/language-server'
 
       -- Lua
       lspconfig.lua_ls.setup({
@@ -105,10 +118,37 @@ return {
       -- Frontend LSP
       lspconfig.volar.setup({
         capabilities = capabilities,
-        filetypes = { 'typescript', 'javascript', 'javascriptreact', 'typescriptreact', 'vue' },
+        on_attach = function(client, bufnr)
+          client.server_capabilities.documentFormattingProvider = false
+          client.server_capabilities.documentRangeFormattingProvider = false
+          -- if client.server_capabilities.inlayHintProvider then
+          --   vim.lsp.buf.inlay_hint(bufnr, true)
+          -- end
+        end,
+      })
+
+      lspconfig.tsserver.setup({
+        capabilities = capabilities,
+        init_options = {
+          plugins = {
+            {
+              name = "@vue/typescript-plugin",
+              location = vue_language_server_path,
+              languages = { "javascript", "typescript", "vue" },
+            },
+          },
+        },
+        filetypes = {
+          "javascript",
+          "javascriptreact",
+          "javascript.jsx",
+          "typescript",
+          "typescriptreact",
+          "typescript.tsx",
+          "vue",
+        },
       })
       lspconfig.html.setup({ capabilities = capabilities })
-      lspconfig.tailwindcss.setup({ capabilities = capabilities })
       lspconfig.cssls.setup({ capabilities = capabilities })
 
       -- Data LSP
@@ -150,7 +190,10 @@ return {
         },
       })
 
-      require('mason-null-ls').setup({ automatic_installation = true })
+      require('mason-null-ls').setup({
+        ensure_installed = { 'lua_ls' },
+        automatic_installation = true
+      })
 
       -- Diagnostic configuration
       vim.diagnostic.config({
@@ -158,7 +201,6 @@ return {
         severity_sort = true,
         float = {
           border = 'rounded',
-          source = 'always',
         },
       })
 
@@ -183,9 +225,31 @@ return {
         texthl = 'DiagnosticHint',
         linehl = 'DiagnosticHintLn'
       })
+
+      -- Keymaps
+      vim.keymap.set('n', '<Leader>d', '<cmd>lua vim.diagnostic.open_float()<CR>', { desc = 'Open diagnostics' })
+      vim.keymap.set('n', '[d', '<cmd>lua vim.diagnostic.goto_prev()<CR>')
+      vim.keymap.set('n', ']d', '<cmd>lua vim.diagnostic.goto_next()<CR>')
+      vim.keymap.set('n', 'gd', ':Telescope lsp_definitions<CR>')
+      vim.keymap.set('n', 'gt', '<cmd>lua vim.lsp.buf.type_definition()<CR>')
+      vim.keymap.set('n', 'gD', '<cmd>lua vim.lsp.buf.declaration()<CR>')
+      vim.keymap.set('n', 'gi', ':Telescope lsp_implementations<CR>')
+      vim.keymap.set('n', 'gr', ':Telescope lsp_references<CR>')
+      vim.keymap.set('n', 'K', '<cmd>lua require("pretty_hover").hover()<CR>')
+      -- vim.keymap.set('n', 'K', '<cmd>lua vim.lsp.buf.hover()<CR>') -- Original hover
+      vim.keymap.set('n', '<leader>ca', '<cmd>lua vim.lsp.buf.code_action()<CR>', { desc = 'Code action' })
+      vim.keymap.set('n', 'm', ':Mason<CR>')
+      -- vim.keymap.set('n', '<Leader>rn', '<cmd>lua vim.lsp.buf.rename()<CR>')
     end,
   },
 
   -- Diagnostics Display
   { "folke/trouble.nvim",     dependencies = 'devicons' },
+
+  -- Make LSP hover information easier to read
+  {
+    "Fildo7525/pretty_hover",
+    event = "LspAttach",
+    opts = {}
+  },
 }
