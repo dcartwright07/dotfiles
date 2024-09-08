@@ -1,5 +1,5 @@
 alias v="neovide"
-alias edit="cd ~/Repos/dotfiles; v ~/.zshrc"
+alias edit="cd ~/Repos/dotfiles; v .zshrc"
 alias refresh="source ~/.zshrc"
 alias nv-config="cd ~/.config/nvim/lua/user/; v"
 alias kitty-config="cd ~/.config/kitty/; v"
