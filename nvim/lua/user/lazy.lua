@@ -36,6 +36,7 @@ require("lazy").setup({
     { import = 'user.plugins.flash' },
     { import = 'user.plugins.copilot' },
     { import = 'user.plugins.incline' },
+    { import = 'user.plugins.noice' },
 
     'tpope/vim-surround',                                                          -- Add, change, and delete surrounding text.
     'tpope/vim-unimpaired',                                                        -- Pairs of handy bracket mappings, like [b and ]b.

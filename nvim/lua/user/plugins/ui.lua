@@ -6,6 +6,13 @@ return {
 
     config = function()
       vim.cmd.colorscheme "catppuccin"
+
+      require('catppuccin').setup({
+        mason = true,
+        neotree = true,
+        which_key = false,
+        noice = false
+      })
     end
   }
 

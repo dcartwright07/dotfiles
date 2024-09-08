@@ -1,4 +1,4 @@
-local separator = { '"▏"', color = { fg = '#888888', gui = 'bold' } }
+-- local separator = { '"▏"', color = { fg = '#888888', gui = 'bold' } }
 
 return {
   'nvim-lualine/lualine.nvim',
