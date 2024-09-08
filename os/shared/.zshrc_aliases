@@ -1,4 +1,4 @@
-alias v="neovide"
+alias v="nvim"
 alias edit="cd ~/Repos/dotfiles; v .zshrc"
 alias refresh="source ~/.zshrc"
 alias nv-config="cd ~/.config/nvim/lua/user/; v"
