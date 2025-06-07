@@ -34,3 +34,45 @@ warp() {
 ws() {
   tmuxp load $(find ~/Repos/dotfiles/.tmuxp | fzf)
 }
+
+# Auto-detect and set Java version for projects
+autoload_java_version() {
+    local java_version=""
+    
+    # Check for .java-version file first
+    if [[ -f .java-version ]]; then
+        java_version=$(cat .java-version | tr -d '[:space:]')
+    # Check pom.xml for Maven projects
+    elif [[ -f pom.xml ]]; then
+        java_version=$(grep -o '<java.version>[^<]*</java.version>' pom.xml | sed 's/<java.version>\(.*\)<\/java.version>/\1/' | head -1)
+    # Check build.gradle for Gradle projects
+    elif [[ -f build.gradle || -f build.gradle.kts ]]; then
+        if [[ -f build.gradle ]]; then
+            java_version=$(grep -o 'sourceCompatibility.*[0-9]\+' build.gradle | grep -o '[0-9]\+' | head -1)
+        fi
+        if [[ -f build.gradle.kts && -z "$java_version" ]]; then
+            java_version=$(grep -o 'sourceCompatibility.*[0-9]\+' build.gradle.kts | grep -o '[0-9]\+' | head -1)
+        fi
+    fi
+    
+    # Set JAVA_HOME if version is detected
+    if [[ -n "$java_version" ]]; then
+        local java_home_path=$(/usr/libexec/java_home -v "$java_version" 2>/dev/null)
+        if [[ $? -eq 0 ]]; then
+            export JAVA_HOME="$java_home_path"
+            export PATH="$JAVA_HOME/bin:$PATH"
+            echo "✅ Set Java $java_version ($(java -version 2>&1 | head -1 | cut -d'"' -f2))"
+        else
+            echo "⚠️  Java $java_version not found. Available versions:"
+            /usr/libexec/java_home -V 2>&1 | grep -E "^\s*[0-9]"
+        fi
+    fi
+}
+
+# Auto-run when changing directories
+chpwd() {
+    autoload_java_version
+}
+
+# Run for current directory when shell starts
+autoload_java_version

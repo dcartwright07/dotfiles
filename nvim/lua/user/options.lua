@@ -39,10 +39,6 @@ vim.g.vim_monokai_tasty_italic = 1
 vim.g.closetag_filetypes = 'html,xhtml,phtml,vue,velocity,vtl'
 vim.g.closetag_xhtml_filenames = '*.xhtml,*.jsx,*.tsx,*.js,*.ts,*.jsx,*.tsx,*.html,*.phtml,*.vue,*.velocity,*.vtl'
 vim.g.skip_ts_context_commentstring_module = true
-vim.g.gitblame_delay = 1000
-vim.g.gitblame_date_format = '%b %d, %Y'
-vim.g.gitblame_highlight_group = 'CommentCursorLine'
-vim.g.gitblame_message_template = '  <author> • <date> • [<sha>] <summary>'
 
 if vim.g.neovide then
     vim.g.neovide_fullscreen = true

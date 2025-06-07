@@ -16,6 +16,7 @@ vim.g.maplocalleader = " "
 
 require("lazy").setup({
     { import = 'user.plugins.which-key' },
+    { import = 'user.plugins.snacks' },
     'folke/neodev.nvim', -- Development plugin
 
     -- Reused Dependencies
@@ -27,16 +28,17 @@ require("lazy").setup({
     { import = 'user.plugins.dashboard' },
     { import = 'user.plugins.language-support' },
     { import = 'user.plugins.telescope' },
-    { import = 'user.plugins.bufferline' },
+    -- { import = 'user.plugins.bufferline' },
     { import = 'user.plugins.cmp' },
-    { import = 'user.plugins.indent-blankline' },
+    -- { import = 'user.plugins.indent-blankline' },
     { import = 'user.plugins.todo-comments' },
     { import = 'user.plugins.colorizer' },
     { import = 'user.plugins.lualine' },
-    { import = 'user.plugins.flash' },
-    { import = 'user.plugins.copilot' },
-    { import = 'user.plugins.incline' },
+    -- { import = 'user.plugins.flash' },
+    -- { import = 'user.plugins.copilot' },
+    -- { import = 'user.plugins.incline' },
     { import = 'user.plugins.noice' },
+    { import = 'user.plugins.git-blame' },
 
     'tpope/vim-surround',                                                          -- Add, change, and delete surrounding text.
     'tpope/vim-unimpaired',                                                        -- Pairs of handy bracket mappings, like [b and ]b.
@@ -46,15 +48,12 @@ require("lazy").setup({
     'nelstrom/vim-visual-star-search',                                             -- Enable * searching with visually selected text.
     'RRethy/vim-illuminate',                                                       -- Automatically highlighting other uses of the word under the cursor.
     'andymass/vim-matchup',                                                        -- Add a better %.
-    'famiu/bufdelete.nvim',                                                        -- All closing buffers without closing the split window.
-    'f-person/git-blame.nvim',                                                     -- Git Blame
 
     { 'whatyouhide/vim-textobj-xmlattr', dependencies = 'kana/vim-textobj-user' }, -- Text objects for HTML attributes
     { 'windwp/nvim-autopairs',           config = true },                          -- Automatically add closing brackets, quotes, etc.
     { 'karb94/neoscroll.nvim',           config = true },                          -- Add smooth scrolling to avoid jarring jumps
     { 'laytan/cloak.nvim',               config = true },                          -- File security
     { 'lewis6991/gitsigns.nvim',         config = true },                          -- Git Signs
-    { "kdheepak/lazygit.nvim",           dependencies = 'plenary' },               -- Git Management
 
     -- Automatically set the working directory to the project root.
     {

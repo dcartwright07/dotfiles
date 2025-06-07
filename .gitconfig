@@ -1,0 +1,28 @@
+[fetch]
+	prune = true
+[pull]
+	rebase = true
+[init]
+	defaultBranch = main
+
+[includeIf "gitdir:~/Repos/slingshot/"]
+    path = ~/Repos/dotfiles/.gitconfig-work
+[includeIf "gitdir:~/Repos/campus/"]
+    path = ~/Repos/dotfiles/.gitconfig-work
+
+[includeIf "gitdir:~/Repos/dotfiles/"]
+    path = ~/Repos/dotfiles/.gitconfig-personal
+[includeIf "gitdir:~/Repos/personal/"]
+    path = ~/Repos/dotfiles/.gitconfig-personal
+[includeIf "gitdir:~/Repos/practice/"]
+    path = ~/Repos/dotfiles/.gitconfig-personal
+[includeIf "gitdir:~/Repos/contract/"]
+    path = ~/Repos/dotfiles/.gitconfig-personal
+[includeIf "gitdir:~/Repos/libraries/"]
+    path = ~/Repos/dotfiles/.gitconfig-personal
+[includeIf "gitdir:~/Repos/templates/"]
+    path = ~/Repos/dotfiles/.gitconfig-personal
+[includeIf "gitdir:~/Repos/evaluations/"]
+    path = ~/Repos/dotfiles/.gitconfig-personal
+[core]
+	excludesfile = ~/.gitignore_global

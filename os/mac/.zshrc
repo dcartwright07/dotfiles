@@ -16,6 +16,7 @@ export FZF_DEFAULT_OPTS=" \
 --color=selected-bg:#45475a \
 --multi"
 export BAT_THEME="CatppuccinMocha"
+export JAVA_HOME="/Library/Java/JavaVirtualMachines/temurin-11.jdk/Contents/Home"
 
 ulimit -n 4096
 

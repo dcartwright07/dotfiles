@@ -3,7 +3,6 @@ return {
   { 'windwp/nvim-ts-autotag', name = 'nvim-ts-autotag' }, -- Automatically close HTML tags
   {
     'nvimtools/none-ls.nvim',                             -- Replacement for null-ls
-    name = 'none-ls',
     dependencies = { 'nvimtools/none-ls-extras.nvim' }
   },
 
@@ -16,6 +15,7 @@ return {
       'JoosepAlviste/nvim-ts-context-commentstring',
       'nvim-treesitter/nvim-treesitter-textobjects',
       { 'nvim-treesitter/playground', cmd = "TSPlaygroundToggle" },
+      { "nushell/tree-sitter-nu",     build = ":TSUpdate nu" },
     },
 
     config = function()
@@ -51,20 +51,6 @@ return {
     end,
   },
 
-  -- Laravel Support
-  {
-    "adalessa/laravel.nvim",
-    dependencies = {
-      "nvim-telescope/telescope.nvim",
-      "tpope/vim-dotenv",
-      "MunifTanjim/nui.nvim",
-      "none-ls",
-    },
-    cmd = { "Sail", "Artisan", "Composer", "Npm", "Yarn", "Laravel", "Pnpm" },
-    event = "VeryLazy",
-    config = true,
-  },
-
   -- LSP Configuration
   {
     'williamboman/mason.nvim',
@@ -86,7 +72,7 @@ return {
     'neovim/nvim-lspconfig',
     dependencies = {
       'b0o/schemastore.nvim',
-      'none-ls',
+      'nvimtools/none-ls.nvim',
       'jayp0521/mason-null-ls.nvim',
     },
 
@@ -96,8 +82,24 @@ return {
       local capabilities = require('cmp_nvim_lsp').default_capabilities(vim.lsp.protocol.make_client_capabilities())
       local lspconfig = require('lspconfig')
       local mason_registry = require('mason-registry')
-      local vue_language_server_path = mason_registry.get_package('vue-language-server'):get_install_path() ..
-          '/node_modules/@vue/language-server'
+
+      -- Safely get vue language server path
+      local vue_language_server_path = nil
+      local success, package = pcall(function()
+        if mason_registry.is_installed('vue-language-server') then
+          return mason_registry.get_package('vue-language-server')
+        end
+        return nil
+      end)
+
+      if success and package then
+        local path_success, install_path = pcall(function()
+          return package:get_install_path()
+        end)
+        if path_success and install_path then
+          vue_language_server_path = install_path .. '/node_modules/@vue/language-server'
+        end
+      end
 
       -- Lua
       lspconfig.lua_ls.setup({
@@ -127,17 +129,9 @@ return {
         end,
       })
 
-      lspconfig.ts_ls.setup({
+      -- Setup TypeScript LSP with conditional Vue plugin
+      local ts_config = {
         capabilities = capabilities,
-        init_options = {
-          plugins = {
-            {
-              name = "@vue/typescript-plugin",
-              location = vue_language_server_path,
-              languages = { "javascript", "typescript", "vue" },
-            },
-          },
-        },
         filetypes = {
           "javascript",
           "javascriptreact",
@@ -145,9 +139,24 @@ return {
           "typescript",
           "typescriptreact",
           "typescript.tsx",
-          "vue",
         },
-      })
+      }
+
+      -- Only add Vue support if the Vue language server is installed
+      if vue_language_server_path then
+        ts_config.init_options = {
+          plugins = {
+            {
+              name = "@vue/typescript-plugin",
+              location = vue_language_server_path,
+              languages = { "javascript", "typescript", "vue" },
+            },
+          },
+        }
+        table.insert(ts_config.filetypes, "vue")
+      end
+
+      lspconfig.ts_ls.setup(ts_config)
       lspconfig.html.setup({ capabilities = capabilities })
       lspconfig.cssls.setup({ capabilities = capabilities })
 
@@ -164,11 +173,12 @@ return {
       -- DevOps LSP
       lspconfig.dockerls.setup({ capabilities = capabilities })
 
-      -- null-ls
-      require('null-ls').setup({
+      -- none-ls (replacement for null-ls)
+      local null_ls = require('null-ls')
+      null_ls.setup({
         sources = {
           -- Diagnostics
-          require('null-ls').builtins.diagnostics.trail_space.with({ disabled_filetypes = { 'NvimTree' } }),
+          null_ls.builtins.diagnostics.trail_space.with({ disabled_filetypes = { 'NvimTree' } }),
           require('none-ls.diagnostics.eslint').with({
             condition = function(utils)
               return utils.root_has_file({ '.eslintrc.js' })
@@ -181,7 +191,7 @@ return {
               return utils.root_has_file({ '.eslintrc.js' })
             end,
           }),
-          require('null-ls').builtins.formatting.prettierd.with({
+          null_ls.builtins.formatting.prettierd.with({
             condition = function(utils)
               return utils.root_has_file({ '.prettierrc.js', '.prettierrc', '.prettierrc.json', '.prettierrc.yml',
                 '.prettierrc.yaml' })
@@ -252,4 +262,7 @@ return {
     event = "LspAttach",
     opts = {}
   },
+
+  -- Add Laravel Framework Support
+  { 'adalessa/laravel.nvim' },
 }

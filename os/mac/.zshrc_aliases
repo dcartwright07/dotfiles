@@ -1,6 +1,6 @@
 source ~/Repos/dotfiles/os/shared/.zshrc_aliases
 
-alias ztheme="v ~/.config/.oh-my-zsh/themes/dominic.zsh-theme"
+# alias ztheme="v ~/.config/.oh-my-zsh/themes/dominic.zsh-theme"
 alias tmux-config="v ~/.config/tmux/tmux.conf"
 alias neovide-config="v $HOME/.config/neovide/config.toml"
 
