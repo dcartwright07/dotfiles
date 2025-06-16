@@ -17,6 +17,13 @@ export FZF_DEFAULT_OPTS=" \
 --multi"
 export BAT_THEME="CatppuccinMocha"
 export JAVA_HOME="/Library/Java/JavaVirtualMachines/temurin-11.jdk/Contents/Home"
+export EDITOR="nvim"
+
+# Google MCP Authentication
+export GDRIVE_CREDENTIALS_PATH="$HOME/.config/google-drive/.gdrive-server-credentials.json"
+export GDRIVE_OAUTH_PATH="$HOME/.config/google-drive/gcp-oauth.keys.json"
+alias gdrive-auth="npx @modelcontextprotocol/server-gdrive auth"
+alias gdrive-start="npx @modelcontextprotocol/server-gdrive --authenticate"
 
 ulimit -n 4096
 

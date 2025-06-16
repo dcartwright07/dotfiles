@@ -13,3 +13,4 @@ alias sphp="brew unlink php@${1} && brew link php@${2}"
 
 # Tools
 alias load="tmuxp load"
+alias ai-browser="npx @agentdeskai/browser-tools-server@1.2.0"
