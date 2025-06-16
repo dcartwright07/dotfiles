@@ -38,9 +38,6 @@ vim.keymap.set('v', '<C-k>', ":move '<-2<CR>gv=gv")
 vim.keymap.set('n', '<Leader>e', ':Neotree position=current toggle<CR>', { desc = 'Toggle Neotree' })
 vim.keymap.set('n', '<Leader>o', ':Neotree position=current focus<CR>', { desc = 'Focus Neotree' })
 
--- Git
-vim.keymap.set('n', '<C-g>', ':LazyGit<CR>', { desc = 'LazyGit' })
-
 -- Gitsigns
 vim.keymap.set('n', ']h', ':Gitsigns next_hunk<CR>')
 vim.keymap.set('n', '[h', ':Gitsigns prev_hunk<CR>')

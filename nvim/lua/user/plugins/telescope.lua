@@ -80,7 +80,7 @@ return {
                 { desc = 'Find All Files' })
             vim.keymap.set('n', '<leader>b', [[<cmd>lua require('telescope.builtin').buffers()<CR>]],
                 { desc = 'View Buffers' })
-            vim.keymap.set('n', '<leader>g',
+            vim.keymap.set('n', '<leader>G',
                 [[<cmd>lua require('telescope').extensions.live_grep_args.live_grep_args()<CR>]],
                 { desc = 'Find a Word' })
             vim.keymap.set('n', '<leader>r', ':Telescope resume<CR>', { desc = 'Resume Last Search' })
@@ -89,9 +89,9 @@ return {
             vim.keymap.set('n', '<leader>s', [[<cmd>lua require('telescope.builtin').lsp_document_symbols()<CR>]],
                 { desc = 'Document Symbols' })
             vim.keymap.set('n', '<leader>T', ':TodoTelescope<CR>', { desc = 'Todo' })
-            vim.keymap.set('n', '<leader>Gb', [[<cmd>lua require('telescope.builtin').git_branches()<CR>]],
+            vim.keymap.set('n', '<leader>gb', [[<cmd>lua require('telescope.builtin').git_branches()<CR>]],
                 { desc = 'Git Branches' })
-            vim.keymap.set('n', '<leader>Gc', [[<cmd>lua require('telescope.builtin').git_commits()<CR>]],
+            vim.keymap.set('n', '<leader>gc', [[<cmd>lua require('telescope.builtin').git_commits()<CR>]],
                 { desc = 'Git Commits' })
             vim.keymap.set('n', '<leader>km', [[<cmd>lua require('telescope.builtin').keymaps()<CR>]],
                 { desc = 'Keymaps' })
