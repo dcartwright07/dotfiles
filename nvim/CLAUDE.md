@@ -42,8 +42,8 @@ The `language-support.lua` file contains comprehensive LSP setup:
 
 ### Key Bindings Structure
 - `<leader>f` - File operations (find files, fuzzy search)
-- `<leader>g` - Git operations and live grep
-- `<leader>G*` - Specific Git operations (branches, commits, blame, etc.)
+- `<leader>G` - Git operations and live grep
+- `<leader>g*` - Specific Git operations (branches, commits, blame, etc.)
 - `<leader>X*` - Trouble/diagnostics
 - `<leader>L*` - Laravel-specific commands
 - `<leader>v*` - Vue.js development commands (component info, definitions, references, hover)
