@@ -6,6 +6,16 @@ return {
     dependencies = { 'nvimtools/none-ls-extras.nvim' }
   },
 
+  -- Vue-specific enhancements
+  {
+    'posva/vim-vue',
+    ft = 'vue',
+    config = function()
+      -- Configure Vue syntax highlighting
+      vim.g.vue_pre_processors = 'detect_on_enter'
+    end
+  },
+
   -- Language Syntax
   {
     'nvim-treesitter/nvim-treesitter',
@@ -64,7 +74,10 @@ return {
     'williamboman/mason-lspconfig.nvim',
     name = 'mason-lspconfig',
     config = function()
-      require('mason-lspconfig').setup({ automatic_installation = true })
+      require('mason-lspconfig').setup({ 
+        automatic_installation = true,
+        ensure_installed = { 'volar', 'ts_ls' } -- Ensure Vue and TypeScript language servers
+      })
     end,
   },
 
@@ -117,20 +130,75 @@ return {
       lspconfig.intelephense.setup({ capabilities = capabilities })
       lspconfig.sqlls.setup({ capabilities = capabilities })
 
-      -- Frontend LSP
+      -- Frontend LSP - Enhanced Vue/Volar Configuration
       lspconfig.volar.setup({
         capabilities = capabilities,
+        filetypes = { 'vue' }, -- Only handle Vue files in non-hybrid mode
+        root_dir = lspconfig.util.root_pattern('package.json', 'vue.config.js', 'vite.config.js', 'nuxt.config.js', '.git'),
+        init_options = {
+          vue = {
+            hybridMode = false, -- Disable hybrid mode for better inlay hints and full features
+          },
+          typescript = {
+            tsdk = vim.fn.stdpath('data') .. '/mason/packages/typescript-language-server/node_modules/typescript/lib',
+          },
+        },
+        settings = {
+          vue = {
+            complete = {
+              casing = {
+                tags = 'kebab',
+                props = 'camel',
+              },
+            },
+            inlayHints = {
+              missingProps = true,
+              optionsWrapper = true,
+            },
+          },
+          typescript = {
+            inlayHints = {
+              enumMemberValues = { enabled = true },
+              functionLikeReturnTypes = { enabled = true },
+              propertyDeclarationTypes = { enabled = true },
+              parameterTypes = { 
+                enabled = true,
+                suppressWhenArgumentMatchesName = true 
+              },
+              variableTypes = { enabled = true },
+            },
+            suggest = {
+              includeCompletionsForModuleExports = true,
+            },
+            preferences = {
+              quoteStyle = 'single',
+            },
+          },
+        },
         on_attach = function(client, bufnr)
           client.server_capabilities.documentFormattingProvider = false
           client.server_capabilities.documentRangeFormattingProvider = false
-          -- if client.server_capabilities.inlayHintProvider then
-          --   vim.lsp.buf.inlay_hint(bufnr, true)
-          -- end
+          
+          -- Debug: Print when Volar attaches
+          print("Volar LSP attached to buffer " .. bufnr .. " for file: " .. vim.api.nvim_buf_get_name(bufnr))
+          
+          -- Enable inlay hints if supported
+          if client.server_capabilities.inlayHintProvider and vim.lsp.inlay_hint then
+            vim.lsp.inlay_hint.enable(true, { bufnr = bufnr })
+          end
+          
+          -- Vue-specific keybindings
+          local opts = { noremap = true, silent = true, buffer = bufnr }
+          vim.keymap.set('n', '<leader>vc', ':VolarComponentInfo<CR>', vim.tbl_extend('force', opts, { desc = 'Vue Component Info' }))
+          vim.keymap.set('n', '<leader>vd', vim.lsp.buf.definition, vim.tbl_extend('force', opts, { desc = 'Go to Vue Definition' }))
+          vim.keymap.set('n', '<leader>vr', vim.lsp.buf.references, vim.tbl_extend('force', opts, { desc = 'Vue References' }))
+          vim.keymap.set('n', '<leader>vh', vim.lsp.buf.hover, vim.tbl_extend('force', opts, { desc = 'Vue Hover Info' }))
+          vim.keymap.set('n', '<leader>vl', ':LspInfo<CR>', vim.tbl_extend('force', opts, { desc = 'LSP Info' }))
         end,
       })
 
-      -- Setup TypeScript LSP with conditional Vue plugin
-      local ts_config = {
+      -- Setup TypeScript LSP (excluding Vue files since Volar handles them in non-hybrid mode)
+      lspconfig.ts_ls.setup({
         capabilities = capabilities,
         filetypes = {
           "javascript",
@@ -140,23 +208,45 @@ return {
           "typescriptreact",
           "typescript.tsx",
         },
-      }
-
-      -- Only add Vue support if the Vue language server is installed
-      if vue_language_server_path then
-        ts_config.init_options = {
-          plugins = {
-            {
-              name = "@vue/typescript-plugin",
-              location = vue_language_server_path,
-              languages = { "javascript", "typescript", "vue" },
+        settings = {
+          typescript = {
+            inlayHints = {
+              enumMemberValues = { enabled = true },
+              functionLikeReturnTypes = { enabled = true },
+              propertyDeclarationTypes = { enabled = true },
+              parameterTypes = { 
+                enabled = true,
+                suppressWhenArgumentMatchesName = true 
+              },
+              variableTypes = { enabled = true },
+            },
+            preferences = {
+              quoteStyle = 'single',
             },
           },
-        }
-        table.insert(ts_config.filetypes, "vue")
-      end
-
-      lspconfig.ts_ls.setup(ts_config)
+          javascript = {
+            inlayHints = {
+              enumMemberValues = { enabled = true },
+              functionLikeReturnTypes = { enabled = true },
+              propertyDeclarationTypes = { enabled = true },
+              parameterTypes = { 
+                enabled = true,
+                suppressWhenArgumentMatchesName = true 
+              },
+              variableTypes = { enabled = true },
+            },
+            preferences = {
+              quoteStyle = 'single',
+            },
+          },
+        },
+        on_attach = function(client, bufnr)
+          -- Enable inlay hints if supported
+          if client.server_capabilities.inlayHintProvider and vim.lsp.inlay_hint then
+            vim.lsp.inlay_hint.enable(true, { bufnr = bufnr })
+          end
+        end,
+      })
       lspconfig.html.setup({ capabilities = capabilities })
       lspconfig.cssls.setup({ capabilities = capabilities })
 
@@ -212,29 +302,37 @@ return {
         float = {
           border = 'rounded',
         },
+        signs = {
+          text = {
+            [vim.diagnostic.severity.ERROR] = '',
+            [vim.diagnostic.severity.WARN] = '',
+            [vim.diagnostic.severity.INFO] = '',
+            [vim.diagnostic.severity.HINT] = '',
+          },
+        },
       })
 
-      -- Sign configuration
-      vim.fn.sign_define('DiagnosticSignError', {
-        text = '',
-        texthl = 'DiagnosticError',
-        linehl = 'DiagnosticErrorLn'
-      })
-      vim.fn.sign_define('DiagnosticSignWarn', {
-        text = '',
-        texthl = 'DiagnosticWarn',
-        linehl = 'DiagnosticWarnLn'
-      })
-      vim.fn.sign_define('DiagnosticSignInfo', {
-        text = '',
-        texthl = 'DiagnosticInfo',
-        linehl = 'DiagnosticInfoLn'
-      })
-      vim.fn.sign_define('DiagnosticSignHint', {
-        text = '',
-        texthl = 'DiagnosticHint',
-        linehl = 'DiagnosticHintLn'
-      })
+      -- Sign configuration (deprecated - replaced with signs config above)
+      -- vim.fn.sign_define('DiagnosticSignError', {
+      --   text = '',
+      --   texthl = 'DiagnosticError',
+      --   linehl = 'DiagnosticErrorLn'
+      -- })
+      -- vim.fn.sign_define('DiagnosticSignWarn', {
+      --   text = '',
+      --   texthl = 'DiagnosticWarn',
+      --   linehl = 'DiagnosticWarnLn'
+      -- })
+      -- vim.fn.sign_define('DiagnosticSignInfo', {
+      --   text = '',
+      --   texthl = 'DiagnosticInfo',
+      --   linehl = 'DiagnosticInfoLn'
+      -- })
+      -- vim.fn.sign_define('DiagnosticSignHint', {
+      --   text = '',
+      --   texthl = 'DiagnosticHint',
+      --   linehl = 'DiagnosticHintLn'
+      -- })
 
       -- Keymaps
       vim.keymap.set('n', '<Leader>d', '<cmd>lua vim.diagnostic.open_float()<CR>', { desc = 'Open diagnostics' })

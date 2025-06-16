@@ -35,7 +35,6 @@ require("lazy").setup({
     { import = 'user.plugins.colorizer' },
     { import = 'user.plugins.lualine' },
     -- { import = 'user.plugins.flash' },
-    -- { import = 'user.plugins.copilot' },
     -- { import = 'user.plugins.incline' },
     { import = 'user.plugins.noice' },
     { import = 'user.plugins.git-blame' },

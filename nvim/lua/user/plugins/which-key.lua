@@ -36,6 +36,7 @@ return {
             { "<leader>La",      ':Laravel artisan<cr>',                               desc = 'Artisan' },
             { "<leader>Lr",      ':Laravel routes<cr>',                                desc = 'Routes' },
             { "<leader>Lm",      ':Laravel related<cr>',                               desc = 'Related' },
+            { "<leader>v",       group = "Vue" },
             { "<leader>n",       function() Snacks.notifier.show_history() end,        desc = "Notification History" },
         }
 
