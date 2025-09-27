@@ -2,3 +2,7 @@
 kitty/kitty-themes
 tmux/plugins
 .DS_Store
+
+tasks
+.idea
+.claude

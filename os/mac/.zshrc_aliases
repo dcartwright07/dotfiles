@@ -13,4 +13,9 @@ alias sphp="brew unlink php@${1} && brew link php@${2}"
 
 # Tools
 alias load="tmuxp load"
-alias ai-browser="npx @agentdeskai/browser-tools-server@1.2.0"
+alias browser-mcp="npx @agentdeskai/browser-tools-server@1.2.0"
+
+# Agent OS
+alias agent-install="nvim ~/Repos/dotfiles/agent-os/.agent-os/setup/project.sh"
+alias agent-custom="nvim ~/Repos/dotfiles/agent-os/.agent-os/standards/"
+alias agent-config="nvim ~/Repos/dotfiles/agent-os/.agent-os/config.yml"
