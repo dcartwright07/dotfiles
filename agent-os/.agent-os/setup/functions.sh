@@ -124,7 +124,7 @@ install_from_github() {
 
     # Core instructions
     echo "  📂 Core instructions:"
-    for file in plan-product post-execution-tasks create-spec create-tasks execute-tasks execute-task analyze-product; do
+    for file in plan-product post-execution-tasks create-spec create-tasks execute-tasks execute-task analyze-product create-github-issues create-jira-issues work-on-github-issue work-on-jira-ticket; do
         download_file "${BASE_URL}/instructions/core/${file}.md" \
             "$target_dir/instructions/core/${file}.md" \
             "$overwrite_inst" \
@@ -164,7 +164,7 @@ install_from_github() {
     echo ""
     echo "📥 Downloading code style files to $target_dir/standards/code-style/"
 
-    for file in css-style html-style javascript-style; do
+    for file in css-style html-style javascript-style vue-style; do
         download_file "${BASE_URL}/standards/code-style/${file}.md" \
             "$target_dir/standards/code-style/${file}.md" \
             "$overwrite_std" \
@@ -177,7 +177,7 @@ install_from_github() {
         echo "📥 Downloading command files to $target_dir/commands/"
         mkdir -p "$target_dir/commands"
 
-        for cmd in plan-product create-spec create-tasks execute-tasks analyze-product; do
+        for cmd in plan-product create-spec create-tasks execute-tasks analyze-product create-github-issues create-jira-issues work-on-github-issue work-on-jira-ticket; do
             download_file "${BASE_URL}/commands/${cmd}.md" \
                 "$target_dir/commands/${cmd}.md" \
                 "$overwrite_std" \
