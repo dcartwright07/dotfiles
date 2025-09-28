@@ -90,9 +90,43 @@ Use the context-fetcher subagent to read and parse spec files for ticket context
 
 </step>
 
-<step number="3" name="jira_configuration">
+<step number="3" name="issue_registry_check">
 
-### Step 3: Jira Configuration Check
+### Step 3: Issue Registry Check
+
+Check for existing issues in the spec folder to avoid duplicates.
+
+<registry_check>
+  CHECK if issues.md exists in spec folder:
+    FILE: .agent-os/specs/{spec_folder_name}/issues.md
+
+  IF issues.md exists:
+    READ file content
+    PARSE existing Jira tickets
+    IDENTIFY tasks already with tickets
+    WARN user about potential duplicates
+  ELSE:
+    PROCEED (no previous issues recorded)
+</registry_check>
+
+<duplicate_detection>
+  FOR each major_task from tasks.md:
+    CHECK if task already has Jira ticket in registry
+    IF duplicate_found:
+      PROMPT user: "Task '{task_title}' already has Jira ticket {ticket_key}.
+      Continue anyway? (yes/no/skip-duplicates)"
+
+  HANDLE user response:
+    - "yes": Create all tickets including duplicates
+    - "no": Cancel ticket creation
+    - "skip-duplicates": Only create tickets for tasks without existing Jira tickets
+</duplicate_detection>
+
+</step>
+
+<step number="4" name="jira_configuration">
+
+### Step 4: Jira Configuration Check
 
 Verify Jira/Atlassian MCP server availability and configuration.
 
@@ -124,9 +158,9 @@ Verify Jira/Atlassian MCP server availability and configuration.
 
 </step>
 
-<step number="4" name="ticket_preparation">
+<step number="5" name="ticket_preparation">
 
-### Step 4: Ticket Preparation
+### Step 5: Ticket Preparation
 
 Prepare Jira ticket content for each major task.
 
@@ -182,9 +216,9 @@ Prepare Jira ticket content for each major task.
 
 </step>
 
-<step number="5" name="subtask_strategy">
+<step number="6" name="subtask_strategy">
 
-### Step 5: Subtask Strategy Selection
+### Step 6: Subtask Strategy Selection
 
 Determine how to handle subtasks in Jira.
 
@@ -214,9 +248,9 @@ Determine how to handle subtasks in Jira.
 
 </step>
 
-<step number="6" name="dry_run_preview">
+<step number="7" name="dry_run_preview">
 
-### Step 6: Dry Run Preview (Optional)
+### Step 7: Dry Run Preview (Optional)
 
 If dry-run mode enabled, show preview of tickets to be created.
 
@@ -253,9 +287,9 @@ If dry-run mode enabled, show preview of tickets to be created.
 
 </step>
 
-<step number="7" name="ticket_creation">
+<step number="8" name="ticket_creation">
 
-### Step 7: Jira Ticket Creation
+### Step 8: Jira Ticket Creation
 
 Create Jira tickets using MCP server tools.
 
@@ -305,9 +339,49 @@ Create Jira tickets using MCP server tools.
 
 </step>
 
-<step number="8" name="results_summary">
+<step number="9" name="issue_registry_update">
 
-### Step 8: Results Summary
+### Step 9: Issue Registry Update
+
+Update the issue registry with created Jira tickets.
+
+<registry_update>
+  CREATE or UPDATE file: .agent-os/specs/{spec_folder_name}/issues.md
+
+  IF issues.md does not exist:
+    CREATE new file with header:
+      "# Created Issues\n\n## GitHub Issues\n\n## Jira Tickets\n\n## Creation History\n"
+
+  FOR each successfully created ticket:
+    ADD entry under "## Jira Tickets" section:
+      "- [x] **{task_title}**
+        - Ticket: {ticket_key} - {ticket_url}
+        - Created: {current_date}
+        - Status: {ticket_status}
+        - Assignee: {assignee_if_set}"
+
+  IF subtasks were created:
+    ADD sub-entries for each subtask:
+      "  - Sub-task: {subtask_key} - {subtask_url}"
+
+  ADD entry under "## Creation History" section:
+    "- {current_date}: Created {success_count} Jira tickets for project {project_key}"
+</registry_update>
+
+<file_formatting>
+  MAINTAIN consistent formatting:
+    - Use checkboxes [x] for completed task tracking
+    - Include all relevant metadata (ticket key, URL, date, status, assignee)
+    - Keep chronological order in Creation History
+    - Preserve existing GitHub issues section if present
+    - Indent sub-tasks appropriately
+</file_formatting>
+
+</step>
+
+<step number="10" name="results_summary">
+
+### Step 10: Results Summary
 
 Provide comprehensive summary of created tickets.
 
@@ -331,6 +405,7 @@ Provide comprehensive summary of created tickets.
 
     📋 Total: {success_count}/{total_count} tickets created
     🔗 View all tickets: {project_board_url}
+    📝 Issue registry updated: .agent-os/specs/{spec_folder_name}/issues.md
 
     Next Steps:
     - Review and prioritize tickets
