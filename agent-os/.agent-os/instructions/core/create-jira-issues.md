@@ -132,7 +132,7 @@ Prepare Jira ticket content for each major task.
 
 <ticket_template>
   FOR each major_task:
-    SUMMARY: "[Task {task_number}] {task_title}"
+    SUMMARY: "{task_title}"
 
     DESCRIPTION:
       "h2. Context

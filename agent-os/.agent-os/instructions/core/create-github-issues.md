@@ -131,7 +131,7 @@ Prepare GitHub issue content for each major task.
 
 <issue_template>
   FOR each major_task:
-    TITLE: "[Task {task_number}] {task_title}"
+    TITLE: "{task_title}"
 
     DESCRIPTION:
       "## Context
