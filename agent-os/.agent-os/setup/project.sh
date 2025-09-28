@@ -197,7 +197,7 @@ if [ "$CLAUDE_CODE" = true ]; then
     if [ "$IS_FROM_BASE" = true ]; then
         # Copy from base installation
         echo "  📂 Commands:"
-        for cmd in plan-product create-spec create-tasks execute-tasks analyze-product; do
+        for cmd in plan-product create-spec create-tasks execute-tasks analyze-product create-github-issues create-jira-issues; do
             if [ -f "$BASE_AGENT_OS/commands/${cmd}.md" ]; then
                 copy_file "$BASE_AGENT_OS/commands/${cmd}.md" "./.claude/commands/${cmd}.md" "false" "commands/${cmd}.md"
             else
@@ -207,7 +207,7 @@ if [ "$CLAUDE_CODE" = true ]; then
 
         echo ""
         echo "  📂 Agents:"
-        for agent in context-fetcher date-checker file-creator git-workflow project-manager test-runner; do
+        for agent in context-fetcher date-checker file-creator git-workflow project-manager test-runner api-integration-specialist enterprise-project-architect form-field-specialist manager-class-specialist simple-project-architect vue-component-specialist; do
             if [ -f "$BASE_AGENT_OS/claude-code/agents/${agent}.md" ]; then
                 copy_file "$BASE_AGENT_OS/claude-code/agents/${agent}.md" "./.claude/agents/${agent}.md" "false" "agents/${agent}.md"
             else
@@ -247,7 +247,7 @@ if [ "$CURSOR" = true ]; then
 
     if [ "$IS_FROM_BASE" = true ]; then
         # Convert commands from base installation to Cursor rules
-        for cmd in plan-product create-spec create-tasks execute-tasks analyze-product; do
+        for cmd in plan-product create-spec create-tasks execute-tasks analyze-product create-github-issues create-jira-issues; do
             if [ -f "$BASE_AGENT_OS/commands/${cmd}.md" ]; then
                 convert_to_cursor_rule "$BASE_AGENT_OS/commands/${cmd}.md" "./.cursor/rules/${cmd}.mdc"
             else
@@ -297,6 +297,8 @@ if [ "$CLAUDE_CODE" = true ]; then
     echo "  /analyze-product - Set up the mission and roadmap for an existing product"
     echo "  /create-spec     - Create a spec for a new feature"
     echo "  /execute-tasks   - Build and ship code for a new feature"
+    echo "  /create-github-issues - Create GitHub issues for a new feature"
+    echo "  /create-jira-issues - Create Jira issues for a new feature"
     echo ""
 fi
 
@@ -306,6 +308,8 @@ if [ "$CURSOR" = true ]; then
     echo "  @analyze-product - Set up the mission and roadmap for an existing product"
     echo "  @create-spec     - Create a spec for a new feature"
     echo "  @execute-tasks   - Build and ship code for a new feature"
+    echo "  @create-github-issues - Create GitHub issues for a new feature"
+    echo "  @create-jira-issues - Create Jira issues for a new feature"
     echo ""
 fi
 
