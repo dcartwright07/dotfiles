@@ -19,3 +19,7 @@ alias browser-mcp="npx @agentdeskai/browser-tools-server@1.2.0"
 alias agent-install="~/Repos/dotfiles/agent-os/.agent-os/setup/project.sh"
 alias agent-custom="nvim ~/Repos/dotfiles/agent-os/.agent-os/standards/"
 alias agent-config="nvim ~/Repos/dotfiles/agent-os/.agent-os/config.yml"
+
+# Ollama
+alias qwen3="ANTHROPIC_AUTH_TOKEN=ollama ANTHROPIC_BASE_URL=http://localhost:11434 ANTHROPIC_API_KEY="" claude --model qwen3-coder"
+alias minimax="ANTHROPIC_AUTH_TOKEN=ollama ANTHROPIC_BASE_URL=http://localhost:11434 ANTHROPIC_API_KEY="" claude --model minimax-m2.5:cloud"

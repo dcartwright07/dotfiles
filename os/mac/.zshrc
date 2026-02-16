@@ -3,11 +3,11 @@ export DISABLE_AUTO_TITLE="true"
 export PATH="$PATH:$HOME/.local/bin"
 export PATH="$PATH:$HOME/go/bin"
 export PATH="$PATH:/opt/homebrew/bin"
-export PATH="$PATH:$HOME/development/flutter/bin:$PATH"
-export PATH="$PATH:$HOME/.gem/bin:$PATH"
+# export PATH="$PATH:$HOME/development/flutter/bin:$PATH"
+# export PATH="$PATH:$HOME/.gem/bin:$PATH"
 export NI_CONFIG_FILE="$HOME/.config/ni/nirc"
 export CONFIG_DIR="$HOME/.config/lazygit"
-export LAUNCH_EDITOR="webstorm"
+# export LAUNCH_EDITOR="webstorm"
 export USE_VUE_DEVTOOLS="false"
 export SSH_AUTH_SOCK="~/Library/Group\ Containers/2BUA8C4S2C.com.1password/t/agent.sock"
 export FZF_DEFAULT_OPTS=" \
@@ -40,7 +40,7 @@ source ~/Repos/dotfiles/os/mac/.zshrc_aliases
 source ~/Repos/dotfiles/os/mac/.zshrc_functions
 
 # pnpm
-export PNPM_HOME="/Users/dcartwright/Library/pnpm"
+export PNPM_HOME="~/Library/pnpm"
 case ":$PATH:" in
   *":$PNPM_HOME:"*) ;;
   *) export PATH="$PNPM_HOME:$PATH" ;;

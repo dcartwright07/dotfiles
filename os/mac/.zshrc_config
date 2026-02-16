@@ -1,7 +1,10 @@
 source ~/Repos/dotfiles/os/shared/.zshrc_config
 
 # VSCode
-[[ "$TERM_PROGRAM" == "vscode" ]] && . "$(code --locate-shell-integration-path zsh)"
+# [[ "$TERM_PROGRAM" == "vscode" ]] && . "$(code --locate-shell-integration-path zsh)"
+
+# Cursor
+[[ "$TERM_PROGRAM" == "cursor" ]] && . "$(cursor --locate-shell-integration-path zsh)"
 
 # Enable Starship
 eval "$(starship init zsh)"
