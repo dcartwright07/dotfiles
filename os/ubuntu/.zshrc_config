@@ -1,4 +1,0 @@
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)" # Setup Homebrew
-eval "$(oh-my-posh init zsh --config ~/.config/dominic.omp.json)" # Setup OhMyPosh
-
-source ~/Repos/dotfiles/os/shared/.zshrc_config

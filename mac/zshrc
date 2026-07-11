@@ -1,26 +1,40 @@
+# =============================================================================
+# mac/zshrc — shareable zsh config for all my Macs.
+#
+# This file is COMMITTED and safe to share. It contains NO secrets.
+# Per-machine secrets (API tokens, keys) live in ~/.zshrc, which sources
+# this file at the end. See mac/zshrc.template for the ~/.zshrc scaffold.
+# =============================================================================
+
+export _ZO_DOCTOR=0  # silence zoxide init-order warning (harness-audit P2-4)
 export ZSH="$HOME/.config/.oh-my-zsh"
 export DISABLE_AUTO_TITLE="true"
+
+# PATH
 export PATH="$PATH:$HOME/.local/bin"
 export PATH="$PATH:$HOME/go/bin"
 export PATH="$PATH:/opt/homebrew/bin"
-# export PATH="$PATH:$HOME/development/flutter/bin:$PATH"
-# export PATH="$PATH:$HOME/.gem/bin:$PATH"
+export PATH="$PATH:/Applications/Obsidian.app/Contents/MacOS"
+
+# Tool config
 export NI_CONFIG_FILE="$HOME/.config/ni/nirc"
 export CONFIG_DIR="$HOME/.config/lazygit"
-# export LAUNCH_EDITOR="webstorm"
 export USE_VUE_DEVTOOLS="false"
+export EDITOR="nvim"
+export BAT_THEME="CatppuccinMocha"
+export JAVA_HOME="/Library/Java/JavaVirtualMachines/temurin-11.jdk/Contents/Home"
+
+# 1Password SSH agent
 export SSH_AUTH_SOCK="~/Library/Group\ Containers/2BUA8C4S2C.com.1password/t/agent.sock"
+
 export FZF_DEFAULT_OPTS=" \
 --color=bg+:#313244,bg:#1e1e2e,spinner:#f5e0dc,hl:#f38ba8 \
 --color=fg:#cdd6f4,header:#f38ba8,info:#cba6f7,pointer:#f5e0dc \
 --color=marker:#b4befe,fg+:#cdd6f4,prompt:#cba6f7,hl+:#f38ba8 \
 --color=selected-bg:#45475a \
 --multi"
-export BAT_THEME="CatppuccinMocha"
-export JAVA_HOME="/Library/Java/JavaVirtualMachines/temurin-11.jdk/Contents/Home"
-export EDITOR="nvim"
 
-# Google MCP Authentication
+# Google MCP (paths only; the credential files themselves are local & gitignored)
 export GDRIVE_CREDENTIALS_PATH="$HOME/.config/google-drive/.gdrive-server-credentials.json"
 export GDRIVE_OAUTH_PATH="$HOME/.config/google-drive/gcp-oauth.keys.json"
 alias gdrive-auth="npx @modelcontextprotocol/server-gdrive auth"
@@ -35,9 +49,9 @@ plugins=(
 )
 
 source $ZSH/oh-my-zsh.sh
-source ~/Repos/dotfiles/os/mac/.zshrc_config
-source ~/Repos/dotfiles/os/mac/.zshrc_aliases
-source ~/Repos/dotfiles/os/mac/.zshrc_functions
+source ~/Repos/dotfiles/mac/.zshrc_config
+source ~/Repos/dotfiles/mac/.zshrc_aliases
+source ~/Repos/dotfiles/mac/.zshrc_functions
 
 # pnpm
 export PNPM_HOME="~/Library/pnpm"

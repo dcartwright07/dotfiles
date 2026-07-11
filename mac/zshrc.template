@@ -1,0 +1,18 @@
+# =============================================================================
+# ~/.zshrc — PER-MACHINE, LOCAL, NOT COMMITTED.
+#
+# install.sh copies this template to ~/.zshrc on a fresh machine (only if one
+# doesn't already exist). Put secrets and machine-specific env HERE — they stay
+# off git. Everything shareable lives in the sourced file at the bottom.
+#
+# After copying, fill in the real values below (e.g. from 1Password).
+# =============================================================================
+
+# --- Secrets / per-machine env -------------------------------------------
+# GitHub personal access token (create at https://github.com/settings/tokens)
+export GITHUB_PERSONAL_ACCESS_TOKEN="REPLACE_ME"
+
+# Add any other machine-local secrets or overrides above this line.
+
+# --- Shared config (committed, safe to share across machines) ------------
+source ~/Repos/dotfiles/mac/zshrc

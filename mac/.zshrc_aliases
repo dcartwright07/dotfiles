@@ -1,5 +1,6 @@
 alias v="nvim"
-alias edit="cd ~/Repos/dotfiles/os/mac; v .zshrc"
+alias edit="v ~/.zshrc"                                        # local secrets zshrc
+alias edit-shared="cd ~/Repos/dotfiles/mac; v zshrc"  # shared committed config
 alias refresh="source ~/.zshrc"
 alias nv-config="cd ~/.config/nvim/lua/user/; v"
 alias ghostty-config="cd ~/Library/Application Support/com.mitchellh.ghostty; v config"
@@ -24,7 +25,7 @@ alias d-view="lazydocker"
 alias d="docker"
 
 # Laravel Projects
-alias sail="sh vendor/bin/sail"
+alias sail="[ -f sail ] && sh sail || sh vendor/bin/sail"
 alias s-up="sail up -d"
 alias s-dn="sail down"
 alias art="sail artisan"
@@ -51,3 +52,28 @@ alias count="wc"
 alias cd="z"
 
 alias pip="python3 -m pip"
+
+alias tmux-config="v ~/.config/tmux/tmux.conf"
+alias neovide-config="v $HOME/.config/neovide/config.toml"
+
+alias ip-p="curl ifconfig.me"
+alias ip="ifconfig en0 | grep inet"
+
+# Laravel Projects
+alias sphp="brew unlink php@${1} && brew link php@${2}"
+
+# Tools
+alias load="tmuxp load"
+alias browser-mcp="npx @agentdeskai/browser-tools-server@1.2.0"
+
+# Agent OS
+alias agent-install="~/Repos/dotfiles/agent-os/.agent-os/setup/project.sh"
+alias agent-custom="nvim ~/Repos/dotfiles/agent-os/.agent-os/standards/"
+alias agent-config="nvim ~/Repos/dotfiles/agent-os/.agent-os/config.yml"
+
+# Ollama
+alias qwen3="ANTHROPIC_AUTH_TOKEN=ollama ANTHROPIC_BASE_URL=http://localhost:11434 ANTHROPIC_API_KEY="" claude --model qwen3-coder-next"
+alias minimax="ANTHROPIC_AUTH_TOKEN=ollama ANTHROPIC_BASE_URL=http://localhost:11434 ANTHROPIC_API_KEY="" claude --model minimax-m2.7:cloud"
+
+# Claude
+alias agents="claude agents"

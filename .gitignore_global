@@ -1,0 +1,23 @@
+# Global gitignore (symlinked to ~/.gitignore_global via install.sh).
+# Referenced by .gitconfig -> core.excludesfile.
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.Spotlight-V100
+.Trashes
+
+# Editors / IDEs
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Env / secrets
+.env
+.env.local
+*.local

@@ -1,13 +1,196 @@
 lastupdatecheck: 0
 recentrepos:
     - /Users/dominic/Repos/dotfiles
-    - /Users/dominic/Repos/contract/whatsup247/wu247v3
+    - /Users/dominic/Repos/fox-and-shield/app-template
     - /Users/dominic/Repos/contract/whatsup247/wu247-java-api
-    - /Users/dominic/Repos/contract/xps-mobile-app
+    - /Users/dominic/Repos/contract/xperienshare/xps-mobile-app
+    - /Users/dominic/Repos/contract/xperienshare/xps-backend
+    - /Users/dominic/Repos/contract/xperienshare/xps-admin-portal
+    - /Users/dominic/Repos/contract/campus/campus-connect-portal
+    - /Users/dominic/.claude
+    - /Users/dominic/Repos/fox-and-shield/company-website
+    - /Users/dominic/Repos/contract/whatsup247/wu247v3
+    - /Users/dominic/Repos/obsidian/Fox & Shield
+    - /Users/dominic/Repos/contract/whatsup247/wu247-mobile-pwa-app
+    - /Users/dominic/Repos/fox-and-shield/ai-resources
+    - /Users/dominic/Repos/contract/slingshot/slingshot-internal
+    - /Users/dominic/Repos/contract/slingshot/slingshot-pro
+    - /Users/dominic/Repos/fox-and-shield/paperlite/backend_paperlite_pro
     - /Users/dominic/Repos/contract/whatsup247/wu247v2
     - /Users/dominic/Repos/fox-and-shield/mobile-app-template
 startuppopupversion: 5
-didshowhunkstaginghint: false
-lastversion: 0.56.0
+didshowhunkstaginghint: true
+lastversion: 0.61.1
 customcommandshistory: []
 hidecommandlog: false
+githubPullRequests:
+    /Users/dominic/.claude: []
+    /Users/dominic/Repos/contract/campus/campus-connect-portal: []
+    /Users/dominic/Repos/contract/whatsup247/wu247v3:
+        - headRefName: develop
+          number: 712
+          title: Deploy to Production
+          state: MERGED
+          url: https://github.com/WhatsUp247/wu247v3/pull/712
+          headRepositoryOwner: WhatsUp247
+        - headRefName: develop
+          number: 709
+          title: 'feat: Deploy to Production'
+          state: MERGED
+          url: https://github.com/WhatsUp247/wu247v3/pull/709
+          headRepositoryOwner: WhatsUp247
+        - headRefName: develop
+          number: 616
+          title: 'feat: Production merge'
+          state: MERGED
+          url: https://github.com/WhatsUp247/wu247v3/pull/616
+          headRepositoryOwner: WhatsUp247
+        - headRefName: develop
+          number: 600
+          title: 'feat: Deploy Finally reporting for state requirements'
+          state: MERGED
+          url: https://github.com/WhatsUp247/wu247v3/pull/600
+          headRepositoryOwner: WhatsUp247
+        - headRefName: develop
+          number: 598
+          title: 'Deployment: Major update to Community Connector/Champion'
+          state: MERGED
+          url: https://github.com/WhatsUp247/wu247v3/pull/598
+          headRepositoryOwner: WhatsUp247
+        - headRefName: fix/657-private-repeating-events
+          number: 681
+          title: 'fix: Chunk child event inserts to avoid query limits'
+          state: OPEN
+          url: https://github.com/WhatsUp247/wu247v3/pull/681
+          headRepositoryOwner: WhatsUp247
+        - headRefName: main
+          number: 583
+          title: 'chore: Sync Updates from Boundless'
+          state: MERGED
+          url: https://github.com/WhatsUp247/wu247v3/pull/583
+          headRepositoryOwner: buildboundless
+        - headRefName: main
+          number: 541
+          title: boundless main -> what's up main
+          state: MERGED
+          url: https://github.com/WhatsUp247/wu247v3/pull/541
+          headRepositoryOwner: buildboundless
+        - headRefName: main
+          number: 515
+          title: boundless main -> what's up main
+          state: MERGED
+          url: https://github.com/WhatsUp247/wu247v3/pull/515
+          headRepositoryOwner: buildboundless
+        - headRefName: main
+          number: 513
+          title: boundless main -> what's up main
+          state: MERGED
+          url: https://github.com/WhatsUp247/wu247v3/pull/513
+          headRepositoryOwner: buildboundless
+        - headRefName: main
+          number: 512
+          title: Boundless merge upstream
+          state: MERGED
+          url: https://github.com/WhatsUp247/wu247v3/pull/512
+          headRepositoryOwner: buildboundless
+        - headRefName: feature/707-champion-report-city-filter
+          number: 708
+          title: 'feat: add city autocomplete filter to Champion Report (#707)'
+          state: MERGED
+          url: https://github.com/WhatsUp247/wu247v3/pull/708
+          headRepositoryOwner: WhatsUp247
+        - headRefName: issue-677-champion-count-discrepancy
+          number: 678
+          title: 'fix: align champion count between dashboard and champions report'
+          state: MERGED
+          url: https://github.com/WhatsUp247/wu247v3/pull/678
+          headRepositoryOwner: WhatsUp247
+        - headRefName: feat/659-champion-system-overhaul
+          number: 660
+          title: 'feat: Champion system overhaul'
+          state: MERGED
+          url: https://github.com/WhatsUp247/wu247v3/pull/660
+          headRepositoryOwner: WhatsUp247
+        - headRefName: github-workflows
+          number: 623
+          title: 'feat: Add PR Build Verification workflow'
+          state: MERGED
+          url: https://github.com/WhatsUp247/wu247v3/pull/623
+          headRepositoryOwner: WhatsUp247
+    /Users/dominic/Repos/contract/whatsup247/wu247-java-api:
+        - headRefName: development
+          number: 12
+          title: Development
+          state: MERGED
+          url: https://github.com/WhatsUp247/wu247-java-api/pull/12
+          headRepositoryOwner: WhatsUp247
+        - headRefName: development
+          number: 5
+          title: Development
+          state: MERGED
+          url: https://github.com/WhatsUp247/wu247-java-api/pull/5
+          headRepositoryOwner: WhatsUp247
+    /Users/dominic/Repos/contract/whatsup247/wu247-mobile-pwa-app:
+        - headRefName: develop
+          number: 80
+          title: Deploy to Production
+          state: MERGED
+          url: https://github.com/WhatsUp247/wu247-mobile-pwa-app/pull/80
+          headRepositoryOwner: WhatsUp247
+        - headRefName: develop
+          number: 59
+          title: Deployment to Production
+          state: MERGED
+          url: https://github.com/WhatsUp247/wu247-mobile-pwa-app/pull/59
+          headRepositoryOwner: WhatsUp247
+        - headRefName: develop
+          number: 52
+          title: Deploy to Production
+          state: MERGED
+          url: https://github.com/WhatsUp247/wu247-mobile-pwa-app/pull/52
+          headRepositoryOwner: WhatsUp247
+        - headRefName: develop
+          number: 46
+          title: Deployment to Production
+          state: MERGED
+          url: https://github.com/WhatsUp247/wu247-mobile-pwa-app/pull/46
+          headRepositoryOwner: WhatsUp247
+        - headRefName: develop
+          number: 39
+          title: Deployment to Production
+          state: MERGED
+          url: https://github.com/WhatsUp247/wu247-mobile-pwa-app/pull/39
+          headRepositoryOwner: WhatsUp247
+    /Users/dominic/Repos/contract/xperienshare/xps-admin-portal: []
+    /Users/dominic/Repos/contract/xperienshare/xps-backend: []
+    /Users/dominic/Repos/contract/xperienshare/xps-mobile-app:
+        - headRefName: dev
+          number: 40
+          title: 'Deployment: Phase 1 of MVP'
+          state: MERGED
+          url: https://github.com/XperienShare/xps-mobile-app/pull/40
+          headRepositoryOwner: XperienShare
+        - headRefName: dev
+          number: 40
+          title: 'Deployment: Phase 1 of MVP'
+          state: MERGED
+          url: https://github.com/XperienShare/xps-mobile-app/pull/40
+          headRepositoryOwner: XperienShare
+    /Users/dominic/Repos/contract/xps-mobile-app:
+        - headRefName: dev
+          number: 40
+          title: 'Deployment: Phase 1 of MVP'
+          state: MERGED
+          url: https://github.com/XperienShare/xps-mobile-app/pull/40
+          headRepositoryOwner: XperienShare
+    /Users/dominic/Repos/dotfiles: []
+    /Users/dominic/Repos/fox-and-shield/ai-resources: []
+    /Users/dominic/Repos/fox-and-shield/app-template: []
+    /Users/dominic/Repos/fox-and-shield/company-website:
+        - headRefName: issue-3-downloadable-assets-brand
+          number: 5
+          title: 'feat: add downloadable brand assets to guidelines'
+          state: MERGED
+          url: https://github.com/Fox-Shield/company-website/pull/5
+          headRepositoryOwner: Fox-Shield
+    /Users/dominic/Repos/obsidian/Fox & Shield: []
