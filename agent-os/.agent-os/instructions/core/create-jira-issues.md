@@ -145,7 +145,10 @@ Verify Jira/Atlassian MCP server availability and configuration.
     - Priority level (optional)
     - Default assignee (optional)
     - Labels/Components (optional)
-    - Ticket creation mode (dry-run vs actual)
+    - Execution mode: "Would you like to create tickets immediately or do a dry run first to preview them?
+      1. **Dry Run** - Preview tickets and save to files (recommended)
+      2. **Create Now** - Create tickets directly in Jira
+      Choose 1 or 2:"
 </configuration_prompts>
 
 <error_handling>
@@ -250,37 +253,114 @@ Determine how to handle subtasks in Jira.
 
 <step number="7" name="dry_run_preview">
 
-### Step 7: Dry Run Preview (Optional)
+### Step 7: Dry Run Preview and File Output
 
-If dry-run mode enabled, show preview of tickets to be created.
+Handle both dry run mode and immediate creation mode based on user selection.
 
-<preview_format>
-  DISPLAY for each prepared ticket:
-    "**Ticket {number}**: {summary}
+<mode_handling>
+  IF execution_mode == "dry_run":
+    PROCEED to dry run file creation
+  IF execution_mode == "create_now":
+    PROCEED to ticket creation (Step 8)
+</mode_handling>
+
+<dry_run_file_creation>
+  CREATE dry run output directory if not exists:
+    DIRECTORY: .agent-os/specs/{spec_folder_name}/dry-runs/
+
+  GENERATE timestamp:
+    FORMAT: YYYY-MM-DD-HHMMSS
+    EXAMPLE: 2024-01-15-143022
+
+  CREATE dry run file:
+    FILENAME: jira-tickets-preview-{timestamp}.md
+    FULL_PATH: .agent-os/specs/{spec_folder_name}/dry-runs/jira-tickets-preview-{timestamp}.md
+</dry_run_file_creation>
+
+<dry_run_content_format>
+  FILE CONTENT:
+    "# Jira Tickets Preview
+    Generated: {current_date_time}
+    Spec: {spec_folder_name}
     Project: {project_key}
-    Type: {issue_type}
-    Priority: {priority_level}
-    Labels: {labels_list}
-    Assignee: {assignee_if_set}
-    Subtask Strategy: {checklist_or_subtasks}
 
-    Preview of description (first 200 chars)...
+    ## Summary
+    - Total tickets to create: {ticket_count}
+    - Issue type: {issue_type}
+    - Priority: {priority_level}
+    - Subtask strategy: {checklist_or_subtasks}
+    - Labels: {labels_list}
+    - Default assignee: {assignee_if_set}
+
+    ---
+
+    ## Ticket Details
+
+    {for_each_prepared_ticket}
+    ### Ticket {number}: {task_title}
+
+    **Jira Fields:**
+    - Summary: {ticket_summary}
+    - Project: {project_key}
+    - Issue Type: {issue_type}
+    - Priority: {priority_level}
+    - Labels: {labels_list}
+    - Assignee: {assignee_if_set}
+
+    **Description:**
+    ```
+    {full_ticket_description}
+    ```
+
+    **Subtasks:**
+    {if_subtask_strategy_is_sub_tickets}
+    - {subtask_1_title}
+    - {subtask_2_title}
+    - {subtask_N_title}
+    {else_if_subtask_strategy_is_checklist}
+    (Included as checkboxes in description above)
+
+    ---
+    {end_for_each_ticket}
+
+    ## Next Steps
+    To proceed with creating these tickets in Jira:
+    1. Review the ticket details above
+    2. Run the create-jira-issues command again
+    3. When prompted for execution mode, choose 'Create Now'
+    4. Or use the 'proceed' option if available in the current session
     "
-</preview_format>
+</dry_run_content_format>
+
+<console_preview>
+  DISPLAY brief summary to console:
+    "📋 Dry Run Complete!
+
+    Prepared {ticket_count} Jira tickets for project {project_key}
+    Preview saved to: .agent-os/specs/{spec_folder_name}/dry-runs/jira-tickets-preview-{timestamp}.md
+
+    📖 Review the detailed preview file to see full ticket content.
+    "
+</console_preview>
 
 <user_confirmation>
-  PROMPT: "Ready to create {ticket_count} Jira tickets in project {project_key}?
+  PROMPT: "Would you like to proceed with creating these tickets in Jira now?
 
-  Type 'yes' to proceed with creation, 'preview' to see full ticket content, or 'cancel' to abort."
+  Options:
+  - 'yes' - Create all {ticket_count} tickets immediately
+  - 'no' - Exit and review the dry run file first
+  - 'show' - Display ticket summaries in console
+
+  Choose an option:"
 </user_confirmation>
 
 <confirmation_flow>
   IF user_response == "yes":
-    PROCEED to ticket creation
-  IF user_response == "preview":
-    SHOW full ticket content, then re-prompt
-  IF user_response == "cancel":
-    ABORT with success message
+    PROCEED to ticket creation (Step 8)
+  IF user_response == "show":
+    DISPLAY brief ticket summaries in console, then re-prompt
+  IF user_response == "no":
+    ABORT with success message and file location
   ELSE:
     RE-PROMPT for valid response
 </confirmation_flow>
@@ -291,7 +371,9 @@ If dry-run mode enabled, show preview of tickets to be created.
 
 ### Step 8: Jira Ticket Creation
 
-Create Jira tickets using MCP server tools.
+Create Jira tickets using MCP server tools. This step is only executed if:
+- User chose "Create Now" in Step 4, OR
+- User chose "yes" to proceed after dry run preview in Step 7
 
 <creation_loop>
   FOR each prepared_ticket:
@@ -386,32 +468,51 @@ Update the issue registry with created Jira tickets.
 Provide comprehensive summary of created tickets.
 
 <summary_report>
-  DISPLAY:
-    "✅ Jira Tickets Created Successfully
+  IF execution_mode == "dry_run" AND user_chose_no_to_proceed:
+    DISPLAY:
+      "📋 Dry Run Complete - No Tickets Created
 
-    Project: {project_key}
-    Spec: {spec_folder_name}
+      Project: {project_key}
+      Spec: {spec_folder_name}
+      Preview file: .agent-os/specs/{spec_folder_name}/dry-runs/jira-tickets-preview-{timestamp}.md
 
-    Created Tickets:
-    {for_each_successful_ticket}
-    - {ticket_key}: {ticket_summary}
-      URL: {ticket_url}
-      {if_subtasks_created}
-      Sub-tasks: {subtask_keys_list}
+      Prepared {ticket_count} tickets for future creation.
 
-    {if_any_failures}
-    ❌ Failed Tickets:
-    - {failed_ticket_details}
+      Next Steps:
+      1. Review the detailed preview file
+      2. Compare with previous dry runs if needed
+      3. Run create-jira-issues again and choose 'Create Now'
+      4. Or modify tasks.md and re-run dry run as needed"
 
-    📋 Total: {success_count}/{total_count} tickets created
-    🔗 View all tickets: {project_board_url}
-    📝 Issue registry updated: .agent-os/specs/{spec_folder_name}/issues.md
+  ELSE (tickets were actually created):
+    DISPLAY:
+      "✅ Jira Tickets Created Successfully
 
-    Next Steps:
-    - Review and prioritize tickets
-    - Assign tickets to team members
-    - Update sprint planning
-    - Link to epics if applicable"
+      Project: {project_key}
+      Spec: {spec_folder_name}
+      {if_dry_run_was_used}
+      Dry run preview: .agent-os/specs/{spec_folder_name}/dry-runs/jira-tickets-preview-{timestamp}.md
+
+      Created Tickets:
+      {for_each_successful_ticket}
+      - {ticket_key}: {ticket_summary}
+        URL: {ticket_url}
+        {if_subtasks_created}
+        Sub-tasks: {subtask_keys_list}
+
+      {if_any_failures}
+      ❌ Failed Tickets:
+      - {failed_ticket_details}
+
+      📋 Total: {success_count}/{total_count} tickets created
+      🔗 View all tickets: {project_board_url}
+      📝 Issue registry updated: .agent-os/specs/{spec_folder_name}/issues.md
+
+      Next Steps:
+      - Review and prioritize tickets
+      - Assign tickets to team members
+      - Update sprint planning
+      - Link to epics if applicable"
 </summary_report>
 
 <follow_up_actions>

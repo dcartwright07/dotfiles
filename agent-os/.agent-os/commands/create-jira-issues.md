@@ -3,6 +3,9 @@
 Create Jira tickets from Agent OS tasks with full spec context for team collaboration.
 
 **Features:**
+- **Dry Run Mode**: Preview tickets before creation with timestamped output files
+- **Multiple Dry Runs**: Compare different dry run outputs to refine tickets
+- **Flexible Creation**: Option to create tickets immediately or after dry run review
 - Automatically detects and prevents duplicate ticket creation
 - Tracks all created tickets in spec folder registry
 - Links tickets to corresponding spec documentation
@@ -12,6 +15,32 @@ Create Jira tickets from Agent OS tasks with full spec context for team collabor
 Refer to the instructions located in this file:
 @.agent-os/instructions/core/create-jira-issues.md
 
+## Dry Run Functionality
+
+The command now supports a **dry run mode** that allows you to preview tickets before creating them in Jira:
+
+### Dry Run Process:
+1. **Choose Dry Run**: Select "Dry Run" when prompted for execution mode
+2. **Review Preview**: Detailed ticket previews are saved to timestamped files
+3. **Compare Runs**: Multiple dry runs create separate files for comparison
+4. **Proceed or Refine**: Choose to create tickets immediately or refine tasks and re-run
+
+### Dry Run Output:
+- **Location**: `.agent-os/specs/YYYY-MM-DD-spec-name/dry-runs/`
+- **Format**: `jira-tickets-preview-YYYY-MM-DD-HHMMSS.md`
+- **Content**: Complete ticket details including descriptions, metadata, and subtasks
+- **Benefits**: Compare different approaches, catch issues early, share previews with team
+
+### Example Workflow:
+```
+1. Run create-jira-issues → Choose "Dry Run"
+2. Review: dry-runs/jira-tickets-preview-2024-01-15-143022.md
+3. Modify tasks.md if needed
+4. Run again → Choose "Dry Run" for comparison
+5. Review: dry-runs/jira-tickets-preview-2024-01-15-151543.md
+6. Run final time → Choose "Create Now" when satisfied
+```
+
 ## Issue Tracking
 
 All created Jira tickets are automatically tracked in the spec folder's `issues.md` file. This ensures:
@@ -20,6 +49,7 @@ All created Jira tickets are automatically tracked in the spec folder's `issues.
 - Easy tracking of ticket status and completion
 - Historical record of ticket creation activities
 - Integration with GitHub issues in the same registry
+- Links to dry run files for reference
 
 The issue registry is located at: `.agent-os/specs/YYYY-MM-DD-spec-name/issues.md`
 

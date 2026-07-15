@@ -26,3 +26,4 @@
     path = ~/Repos/dotfiles/.gitconfig-personal
 [core]
 	excludesfile = ~/.gitignore_global
+	autocrlf = input

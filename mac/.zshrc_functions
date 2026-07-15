@@ -136,3 +136,13 @@ chpwd() {
 
 # Run for current directory when shell starts
 autoload_java_version
+
+# Toggle AI Brain Dashboard off and on
+braindash() {
+  if pgrep -f "dashboard/server.mjs" >/dev/null; then
+    pkill -f "dashboard/server.mjs" && echo "AI Brain dashboard stopped"
+  else
+    node "$HOME/AI Brain/.system/dashboard/server.mjs" >/dev/null 2>&1 &
+    echo "AI Brain dashboard started (port 4777)"
+  fi
+}

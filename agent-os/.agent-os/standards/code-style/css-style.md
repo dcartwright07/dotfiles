@@ -1,5 +1,11 @@
 # CSS Style Guide
 
+## UI Design Standards
+
+For comprehensive guidelines on UI colors, shadows, and visual depth:
+- **[Color Palette System](../ui-design/color-palette.md)** - Complete color palette structure, 60-30-10 rule, shade variations
+- **[Shadows & Depth](../ui-design/shadows-and-depth.md)** - Color layering, shadow systems, gradient techniques
+
 ## Nested CSS Structure (Preferred)
 - Use nested CSS for component-specific styles
 - Use 4 spaces for indentation
