@@ -137,10 +137,13 @@ chpwd() {
 # Run for current directory when shell starts
 autoload_java_version
 
-# Toggle AI Brain Dashboard off and on
-braindash() {
-  if pgrep -f "dashboard/server.mjs" >/dev/null; then
-    pkill -f "dashboard/server.mjs" && echo "AI Brain dashboard stopped"
+# AI Brain dashboard control — toggle the local memory dashboard on/off.
+# Usage: brain-dashboard   (running = stop, stopped = start)
+# Identity is the listening port (4777), not the process name, so it reliably
+# finds the server however it was launched (node server.mjs vs. full path).
+brain-dashboard() {
+  if lsof -ti tcp:4777 >/dev/null 2>&1; then
+    lsof -ti tcp:4777 | xargs kill 2>/dev/null && echo "AI Brain dashboard stopped"
   else
     node "$HOME/AI Brain/.system/dashboard/server.mjs" >/dev/null 2>&1 &
     echo "AI Brain dashboard started (port 4777)"
