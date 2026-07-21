@@ -38,6 +38,8 @@ alias issues="gh issue list"
 alias feats="gh issue list -l enhancement"
 alias prs="gh pr list"
 alias gh-squash="gh pr list | fzf | awk '{print \$1}' | xargs -I % sh -c 'gh pr merge % -d --squash'; ggpull"
+alias gh-sw-dom="gh auth switch --user dcartwright07"
+alias gh-sw-fox="gh auth switch --user foxagent1"
 
 # Git
 alias g-undo="git reset --soft HEAD~1"
@@ -77,3 +79,5 @@ alias minimax="ANTHROPIC_AUTH_TOKEN=ollama ANTHROPIC_BASE_URL=http://localhost:1
 
 # Claude
 alias agents="claude agents"
+
+
