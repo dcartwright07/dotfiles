@@ -3,6 +3,7 @@ recentrepos:
     - /Users/dominic/Repos/dotfiles
     - /Users/dominic/AI Brain
     - /Users/dominic/Repos/contract/whatsup247/wu247v3
+    - /Users/dominic/AI Brain/.system
     - /Users/dominic/.claude
     - /Users/dominic/Repos/fox-and-shield/app-template
     - /Users/dominic/Repos/contract/whatsup247/wu247-java-api
@@ -26,6 +27,7 @@ customcommandshistory: []
 hidecommandlog: false
 githubPullRequests:
     /Users/dominic/.claude: []
+    /Users/dominic/AI Brain: []
     /Users/dominic/AI Brain/.system: []
     /Users/dominic/Repos/contract/campus/campus-connect-portal: []
     /Users/dominic/Repos/contract/whatsup247/wu247v3:
