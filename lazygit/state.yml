@@ -1,10 +1,9 @@
 lastupdatecheck: 0
 recentrepos:
     - /Users/dominic/Repos/dotfiles
-    - /Users/dominic/.claude
-    - /Users/dominic/Repos/contract/whatsup247/wu247v3
-    - /Users/dominic/AI Brain/.system
     - /Users/dominic/AI Brain
+    - /Users/dominic/Repos/contract/whatsup247/wu247v3
+    - /Users/dominic/.claude
     - /Users/dominic/Repos/fox-and-shield/app-template
     - /Users/dominic/Repos/contract/whatsup247/wu247-java-api
     - /Users/dominic/Repos/contract/xperienshare/xps-mobile-app
@@ -30,42 +29,6 @@ githubPullRequests:
     /Users/dominic/AI Brain/.system: []
     /Users/dominic/Repos/contract/campus/campus-connect-portal: []
     /Users/dominic/Repos/contract/whatsup247/wu247v3:
-        - headRefName: develop
-          number: 717
-          title: Deploy to Production
-          state: MERGED
-          url: https://github.com/WhatsUp247/wu247v3/pull/717
-          headRepositoryOwner: WhatsUp247
-        - headRefName: develop
-          number: 712
-          title: Deploy to Production
-          state: MERGED
-          url: https://github.com/WhatsUp247/wu247v3/pull/712
-          headRepositoryOwner: WhatsUp247
-        - headRefName: develop
-          number: 709
-          title: 'feat: Deploy to Production'
-          state: MERGED
-          url: https://github.com/WhatsUp247/wu247v3/pull/709
-          headRepositoryOwner: WhatsUp247
-        - headRefName: develop
-          number: 616
-          title: 'feat: Production merge'
-          state: MERGED
-          url: https://github.com/WhatsUp247/wu247v3/pull/616
-          headRepositoryOwner: WhatsUp247
-        - headRefName: develop
-          number: 600
-          title: 'feat: Deploy Finally reporting for state requirements'
-          state: MERGED
-          url: https://github.com/WhatsUp247/wu247v3/pull/600
-          headRepositoryOwner: WhatsUp247
-        - headRefName: github-workflows
-          number: 623
-          title: 'feat: Add PR Build Verification workflow'
-          state: MERGED
-          url: https://github.com/WhatsUp247/wu247v3/pull/623
-          headRepositoryOwner: WhatsUp247
         - headRefName: main
           number: 583
           title: 'chore: Sync Updates from Boundless'
@@ -102,12 +65,6 @@ githubPullRequests:
           state: MERGED
           url: https://github.com/WhatsUp247/wu247v3/pull/708
           headRepositoryOwner: WhatsUp247
-        - headRefName: fix/657-private-repeating-events
-          number: 681
-          title: 'fix: Chunk child event inserts to avoid query limits'
-          state: MERGED
-          url: https://github.com/WhatsUp247/wu247v3/pull/681
-          headRepositoryOwner: WhatsUp247
         - headRefName: issue-677-champion-count-discrepancy
           number: 678
           title: 'fix: align champion count between dashboard and champions report'
@@ -119,6 +76,54 @@ githubPullRequests:
           title: 'feat: Champion system overhaul'
           state: MERGED
           url: https://github.com/WhatsUp247/wu247v3/pull/660
+          headRepositoryOwner: WhatsUp247
+        - headRefName: develop
+          number: 717
+          title: Deploy to Production
+          state: MERGED
+          url: https://github.com/WhatsUp247/wu247v3/pull/717
+          headRepositoryOwner: WhatsUp247
+        - headRefName: develop
+          number: 712
+          title: Deploy to Production
+          state: MERGED
+          url: https://github.com/WhatsUp247/wu247v3/pull/712
+          headRepositoryOwner: WhatsUp247
+        - headRefName: develop
+          number: 709
+          title: 'feat: Deploy to Production'
+          state: MERGED
+          url: https://github.com/WhatsUp247/wu247v3/pull/709
+          headRepositoryOwner: WhatsUp247
+        - headRefName: develop
+          number: 616
+          title: 'feat: Production merge'
+          state: MERGED
+          url: https://github.com/WhatsUp247/wu247v3/pull/616
+          headRepositoryOwner: WhatsUp247
+        - headRefName: develop
+          number: 600
+          title: 'feat: Deploy Finally reporting for state requirements'
+          state: MERGED
+          url: https://github.com/WhatsUp247/wu247v3/pull/600
+          headRepositoryOwner: WhatsUp247
+        - headRefName: issue-722-sos-sponsorship-ended
+          number: 723
+          title: 'fix: hide Secretary of State sponsor branding while keeping beneficiary benefit (#722)'
+          state: MERGED
+          url: https://github.com/WhatsUp247/wu247v3/pull/723
+          headRepositoryOwner: WhatsUp247
+        - headRefName: fix/657-private-repeating-events
+          number: 681
+          title: 'fix: Chunk child event inserts to avoid query limits'
+          state: MERGED
+          url: https://github.com/WhatsUp247/wu247v3/pull/681
+          headRepositoryOwner: WhatsUp247
+        - headRefName: github-workflows
+          number: 623
+          title: 'feat: Add PR Build Verification workflow'
+          state: MERGED
+          url: https://github.com/WhatsUp247/wu247v3/pull/623
           headRepositoryOwner: WhatsUp247
     /Users/dominic/Repos/contract/whatsup247/wu247-java-api:
         - headRefName: development
