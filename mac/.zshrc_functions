@@ -137,15 +137,15 @@ chpwd() {
 # Run for current directory when shell starts
 autoload_java_version
 
-# AI Brain dashboard control — toggle the local memory dashboard on/off.
-# Usage: brain-dashboard   (running = stop, stopped = start)
+# Space Station dashboard control — toggle the local memory dashboard on/off.
+# Usage: station-dash (running = stop, stopped = start)
 # Identity is the listening port (4777), not the process name, so it reliably
 # finds the server however it was launched (node server.mjs vs. full path).
-brain-dashboard() {
+station-dash() {
   if lsof -ti tcp:4777 >/dev/null 2>&1; then
-    lsof -ti tcp:4777 | xargs kill 2>/dev/null && echo "AI Brain dashboard stopped"
+    lsof -ti tcp:4777 | xargs kill 2>/dev/null && echo "Space Station dashboard stopped"
   else
-    node "$HOME/AI Brain/.system/dashboard/server.mjs" >/dev/null 2>&1 &
-    echo "AI Brain dashboard started (port 4777)"
+    node "$HOME/Space Station/.system/dashboard/server.mjs" >/dev/null 2>&1 &
+    echo "Space Station dashboard started (port 4777)"
   fi
 }
