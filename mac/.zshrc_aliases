@@ -77,6 +77,7 @@ alias agent-config="nvim ~/Repos/dotfiles/agent-os/.agent-os/config.yml"
 alias qwen3="ANTHROPIC_AUTH_TOKEN=ollama ANTHROPIC_BASE_URL=http://localhost:11434 ANTHROPIC_API_KEY="" claude --model qwen3-coder-next"
 alias minimax="ANTHROPIC_AUTH_TOKEN=ollama ANTHROPIC_BASE_URL=http://localhost:11434 ANTHROPIC_API_KEY="" claude --model minimax-m2.7:cloud"
 alias glm="ANTHROPIC_AUTH_TOKEN=ollama ANTHROPIC_BASE_URL=http://localhost:11434 ANTHROPIC_API_KEY="" claude --model glm-5.2:cloud"
+alias k3="ANTHROPIC_AUTH_TOKEN=ollama ANTHROPIC_BASE_URL=http://localhost:11434 ANTHROPIC_API_KEY="" claude --model kimi-k3:cloud"
 
 # Claude
 alias agents="claude agents"
