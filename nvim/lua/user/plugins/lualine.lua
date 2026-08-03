@@ -8,7 +8,7 @@ return {
       section_separators = '',
       component_separators = '',
       globalstatus = true,
-      theme = 'catppuccin'
+      theme = 'auto'
       -- theme = {
       -- normal = {
       --   a = 'StatusLine',

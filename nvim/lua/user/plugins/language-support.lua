@@ -30,14 +30,27 @@ return {
 
     config = function()
       require('nvim-treesitter.configs').setup({
-        ensure_installed = 'all',
+        ensure_installed = {
+          'lua', 'vim', 'vimdoc', 'query',
+          'php', 'phpdoc',
+          'sql',
+          'vue', 'typescript', 'javascript',
+          'html', 'css', 'scss',
+          'json', 'json5', 'jsonc', 'yaml',
+          'dockerfile',
+          'bash',
+          'markdown', 'markdown_inline',
+          'gitcommit', 'gitignore',
+          'regex', 'comment',
+          'nu',
+        },
         sync_install = false,
         auto_install = true,
         ignore_install = {},
         modules = {},
         highlight = {
           enable = true,
-          additional_vim_regex_highlighting = true,
+          additional_vim_regex_highlighting = false,
         },
         indent = {
           enable = true
@@ -74,9 +87,8 @@ return {
     'williamboman/mason-lspconfig.nvim',
     name = 'mason-lspconfig',
     config = function()
-      require('mason-lspconfig').setup({ 
-        automatic_installation = true,
-        ensure_installed = { 'volar', 'ts_ls' } -- Ensure Vue and TypeScript language servers
+      require('mason-lspconfig').setup({
+        ensure_installed = { 'vue_ls', 'ts_ls' } -- Ensure Vue and TypeScript language servers
       })
     end,
   },
@@ -93,30 +105,10 @@ return {
       require('neodev').setup({})
 
       local capabilities = require('cmp_nvim_lsp').default_capabilities(vim.lsp.protocol.make_client_capabilities())
-      local lspconfig = require('lspconfig')
-      local mason_registry = require('mason-registry')
-
-      -- Safely get vue language server path
-      local vue_language_server_path = nil
-      local success, package = pcall(function()
-        if mason_registry.is_installed('vue-language-server') then
-          return mason_registry.get_package('vue-language-server')
-        end
-        return nil
-      end)
-
-      if success and package then
-        local path_success, install_path = pcall(function()
-          return package:get_install_path()
-        end)
-        if path_success and install_path then
-          vue_language_server_path = install_path .. '/node_modules/@vue/language-server'
-        end
-      end
+      vim.lsp.config('*', { capabilities = capabilities })
 
       -- Lua
-      lspconfig.lua_ls.setup({
-        capabilities = capabilities,
+      vim.lsp.config('lua_ls', {
         settings = {
           Lua = {
             completion = {
@@ -126,15 +118,10 @@ return {
         }
       })
 
-      -- Backend LSP
-      lspconfig.intelephense.setup({ capabilities = capabilities })
-      lspconfig.sqlls.setup({ capabilities = capabilities })
-
       -- Frontend LSP - Enhanced Vue/Volar Configuration
-      lspconfig.volar.setup({
-        capabilities = capabilities,
+      vim.lsp.config('vue_ls', {
         filetypes = { 'vue' }, -- Only handle Vue files in non-hybrid mode
-        root_dir = lspconfig.util.root_pattern('package.json', 'vue.config.js', 'vite.config.js', 'nuxt.config.js', '.git'),
+        root_markers = { 'package.json', 'vue.config.js', 'vite.config.js', 'nuxt.config.js', '.git' },
         init_options = {
           vue = {
             hybridMode = false, -- Disable hybrid mode for better inlay hints and full features
@@ -161,9 +148,9 @@ return {
               enumMemberValues = { enabled = true },
               functionLikeReturnTypes = { enabled = true },
               propertyDeclarationTypes = { enabled = true },
-              parameterTypes = { 
+              parameterTypes = {
                 enabled = true,
-                suppressWhenArgumentMatchesName = true 
+                suppressWhenArgumentMatchesName = true
               },
               variableTypes = { enabled = true },
             },
@@ -178,18 +165,14 @@ return {
         on_attach = function(client, bufnr)
           client.server_capabilities.documentFormattingProvider = false
           client.server_capabilities.documentRangeFormattingProvider = false
-          
-          -- Debug: Print when Volar attaches
-          print("Volar LSP attached to buffer " .. bufnr .. " for file: " .. vim.api.nvim_buf_get_name(bufnr))
-          
+
           -- Enable inlay hints if supported
           if client.server_capabilities.inlayHintProvider and vim.lsp.inlay_hint then
             vim.lsp.inlay_hint.enable(true, { bufnr = bufnr })
           end
-          
+
           -- Vue-specific keybindings
           local opts = { noremap = true, silent = true, buffer = bufnr }
-          vim.keymap.set('n', '<leader>vc', ':VolarComponentInfo<CR>', vim.tbl_extend('force', opts, { desc = 'Vue Component Info' }))
           vim.keymap.set('n', '<leader>vd', vim.lsp.buf.definition, vim.tbl_extend('force', opts, { desc = 'Go to Vue Definition' }))
           vim.keymap.set('n', '<leader>vr', vim.lsp.buf.references, vim.tbl_extend('force', opts, { desc = 'Vue References' }))
           vim.keymap.set('n', '<leader>vh', vim.lsp.buf.hover, vim.tbl_extend('force', opts, { desc = 'Vue Hover Info' }))
@@ -198,8 +181,7 @@ return {
       })
 
       -- Setup TypeScript LSP (excluding Vue files since Volar handles them in non-hybrid mode)
-      lspconfig.ts_ls.setup({
-        capabilities = capabilities,
+      vim.lsp.config('ts_ls', {
         filetypes = {
           "javascript",
           "javascriptreact",
@@ -214,9 +196,9 @@ return {
               enumMemberValues = { enabled = true },
               functionLikeReturnTypes = { enabled = true },
               propertyDeclarationTypes = { enabled = true },
-              parameterTypes = { 
+              parameterTypes = {
                 enabled = true,
-                suppressWhenArgumentMatchesName = true 
+                suppressWhenArgumentMatchesName = true
               },
               variableTypes = { enabled = true },
             },
@@ -229,9 +211,9 @@ return {
               enumMemberValues = { enabled = true },
               functionLikeReturnTypes = { enabled = true },
               propertyDeclarationTypes = { enabled = true },
-              parameterTypes = { 
+              parameterTypes = {
                 enabled = true,
-                suppressWhenArgumentMatchesName = true 
+                suppressWhenArgumentMatchesName = true
               },
               variableTypes = { enabled = true },
             },
@@ -247,12 +229,9 @@ return {
           end
         end,
       })
-      lspconfig.html.setup({ capabilities = capabilities })
-      lspconfig.cssls.setup({ capabilities = capabilities })
 
       -- Data LSP
-      lspconfig.jsonls.setup({
-        capabilities = capabilities,
+      vim.lsp.config('jsonls', {
         settings = {
           json = {
             schemas = require('schemastore').json.schemas(),
@@ -260,8 +239,9 @@ return {
         },
       })
 
-      -- DevOps LSP
-      lspconfig.dockerls.setup({ capabilities = capabilities })
+      vim.lsp.enable({
+        'lua_ls', 'intelephense', 'sqlls', 'vue_ls', 'ts_ls', 'html', 'cssls', 'jsonls', 'dockerls',
+      })
 
       -- none-ls (replacement for null-ls)
       local null_ls = require('null-ls')
@@ -347,7 +327,7 @@ return {
       -- vim.keymap.set('n', 'K', '<cmd>lua vim.lsp.buf.hover()<CR>') -- Original hover
       vim.keymap.set('n', '<leader>ca', '<cmd>lua vim.lsp.buf.code_action()<CR>', { desc = 'Code action' })
       vim.keymap.set('n', 'm', ':Mason<CR>')
-      -- vim.keymap.set('n', '<Leader>rn', '<cmd>lua vim.lsp.buf.rename()<CR>')
+      vim.keymap.set('n', '<Leader>rn', '<cmd>lua vim.lsp.buf.rename()<CR>', { desc = 'Rename symbol' })
     end,
   },
 

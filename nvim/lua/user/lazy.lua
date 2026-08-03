@@ -1,5 +1,5 @@
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
-if not vim.loop.fs_stat(lazypath) then
+if not vim.uv.fs_stat(lazypath) then
     vim.fn.system({
         "git",
         "clone",
@@ -28,14 +28,11 @@ require("lazy").setup({
     { import = 'user.plugins.dashboard' },
     { import = 'user.plugins.language-support' },
     { import = 'user.plugins.telescope' },
-    -- { import = 'user.plugins.bufferline' },
     { import = 'user.plugins.cmp' },
-    -- { import = 'user.plugins.indent-blankline' },
+    { import = 'user.plugins.indent-blankline' },
     { import = 'user.plugins.todo-comments' },
     { import = 'user.plugins.colorizer' },
     { import = 'user.plugins.lualine' },
-    -- { import = 'user.plugins.flash' },
-    -- { import = 'user.plugins.incline' },
     { import = 'user.plugins.noice' },
     { import = 'user.plugins.git-blame' },
     { import = 'user.plugins.claude-code' },
