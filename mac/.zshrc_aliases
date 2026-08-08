@@ -81,5 +81,5 @@ alias k3="ANTHROPIC_AUTH_TOKEN=ollama ANTHROPIC_BASE_URL=http://localhost:11434 
 
 # Claude
 alias agents="claude agents"
-
+alias sync-mcps="~/.claude/scripts/sync-mcp-servers.py"
 
