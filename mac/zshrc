@@ -23,6 +23,7 @@ export USE_VUE_DEVTOOLS="false"
 export EDITOR="nvim"
 export BAT_THEME="CatppuccinMocha"
 export JAVA_HOME="/Library/Java/JavaVirtualMachines/temurin-11.jdk/Contents/Home"
+export LIGHTPANDA_DISABLE_TELEMETRY=true
 
 # 1Password SSH agent
 export SSH_AUTH_SOCK="~/Library/Group\ Containers/2BUA8C4S2C.com.1password/t/agent.sock"
