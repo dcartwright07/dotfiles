@@ -159,18 +159,51 @@ station-dash() {
   fi
 }
 
-# envkey — keep secret env vars in the macOS Keychain instead of ~/.zshrc.
-#   envkey add NAME   store NAME's value (macOS prompts for it, hidden) and export it now
-#   envkey rm NAME    delete it from the Keychain and stop exporting it
-#   envkey ls         list the names it exports (never the values)
-# Names live in ~/.config/envkey/names (one per line, no values). Values live only in the
-# login Keychain, service "envkey:NAME". Every new shell exports them via _envkey_load.
+# envkey — keep secret env vars in the macOS Keychain instead of ~/.zshrc, optionally
+# sourced from 1Password.
+#   envkey add NAME        store NAME's value (macOS prompts for it, hidden) and export it now
+#   envkey link NAME REF   tie NAME to a 1Password secret reference (op://Vault/Item/field):
+#                          read it once with `op`, cache it in the Keychain, export it now
+#   envkey sync            re-read every linked NAME from 1Password (run after rotating there)
+#   envkey rm NAME         delete it from the Keychain and stop exporting it
+#   envkey ls              list names, and the op:// reference of linked ones (never values)
+# ~/.config/envkey/names holds one "NAME" or "NAME op://..." per line — no values. Values live
+# only in the login Keychain, service "envkey:NAME". New shells export them via _envkey_load
+# from the Keychain alone, so opening a shell never asks 1Password (no Touch ID, works headless).
 ENVKEY_NAMES="${XDG_CONFIG_HOME:-$HOME/.config}/envkey/names"
 
+# Write NAME's line in the names file (replacing any old one). $2 is an optional op:// ref.
+_envkey_record() {
+  mkdir -p "${ENVKEY_NAMES:h}"; touch "$ENVKEY_NAMES"
+  sed -i '' -E "/^$1( |\$)/d" "$ENVKEY_NAMES"
+  print -r -- "$1${2:+ $2}" >> "$ENVKEY_NAMES"
+}
+
+# Store $2 as NAME $1 in the Keychain via `security -i` (stdin), so the value never shows up in
+# argv / ps. security -i takes double-quoted args, so refuse values it cannot quote.
+_envkey_store() {
+  if [[ "$2" == *[\"\\$'\n']* ]]; then
+    echo "envkey: $1's value contains a quote, backslash or newline; store it with: envkey add $1"
+    return 1
+  fi
+  print -r -- "add-generic-password -U -a \"$USER\" -s \"envkey:$1\" -w \"$2\"" \
+    | security -i >/dev/null || { echo "envkey: could not write $1 to the Keychain"; return 1; }
+}
+
+# Read op:// ref $2 from 1Password and cache it as NAME $1. Exports it on success.
+_envkey_pull() {
+  command -v op >/dev/null || { echo "envkey: 1Password CLI (op) not found"; return 1; }
+  local value
+  value="$(op read --no-newline -- "$2")" && [[ -n "$value" ]] \
+    || { echo "envkey: could not read $2 from 1Password"; return 1; }
+  _envkey_store "$1" "$value" || return 1
+  export "$1=$value"
+}
+
 envkey() {
-  local cmd="$1" name="$2" value
-  if [[ "$cmd" == (add|rm) && ! "$name" =~ ^[A-Za-z_][A-Za-z0-9_]*$ ]]; then
-    echo "Usage: envkey add|rm NAME   (NAME like GITHUB_TOKEN)"; return 1
+  local cmd="$1" name="$2" ref="$3" value line n ok=0 bad=0
+  if [[ "$cmd" == (add|rm|link) && ! "$name" =~ ^[A-Za-z_][A-Za-z0-9_]*$ ]]; then
+    echo "Usage: envkey add|rm NAME | envkey link NAME op://Vault/Item/field"; return 1
   fi
   case "$cmd" in
     add)
@@ -178,26 +211,41 @@ envkey() {
       # -w as the LAST option makes `security` prompt, so the value never appears in argv/ps.
       security add-generic-password -U -a "$USER" -s "envkey:$name" -w || return 1
       value="$(security find-generic-password -a "$USER" -s "envkey:$name" -w)" || return 1
-      mkdir -p "${ENVKEY_NAMES:h}"
-      grep -qx "$name" "$ENVKEY_NAMES" 2>/dev/null || print -r -- "$name" >> "$ENVKEY_NAMES"
+      _envkey_record "$name"
       export "$name=$value"
       echo "Stored $name in the Keychain. It is exported here and in every new shell." ;;
+    link)
+      [[ "$ref" == op://* ]] || { echo "Usage: envkey link NAME op://Vault/Item/field"; return 1; }
+      _envkey_pull "$name" "$ref" || return 1
+      _envkey_record "$name" "$ref"
+      echo "Linked $name to $ref. Cached in the Keychain; run 'envkey sync' after rotating it." ;;
+    sync)
+      [[ -r "$ENVKEY_NAMES" ]] || { echo "No envkey secrets yet."; return 0; }
+      while IFS=' ' read -r n ref; do
+        [[ "$ref" == op://* ]] || continue
+        if _envkey_pull "$n" "$ref"; then (( ok++ )); echo "synced $n"; else (( bad++ )); fi
+      done < "$ENVKEY_NAMES"
+      echo "envkey sync: $ok updated, $bad failed."
+      (( bad == 0 )) ;;
     rm)
       security delete-generic-password -a "$USER" -s "envkey:$name" >/dev/null 2>&1 \
         && echo "Removed $name from the Keychain." || echo "$name was not in the Keychain."
-      [[ -f "$ENVKEY_NAMES" ]] && sed -i '' "/^${name}\$/d" "$ENVKEY_NAMES"
+      [[ -f "$ENVKEY_NAMES" ]] && sed -i '' -E "/^${name}( |\$)/d" "$ENVKEY_NAMES"
       unset "$name" ;;
     ls)
-      [[ -s "$ENVKEY_NAMES" ]] && cat "$ENVKEY_NAMES" || echo "No envkey secrets yet." ;;
+      [[ -s "$ENVKEY_NAMES" ]] || { echo "No envkey secrets yet."; return 0; }
+      while IFS=' ' read -r n ref; do
+        [[ -n "$n" ]] && print -r -- "$n${ref:+  <- $ref}"
+      done < "$ENVKEY_NAMES" ;;
     *)
-      echo "Usage: envkey add NAME | envkey rm NAME | envkey ls"; return 1 ;;
+      echo "Usage: envkey add NAME | link NAME op://... | sync | rm NAME | ls"; return 1 ;;
   esac
 }
 
 _envkey_load() {
   [[ -r "$ENVKEY_NAMES" ]] || return 0
-  local name value
-  while IFS= read -r name; do
+  local name ref value
+  while IFS=' ' read -r name ref; do
     [[ -n "$name" ]] || continue
     value="$(security find-generic-password -a "$USER" -s "envkey:$name" -w 2>/dev/null)" \
       && export "$name=$value"
