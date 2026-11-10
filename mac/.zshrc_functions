@@ -158,3 +158,49 @@ station-dash() {
     echo "Space Station dashboard started (port 4777)"
   fi
 }
+
+# envkey — keep secret env vars in the macOS Keychain instead of ~/.zshrc.
+#   envkey add NAME   store NAME's value (macOS prompts for it, hidden) and export it now
+#   envkey rm NAME    delete it from the Keychain and stop exporting it
+#   envkey ls         list the names it exports (never the values)
+# Names live in ~/.config/envkey/names (one per line, no values). Values live only in the
+# login Keychain, service "envkey:NAME". Every new shell exports them via _envkey_load.
+ENVKEY_NAMES="${XDG_CONFIG_HOME:-$HOME/.config}/envkey/names"
+
+envkey() {
+  local cmd="$1" name="$2" value
+  if [[ "$cmd" == (add|rm) && ! "$name" =~ ^[A-Za-z_][A-Za-z0-9_]*$ ]]; then
+    echo "Usage: envkey add|rm NAME   (NAME like GITHUB_TOKEN)"; return 1
+  fi
+  case "$cmd" in
+    add)
+      echo "Enter the value for $name (typing is hidden; macOS asks twice)."
+      # -w as the LAST option makes `security` prompt, so the value never appears in argv/ps.
+      security add-generic-password -U -a "$USER" -s "envkey:$name" -w || return 1
+      value="$(security find-generic-password -a "$USER" -s "envkey:$name" -w)" || return 1
+      mkdir -p "${ENVKEY_NAMES:h}"
+      grep -qx "$name" "$ENVKEY_NAMES" 2>/dev/null || print -r -- "$name" >> "$ENVKEY_NAMES"
+      export "$name=$value"
+      echo "Stored $name in the Keychain. It is exported here and in every new shell." ;;
+    rm)
+      security delete-generic-password -a "$USER" -s "envkey:$name" >/dev/null 2>&1 \
+        && echo "Removed $name from the Keychain." || echo "$name was not in the Keychain."
+      [[ -f "$ENVKEY_NAMES" ]] && sed -i '' "/^${name}\$/d" "$ENVKEY_NAMES"
+      unset "$name" ;;
+    ls)
+      [[ -s "$ENVKEY_NAMES" ]] && cat "$ENVKEY_NAMES" || echo "No envkey secrets yet." ;;
+    *)
+      echo "Usage: envkey add NAME | envkey rm NAME | envkey ls"; return 1 ;;
+  esac
+}
+
+_envkey_load() {
+  [[ -r "$ENVKEY_NAMES" ]] || return 0
+  local name value
+  while IFS= read -r name; do
+    [[ -n "$name" ]] || continue
+    value="$(security find-generic-password -a "$USER" -s "envkey:$name" -w 2>/dev/null)" \
+      && export "$name=$value"
+  done < "$ENVKEY_NAMES"
+}
+_envkey_load
